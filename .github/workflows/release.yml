@@ -1,0 +1,50 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+env:
+  CARGO_TERM_COLOR: always
+  # Must match the channel pinned in rust-toolchain.toml.
+  RUST_TOOLCHAIN: 1.99.0
+
+jobs:
+  publish:
+    name: Publish to crates.io
+    runs-on: ubuntu-latest
+    # Lets the repository add protection rules, such as a required reviewer, before a release goes
+    # out. The trusted publisher on crates.io must name this same environment.
+    environment: crates-io
+    permissions:
+      contents: read
+      # Trusted publishing exchanges the workflow's OIDC token for a short-lived crates.io token,
+      # so no long-lived API token is stored in the repository.
+      id-token: write
+    steps:
+      - uses: actions/checkout@v7.0.1
+
+      - name: Install Rust toolchain
+        run: rustup toolchain install "$RUST_TOOLCHAIN" --profile minimal
+
+      - name: Check the tag matches the crate version
+        run: |
+          version="$(cargo metadata --no-deps --format-version 1 | jq -r '.packages[0].version')"
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME does not match crate version $version"
+            exit 1
+          fi
+
+      - name: Test
+        run: cargo test --workspace --all-features
+
+      - id: auth
+        uses: rust-lang/crates-io-auth-action@v1.0.5
+
+      - name: Publish
+        run: cargo publish
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ steps.auth.outputs.token }}

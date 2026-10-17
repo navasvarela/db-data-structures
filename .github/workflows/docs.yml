@@ -1,0 +1,64 @@
+name: Docs
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# One deployment at a time, and never cancel one halfway through, so the site is never left
+# partially updated.
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  CARGO_TERM_COLOR: always
+  # Must match the channel pinned in rust-toolchain.toml.
+  RUST_TOOLCHAIN: 1.99.0
+
+jobs:
+  build:
+    name: Build docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+
+      - name: Install Rust toolchain
+        run: rustup toolchain install "$RUST_TOOLCHAIN" --profile minimal
+
+      - uses: Swatinem/rust-cache@v2.9.2
+
+      # Broken intra-doc links fail the build, so pull requests catch them before they publish.
+      - name: Build docs
+        run: cargo doc --no-deps --all-features
+        env:
+          RUSTDOCFLAGS: -D warnings
+
+      # rustdoc puts each crate in its own folder, so the site root redirects to this one.
+      - name: Add landing page
+        run: |
+          echo '<meta http-equiv="refresh" content="0; url=db_data_structures/index.html">' \
+            > target/doc/index.html
+
+      - uses: actions/upload-pages-artifact@v5.0.0
+        with:
+          path: target/doc
+
+  deploy:
+    name: Deploy to GitHub Pages
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5.0.1
