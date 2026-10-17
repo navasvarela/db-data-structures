@@ -1,9 +1,9 @@
-use std::{collections::HashMap, io};
+use std::collections::HashMap;
 
 use tracing::warn;
 
 use crate::{
-    backend::{ByteStore, record_size},
+    backend::{ByteStore, CompactionStores, record_size},
     hash::{HashIndex, HashIndexError, record},
 };
 
@@ -12,43 +12,42 @@ use crate::{
 /// Every `set` appends a new record and repoints the key at it, so a value being written never
 /// shares bytes with one already stored: if the append fails, the key keeps its previous value.
 /// Overwritten records stay behind as dead bytes. Once they outweigh the live ones, the index
-/// compacts itself by copying the live records into an empty store made by `new_store`.
-pub struct SimpleHashIndex<B, F> {
-    store: B,
+/// compacts itself by copying the live records into an empty store from its
+/// [`CompactionStores`], which then puts that store in place of the old one.
+pub struct SimpleHashIndex<C: CompactionStores> {
+    store: C::Store,
     keydir: KeyDir,
-    new_store: F,
+    compaction_stores: C,
 }
 
-impl<B, F> SimpleHashIndex<B, F>
-where
-    B: ByteStore,
-    F: FnMut() -> io::Result<B>,
-{
+impl<C: CompactionStores> SimpleHashIndex<C> {
     /// Opens an index over `store`, rebuilding it from the records already there.
     ///
-    /// `new_store` must return an empty store; the index calls it each time it compacts.
+    /// `compaction_stores` must replace `store` itself when it installs a compacted store, for
+    /// example by writing to the same file path.
     ///
     /// # Errors
     ///
     /// Returns an error if a record in `store` cannot be read or is not a key-value record.
-    pub fn open(store: B, new_store: F) -> Result<Self, HashIndexError> {
+    pub fn open(store: C::Store, compaction_stores: C) -> Result<Self, HashIndexError> {
         let keydir = KeyDir::rebuild_from(&store)?;
         Ok(Self {
             store,
             keydir,
-            new_store,
+            compaction_stores,
         })
     }
 
-    /// Copies every live record into a new store and switches the index over to it, dropping
-    /// the old store along with all its dead records.
+    /// Copies every live record into a new store, installs it in place of the current one and
+    /// switches the index over to it, dropping the old store along with all its dead records.
     ///
     /// # Errors
     ///
-    /// Returns the first error from creating the new store, reading the old one or copying a
-    /// record. The index is then left unchanged, still reading from the old store.
+    /// Returns the first error from creating the new store, reading the old one, copying a
+    /// record or installing the new store. The index is then left unchanged, still reading from
+    /// the old store.
     pub fn compact(&mut self) -> Result<(), HashIndexError> {
-        let fresh = (self.new_store)()?;
+        let fresh = self.compaction_stores.create()?;
         let mut keydir = KeyDir::default();
         for (key, location) in self.keydir.iter() {
             let payload = self.store.read_record(location.offset)?;
@@ -62,6 +61,7 @@ where
             );
         }
 
+        self.compaction_stores.install(&fresh)?;
         self.store = fresh;
         self.keydir = keydir;
         Ok(())
@@ -89,11 +89,7 @@ where
     }
 }
 
-impl<B, F> HashIndex for SimpleHashIndex<B, F>
-where
-    B: ByteStore,
-    F: FnMut() -> io::Result<B>,
-{
+impl<C: CompactionStores> HashIndex for SimpleHashIndex<C> {
     fn get(&self, key: String) -> Option<String> {
         let location = self.keydir.get(&key)?;
         self.read_value(location.offset)
@@ -188,16 +184,19 @@ impl KeyDir {
 
 #[cfg(test)]
 mod tests {
-    use std::cell::Cell;
+    use std::{cell::Cell, io};
 
     use rstest::rstest;
 
     use super::*;
-    use crate::backend::{StoredRecord, memory::MemoryByteStore};
+    use crate::backend::{
+        StoredRecord,
+        memory::{MemoryByteStore, MemoryCompactionStores},
+    };
 
     type Entries<'a> = &'a [(&'a str, &'a str)];
-    type MemoryIndex = SimpleHashIndex<MemoryByteStore, fn() -> io::Result<MemoryByteStore>>;
-    type FlakyIndex = SimpleHashIndex<FlakyStore, fn() -> io::Result<FlakyStore>>;
+    type MemoryIndex = SimpleHashIndex<MemoryCompactionStores>;
+    type FlakyIndex = SimpleHashIndex<FlakyStores>;
 
     /// A memory store whose appends can be made to fail, to exercise error paths.
     #[derive(Default)]
@@ -227,35 +226,41 @@ mod tests {
         }
     }
 
-    #[expect(
-        clippy::unnecessary_wraps,
-        reason = "store factories must return io::Result"
-    )]
-    fn new_memory_store() -> io::Result<MemoryByteStore> {
-        Ok(MemoryByteStore::new())
+    /// Which step of a compaction [`FlakyStores`] makes fail.
+    #[derive(Debug, Clone, Copy)]
+    enum CompactionFailure {
+        Nothing,
+        Create,
+        Copy,
+        Install,
     }
 
-    #[expect(
-        clippy::unnecessary_wraps,
-        reason = "store factories must return io::Result"
-    )]
-    fn new_flaky_store() -> io::Result<FlakyStore> {
-        Ok(FlakyStore::default())
-    }
+    struct FlakyStores(CompactionFailure);
 
-    fn cannot_create_store() -> io::Result<FlakyStore> {
-        Err(io::Error::other("no space left"))
-    }
+    impl CompactionStores for FlakyStores {
+        type Store = FlakyStore;
 
-    #[expect(
-        clippy::unnecessary_wraps,
-        reason = "store factories must return io::Result"
-    )]
-    fn new_store_with_failing_appends() -> io::Result<FlakyStore> {
-        Ok(FlakyStore {
-            appends_fail: Cell::new(true),
-            ..FlakyStore::default()
-        })
+        fn create(&mut self) -> io::Result<FlakyStore> {
+            match self.0 {
+                CompactionFailure::Create => Err(io::Error::other("no space left")),
+                CompactionFailure::Copy => Ok(FlakyStore {
+                    appends_fail: Cell::new(true),
+                    ..FlakyStore::default()
+                }),
+                CompactionFailure::Nothing | CompactionFailure::Install => {
+                    Ok(FlakyStore::default())
+                },
+            }
+        }
+
+        fn install(&mut self, _compacted: &FlakyStore) -> io::Result<()> {
+            match self.0 {
+                CompactionFailure::Install => Err(io::Error::other("rename failed")),
+                CompactionFailure::Nothing
+                | CompactionFailure::Create
+                | CompactionFailure::Copy => Ok(()),
+            }
+        }
     }
 
     fn set(index: &mut impl HashIndex, key: &str, value: &str) {
@@ -267,7 +272,7 @@ mod tests {
     }
 
     fn index_with(entries: Entries) -> MemoryIndex {
-        let mut index = MemoryIndex::open(MemoryByteStore::new(), new_memory_store).unwrap();
+        let mut index = MemoryIndex::open(MemoryByteStore::new(), MemoryCompactionStores).unwrap();
         for (key, value) in entries {
             set(&mut index, key, value);
         }
@@ -279,7 +284,7 @@ mod tests {
         record_size(record::encode(key, value.as_bytes()).unwrap().len()).unwrap()
     }
 
-    fn usage<B, F>(index: &SimpleHashIndex<B, F>) -> (u64, u64) {
+    fn usage(index: &SimpleHashIndex<impl CompactionStores>) -> (u64, u64) {
         (index.keydir.live_bytes, index.keydir.dead_bytes)
     }
 
@@ -343,7 +348,11 @@ mod tests {
 
     #[test]
     fn failed_set_keeps_the_previous_state() {
-        let mut index = FlakyIndex::open(FlakyStore::default(), new_flaky_store).unwrap();
+        let mut index = FlakyIndex::open(
+            FlakyStore::default(),
+            FlakyStores(CompactionFailure::Nothing),
+        )
+        .unwrap();
         set(&mut index, "a", "old");
         index.store.appends_fail.set(true);
 
@@ -358,12 +367,11 @@ mod tests {
     }
 
     #[rstest]
-    #[case::store_cannot_be_created(cannot_create_store)]
-    #[case::copy_into_store_fails(new_store_with_failing_appends)]
-    fn failed_compaction_keeps_the_write_and_the_old_store(
-        #[case] new_store: fn() -> io::Result<FlakyStore>,
-    ) {
-        let mut index = FlakyIndex::open(FlakyStore::default(), new_store).unwrap();
+    #[case::create(CompactionFailure::Create)]
+    #[case::copy(CompactionFailure::Copy)]
+    #[case::install(CompactionFailure::Install)]
+    fn failed_compaction_keeps_the_write_and_the_old_store(#[case] failure: CompactionFailure) {
+        let mut index = FlakyIndex::open(FlakyStore::default(), FlakyStores(failure)).unwrap();
         for value in ["1", "2"] {
             set(&mut index, "a", value);
         }
@@ -394,7 +402,7 @@ mod tests {
             .collect();
 
         let SimpleHashIndex { store, .. } = index;
-        let reopened = MemoryIndex::open(store, new_memory_store).unwrap();
+        let reopened = MemoryIndex::open(store, MemoryCompactionStores).unwrap();
 
         assert_eq!(usage(&reopened), expected_usage);
         for (key, value) in values {
@@ -413,7 +421,7 @@ mod tests {
             .unwrap();
         let corrupt_offset = store.append(payload).unwrap();
 
-        let result = MemoryIndex::open(store, new_memory_store);
+        let result = MemoryIndex::open(store, MemoryCompactionStores);
 
         assert!(matches!(
             result,

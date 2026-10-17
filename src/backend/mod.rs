@@ -24,6 +24,22 @@ pub trait ByteStore {
     fn records(&self) -> impl Iterator<Item = Result<StoredRecord>>;
 }
 
+/// Where an index gets the empty stores it compacts into, and how it puts a compacted store in
+/// place of the one it was compacted from.
+pub trait CompactionStores {
+    type Store: ByteStore;
+
+    /// Returns an empty store for a compaction to copy the live records into.
+    fn create(&mut self) -> Result<Self::Store>;
+
+    /// Makes the fully written `compacted` store durable in place of the store it was compacted
+    /// from.
+    ///
+    /// Callers switch over to `compacted` only after this succeeds. On failure they keep using
+    /// the old store, so implementations must leave it intact until the replacement is done.
+    fn install(&mut self, compacted: &Self::Store) -> Result<()>;
+}
+
 /// A record as read back from a [`ByteStore`].
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct StoredRecord {
@@ -37,6 +53,13 @@ pub(crate) fn record_size(payload_len: usize) -> Result<u64> {
     let len = u32::try_from(payload_len)
         .map_err(|_| io::Error::new(io::ErrorKind::InvalidInput, "record too large"))?;
     Ok(LENGTH_PREFIX_LEN + u64::from(len))
+}
+
+pub(crate) fn offset_overflow() -> io::Error {
+    io::Error::new(
+        io::ErrorKind::InvalidInput,
+        "record would end past the last addressable offset",
+    )
 }
 
 #[cfg(test)]

@@ -10,7 +10,7 @@ use std::{
 
 use crossbeam_skiplist::SkipMap;
 
-use crate::backend::{ByteStore, StoredRecord, record_size};
+use crate::backend::{ByteStore, CompactionStores, StoredRecord, offset_overflow, record_size};
 
 /// A [`ByteStore`] that keeps records in memory and never takes a lock.
 ///
@@ -94,11 +94,20 @@ impl ByteStore for MemoryByteStore {
     }
 }
 
-fn offset_overflow() -> io::Error {
-    io::Error::new(
-        io::ErrorKind::InvalidInput,
-        "record would end past the last addressable offset",
-    )
+/// Compacts memory stores into new ones; there is nothing to persist, so installing is free.
+#[derive(Debug, Default, Clone, Copy)]
+pub struct MemoryCompactionStores;
+
+impl CompactionStores for MemoryCompactionStores {
+    type Store = MemoryByteStore;
+
+    fn create(&mut self) -> io::Result<MemoryByteStore> {
+        Ok(MemoryByteStore::new())
+    }
+
+    fn install(&mut self, _compacted: &MemoryByteStore) -> io::Result<()> {
+        Ok(())
+    }
 }
 
 #[cfg(test)]
