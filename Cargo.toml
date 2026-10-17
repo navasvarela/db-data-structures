@@ -1,6 +1,6 @@
 [package]
 name = "db-data-structures"
-description = "Storage engine building blocks: byte stores and an append-only, self-compacting hash index"
+description = "Storage engine building blocks: byte stores, an append-only self-compacting hash index and a red-black tree"
 version = "0.1.0"
 edition = "2024"
 # The toolchain pinned in rust-toolchain.toml, which is the only one CI tests against.
