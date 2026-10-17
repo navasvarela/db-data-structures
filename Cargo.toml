@@ -1,0 +1,51 @@
+[package]
+name = "db-data-structures"
+description = "Implementation of data structures for databases"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0"
+crossbeam-skiplist = "0.1.3"
+log = "0.4"
+thiserror = "2.0"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+[dev-dependencies]
+rstest = "0.26.1"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+all      = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+
+# Noisy pedantic lints
+module_name_repetitions = "allow"
+must_use_candidate      = "allow"
+missing_errors_doc      = "allow"
+similar_names           = "allow"
+
+# Direct panic sources
+unwrap_used    = "deny"
+expect_used    = "deny"
+panic          = "deny"
+unreachable    = "deny"
+todo           = "deny"
+unimplemented  = "deny"
+
+# Hidden panic sources
+indexing_slicing        = "deny"   # v[i], &v[a..b]  -> use .get()
+string_slice            = "deny"   # &s[a..b] can panic on non-char boundaries
+arithmetic_side_effects = "deny"   # overflow and division by zero -> use checked_*/saturating_*
+get_unwrap              = "deny"   # .get(i).unwrap()
+
+# Keeps panics out of fallible code
+unwrap_in_result  = "deny"
+panic_in_result_fn = "deny"
+fallible_impl_from = "deny"        # From impls that can panic should be TryFrom
+
+# Leftovers
+dbg_macro = "deny"
