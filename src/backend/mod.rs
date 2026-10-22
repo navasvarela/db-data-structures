@@ -2,6 +2,7 @@ use std::io::{self, Result};
 
 pub mod file;
 pub mod memory;
+pub mod record;
 
 /// Bytes a record's length prefix occupies in [`FileByteStore`](file::FileByteStore).
 ///
