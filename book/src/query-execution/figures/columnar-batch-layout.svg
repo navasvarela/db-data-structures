@@ -1,0 +1,126 @@
+<svg class="diagram" viewBox="0 0 640 352" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="columnar-batch-layout-title">
+<title id="columnar-batch-layout-title">A batch of six rows with an i64 column price, whose row 2 is NULL, and a string column name stored as offsets into one byte buffer.</title>
+<text class="t-small t-muted" x="178" y="18" text-anchor="middle">row 0</text>
+<text class="t-small t-muted" x="234" y="18" text-anchor="middle">row 1</text>
+<text class="t-small t-muted" x="290" y="18" text-anchor="middle">row 2</text>
+<text class="t-small t-muted" x="346" y="18" text-anchor="middle">row 3</text>
+<text class="t-small t-muted" x="402" y="18" text-anchor="middle">row 4</text>
+<text class="t-small t-muted" x="458" y="18" text-anchor="middle">row 5</text>
+<text class="t t-bold" x="20" y="50">price (i64)</text>
+<text class="t-small t-muted" x="140" y="79" text-anchor="end">validity</text>
+<text class="t-small t-muted" x="140" y="113" text-anchor="end">values</text>
+<rect class="box" x="150" y="60" width="56" height="28"/>
+<text class="t t-mono" x="178" y="79" text-anchor="middle">1</text>
+<rect class="box" x="150" y="94" width="56" height="28"/>
+<text class="t t-mono" x="178" y="113" text-anchor="middle">10</text>
+<rect class="box" x="206" y="60" width="56" height="28"/>
+<text class="t t-mono" x="234" y="79" text-anchor="middle">1</text>
+<rect class="box" x="206" y="94" width="56" height="28"/>
+<text class="t t-mono" x="234" y="113" text-anchor="middle">25</text>
+<rect class="box-muted" x="262" y="60" width="56" height="28"/>
+<text class="t t-mono" x="290" y="79" text-anchor="middle">0</text>
+<rect class="box-muted" x="262" y="94" width="56" height="28"/>
+<text class="t t-mono t-muted" x="290" y="113" text-anchor="middle">??</text>
+<rect class="box" x="318" y="60" width="56" height="28"/>
+<text class="t t-mono" x="346" y="79" text-anchor="middle">1</text>
+<rect class="box" x="318" y="94" width="56" height="28"/>
+<text class="t t-mono" x="346" y="113" text-anchor="middle">7</text>
+<rect class="box" x="374" y="60" width="56" height="28"/>
+<text class="t t-mono" x="402" y="79" text-anchor="middle">1</text>
+<rect class="box" x="374" y="94" width="56" height="28"/>
+<text class="t t-mono" x="402" y="113" text-anchor="middle">40</text>
+<rect class="box" x="430" y="60" width="56" height="28"/>
+<text class="t t-mono" x="458" y="79" text-anchor="middle">1</text>
+<rect class="box" x="430" y="94" width="56" height="28"/>
+<text class="t t-mono" x="458" y="113" text-anchor="middle">12</text>
+<text class="t-small t-muted" x="290" y="138" text-anchor="middle">NULL: never read</text>
+<text class="t t-bold" x="20" y="168">name (string)</text>
+<text class="t-small t-muted" x="140" y="197" text-anchor="end">validity</text>
+<text class="t-small t-muted" x="140" y="231" text-anchor="end">offsets</text>
+<rect class="box" x="150" y="178" width="56" height="28"/>
+<text class="t t-mono" x="178" y="197" text-anchor="middle">1</text>
+<rect class="box" x="206" y="178" width="56" height="28"/>
+<text class="t t-mono" x="234" y="197" text-anchor="middle">1</text>
+<rect class="box" x="262" y="178" width="56" height="28"/>
+<text class="t t-mono" x="290" y="197" text-anchor="middle">1</text>
+<rect class="box" x="318" y="178" width="56" height="28"/>
+<text class="t t-mono" x="346" y="197" text-anchor="middle">1</text>
+<rect class="box" x="374" y="178" width="56" height="28"/>
+<text class="t t-mono" x="402" y="197" text-anchor="middle">1</text>
+<rect class="box" x="430" y="178" width="56" height="28"/>
+<text class="t t-mono" x="458" y="197" text-anchor="middle">1</text>
+<rect class="box" x="150" y="212" width="56" height="28"/>
+<text class="t t-mono" x="178" y="231" text-anchor="middle">0</text>
+<rect class="box" x="206" y="212" width="56" height="28"/>
+<text class="t t-mono" x="234" y="231" text-anchor="middle">3</text>
+<rect class="box" x="262" y="212" width="56" height="28"/>
+<text class="t t-mono" x="290" y="231" text-anchor="middle">3</text>
+<rect class="box" x="318" y="212" width="56" height="28"/>
+<text class="t t-mono" x="346" y="231" text-anchor="middle">8</text>
+<rect class="box" x="374" y="212" width="56" height="28"/>
+<text class="t t-mono" x="402" y="231" text-anchor="middle">12</text>
+<rect class="box" x="430" y="212" width="56" height="28"/>
+<text class="t t-mono" x="458" y="231" text-anchor="middle">16</text>
+<rect class="box-a" x="486" y="212" width="56" height="28"/>
+<text class="t t-mono" x="514" y="231" text-anchor="middle">20</text>
+<text class="t-small t-muted" x="552" y="231">n + 1 entries</text>
+<text class="t-small t-muted" x="140" y="283" text-anchor="end">data</text>
+<rect class="box" x="150" y="264" width="22" height="28"/>
+<text class="t t-mono" x="161" y="283" text-anchor="middle">f</text>
+<rect class="box" x="172" y="264" width="22" height="28"/>
+<text class="t t-mono" x="183" y="283" text-anchor="middle">o</text>
+<rect class="box" x="194" y="264" width="22" height="28"/>
+<text class="t t-mono" x="205" y="283" text-anchor="middle">o</text>
+<rect class="box" x="216" y="264" width="22" height="28"/>
+<text class="t t-mono" x="227" y="283" text-anchor="middle">a</text>
+<rect class="box" x="238" y="264" width="22" height="28"/>
+<text class="t t-mono" x="249" y="283" text-anchor="middle">p</text>
+<rect class="box" x="260" y="264" width="22" height="28"/>
+<text class="t t-mono" x="271" y="283" text-anchor="middle">p</text>
+<rect class="box" x="282" y="264" width="22" height="28"/>
+<text class="t t-mono" x="293" y="283" text-anchor="middle">l</text>
+<rect class="box" x="304" y="264" width="22" height="28"/>
+<text class="t t-mono" x="315" y="283" text-anchor="middle">e</text>
+<rect class="box" x="326" y="264" width="22" height="28"/>
+<text class="t t-mono" x="337" y="283" text-anchor="middle">p</text>
+<rect class="box" x="348" y="264" width="22" height="28"/>
+<text class="t t-mono" x="359" y="283" text-anchor="middle">e</text>
+<rect class="box" x="370" y="264" width="22" height="28"/>
+<text class="t t-mono" x="381" y="283" text-anchor="middle">a</text>
+<rect class="box" x="392" y="264" width="22" height="28"/>
+<text class="t t-mono" x="403" y="283" text-anchor="middle">r</text>
+<rect class="box" x="414" y="264" width="22" height="28"/>
+<text class="t t-mono" x="425" y="283" text-anchor="middle">k</text>
+<rect class="box" x="436" y="264" width="22" height="28"/>
+<text class="t t-mono" x="447" y="283" text-anchor="middle">i</text>
+<rect class="box" x="458" y="264" width="22" height="28"/>
+<text class="t t-mono" x="469" y="283" text-anchor="middle">w</text>
+<rect class="box" x="480" y="264" width="22" height="28"/>
+<text class="t t-mono" x="491" y="283" text-anchor="middle">i</text>
+<rect class="box" x="502" y="264" width="22" height="28"/>
+<text class="t t-mono" x="513" y="283" text-anchor="middle">p</text>
+<rect class="box" x="524" y="264" width="22" height="28"/>
+<text class="t t-mono" x="535" y="283" text-anchor="middle">l</text>
+<rect class="box" x="546" y="264" width="22" height="28"/>
+<text class="t t-mono" x="557" y="283" text-anchor="middle">u</text>
+<rect class="box" x="568" y="264" width="22" height="28"/>
+<text class="t t-mono" x="579" y="283" text-anchor="middle">m</text>
+<text class="t-small t-muted" x="150" y="258" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="216" y="258" text-anchor="middle">3</text>
+<text class="t-small t-muted" x="326" y="258" text-anchor="middle">8</text>
+<text class="t-small t-muted" x="414" y="258" text-anchor="middle">12</text>
+<text class="t-small t-muted" x="502" y="258" text-anchor="middle">16</text>
+<text class="t-small t-muted" x="590" y="258" text-anchor="middle">20</text>
+<path class="line" d="M152,296V300H214V296"/>
+<text class="t-small" x="183" y="320" text-anchor="middle">row 0</text>
+<line class="line" x1="216" y1="294" x2="216" y2="324"/>
+<text class="t-small" x="216" y="340" text-anchor="middle">row 1 is empty</text>
+<path class="line" d="M218,296V300H324V296"/>
+<text class="t-small" x="271" y="320" text-anchor="middle">row 2</text>
+<path class="line" d="M328,296V300H412V296"/>
+<text class="t-small" x="370" y="320" text-anchor="middle">row 3</text>
+<path class="line" d="M416,296V300H500V296"/>
+<text class="t-small" x="458" y="320" text-anchor="middle">row 4</text>
+<path class="line" d="M504,296V300H588V296"/>
+<text class="t-small" x="546" y="320" text-anchor="middle">row 5</text>
+</svg>

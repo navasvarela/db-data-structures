@@ -1,0 +1,51 @@
+<svg class="diagram" viewBox="0 0 640 352" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="red-black-tree-insert-title">
+<title id="red-black-tree-insert-title">Inserting A, C and B into an empty left-leaning red-black tree, in six steps that use rotate_left twice, rotate_right once and flip_colours once.</title>
+<text class="t-small t-muted t-mono" x="106.5" y="20" text-anchor="middle">1. insert C</text>
+<line class="line-warn" x1="125.87" y1="61.713" x2="147.13" y2="88.287"/>
+<circle class="box" cx="116.5" cy="50" r="15"/>
+<text class="t t-bold" x="116.5" y="55" text-anchor="middle">A</text>
+<circle class="box-warn" cx="156.5" cy="100" r="15"/>
+<text class="t t-bold" x="156.5" y="105" text-anchor="middle">C</text>
+<text class="t-small t-muted t-mono" x="319.5" y="20" text-anchor="middle">2. rotate_left(A)</text>
+<line class="line-warn" x1="320.13" y1="61.713" x2="298.87" y2="88.287"/>
+<circle class="box" cx="329.5" cy="50" r="15"/>
+<text class="t t-bold" x="329.5" y="55" text-anchor="middle">C</text>
+<circle class="box-warn" cx="289.5" cy="100" r="15"/>
+<text class="t t-bold" x="289.5" y="105" text-anchor="middle">A</text>
+<text class="t-small t-muted t-mono" x="532.5" y="20" text-anchor="middle">3. insert B</text>
+<line class="line-warn" x1="533.13" y1="61.713" x2="511.87" y2="88.287"/>
+<line class="line-warn" x1="510.935" y1="112.404" x2="528.065" y2="137.596"/>
+<circle class="box" cx="542.5" cy="50" r="15"/>
+<text class="t t-bold" x="542.5" y="55" text-anchor="middle">C</text>
+<circle class="box-warn" cx="502.5" cy="100" r="15"/>
+<text class="t t-bold" x="502.5" y="105" text-anchor="middle">A</text>
+<circle class="box-warn" cx="536.5" cy="150" r="15"/>
+<text class="t t-bold" x="536.5" y="155" text-anchor="middle">B</text>
+<text class="t-small t-muted t-mono" x="106.5" y="200" text-anchor="middle">4. rotate_left(A)</text>
+<line class="line-warn" x1="107.13" y1="241.713" x2="85.8704" y2="268.287"/>
+<line class="line-warn" x1="68.0653" y1="292.404" x2="50.9347" y2="317.596"/>
+<circle class="box" cx="116.5" cy="230" r="15"/>
+<text class="t t-bold" x="116.5" y="235" text-anchor="middle">C</text>
+<circle class="box-warn" cx="76.5" cy="280" r="15"/>
+<text class="t t-bold" x="76.5" y="285" text-anchor="middle">B</text>
+<circle class="box-warn" cx="42.5" cy="330" r="15"/>
+<text class="t t-bold" x="42.5" y="335" text-anchor="middle">A</text>
+<text class="t-small t-muted t-mono" x="319.5" y="200" text-anchor="middle">5. rotate_right(C)</text>
+<line class="line-warn" x1="320.13" y1="241.713" x2="298.87" y2="268.287"/>
+<line class="line-warn" x1="338.87" y1="241.713" x2="360.13" y2="268.287"/>
+<circle class="box" cx="329.5" cy="230" r="15"/>
+<text class="t t-bold" x="329.5" y="235" text-anchor="middle">B</text>
+<circle class="box-warn" cx="289.5" cy="280" r="15"/>
+<text class="t t-bold" x="289.5" y="285" text-anchor="middle">A</text>
+<circle class="box-warn" cx="369.5" cy="280" r="15"/>
+<text class="t t-bold" x="369.5" y="285" text-anchor="middle">C</text>
+<text class="t-small t-muted t-mono" x="532.5" y="200" text-anchor="middle">6. flip_colours(B)</text>
+<line class="line" x1="533.13" y1="241.713" x2="511.87" y2="268.287"/>
+<line class="line" x1="551.87" y1="241.713" x2="573.13" y2="268.287"/>
+<circle class="box" cx="542.5" cy="230" r="15"/>
+<text class="t t-bold" x="542.5" y="235" text-anchor="middle">B</text>
+<circle class="box" cx="502.5" cy="280" r="15"/>
+<text class="t t-bold" x="502.5" y="285" text-anchor="middle">A</text>
+<circle class="box" cx="582.5" cy="280" r="15"/>
+<text class="t t-bold" x="582.5" y="285" text-anchor="middle">C</text>
+</svg>

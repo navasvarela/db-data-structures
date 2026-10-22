@@ -1,0 +1,52 @@
+<svg class="diagram" viewBox="0 0 640 272" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ring-buffer-cursors-title">
+<title id="ring-buffer-cursors-title">A ring buffer of capacity 8 holding a to d in slots 2 to 5, with head 2 and tail 6. After pushing e, f, g and h, tail wraps to slot 2 and the buffer is full.</title>
+<defs><marker id="ring-buffer-cursors-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="ring-buffer-cursors-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker><marker id="ring-buffer-cursors-head-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-b" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="174" y="30" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="222" y="30" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="270" y="30" text-anchor="middle">2</text>
+<text class="t-small t-muted" x="318" y="30" text-anchor="middle">3</text>
+<text class="t-small t-muted" x="366" y="30" text-anchor="middle">4</text>
+<text class="t-small t-muted" x="414" y="30" text-anchor="middle">5</text>
+<text class="t-small t-muted" x="462" y="30" text-anchor="middle">6</text>
+<text class="t-small t-muted" x="510" y="30" text-anchor="middle">7</text>
+<text class="t-small t-muted" x="138" y="30" text-anchor="end">slot</text>
+<rect class="box" x="150" y="40" width="48" height="36"/>
+<rect class="box" x="198" y="40" width="48" height="36"/>
+<rect class="box" x="246" y="40" width="48" height="36"/>
+<text class="t t-mono" x="270" y="63.0" text-anchor="middle">a</text>
+<rect class="box" x="294" y="40" width="48" height="36"/>
+<text class="t t-mono" x="318" y="63.0" text-anchor="middle">b</text>
+<rect class="box" x="342" y="40" width="48" height="36"/>
+<text class="t t-mono" x="366" y="63.0" text-anchor="middle">c</text>
+<rect class="box" x="390" y="40" width="48" height="36"/>
+<text class="t t-mono" x="414" y="63.0" text-anchor="middle">d</text>
+<rect class="box" x="438" y="40" width="48" height="36"/>
+<rect class="box" x="486" y="40" width="48" height="36"/>
+<text class="t-small" x="138" y="63" text-anchor="end">length 4</text>
+<line class="line-b" x1="270" y1="100" x2="270" y2="80" marker-end="url(#ring-buffer-cursors-head-b)"/>
+<text class="t-small t-b" x="270" y="116" text-anchor="middle">head</text>
+<line class="line-a" x1="462" y1="100" x2="462" y2="80" marker-end="url(#ring-buffer-cursors-head-a)"/>
+<text class="t-small t-a" x="462" y="116" text-anchor="middle">tail</text>
+<rect class="box-a" x="150" y="186" width="48" height="36"/>
+<text class="t t-mono" x="174" y="209.0" text-anchor="middle">g</text>
+<rect class="box-a" x="198" y="186" width="48" height="36"/>
+<text class="t t-mono" x="222" y="209.0" text-anchor="middle">h</text>
+<rect class="box" x="246" y="186" width="48" height="36"/>
+<text class="t t-mono" x="270" y="209.0" text-anchor="middle">a</text>
+<rect class="box" x="294" y="186" width="48" height="36"/>
+<text class="t t-mono" x="318" y="209.0" text-anchor="middle">b</text>
+<rect class="box" x="342" y="186" width="48" height="36"/>
+<text class="t t-mono" x="366" y="209.0" text-anchor="middle">c</text>
+<rect class="box" x="390" y="186" width="48" height="36"/>
+<text class="t t-mono" x="414" y="209.0" text-anchor="middle">d</text>
+<rect class="box-a" x="438" y="186" width="48" height="36"/>
+<text class="t t-mono" x="462" y="209.0" text-anchor="middle">e</text>
+<rect class="box-a" x="486" y="186" width="48" height="36"/>
+<text class="t t-mono" x="510" y="209.0" text-anchor="middle">f</text>
+<text class="t-small" x="138" y="209" text-anchor="end">length 8</text>
+<path class="line-a dashed" d="M528,182 C558,134 126,134 156,180" marker-end="url(#ring-buffer-cursors-head-a)"/>
+<text class="t-small t-a" x="342" y="142" text-anchor="middle">tail wraps from slot 7 to slot 0</text>
+<line class="line" x1="270" y1="246" x2="270" y2="226" marker-end="url(#ring-buffer-cursors-head)"/>
+<text class="t-small" x="270" y="262" text-anchor="middle">head = tail</text>
+<text class="t-small t-bold" x="544" y="209">full</text>
+</svg>

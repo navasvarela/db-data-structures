@@ -1,0 +1,75 @@
+<svg class="diagram" viewBox="0 0 640 286" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="replicated-log-layout-title">
+<title id="replicated-log-layout-title">Logs of five servers in term 3, showing each entry's term. Entries 1 to 5 are committed; entry 6 is on two servers only; S5 holds two uncommitted term-2 entries that conflict with the leader.</title>
+<text class="t-small t-muted" x="143" y="22" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="193" y="22" text-anchor="middle">2</text>
+<text class="t-small t-muted" x="243" y="22" text-anchor="middle">3</text>
+<text class="t-small t-muted" x="293" y="22" text-anchor="middle">4</text>
+<text class="t-small t-muted" x="343" y="22" text-anchor="middle">5</text>
+<text class="t-small t-muted" x="393" y="22" text-anchor="middle">6</text>
+<text class="t-small t-muted" x="108" y="22" text-anchor="end">index</text>
+<text class="t-small t-bold" x="108" y="54" text-anchor="end">S1 leader</text>
+<rect class="box-a" x="120" y="34" width="46" height="30"/>
+<text class="t t-mono" x="143" y="54" text-anchor="middle">1</text>
+<rect class="box-a" x="170" y="34" width="46" height="30"/>
+<text class="t t-mono" x="193" y="54" text-anchor="middle">1</text>
+<rect class="box-a" x="220" y="34" width="46" height="30"/>
+<text class="t t-mono" x="243" y="54" text-anchor="middle">2</text>
+<rect class="box-a" x="270" y="34" width="46" height="30"/>
+<text class="t t-mono" x="293" y="54" text-anchor="middle">3</text>
+<rect class="box-a" x="320" y="34" width="46" height="30"/>
+<text class="t t-mono" x="343" y="54" text-anchor="middle">3</text>
+<rect class="box" x="370" y="34" width="46" height="30"/>
+<text class="t t-mono" x="393" y="54" text-anchor="middle">3</text>
+<text class="t-small t-bold" x="108" y="96" text-anchor="end">S2</text>
+<rect class="box-a" x="120" y="76" width="46" height="30"/>
+<text class="t t-mono" x="143" y="96" text-anchor="middle">1</text>
+<rect class="box-a" x="170" y="76" width="46" height="30"/>
+<text class="t t-mono" x="193" y="96" text-anchor="middle">1</text>
+<rect class="box-a" x="220" y="76" width="46" height="30"/>
+<text class="t t-mono" x="243" y="96" text-anchor="middle">2</text>
+<rect class="box-a" x="270" y="76" width="46" height="30"/>
+<text class="t t-mono" x="293" y="96" text-anchor="middle">3</text>
+<rect class="box-a" x="320" y="76" width="46" height="30"/>
+<text class="t t-mono" x="343" y="96" text-anchor="middle">3</text>
+<rect class="box-muted dashed" x="370" y="76" width="46" height="30"/>
+<text class="t-small t-bold" x="108" y="138" text-anchor="end">S3</text>
+<rect class="box-a" x="120" y="118" width="46" height="30"/>
+<text class="t t-mono" x="143" y="138" text-anchor="middle">1</text>
+<rect class="box-a" x="170" y="118" width="46" height="30"/>
+<text class="t t-mono" x="193" y="138" text-anchor="middle">1</text>
+<rect class="box-a" x="220" y="118" width="46" height="30"/>
+<text class="t t-mono" x="243" y="138" text-anchor="middle">2</text>
+<rect class="box-a" x="270" y="118" width="46" height="30"/>
+<text class="t t-mono" x="293" y="138" text-anchor="middle">3</text>
+<rect class="box-a" x="320" y="118" width="46" height="30"/>
+<text class="t t-mono" x="343" y="138" text-anchor="middle">3</text>
+<rect class="box" x="370" y="118" width="46" height="30"/>
+<text class="t t-mono" x="393" y="138" text-anchor="middle">3</text>
+<text class="t-small t-bold" x="108" y="180" text-anchor="end">S4</text>
+<rect class="box-a" x="120" y="160" width="46" height="30"/>
+<text class="t t-mono" x="143" y="180" text-anchor="middle">1</text>
+<rect class="box-a" x="170" y="160" width="46" height="30"/>
+<text class="t t-mono" x="193" y="180" text-anchor="middle">1</text>
+<rect class="box-muted dashed" x="220" y="160" width="46" height="30"/>
+<rect class="box-muted dashed" x="270" y="160" width="46" height="30"/>
+<rect class="box-muted dashed" x="320" y="160" width="46" height="30"/>
+<rect class="box-muted dashed" x="370" y="160" width="46" height="30"/>
+<text class="t-small t-bold" x="108" y="222" text-anchor="end">S5</text>
+<rect class="box-a" x="120" y="202" width="46" height="30"/>
+<text class="t t-mono" x="143" y="222" text-anchor="middle">1</text>
+<rect class="box-a" x="170" y="202" width="46" height="30"/>
+<text class="t t-mono" x="193" y="222" text-anchor="middle">1</text>
+<rect class="box-a" x="220" y="202" width="46" height="30"/>
+<text class="t t-mono" x="243" y="222" text-anchor="middle">2</text>
+<rect class="box-warn" x="270" y="202" width="46" height="30"/>
+<text class="t t-mono" x="293" y="222" text-anchor="middle">2</text>
+<rect class="box-warn" x="320" y="202" width="46" height="30"/>
+<text class="t t-mono" x="343" y="222" text-anchor="middle">2</text>
+<rect class="box-muted dashed" x="370" y="202" width="46" height="30"/>
+<line class="line-a dashed" x1="368" y1="28" x2="368" y2="238"/>
+<text class="t-small t-a t-bold" x="368" y="256" text-anchor="middle">commitIndex = 5</text>
+<text class="t-small" x="440" y="54">entry 5 is on S1, S2, S3: a majority</text>
+<text class="t-small" x="440" y="138">entry 6 is on S1, S3 only</text>
+<text class="t-small t-warn" x="440" y="214">from the old term-2 leader,</text>
+<text class="t-small t-warn" x="440" y="230">never committed</text>
+</svg>

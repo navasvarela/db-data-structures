@@ -1,0 +1,47 @@
+<svg class="diagram" viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ring-buffer-batch-title">
+<title id="ring-buffer-batch-title">With counters head 6 and tail 11 in a ring of 8, the occupied slots are 6, 7, 0, 1 and 2. They are drained as two slices, slots 6 to 7 and slots 0 to 2, written one after the other.</title>
+<defs><marker id="ring-buffer-batch-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="174" y="30" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="222" y="30" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="270" y="30" text-anchor="middle">2</text>
+<text class="t-small t-muted" x="318" y="30" text-anchor="middle">3</text>
+<text class="t-small t-muted" x="366" y="30" text-anchor="middle">4</text>
+<text class="t-small t-muted" x="414" y="30" text-anchor="middle">5</text>
+<text class="t-small t-muted" x="462" y="30" text-anchor="middle">6</text>
+<text class="t-small t-muted" x="510" y="30" text-anchor="middle">7</text>
+<text class="t-small t-muted" x="138" y="30" text-anchor="end">slot</text>
+<rect class="box-b" x="150" y="40" width="48" height="36"/>
+<text class="t t-mono" x="174" y="63.0" text-anchor="middle">c</text>
+<rect class="box-b" x="198" y="40" width="48" height="36"/>
+<text class="t t-mono" x="222" y="63.0" text-anchor="middle">d</text>
+<rect class="box-b" x="246" y="40" width="48" height="36"/>
+<text class="t t-mono" x="270" y="63.0" text-anchor="middle">e</text>
+<rect class="box" x="294" y="40" width="48" height="36"/>
+<rect class="box" x="342" y="40" width="48" height="36"/>
+<rect class="box" x="390" y="40" width="48" height="36"/>
+<rect class="box-a" x="438" y="40" width="48" height="36"/>
+<text class="t t-mono" x="462" y="63.0" text-anchor="middle">a</text>
+<rect class="box-a" x="486" y="40" width="48" height="36"/>
+<text class="t t-mono" x="510" y="63.0" text-anchor="middle">b</text>
+<line class="line" x1="462" y1="100" x2="462" y2="80" marker-end="url(#ring-buffer-batch-head)"/>
+<text class="t-small" x="462" y="116" text-anchor="middle">head = 6</text>
+<line class="line" x1="318" y1="100" x2="318" y2="80" marker-end="url(#ring-buffer-batch-head)"/>
+<text class="t-small" x="318" y="116" text-anchor="middle">tail = 11</text>
+<path class="line-a" d="M442,134 L442,140 L530,140 L530,134"/>
+<text class="t-small t-a" x="486" y="156" text-anchor="middle">slice 1</text>
+<path class="line-b" d="M154,134 L154,140 L290,140 L290,134"/>
+<text class="t-small t-b" x="222" y="156" text-anchor="middle">slice 2</text>
+<text class="t-small" x="138" y="221" text-anchor="end">log file</text>
+<rect class="box-muted" x="150" y="198" width="96" height="36"/>
+<text class="t t-muted" x="198" y="221.0" text-anchor="middle">…</text>
+<rect class="box-a" x="246" y="198" width="48" height="36"/>
+<text class="t t-mono" x="270" y="221.0" text-anchor="middle">a</text>
+<rect class="box-a" x="294" y="198" width="48" height="36"/>
+<text class="t t-mono" x="318" y="221.0" text-anchor="middle">b</text>
+<rect class="box-b" x="342" y="198" width="48" height="36"/>
+<text class="t t-mono" x="366" y="221.0" text-anchor="middle">c</text>
+<rect class="box-b" x="390" y="198" width="48" height="36"/>
+<text class="t t-mono" x="414" y="221.0" text-anchor="middle">d</text>
+<rect class="box-b" x="438" y="198" width="48" height="36"/>
+<text class="t t-mono" x="462" y="221.0" text-anchor="middle">e</text>
+</svg>

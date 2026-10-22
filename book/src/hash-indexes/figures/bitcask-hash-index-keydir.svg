@@ -1,0 +1,29 @@
+<svg class="diagram" viewBox="0 0 640 222" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bitcask-hash-index-keydir-title">
+<title id="bitcask-hash-index-keydir-title">The keydir maps apple to offset 0, size 16 and pear to offset 34, size 17. The log holds apple=red at 0, pear=yellow at 16, now dead, and pear=green at 34.</title>
+<defs><marker id="bitcask-hash-index-keydir-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-bold" x="50" y="62" text-anchor="end">keydir</text>
+<text class="t-small t-bold" x="50" y="154" text-anchor="end">log</text>
+<rect class="box" x="60" y="40" width="64" height="34"/>
+<text class="t-small t-mono" x="92" y="61.3" text-anchor="middle">"apple"</text>
+<rect class="box" x="124" y="40" width="112" height="34"/>
+<text class="t-small" x="180" y="61.3" text-anchor="middle">offset 0, size 16</text>
+<line class="line" x1="74" y1="74" x2="74" y2="128" marker-end="url(#bitcask-hash-index-keydir-head)"/>
+<rect class="box" x="400" y="40" width="64" height="34"/>
+<text class="t-small t-mono" x="432" y="61.3" text-anchor="middle">"pear"</text>
+<rect class="box" x="464" y="40" width="112" height="34"/>
+<text class="t-small" x="520" y="61.3" text-anchor="middle">offset 34, size 17</text>
+<line class="line" x1="414" y1="74" x2="414" y2="128" marker-end="url(#bitcask-hash-index-keydir-head)"/>
+<rect class="box" x="60" y="132" width="160" height="34"/>
+<text class="t-small t-mono" x="140" y="153.3" text-anchor="middle">apple=red</text>
+<rect class="box-muted" x="220" y="132" width="180" height="34"/>
+<text class="t-small t-mono t-muted" x="310" y="153.3" text-anchor="middle">pear=yellow</text>
+<rect class="box" x="400" y="132" width="170" height="34"/>
+<text class="t-small t-mono" x="485" y="153.3" text-anchor="middle">pear=green</text>
+<text class="t-small t-mono" x="60" y="184" text-anchor="middle">0</text>
+<text class="t-small t-mono" x="220" y="184" text-anchor="middle">16</text>
+<text class="t-small t-mono" x="400" y="184" text-anchor="middle">34</text>
+<text class="t-small t-mono" x="570" y="184" text-anchor="middle">51</text>
+<text class="t-small t-muted" x="310" y="122" text-anchor="middle">dead</text>
+<text class="t-small" x="60" y="218">live_bytes = 16 + 17 = 33</text>
+<text class="t-small t-muted" x="280" y="218">dead_bytes = 18</text>
+</svg>

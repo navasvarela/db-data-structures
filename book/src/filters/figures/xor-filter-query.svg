@@ -1,0 +1,38 @@
+<svg class="diagram" viewBox="0 0 640 206" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="xor-filter-query-title">
+<title id="xor-filter-query-title">Key x maps to one slot in each of three segments, holding 3a, c5 and 71; their xor is 8e, which equals the fingerprint of x.</title>
+<defs><marker id="xor-filter-query-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t t-bold t-a" x="344" y="24" text-anchor="middle">"x"</text>
+<text class="t-small t-muted" x="344" y="42" text-anchor="middle">fp(x) = 8e</text>
+<rect class="box" x="41" y="92" width="30" height="30"/>
+<rect class="box" x="71" y="92" width="30" height="30"/>
+<rect class="box-a" x="101" y="92" width="30" height="30"/>
+<text class="t t-mono" x="116" y="112" text-anchor="middle">3a</text>
+<rect class="box" x="131" y="92" width="30" height="30"/>
+<rect class="box" x="161" y="92" width="30" height="30"/>
+<rect class="box" x="191" y="92" width="30" height="30"/>
+<rect class="box" x="239" y="92" width="30" height="30"/>
+<rect class="box" x="269" y="92" width="30" height="30"/>
+<rect class="box" x="299" y="92" width="30" height="30"/>
+<rect class="box" x="329" y="92" width="30" height="30"/>
+<rect class="box-a" x="359" y="92" width="30" height="30"/>
+<text class="t t-mono" x="374" y="112" text-anchor="middle">c5</text>
+<rect class="box" x="389" y="92" width="30" height="30"/>
+<rect class="box" x="437" y="92" width="30" height="30"/>
+<rect class="box" x="467" y="92" width="30" height="30"/>
+<rect class="box" x="497" y="92" width="30" height="30"/>
+<rect class="box-a" x="527" y="92" width="30" height="30"/>
+<text class="t t-mono" x="542" y="112" text-anchor="middle">71</text>
+<rect class="box" x="557" y="92" width="30" height="30"/>
+<rect class="box" x="587" y="92" width="30" height="30"/>
+<line class="line-a" x1="340" y1="50" x2="116" y2="86" marker-end="url(#xor-filter-query-head-a)"/>
+<text class="t-small t-a" x="108" y="70" text-anchor="end">h0(x)</text>
+<line class="line-a" x1="344" y1="50" x2="374" y2="86" marker-end="url(#xor-filter-query-head-a)"/>
+<text class="t-small t-a" x="390" y="80">h1(x)</text>
+<line class="line-a" x1="348" y1="50" x2="542" y2="86" marker-end="url(#xor-filter-query-head-a)"/>
+<text class="t-small t-a" x="550" y="70">h2(x)</text>
+<text class="t-small t-muted" x="131" y="144" text-anchor="middle">segment 0</text>
+<text class="t-small t-muted" x="329" y="144" text-anchor="middle">segment 1</text>
+<text class="t-small t-muted" x="527" y="144" text-anchor="middle">segment 2</text>
+<text class="t t-mono" x="320" y="176" text-anchor="middle">Z[h0(x)] xor Z[h1(x)] xor Z[h2(x)] = 3a xor c5 xor 71 = 8e</text>
+<text class="t-small t-a" x="320" y="198" text-anchor="middle">equals fp(x): maybe present</text>
+</svg>

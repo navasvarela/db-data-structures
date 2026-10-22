@@ -1,0 +1,74 @@
+<svg class="diagram" viewBox="0 0 640 222" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="learned-index-levels-title">
+<title id="learned-index-levels-title">A lookup descends from the root segment to a window of the segment level, picks a segment there, and searches a window of the data array around its prediction.</title>
+<defs><marker id="learned-index-levels-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="86" y="42" text-anchor="end">root</text>
+<text class="t-small t-muted" x="86" y="116" text-anchor="end">segments</text>
+<text class="t-small t-muted" x="86" y="196" text-anchor="end">data</text>
+<rect class="box-a" x="336" y="26" width="40" height="24"/>
+<rect class="box" x="96" y="100" width="40" height="24"/>
+<rect class="box" x="136" y="100" width="40" height="24"/>
+<rect class="box" x="176" y="100" width="40" height="24"/>
+<rect class="box" x="216" y="100" width="40" height="24"/>
+<rect class="box-a" x="256" y="100" width="40" height="24"/>
+<rect class="box-b" x="296" y="100" width="40" height="24"/>
+<rect class="box-a" x="336" y="100" width="40" height="24"/>
+<rect class="box-a" x="376" y="100" width="40" height="24"/>
+<rect class="box-a" x="416" y="100" width="40" height="24"/>
+<rect class="box" x="456" y="100" width="40" height="24"/>
+<rect class="box" x="496" y="100" width="40" height="24"/>
+<rect class="box" x="536" y="100" width="40" height="24"/>
+<rect class="box" x="96" y="180" width="10" height="24"/>
+<rect class="box" x="106" y="180" width="10" height="24"/>
+<rect class="box" x="116" y="180" width="10" height="24"/>
+<rect class="box" x="126" y="180" width="10" height="24"/>
+<rect class="box" x="136" y="180" width="10" height="24"/>
+<rect class="box" x="146" y="180" width="10" height="24"/>
+<rect class="box" x="156" y="180" width="10" height="24"/>
+<rect class="box" x="166" y="180" width="10" height="24"/>
+<rect class="box" x="176" y="180" width="10" height="24"/>
+<rect class="box" x="186" y="180" width="10" height="24"/>
+<rect class="box" x="196" y="180" width="10" height="24"/>
+<rect class="box" x="206" y="180" width="10" height="24"/>
+<rect class="box" x="216" y="180" width="10" height="24"/>
+<rect class="box" x="226" y="180" width="10" height="24"/>
+<rect class="box" x="236" y="180" width="10" height="24"/>
+<rect class="box" x="246" y="180" width="10" height="24"/>
+<rect class="box" x="256" y="180" width="10" height="24"/>
+<rect class="box" x="266" y="180" width="10" height="24"/>
+<rect class="box" x="276" y="180" width="10" height="24"/>
+<rect class="box" x="286" y="180" width="10" height="24"/>
+<rect class="box" x="296" y="180" width="10" height="24"/>
+<rect class="box" x="306" y="180" width="10" height="24"/>
+<rect class="box" x="316" y="180" width="10" height="24"/>
+<rect class="box" x="326" y="180" width="10" height="24"/>
+<rect class="box" x="336" y="180" width="10" height="24"/>
+<rect class="box" x="346" y="180" width="10" height="24"/>
+<rect class="box" x="356" y="180" width="10" height="24"/>
+<rect class="box-a" x="366" y="180" width="10" height="24"/>
+<rect class="box-a" x="376" y="180" width="10" height="24"/>
+<rect class="box-a" x="386" y="180" width="10" height="24"/>
+<rect class="box-a" x="396" y="180" width="10" height="24"/>
+<rect class="box-a" x="406" y="180" width="10" height="24"/>
+<rect class="box" x="416" y="180" width="10" height="24"/>
+<rect class="box" x="426" y="180" width="10" height="24"/>
+<rect class="box" x="436" y="180" width="10" height="24"/>
+<rect class="box" x="446" y="180" width="10" height="24"/>
+<rect class="box" x="456" y="180" width="10" height="24"/>
+<rect class="box" x="466" y="180" width="10" height="24"/>
+<rect class="box" x="476" y="180" width="10" height="24"/>
+<rect class="box" x="486" y="180" width="10" height="24"/>
+<rect class="box" x="496" y="180" width="10" height="24"/>
+<rect class="box" x="506" y="180" width="10" height="24"/>
+<rect class="box" x="516" y="180" width="10" height="24"/>
+<rect class="box" x="526" y="180" width="10" height="24"/>
+<rect class="box" x="536" y="180" width="10" height="24"/>
+<rect class="box" x="546" y="180" width="10" height="24"/>
+<rect class="box" x="556" y="180" width="10" height="24"/>
+<rect class="box" x="566" y="180" width="10" height="24"/>
+<line class="line-a" x1="356" y1="50" x2="354" y2="98" marker-end="url(#learned-index-levels-head-a)"/>
+<line class="line-a" x1="316" y1="124" x2="391" y2="178" marker-end="url(#learned-index-levels-head-a)"/>
+<path class="line-a" d="M256,128 L256,132 L456,132 L456,128"/>
+<text class="t-small t-a" x="464" y="136">pos ± ε</text>
+<path class="line-a" d="M366,208 L366,212 L416,212 L416,208"/>
+<text class="t-small t-a" x="424" y="216">pos ± ε</text>
+</svg>

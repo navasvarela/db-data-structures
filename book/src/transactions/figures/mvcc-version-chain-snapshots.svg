@@ -1,0 +1,39 @@
+<svg class="diagram" viewBox="0 0 640 254" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="mvcc-version-chain-snapshots-title">
+<title id="mvcc-version-chain-snapshots-title">Versions of key 42 as intervals of commit timestamps. A reader at 20 sees 80, transaction 17, which started at 31, sees its own 70, and a reader at 38 sees 100.</title>
+<defs><marker id="mvcc-version-chain-snapshots-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-mono" x="100" y="109" text-anchor="end">balance = 80</text>
+<rect class="box" x="225.2" y="92" width="172.8" height="24"/>
+<text class="t-small t-mono" x="100" y="149" text-anchor="end">balance = 100</text>
+<rect class="box" x="398" y="132" width="192" height="24"/>
+<text class="t-small" x="596" y="149">∞</text>
+<text class="t-small t-mono t-muted" x="100" y="189" text-anchor="end">balance = 70</text>
+<rect class="box-muted dashed" x="407.6" y="172" width="182.4" height="24"/>
+<text class="t-small t-muted" x="537.2" y="189" text-anchor="middle">uncommitted</text>
+<line class="line" x1="110" y1="222" x2="609.2" y2="222" marker-end="url(#mvcc-version-chain-snapshots-head)"/>
+<line class="line" x1="110" y1="218" x2="110" y2="226"/>
+<text class="t-small t-muted" x="110" y="242" text-anchor="middle">0</text>
+<line class="line" x1="206" y1="218" x2="206" y2="226"/>
+<text class="t-small t-muted" x="206" y="242" text-anchor="middle">10</text>
+<line class="line" x1="302" y1="218" x2="302" y2="226"/>
+<text class="t-small t-muted" x="302" y="242" text-anchor="middle">20</text>
+<line class="line" x1="398" y1="218" x2="398" y2="226"/>
+<text class="t-small t-muted" x="398" y="242" text-anchor="middle">30</text>
+<line class="line" x1="494" y1="218" x2="494" y2="226"/>
+<text class="t-small t-muted" x="494" y="242" text-anchor="middle">40</text>
+<line class="line" x1="590" y1="218" x2="590" y2="226"/>
+<text class="t-small t-muted" x="590" y="242" text-anchor="middle">50</text>
+<line class="line" x1="225.2" y1="218" x2="225.2" y2="226"/>
+<text class="t-small t-muted" x="613.2" y="226">ts</text>
+<line class="line-a dashed" x1="302" y1="50" x2="302" y2="220"/>
+<text class="t-small t-a t-bold" x="302" y="18" text-anchor="middle">reader</text>
+<text class="t-small t-a" x="302" y="36" text-anchor="middle">ts 20</text>
+<circle class="box-a" cx="302" cy="104" r="6"/>
+<line class="line-a dashed" x1="407.6" y1="50" x2="407.6" y2="220"/>
+<text class="t-small t-a t-bold" x="407.6" y="18" text-anchor="middle">txn 17</text>
+<text class="t-small t-a" x="407.6" y="36" text-anchor="middle">ts 31</text>
+<circle class="box-a" cx="407.6" cy="184" r="6"/>
+<line class="line-a dashed" x1="474.8" y1="50" x2="474.8" y2="220"/>
+<text class="t-small t-a t-bold" x="474.8" y="18" text-anchor="middle">reader</text>
+<text class="t-small t-a" x="474.8" y="36" text-anchor="middle">ts 38</text>
+<circle class="box-a" cx="474.8" cy="144" r="6"/>
+</svg>

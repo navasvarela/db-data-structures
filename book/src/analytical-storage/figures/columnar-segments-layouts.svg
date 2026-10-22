@@ -1,0 +1,68 @@
+<svg class="diagram" viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="columnar-segments-layouts-title">
+<title id="columnar-segments-layouts-title">A three-row table stored row by row interleaves the price values with the other columns; stored column by column, the three prices are contiguous.</title>
+<text class="t-small t-bold" x="256" y="18" text-anchor="middle">id</text>
+<text class="t-small t-bold" x="320" y="18" text-anchor="middle">name</text>
+<text class="t-small t-bold" x="384" y="18" text-anchor="middle">price</text>
+<rect class="box" x="224" y="26" width="64" height="24"/>
+<text class="t t-mono" x="256" y="43" text-anchor="middle">1</text>
+<rect class="box" x="288" y="26" width="64" height="24"/>
+<text class="t t-mono" x="320" y="43" text-anchor="middle">ana</text>
+<rect class="box-a" x="352" y="26" width="64" height="24"/>
+<text class="t t-mono" x="384" y="43" text-anchor="middle">12</text>
+<rect class="box" x="224" y="50" width="64" height="24"/>
+<text class="t t-mono" x="256" y="67" text-anchor="middle">2</text>
+<rect class="box" x="288" y="50" width="64" height="24"/>
+<text class="t t-mono" x="320" y="67" text-anchor="middle">bo</text>
+<rect class="box-a" x="352" y="50" width="64" height="24"/>
+<text class="t t-mono" x="384" y="67" text-anchor="middle">250</text>
+<rect class="box" x="224" y="74" width="64" height="24"/>
+<text class="t t-mono" x="256" y="91" text-anchor="middle">3</text>
+<rect class="box" x="288" y="74" width="64" height="24"/>
+<text class="t t-mono" x="320" y="91" text-anchor="middle">cy</text>
+<rect class="box-a" x="352" y="74" width="64" height="24"/>
+<text class="t t-mono" x="384" y="91" text-anchor="middle">99</text>
+<text class="t-small t-muted" x="124" y="149" text-anchor="end">row layout</text>
+<rect class="box" x="134" y="130" width="52" height="28"/>
+<text class="t t-mono" x="160" y="149" text-anchor="middle">1</text>
+<rect class="box" x="186" y="130" width="52" height="28"/>
+<text class="t t-mono" x="212" y="149" text-anchor="middle">ana</text>
+<rect class="box-a" x="238" y="130" width="52" height="28"/>
+<text class="t t-mono" x="264" y="149" text-anchor="middle">12</text>
+<rect class="box" x="298" y="130" width="52" height="28"/>
+<text class="t t-mono" x="324" y="149" text-anchor="middle">2</text>
+<rect class="box" x="350" y="130" width="52" height="28"/>
+<text class="t t-mono" x="376" y="149" text-anchor="middle">bo</text>
+<rect class="box-a" x="402" y="130" width="52" height="28"/>
+<text class="t t-mono" x="428" y="149" text-anchor="middle">250</text>
+<rect class="box" x="462" y="130" width="52" height="28"/>
+<text class="t t-mono" x="488" y="149" text-anchor="middle">3</text>
+<rect class="box" x="514" y="130" width="52" height="28"/>
+<text class="t t-mono" x="540" y="149" text-anchor="middle">cy</text>
+<rect class="box-a" x="566" y="130" width="52" height="28"/>
+<text class="t t-mono" x="592" y="149" text-anchor="middle">99</text>
+<text class="t-small t-muted" x="124" y="205" text-anchor="end">column layout</text>
+<rect class="box" x="134" y="186" width="52" height="28"/>
+<text class="t t-mono" x="160" y="205" text-anchor="middle">1</text>
+<rect class="box" x="186" y="186" width="52" height="28"/>
+<text class="t t-mono" x="212" y="205" text-anchor="middle">2</text>
+<rect class="box" x="238" y="186" width="52" height="28"/>
+<text class="t t-mono" x="264" y="205" text-anchor="middle">3</text>
+<rect class="box" x="298" y="186" width="52" height="28"/>
+<text class="t t-mono" x="324" y="205" text-anchor="middle">ana</text>
+<rect class="box" x="350" y="186" width="52" height="28"/>
+<text class="t t-mono" x="376" y="205" text-anchor="middle">bo</text>
+<rect class="box" x="402" y="186" width="52" height="28"/>
+<text class="t t-mono" x="428" y="205" text-anchor="middle">cy</text>
+<rect class="box-a" x="462" y="186" width="52" height="28"/>
+<text class="t t-mono" x="488" y="205" text-anchor="middle">12</text>
+<rect class="box-a" x="514" y="186" width="52" height="28"/>
+<text class="t t-mono" x="540" y="205" text-anchor="middle">250</text>
+<rect class="box-a" x="566" y="186" width="52" height="28"/>
+<text class="t t-mono" x="592" y="205" text-anchor="middle">99</text>
+<text class="t-small t-muted" x="212" y="124" text-anchor="middle">row 0</text>
+<text class="t-small t-muted" x="376" y="124" text-anchor="middle">row 1</text>
+<text class="t-small t-muted" x="540" y="124" text-anchor="middle">row 2</text>
+<text class="t-small t-muted" x="212" y="234" text-anchor="middle">id</text>
+<text class="t-small t-muted" x="376" y="234" text-anchor="middle">name</text>
+<text class="t-small t-a" x="540" y="234" text-anchor="middle">price</text>
+</svg>

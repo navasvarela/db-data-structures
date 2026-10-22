@@ -1,0 +1,47 @@
+<svg class="diagram" viewBox="0 0 640 196" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="k-way-merge-heap-layout-title">
+<title id="k-way-merge-heap-layout-title">Three sorted inputs, newest first, and a min-heap of their heads ordered by key and rank: (a, 1) at the top, (b, 0) and (b, 2) below it, stored as an array.</title>
+<text class="t-small t-muted" x="16" y="20">inputs, newest first</text>
+<text class="t-small t-muted" x="16" y="52">rank 0</text>
+<text class="t-small" x="64" y="52">memtable</text>
+<rect class="box-a" x="140" y="34" width="30" height="28"/>
+<text class="t t-mono" x="155" y="53" text-anchor="middle">b</text>
+<rect class="box" x="170" y="34" width="30" height="28"/>
+<text class="t t-mono" x="185" y="53" text-anchor="middle">e</text>
+<rect class="box" x="200" y="34" width="30" height="28"/>
+<text class="t t-mono" x="215" y="53" text-anchor="middle">k</text>
+<text class="t-small t-muted" x="16" y="92">rank 1</text>
+<text class="t-small" x="64" y="92">L0 file</text>
+<rect class="box-a" x="140" y="74" width="30" height="28"/>
+<text class="t t-mono" x="155" y="93" text-anchor="middle">a</text>
+<rect class="box" x="170" y="74" width="30" height="28"/>
+<text class="t t-mono" x="185" y="93" text-anchor="middle">e</text>
+<rect class="box" x="200" y="74" width="30" height="28"/>
+<text class="t t-mono" x="215" y="93" text-anchor="middle">f</text>
+<text class="t-small t-muted" x="16" y="132">rank 2</text>
+<text class="t-small" x="64" y="132">L1 file</text>
+<rect class="box-a" x="140" y="114" width="30" height="28"/>
+<text class="t t-mono" x="155" y="133" text-anchor="middle">b</text>
+<rect class="box" x="170" y="114" width="30" height="28"/>
+<text class="t t-mono" x="185" y="133" text-anchor="middle">c</text>
+<rect class="box" x="200" y="114" width="30" height="28"/>
+<text class="t t-mono" x="215" y="133" text-anchor="middle">m</text>
+<text class="t-small t-muted" x="470" y="20" text-anchor="middle">heap of heads, by (key, rank)</text>
+<line class="line" x1="460" y1="61" x2="410" y2="91"/>
+<line class="line" x1="480" y1="61" x2="530" y2="91"/>
+<rect class="box" x="442" y="35" width="56" height="26"/>
+<text class="t-small t-mono" x="470" y="52" text-anchor="middle">(a, 1)</text>
+<rect class="box" x="382" y="91" width="56" height="26"/>
+<text class="t-small t-mono" x="410" y="108" text-anchor="middle">(b, 0)</text>
+<rect class="box" x="502" y="91" width="56" height="26"/>
+<text class="t-small t-mono" x="530" y="108" text-anchor="middle">(b, 2)</text>
+<text class="t-small t-muted" x="330" y="165">array</text>
+<rect class="box" x="380" y="148" width="56" height="26"/>
+<text class="t-small t-mono" x="408" y="165" text-anchor="middle">(a, 1)</text>
+<text class="t-small t-muted" x="408" y="190" text-anchor="middle">0</text>
+<rect class="box" x="436" y="148" width="56" height="26"/>
+<text class="t-small t-mono" x="464" y="165" text-anchor="middle">(b, 0)</text>
+<text class="t-small t-muted" x="464" y="190" text-anchor="middle">1</text>
+<rect class="box" x="492" y="148" width="56" height="26"/>
+<text class="t-small t-mono" x="520" y="165" text-anchor="middle">(b, 2)</text>
+<text class="t-small t-muted" x="520" y="190" text-anchor="middle">2</text>
+</svg>

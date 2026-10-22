@@ -1,0 +1,25 @@
+<svg class="diagram" viewBox="0 0 640 184" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="zone-maps-clustering-title">
+<title id="zone-maps-clustering-title">The same values in four zones, sorted and unsorted. Sorted, each zone covers a quarter of the domain and x = 42 touches one zone; unsorted, every zone spans almost the whole domain and all four must be scanned.</title>
+<text class="t-small t-bold" x="165" y="18" text-anchor="middle">sorted by x</text>
+<rect class="box-muted" x="40" y="32" width="60.6" height="16"/>
+<rect class="box-a" x="103.1" y="62" width="60.6" height="16"/>
+<rect class="box-muted" x="166.3" y="92" width="60.6" height="16"/>
+<rect class="box-muted" x="229.4" y="122" width="60.6" height="16"/>
+<line class="line" x1="40" y1="152" x2="290" y2="152"/>
+<text class="t-small t-muted" x="40" y="168" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="290" y="168" text-anchor="middle">99</text>
+<line class="line-warn dashed" x1="146.1" y1="26" x2="146.1" y2="152"/>
+<text class="t-small t-warn" x="146.1" y="168" text-anchor="middle">42</text>
+<text class="t-small t-a" x="165" y="192" text-anchor="middle">x = 42 scans 1 of 4 zones</text>
+<text class="t-small t-bold" x="475" y="18" text-anchor="middle">insertion order, unclustered</text>
+<rect class="box-a" x="352.5" y="32" width="244.9" height="16"/>
+<rect class="box-a" x="350" y="62" width="250" height="16"/>
+<rect class="box-a" x="357.6" y="92" width="237.4" height="16"/>
+<rect class="box-a" x="350" y="122" width="239.9" height="16"/>
+<line class="line" x1="350" y1="152" x2="600" y2="152"/>
+<text class="t-small t-muted" x="350" y="168" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="600" y="168" text-anchor="middle">99</text>
+<line class="line-warn dashed" x1="456.1" y1="26" x2="456.1" y2="152"/>
+<text class="t-small t-warn" x="456.1" y="168" text-anchor="middle">42</text>
+<text class="t-small t-warn" x="475" y="192" text-anchor="middle">x = 42 scans 4 of 4 zones</text>
+</svg>

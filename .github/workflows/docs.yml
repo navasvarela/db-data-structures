@@ -19,6 +19,8 @@ env:
   CARGO_TERM_COLOR: always
   # Must match the channel pinned in rust-toolchain.toml.
   RUST_TOOLCHAIN: 1.99.0
+  # Must match the version suggested in the justfile, so local builds render the same.
+  MDBOOK_VERSION: 0.5.4
 
 jobs:
   build:
@@ -38,15 +40,28 @@ jobs:
         env:
           RUSTDOCFLAGS: -D warnings
 
-      # rustdoc puts each crate in its own folder, so the site root redirects to this one.
-      - name: Add landing page
+      # A prebuilt release installs in seconds, where `cargo install mdbook` compiles for minutes.
+      - name: Install mdBook
         run: |
+          mkdir -p "$RUNNER_TEMP/mdbook"
+          curl -sSfL "https://github.com/rust-lang/mdBook/releases/download/v${MDBOOK_VERSION}/mdbook-v${MDBOOK_VERSION}-x86_64-unknown-linux-gnu.tar.gz" \
+            | tar -xz -C "$RUNNER_TEMP/mdbook"
+          echo "$RUNNER_TEMP/mdbook" >> "$GITHUB_PATH"
+
+      - name: Build guide
+        run: mdbook build book
+
+      # The guide is the site root and the API docs live under api/. rustdoc puts each crate in
+      # its own folder, so api/ redirects to this one.
+      - name: Assemble site
+        run: |
+          cp -r target/doc target/book/api
           echo '<meta http-equiv="refresh" content="0; url=db_data_structures/index.html">' \
-            > target/doc/index.html
+            > target/book/api/index.html
 
       - uses: actions/upload-pages-artifact@v5.0.0
         with:
-          path: target/doc
+          path: target/book
 
   deploy:
     name: Deploy to GitHub Pages

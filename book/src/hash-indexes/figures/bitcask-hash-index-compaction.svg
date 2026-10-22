@@ -1,0 +1,32 @@
+<svg class="diagram" viewBox="0 0 640 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bitcask-hash-index-compaction-title">
+<title id="bitcask-hash-index-compaction-title">Compaction after pear=blue is written at offset 51: dead bytes 35 exceed live bytes 32, so apple=red and pear=blue are copied into a new 32-byte store at offsets 0 and 16.</title>
+<defs><marker id="bitcask-hash-index-compaction-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-bold" x="80" y="88" text-anchor="end">old store</text>
+<text class="t-small t-bold" x="80" y="202" text-anchor="end">new store</text>
+<rect class="box" x="90" y="66" width="128" height="34"/>
+<text class="t-small t-mono" x="154" y="87.3" text-anchor="middle">apple=red</text>
+<rect class="box-muted" x="218" y="66" width="144" height="34"/>
+<text class="t-small t-mono t-muted" x="290" y="87.3" text-anchor="middle">pear=yellow</text>
+<rect class="box-muted" x="362" y="66" width="136" height="34"/>
+<text class="t-small t-mono t-muted" x="430" y="87.3" text-anchor="middle">pear=green</text>
+<rect class="box" x="498" y="66" width="128" height="34"/>
+<text class="t-small t-mono" x="562" y="87.3" text-anchor="middle">pear=blue</text>
+<text class="t-small t-mono" x="90" y="58" text-anchor="middle">0</text>
+<text class="t-small t-mono" x="218" y="58" text-anchor="middle">16</text>
+<text class="t-small t-mono" x="362" y="58" text-anchor="middle">34</text>
+<text class="t-small t-mono" x="498" y="58" text-anchor="middle">51</text>
+<text class="t-small t-mono" x="626" y="58" text-anchor="middle">67</text>
+<text class="t-small" x="90" y="22">live_bytes = 32, dead_bytes = 35</text>
+<text class="t-small t-warn" x="322" y="22">dead &gt; live: compact</text>
+<rect class="box-a" x="90" y="180" width="128" height="34"/>
+<text class="t-small t-mono" x="154" y="201.3" text-anchor="middle">apple=red</text>
+<line class="line-a" x1="154" y1="104" x2="154" y2="176" marker-end="url(#bitcask-hash-index-compaction-head-a)"/>
+<rect class="box-a" x="218" y="180" width="128" height="34"/>
+<text class="t-small t-mono" x="282" y="201.3" text-anchor="middle">pear=blue</text>
+<line class="line-a" x1="562" y1="104" x2="282" y2="176" marker-end="url(#bitcask-hash-index-compaction-head-a)"/>
+<text class="t-small t-mono" x="90" y="232" text-anchor="middle">0</text>
+<text class="t-small t-mono" x="218" y="232" text-anchor="middle">16</text>
+<text class="t-small t-mono" x="346" y="232" text-anchor="middle">32</text>
+<text class="t-small t-a" x="90" y="262">keydir: "apple" → 0, "pear" → 16</text>
+<text class="t-small" x="362" y="202">dead_bytes = 0</text>
+</svg>

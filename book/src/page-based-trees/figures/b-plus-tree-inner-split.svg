@@ -1,0 +1,64 @@
+<svg class="diagram" viewBox="0 0 640 176" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="b-plus-tree-inner-split-title">
+<title id="b-plus-tree-inner-split-title">An overflowing inner page with separators 20, 40, 60 and 80 splits: 60 moves up into the parent, and its child pointer c4 becomes the leftmost child of the new page.</title>
+<defs><marker id="b-plus-tree-inner-split-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="b-plus-tree-inner-split-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t t-bold" x="20" y="18">Before</text>
+<rect class="box-muted" x="115" y="30" width="28" height="28"/>
+<text class="t-small t-mono" x="129" y="49" text-anchor="middle">c12</text>
+<rect class="box" x="143" y="30" width="34" height="28"/>
+<text class="t t-mono" x="160" y="49" text-anchor="middle">100</text>
+<rect class="box-muted" x="177" y="30" width="28" height="28"/>
+<text class="t-small t-mono" x="191" y="49" text-anchor="middle">c14</text>
+<text class="t-small t-muted" x="105" y="49" text-anchor="end">parent</text>
+<rect class="box-muted" x="22" y="110" width="28" height="28"/>
+<text class="t-small t-mono" x="36" y="129" text-anchor="middle">c1</text>
+<rect class="box" x="50" y="110" width="34" height="28"/>
+<text class="t t-mono" x="67" y="129" text-anchor="middle">20</text>
+<rect class="box-muted" x="84" y="110" width="28" height="28"/>
+<text class="t-small t-mono" x="98" y="129" text-anchor="middle">c2</text>
+<rect class="box" x="112" y="110" width="34" height="28"/>
+<text class="t t-mono" x="129" y="129" text-anchor="middle">40</text>
+<rect class="box-muted" x="146" y="110" width="28" height="28"/>
+<text class="t-small t-mono" x="160" y="129" text-anchor="middle">c3</text>
+<rect class="box-a" x="174" y="110" width="34" height="28"/>
+<text class="t t-mono" x="191" y="129" text-anchor="middle">60</text>
+<rect class="box-b" x="208" y="110" width="28" height="28"/>
+<text class="t-small t-mono" x="222" y="129" text-anchor="middle">c4</text>
+<rect class="box" x="236" y="110" width="34" height="28"/>
+<text class="t t-mono" x="253" y="129" text-anchor="middle">80</text>
+<rect class="box-muted" x="270" y="110" width="28" height="28"/>
+<text class="t-small t-mono" x="284" y="129" text-anchor="middle">c5</text>
+<text class="t-small t-muted" x="160" y="160" text-anchor="middle">page 12, one separator too many</text>
+<line class="line" x1="129" y1="58" x2="160" y2="106" marker-end="url(#b-plus-tree-inner-split-head)"/>
+<line class="line dashed" x1="316" y1="6" x2="316" y2="170"/>
+<text class="t t-bold" x="336" y="18">After</text>
+<rect class="box-muted" x="404" y="30" width="28" height="28"/>
+<text class="t-small t-mono" x="418" y="49" text-anchor="middle">c12</text>
+<rect class="box-a" x="432" y="30" width="34" height="28"/>
+<text class="t t-mono" x="449" y="49" text-anchor="middle">60</text>
+<rect class="box-a" x="466" y="30" width="28" height="28"/>
+<text class="t-small t-mono" x="480" y="49" text-anchor="middle">c13</text>
+<rect class="box" x="494" y="30" width="34" height="28"/>
+<text class="t t-mono" x="511" y="49" text-anchor="middle">100</text>
+<rect class="box-muted" x="528" y="30" width="28" height="28"/>
+<text class="t-small t-mono" x="542" y="49" text-anchor="middle">c14</text>
+<rect class="box-muted" x="336" y="110" width="28" height="28"/>
+<text class="t-small t-mono" x="350" y="129" text-anchor="middle">c1</text>
+<rect class="box" x="364" y="110" width="34" height="28"/>
+<text class="t t-mono" x="381" y="129" text-anchor="middle">20</text>
+<rect class="box-muted" x="398" y="110" width="28" height="28"/>
+<text class="t-small t-mono" x="412" y="129" text-anchor="middle">c2</text>
+<rect class="box" x="426" y="110" width="34" height="28"/>
+<text class="t t-mono" x="443" y="129" text-anchor="middle">40</text>
+<rect class="box-muted" x="460" y="110" width="28" height="28"/>
+<text class="t-small t-mono" x="474" y="129" text-anchor="middle">c3</text>
+<rect class="box-b" x="536" y="110" width="28" height="28"/>
+<text class="t-small t-mono" x="550" y="129" text-anchor="middle">c4</text>
+<rect class="box" x="564" y="110" width="34" height="28"/>
+<text class="t t-mono" x="581" y="129" text-anchor="middle">80</text>
+<rect class="box-muted" x="598" y="110" width="28" height="28"/>
+<text class="t-small t-mono" x="612" y="129" text-anchor="middle">c5</text>
+<text class="t-small t-muted" x="412" y="160" text-anchor="middle">page 12</text>
+<text class="t-small t-muted" x="581" y="160" text-anchor="middle">page 13 (new)</text>
+<line class="line" x1="418" y1="58" x2="412" y2="106" marker-end="url(#b-plus-tree-inner-split-head)"/>
+<line class="line-a" x1="480" y1="58" x2="581" y2="106" marker-end="url(#b-plus-tree-inner-split-head-a)"/>
+</svg>

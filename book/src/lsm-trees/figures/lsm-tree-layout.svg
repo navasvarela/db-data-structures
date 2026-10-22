@@ -1,0 +1,72 @@
+<svg class="diagram" viewBox="0 0 640 352" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="lsm-tree-layout-title">
+<title id="lsm-tree-layout-title">An LSM tree: writes go to the WAL and the active memtable; the immutable memtable is flushed into level 0, whose files overlap; levels 1 and 2 hold files with disjoint key ranges; the MANIFEST records the files of each level and CURRENT names it.</title>
+<defs><marker id="lsm-tree-layout-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t t-bold" x="16" y="41">write</text>
+<rect class="box-a" x="150" y="20" width="150" height="34"/>
+<text class="t" x="225" y="42" text-anchor="middle">active memtable</text>
+<rect class="box" x="370" y="20" width="160" height="34"/>
+<text class="t" x="450" y="42" text-anchor="middle">immutable memtable</text>
+<line class="line" x1="58" y1="37" x2="148" y2="37" marker-end="url(#lsm-tree-layout-head)"/>
+<line class="line" x1="300" y1="37" x2="368" y2="37" marker-end="url(#lsm-tree-layout-head)"/>
+<text class="t-small" x="334" y="30" text-anchor="middle">freeze</text>
+<line class="line dashed" x1="16" y1="76" x2="624" y2="76"/>
+<text class="t-small t-muted" x="624" y="70" text-anchor="end">memory</text>
+<text class="t-small t-muted" x="624" y="92" text-anchor="end">disk</text>
+<path class="line" d="M36,46 L36,92" marker-end="url(#lsm-tree-layout-head)"/>
+<rect class="box" x="16" y="94" width="44" height="22"/>
+<text class="t-small t-mono" x="38" y="109" text-anchor="middle">WAL</text>
+<text class="t t-bold" x="16" y="144">L0</text>
+<rect class="box-a" x="79" y="108" width="88" height="20" rx="3"/>
+<text class="t-small t-mono" x="123" y="122" text-anchor="middle">b–f</text>
+<rect class="box" x="97" y="132" width="250" height="20" rx="3"/>
+<text class="t-small t-mono" x="105" y="146">c–p</text>
+<rect class="box" x="61" y="156" width="196" height="20" rx="3"/>
+<text class="t-small t-mono" x="69" y="170">a–k</text>
+<text class="t t-bold" x="16" y="212">L1</text>
+<rect class="box" x="61" y="198" width="70" height="20" rx="3"/>
+<text class="t-small t-mono" x="96" y="212" text-anchor="middle">a–d</text>
+<rect class="box" x="133" y="198" width="70" height="20" rx="3"/>
+<text class="t-small t-mono" x="168" y="212" text-anchor="middle">e–h</text>
+<rect class="box" x="205" y="198" width="88" height="20" rx="3"/>
+<text class="t-small t-mono" x="249" y="212" text-anchor="middle">i–m</text>
+<rect class="box" x="295" y="198" width="232" height="20" rx="3"/>
+<text class="t-small t-mono" x="303" y="212">n–z</text>
+<text class="t t-bold" x="16" y="250">L2</text>
+<rect class="box" x="61" y="236" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="78" y="250" text-anchor="middle">a–b</text>
+<rect class="box" x="97" y="236" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="114" y="250" text-anchor="middle">c–d</text>
+<rect class="box" x="133" y="236" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="150" y="250" text-anchor="middle">e–f</text>
+<rect class="box" x="169" y="236" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="186" y="250" text-anchor="middle">g–h</text>
+<rect class="box" x="205" y="236" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="222" y="250" text-anchor="middle">i–j</text>
+<rect class="box" x="241" y="236" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="258" y="250" text-anchor="middle">k–l</text>
+<rect class="box" x="277" y="236" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="294" y="250" text-anchor="middle">m–n</text>
+<rect class="box" x="313" y="236" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="330" y="250" text-anchor="middle">o–p</text>
+<rect class="box" x="349" y="236" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="366" y="250" text-anchor="middle">q–r</text>
+<rect class="box" x="385" y="236" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="402" y="250" text-anchor="middle">s–t</text>
+<rect class="box" x="421" y="236" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="438" y="250" text-anchor="middle">u–v</text>
+<rect class="box" x="457" y="236" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="474" y="250" text-anchor="middle">w–x</text>
+<rect class="box" x="493" y="236" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="510" y="250" text-anchor="middle">y–z</text>
+<path class="line" d="M450,54 C450,90 144,84 114,106" marker-end="url(#lsm-tree-layout-head)"/>
+<text class="t-small" x="430" y="98" text-anchor="middle">flush</text>
+<text class="t-small t-muted" x="540" y="146">files may overlap</text>
+<text class="t-small t-muted" x="540" y="212">disjoint, ~10 MB</text>
+<text class="t-small t-muted" x="540" y="250">disjoint, ~100 MB</text>
+<rect class="box" x="60" y="282" width="90" height="24"/>
+<text class="t-small t-mono" x="105" y="298" text-anchor="middle">MANIFEST</text>
+<text class="t-small t-muted" x="158" y="298">which files are in which level</text>
+<rect class="box" x="380" y="282" width="80" height="24"/>
+<text class="t-small t-mono" x="420" y="298" text-anchor="middle">CURRENT</text>
+<text class="t-small t-muted" x="468" y="298">names the live MANIFEST</text>
+</svg>

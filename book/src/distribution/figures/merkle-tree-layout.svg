@@ -1,0 +1,41 @@
+<svg class="diagram" viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="merkle-tree-layout-title">
+<title id="merkle-tree-layout-title">A Merkle tree of depth 2 over the key range 0 to 400: four leaves for the sub-ranges of width 100, two inner nodes and a root.</title>
+<line class="line" x1="235" y1="42" x2="125" y2="78"/>
+<line class="line" x1="235" y1="42" x2="345" y2="78"/>
+<line class="line" x1="125" y1="106" x2="70" y2="142"/>
+<line class="line" x1="125" y1="106" x2="180" y2="142"/>
+<line class="line" x1="345" y1="106" x2="290" y2="142"/>
+<line class="line" x1="345" y1="106" x2="400" y2="142"/>
+<rect class="box" x="38" y="142" width="64" height="28"/>
+<text class="t-small t-mono" x="70" y="160" text-anchor="middle">h0</text>
+<text class="t-small t-muted" x="106" y="152">3</text>
+<rect class="box" x="148" y="142" width="64" height="28"/>
+<text class="t-small t-mono" x="180" y="160" text-anchor="middle">h1</text>
+<text class="t-small t-muted" x="216" y="152">4</text>
+<rect class="box" x="258" y="142" width="64" height="28"/>
+<text class="t-small t-mono" x="290" y="160" text-anchor="middle">h2</text>
+<text class="t-small t-muted" x="326" y="152">5</text>
+<rect class="box" x="368" y="142" width="64" height="28"/>
+<text class="t-small t-mono" x="400" y="160" text-anchor="middle">h3</text>
+<text class="t-small t-muted" x="436" y="152">6</text>
+<rect class="box" x="93" y="78" width="64" height="28"/>
+<text class="t-small t-mono" x="125" y="96" text-anchor="middle">h01</text>
+<text class="t-small t-muted" x="161" y="88">1</text>
+<rect class="box" x="313" y="78" width="64" height="28"/>
+<text class="t-small t-mono" x="345" y="96" text-anchor="middle">h23</text>
+<text class="t-small t-muted" x="381" y="88">2</text>
+<rect class="box" x="203" y="14" width="64" height="28"/>
+<text class="t-small t-mono" x="235" y="32" text-anchor="middle">root</text>
+<text class="t-small t-muted" x="271" y="24">0</text>
+<text class="t-small t-mono t-muted" x="70" y="190" text-anchor="middle">[0, 100)</text>
+<text class="t-small t-mono t-muted" x="180" y="190" text-anchor="middle">[100, 200)</text>
+<text class="t-small t-mono t-muted" x="290" y="190" text-anchor="middle">[200, 300)</text>
+<text class="t-small t-mono t-muted" x="400" y="190" text-anchor="middle">[300, 400)</text>
+<text class="t-small t-bold" x="470" y="40">inner node:</text>
+<text class="t-small t-mono" x="470" y="58">H(1 ‖ left ‖ right)</text>
+<text class="t-small t-bold" x="470" y="96">leaf:</text>
+<text class="t-small t-mono" x="470" y="114">H(0 ‖ pairs in</text>
+<text class="t-small t-mono" x="470" y="130">  key order)</text>
+<text class="t-small t-muted" x="470" y="168">numbers: array</text>
+<text class="t-small t-muted" x="470" y="184">positions</text>
+</svg>

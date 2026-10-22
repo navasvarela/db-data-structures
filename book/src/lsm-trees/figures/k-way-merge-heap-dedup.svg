@@ -1,0 +1,56 @@
+<svg class="diagram" viewBox="0 0 640 134" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="k-way-merge-heap-dedup-title">
+<title id="k-way-merge-heap-dedup-title">The merged output a, b, b, c, e, e, f, k, m with their ranks; deduplication drops b from rank 2 and e from rank 1, which are older versions.</title>
+<defs><marker id="k-way-merge-heap-dedup-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="16" y="49">merged</text>
+<text class="t-small t-muted" x="16" y="115">deduplicated</text>
+<rect class="box" x="120" y="30" width="52" height="30"/>
+<text class="t t-mono" x="142" y="50" text-anchor="middle">a</text>
+<text class="t-small t-muted" x="156" y="54" text-anchor="middle">1</text>
+<line class="line" x1="146" y1="61" x2="146" y2="94" marker-end="url(#k-way-merge-heap-dedup-head)"/>
+<rect class="box" x="126" y="96" width="40" height="30"/>
+<text class="t t-mono" x="146" y="116" text-anchor="middle">a</text>
+<rect class="box" x="172" y="30" width="52" height="30"/>
+<text class="t t-mono" x="194" y="50" text-anchor="middle">b</text>
+<text class="t-small t-muted" x="208" y="54" text-anchor="middle">0</text>
+<line class="line" x1="198" y1="61" x2="198" y2="94" marker-end="url(#k-way-merge-heap-dedup-head)"/>
+<rect class="box" x="178" y="96" width="40" height="30"/>
+<text class="t t-mono" x="198" y="116" text-anchor="middle">b</text>
+<rect class="box-muted" x="224" y="30" width="52" height="30"/>
+<text class="t t-mono t-muted" x="246" y="50" text-anchor="middle">b</text>
+<text class="t-small t-muted" x="260" y="54" text-anchor="middle">2</text>
+<text class="t-small t-muted" x="250" y="78" text-anchor="middle">older</text>
+<rect class="box" x="276" y="30" width="52" height="30"/>
+<text class="t t-mono" x="298" y="50" text-anchor="middle">c</text>
+<text class="t-small t-muted" x="312" y="54" text-anchor="middle">2</text>
+<line class="line" x1="302" y1="61" x2="302" y2="94" marker-end="url(#k-way-merge-heap-dedup-head)"/>
+<rect class="box" x="282" y="96" width="40" height="30"/>
+<text class="t t-mono" x="302" y="116" text-anchor="middle">c</text>
+<rect class="box" x="328" y="30" width="52" height="30"/>
+<text class="t t-mono" x="350" y="50" text-anchor="middle">e</text>
+<text class="t-small t-muted" x="364" y="54" text-anchor="middle">0</text>
+<line class="line" x1="354" y1="61" x2="354" y2="94" marker-end="url(#k-way-merge-heap-dedup-head)"/>
+<rect class="box" x="334" y="96" width="40" height="30"/>
+<text class="t t-mono" x="354" y="116" text-anchor="middle">e</text>
+<rect class="box-muted" x="380" y="30" width="52" height="30"/>
+<text class="t t-mono t-muted" x="402" y="50" text-anchor="middle">e</text>
+<text class="t-small t-muted" x="416" y="54" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="406" y="78" text-anchor="middle">older</text>
+<rect class="box" x="432" y="30" width="52" height="30"/>
+<text class="t t-mono" x="454" y="50" text-anchor="middle">f</text>
+<text class="t-small t-muted" x="468" y="54" text-anchor="middle">1</text>
+<line class="line" x1="458" y1="61" x2="458" y2="94" marker-end="url(#k-way-merge-heap-dedup-head)"/>
+<rect class="box" x="438" y="96" width="40" height="30"/>
+<text class="t t-mono" x="458" y="116" text-anchor="middle">f</text>
+<rect class="box" x="484" y="30" width="52" height="30"/>
+<text class="t t-mono" x="506" y="50" text-anchor="middle">k</text>
+<text class="t-small t-muted" x="520" y="54" text-anchor="middle">0</text>
+<line class="line" x1="510" y1="61" x2="510" y2="94" marker-end="url(#k-way-merge-heap-dedup-head)"/>
+<rect class="box" x="490" y="96" width="40" height="30"/>
+<text class="t t-mono" x="510" y="116" text-anchor="middle">k</text>
+<rect class="box" x="536" y="30" width="52" height="30"/>
+<text class="t t-mono" x="558" y="50" text-anchor="middle">m</text>
+<text class="t-small t-muted" x="572" y="54" text-anchor="middle">2</text>
+<line class="line" x1="562" y1="61" x2="562" y2="94" marker-end="url(#k-way-merge-heap-dedup-head)"/>
+<rect class="box" x="542" y="96" width="40" height="30"/>
+<text class="t t-mono" x="562" y="116" text-anchor="middle">m</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg class="diagram" viewBox="0 0 640 396" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="columnar-segments-file-title">
+<title id="columnar-segments-file-title">A segment file: leading magic, two row groups each holding one column chunk per column split into pages, then the footer with the offsets and statistics of every chunk, its length and the closing magic.</title>
+<defs><marker id="columnar-segments-file-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker><marker id="columnar-segments-file-head-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-b" d="M0,0L10,5L0,10z"/></marker></defs>
+<rect class="box-muted" x="48" y="8" width="552" height="24"/>
+<text class="t-small t-mono" x="320" y="24.3" text-anchor="middle">magic "SEG1"</text>
+<rect class="box" x="48" y="42" width="552" height="114"/>
+<text class="t-small t-bold" x="58" y="59">row group 0</text>
+<text class="t-small" x="120" y="83" text-anchor="end">column a</text>
+<rect class="box" x="152" y="70" width="64" height="22"/>
+<text class="t-small" x="184" y="85.3" text-anchor="middle">page</text>
+<rect class="box" x="216" y="70" width="64" height="22"/>
+<text class="t-small" x="248" y="85.3" text-anchor="middle">page</text>
+<rect class="box" x="280" y="70" width="64" height="22"/>
+<text class="t-small" x="312" y="85.3" text-anchor="middle">page</text>
+<text class="t-small" x="120" y="111" text-anchor="end">column b</text>
+<rect class="box-b" x="152" y="98" width="92" height="22"/>
+<text class="t-small" x="198" y="113.3" text-anchor="middle">dictionary</text>
+<rect class="box" x="244" y="98" width="64" height="22"/>
+<text class="t-small" x="276" y="113.3" text-anchor="middle">page</text>
+<rect class="box" x="308" y="98" width="64" height="22"/>
+<text class="t-small" x="340" y="113.3" text-anchor="middle">page</text>
+<text class="t-small" x="120" y="139" text-anchor="end">column c</text>
+<rect class="box" x="152" y="126" width="64" height="22"/>
+<text class="t-small" x="184" y="141.3" text-anchor="middle">page</text>
+<rect class="box" x="216" y="126" width="64" height="22"/>
+<text class="t-small" x="248" y="141.3" text-anchor="middle">page</text>
+<rect class="box" x="48" y="166" width="552" height="114"/>
+<text class="t-small t-bold" x="58" y="183">row group 1</text>
+<text class="t-small" x="120" y="207" text-anchor="end">column a</text>
+<rect class="box" x="152" y="194" width="64" height="22"/>
+<text class="t-small" x="184" y="209.3" text-anchor="middle">page</text>
+<rect class="box" x="216" y="194" width="64" height="22"/>
+<text class="t-small" x="248" y="209.3" text-anchor="middle">page</text>
+<text class="t-small" x="120" y="235" text-anchor="end">column b</text>
+<rect class="box-b" x="152" y="222" width="92" height="22"/>
+<text class="t-small" x="198" y="237.3" text-anchor="middle">dictionary</text>
+<rect class="box" x="244" y="222" width="64" height="22"/>
+<text class="t-small" x="276" y="237.3" text-anchor="middle">page</text>
+<text class="t-small" x="120" y="263" text-anchor="end">column c</text>
+<rect class="box" x="152" y="250" width="64" height="22"/>
+<text class="t-small" x="184" y="265.3" text-anchor="middle">page</text>
+<rect class="box" x="216" y="250" width="64" height="22"/>
+<text class="t-small" x="248" y="265.3" text-anchor="middle">page</text>
+<rect class="box-a" x="48" y="290" width="552" height="72"/>
+<text class="t-small t-bold" x="152" y="310">footer</text>
+<text class="t-small" x="152" y="328">schema; per row group: row count</text>
+<text class="t-small" x="152" y="346">per column chunk: offset, length, encoding, min, max, null count</text>
+<line class="line-a" x1="132" y1="290" x2="132" y2="81"/>
+<line class="line-a" x1="132" y1="81" x2="151" y2="81" marker-end="url(#columnar-segments-file-head-a)"/>
+<line class="line-a" x1="132" y1="109" x2="151" y2="109" marker-end="url(#columnar-segments-file-head-a)"/>
+<line class="line-a" x1="132" y1="137" x2="151" y2="137" marker-end="url(#columnar-segments-file-head-a)"/>
+<line class="line-a" x1="132" y1="205" x2="151" y2="205" marker-end="url(#columnar-segments-file-head-a)"/>
+<line class="line-a" x1="132" y1="233" x2="151" y2="233" marker-end="url(#columnar-segments-file-head-a)"/>
+<line class="line-a" x1="132" y1="261" x2="151" y2="261" marker-end="url(#columnar-segments-file-head-a)"/>
+<rect class="box-muted" x="48" y="372" width="330" height="24"/>
+<text class="t-small" x="213" y="388.3" text-anchor="middle">footer length (4 bytes, little-endian)</text>
+<rect class="box-muted" x="378" y="372" width="222" height="24"/>
+<text class="t-small t-mono" x="489" y="388.3" text-anchor="middle">magic "SEG1"</text>
+<path class="line-b" d="M600,384H622V304H602" marker-end="url(#columnar-segments-file-head-b)"/>
+</svg>

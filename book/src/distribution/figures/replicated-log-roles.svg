@@ -1,0 +1,22 @@
+<svg class="diagram" viewBox="0 0 640 252" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="replicated-log-roles-title">
+<title id="replicated-log-roles-title">Raft roles: a follower that times out becomes a candidate; a candidate that times out starts a new election, one that wins a majority becomes leader, and one that hears from a current leader or a higher term becomes a follower; a leader that sees a higher term becomes a follower.</title>
+<defs><marker id="replicated-log-roles-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="replicated-log-roles-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<rect class="box" x="40" y="90" width="120" height="40"/>
+<text class="t t-bold" x="100" y="115" text-anchor="middle">follower</text>
+<rect class="box" x="260" y="90" width="120" height="40"/>
+<text class="t t-bold" x="320" y="115" text-anchor="middle">candidate</text>
+<rect class="box-a" x="480" y="90" width="120" height="40"/>
+<text class="t t-bold" x="540" y="115" text-anchor="middle">leader</text>
+<line class="line" x1="4" y1="110" x2="36" y2="110" marker-end="url(#replicated-log-roles-head)"/>
+<text class="t-small t-muted" x="4" y="84">start</text>
+<line class="line" x1="162" y1="102" x2="256" y2="102" marker-end="url(#replicated-log-roles-head)"/>
+<text class="t-small" x="209" y="94" text-anchor="middle">times out</text>
+<line class="line-a" x1="382" y1="102" x2="476" y2="102" marker-end="url(#replicated-log-roles-head-a)"/>
+<text class="t-small t-a" x="429" y="94" text-anchor="middle">majority votes</text>
+<path class="line" d="M300,88C290,40 350,40 340,86" marker-end="url(#replicated-log-roles-head)"/>
+<text class="t-small" x="320" y="46" text-anchor="middle">times out: new term</text>
+<path class="line" d="M300,132C300,158 130,158 110,134" marker-end="url(#replicated-log-roles-head)"/>
+<text class="t-small" x="205" y="170" text-anchor="middle">hears from a leader, or a higher term</text>
+<path class="line" d="M540,132C540,250 70,250 70,134" marker-end="url(#replicated-log-roles-head)"/>
+<text class="t-small" x="305" y="238" text-anchor="middle">sees a higher term</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg class="diagram" viewBox="0 0 640 322" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="consistent-hashing-ring-join-title">
+<title id="consistent-hashing-ring-join-title">Before and after node D joins with tokens D1 and D2. Key k2 moves from C to D and key k4 moves from B to D; the other keys keep their owners.</title>
+<text class="t-small t-bold" x="160" y="18" text-anchor="middle">before</text>
+<circle class="line" cx="160" cy="160" r="100"/>
+<line class="line" x1="160" y1="54" x2="160" y2="66"/>
+<text class="t-small t-muted" x="160" y="48" text-anchor="middle">0</text>
+<circle class="box" cx="210" cy="73.3975" r="5"/>
+<text class="t-small t-bold" x="220" y="61.077" text-anchor="middle">A1</text>
+<circle class="box" cx="258.481" cy="142.635" r="5"/>
+<text class="t-small t-bold" x="278.177" y="144.162" text-anchor="middle">B1</text>
+<circle class="box" cx="224.279" cy="236.604" r="5"/>
+<text class="t-small t-bold" x="237.135" y="256.925" text-anchor="middle">C1</text>
+<circle class="box" cx="142.635" cy="258.481" r="5"/>
+<text class="t-small t-bold" x="139.162" y="283.177" text-anchor="middle">A2</text>
+<circle class="box" cx="66.0307" cy="194.202" r="5"/>
+<text class="t-small t-bold" x="47.2369" y="206.042" text-anchor="middle">B2</text>
+<circle class="box" cx="83.3956" cy="95.7212" r="5"/>
+<text class="t-small t-bold" x="68.0747" y="87.8655" text-anchor="middle">C2</text>
+<circle class="box" cx="230.447" cy="110.672" r="4"/>
+<text class="t-small" x="215.702" y="124.997" text-anchor="middle">k1</text>
+<circle class="box" cx="244.693" cy="174.934" r="4"/>
+<text class="t-small" x="226.967" y="175.808" text-anchor="middle">k2</text>
+<circle class="box" cx="230.447" cy="209.328" r="4"/>
+<text class="t-small" x="215.702" y="203.003" text-anchor="middle">k3</text>
+<circle class="box" cx="123.655" cy="237.942" r="4"/>
+<text class="t-small" x="131.262" y="225.629" text-anchor="middle">k4</text>
+<circle class="box" cx="89.5529" cy="209.328" r="4"/>
+<text class="t-small" x="104.298" y="203.003" text-anchor="middle">k5</text>
+<circle class="box" cx="130.586" cy="79.1864" r="4"/>
+<text class="t-small" x="136.743" y="100.101" text-anchor="middle">k6</text>
+<text class="t-small t-bold" x="480" y="18" text-anchor="middle">after D joins</text>
+<circle class="line" cx="480" cy="160" r="100"/>
+<path class="line-a" d="M578.5,142.6A100,100 0 0 1 572.7,197.5"/>
+<path class="line-a" d="M462.6,258.5A100,100 0 0 1 415.7,236.6"/>
+<line class="line" x1="480" y1="54" x2="480" y2="66"/>
+<text class="t-small t-muted" x="480" y="48" text-anchor="middle">0</text>
+<circle class="box" cx="530" cy="73.3975" r="5"/>
+<text class="t-small t-bold" x="540" y="61.077" text-anchor="middle">A1</text>
+<circle class="box" cx="578.481" cy="142.635" r="5"/>
+<text class="t-small t-bold" x="598.177" y="144.162" text-anchor="middle">B1</text>
+<circle class="box" cx="544.279" cy="236.604" r="5"/>
+<text class="t-small t-bold" x="557.135" y="256.925" text-anchor="middle">C1</text>
+<circle class="box" cx="462.635" cy="258.481" r="5"/>
+<text class="t-small t-bold" x="459.162" y="283.177" text-anchor="middle">A2</text>
+<circle class="box" cx="386.031" cy="194.202" r="5"/>
+<text class="t-small t-bold" x="367.237" y="206.042" text-anchor="middle">B2</text>
+<circle class="box" cx="403.396" cy="95.7212" r="5"/>
+<text class="t-small t-bold" x="388.075" y="87.8655" text-anchor="middle">C2</text>
+<circle class="box-a" cx="572.718" cy="197.461" r="5"/>
+<text class="t-small t-bold t-a" x="591.262" y="209.953" text-anchor="middle">D1</text>
+<circle class="box-a" cx="415.721" cy="236.604" r="5"/>
+<text class="t-small t-bold t-a" x="402.865" y="256.925" text-anchor="middle">D2</text>
+<circle class="box" cx="550.447" cy="110.672" r="4"/>
+<text class="t-small" x="535.702" y="124.997" text-anchor="middle">k1</text>
+<circle class="box-a" cx="564.693" cy="174.934" r="4"/>
+<text class="t-small t-a t-bold" x="546.967" y="175.808" text-anchor="middle">k2</text>
+<circle class="box" cx="550.447" cy="209.328" r="4"/>
+<text class="t-small" x="535.702" y="203.003" text-anchor="middle">k3</text>
+<circle class="box-a" cx="443.655" cy="237.942" r="4"/>
+<text class="t-small t-a t-bold" x="451.262" y="225.629" text-anchor="middle">k4</text>
+<circle class="box" cx="409.553" cy="209.328" r="4"/>
+<text class="t-small" x="424.298" y="203.003" text-anchor="middle">k5</text>
+<circle class="box" cx="450.586" cy="79.1864" r="4"/>
+<text class="t-small" x="456.743" y="100.101" text-anchor="middle">k6</text>
+<text class="t-small t-muted" x="160" y="312" text-anchor="middle">k2 on C1, k4 on B2</text>
+<text class="t-small t-a" x="480" y="312" text-anchor="middle">k2 and k4 move to D; nothing else moves</text>
+</svg>

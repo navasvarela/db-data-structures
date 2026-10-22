@@ -1,0 +1,61 @@
+<svg class="diagram" viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="range-filter-surf-trie-title">
+<title id="range-filter-surf-trie-title">Full trie of SIGAI, SIGMOD and SIGOPS, and the SuRF-Base trie truncated to SIGA, SIGM and SIGO.</title>
+<text class="t t-bold" x="160" y="20" text-anchor="middle">full trie</text>
+<line class="line" x1="160" y1="46" x2="160" y2="72"/>
+<text class="t-small t-mono t-bold" x="168" y="64">S</text>
+<line class="line" x1="160" y1="84" x2="160" y2="110"/>
+<text class="t-small t-mono t-bold" x="168" y="102">I</text>
+<line class="line" x1="160" y1="122" x2="160" y2="148"/>
+<text class="t-small t-mono t-bold" x="168" y="140">G</text>
+<line class="line" x1="160" y1="160" x2="86" y2="186"/>
+<text class="t-small t-mono t-bold" x="113" y="178" text-anchor="end">A</text>
+<line class="line" x1="86" y1="198" x2="86" y2="224"/>
+<text class="t-small t-mono t-bold" x="94" y="216">I</text>
+<line class="line" x1="160" y1="160" x2="160" y2="186"/>
+<text class="t-small t-mono t-bold" x="168" y="178">M</text>
+<line class="line" x1="160" y1="198" x2="160" y2="224"/>
+<text class="t-small t-mono t-bold" x="168" y="216">O</text>
+<line class="line" x1="160" y1="236" x2="160" y2="262"/>
+<text class="t-small t-mono t-bold" x="168" y="254">D</text>
+<line class="line" x1="160" y1="160" x2="234" y2="186"/>
+<text class="t-small t-mono t-bold" x="207" y="178">O</text>
+<line class="line" x1="234" y1="198" x2="234" y2="224"/>
+<text class="t-small t-mono t-bold" x="242" y="216">P</text>
+<line class="line" x1="234" y1="236" x2="234" y2="262"/>
+<text class="t-small t-mono t-bold" x="242" y="254">S</text>
+<circle class="box" cx="160" cy="40" r="6"/>
+<circle class="box" cx="160" cy="78" r="6"/>
+<circle class="box" cx="160" cy="116" r="6"/>
+<circle class="box" cx="160" cy="154" r="6"/>
+<circle class="box" cx="86" cy="192" r="6"/>
+<circle class="box-a" cx="86" cy="230" r="6"/>
+<circle class="box" cx="160" cy="192" r="6"/>
+<circle class="box" cx="160" cy="230" r="6"/>
+<circle class="box-a" cx="160" cy="268" r="6"/>
+<circle class="box" cx="234" cy="192" r="6"/>
+<circle class="box" cx="234" cy="230" r="6"/>
+<circle class="box-a" cx="234" cy="268" r="6"/>
+<text class="t t-bold" x="480" y="20" text-anchor="middle">SuRF-Base</text>
+<line class="line" x1="480" y1="46" x2="480" y2="72"/>
+<text class="t-small t-mono t-bold" x="488" y="64">S</text>
+<line class="line" x1="480" y1="84" x2="480" y2="110"/>
+<text class="t-small t-mono t-bold" x="488" y="102">I</text>
+<line class="line" x1="480" y1="122" x2="480" y2="148"/>
+<text class="t-small t-mono t-bold" x="488" y="140">G</text>
+<line class="line" x1="480" y1="160" x2="406" y2="186"/>
+<text class="t-small t-mono t-bold" x="433" y="178" text-anchor="end">A</text>
+<line class="line" x1="480" y1="160" x2="480" y2="186"/>
+<text class="t-small t-mono t-bold" x="488" y="178">M</text>
+<line class="line" x1="480" y1="160" x2="554" y2="186"/>
+<text class="t-small t-mono t-bold" x="527" y="178">O</text>
+<circle class="box" cx="480" cy="40" r="6"/>
+<circle class="box" cx="480" cy="78" r="6"/>
+<circle class="box" cx="480" cy="116" r="6"/>
+<circle class="box" cx="480" cy="154" r="6"/>
+<circle class="box-a" cx="406" cy="192" r="6"/>
+<circle class="box-a" cx="480" cy="192" r="6"/>
+<circle class="box-a" cx="554" cy="192" r="6"/>
+<text class="t-small t-mono t-a" x="406" y="218" text-anchor="middle">SIGA…</text>
+<text class="t-small t-mono t-a" x="480" y="218" text-anchor="middle">SIGM…</text>
+<text class="t-small t-mono t-a" x="554" y="218" text-anchor="middle">SIGO…</text>
+</svg>

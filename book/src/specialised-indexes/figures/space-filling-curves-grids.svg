@@ -1,0 +1,93 @@
+<svg class="diagram" viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="space-filling-curves-grids-title">
+<title id="space-filling-curves-grids-title">Z-order and Hilbert curves on a 4 by 4 grid, with y = 0 as the top row. Z-order visits cells in repeated Z shapes and jumps between quadrants; the Hilbert curve only ever moves to a neighbouring cell.</title>
+<text class="t t-bold" x="172" y="22" text-anchor="middle">Z-order (Morton)</text>
+<text class="t-small t-muted" x="88" y="44" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="50" y="84" text-anchor="end">0</text>
+<text class="t-small t-muted" x="144" y="44" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="50" y="140" text-anchor="end">1</text>
+<text class="t-small t-muted" x="200" y="44" text-anchor="middle">2</text>
+<text class="t-small t-muted" x="50" y="196" text-anchor="end">2</text>
+<text class="t-small t-muted" x="256" y="44" text-anchor="middle">3</text>
+<text class="t-small t-muted" x="50" y="252" text-anchor="end">3</text>
+<text class="t-small t-muted" x="50" y="44" text-anchor="end">y\x</text>
+<rect class="box" x="60" y="52" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="65" y="67">0</text>
+<rect class="box" x="116" y="52" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="121" y="67">1</text>
+<rect class="box" x="172" y="52" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="177" y="67">4</text>
+<rect class="box" x="228" y="52" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="233" y="67">5</text>
+<rect class="box" x="60" y="108" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="65" y="123">2</text>
+<rect class="box" x="116" y="108" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="121" y="123">3</text>
+<rect class="box" x="172" y="108" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="177" y="123">6</text>
+<rect class="box" x="228" y="108" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="233" y="123">7</text>
+<rect class="box" x="60" y="164" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="65" y="179">8</text>
+<rect class="box" x="116" y="164" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="121" y="179">9</text>
+<rect class="box" x="172" y="164" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="177" y="179">12</text>
+<rect class="box" x="228" y="164" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="233" y="179">13</text>
+<rect class="box" x="60" y="220" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="65" y="235">10</text>
+<rect class="box" x="116" y="220" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="121" y="235">11</text>
+<rect class="box" x="172" y="220" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="177" y="235">14</text>
+<rect class="box" x="228" y="220" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="233" y="235">15</text>
+<path class="line-a" d="M88,80 L144,80 L88,136 L144,136 L200,80 L256,80 L200,136 L256,136 L88,192 L144,192 L88,248 L144,248 L200,192 L256,192 L200,248 L256,248"/>
+<circle class="head-a" cx="88" cy="80" r="3.5"/>
+<circle class="head-a" cx="256" cy="248" r="3.5"/>
+<text class="t t-bold" x="488" y="22" text-anchor="middle">Hilbert</text>
+<text class="t-small t-muted" x="404" y="44" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="366" y="84" text-anchor="end">0</text>
+<text class="t-small t-muted" x="460" y="44" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="366" y="140" text-anchor="end">1</text>
+<text class="t-small t-muted" x="516" y="44" text-anchor="middle">2</text>
+<text class="t-small t-muted" x="366" y="196" text-anchor="end">2</text>
+<text class="t-small t-muted" x="572" y="44" text-anchor="middle">3</text>
+<text class="t-small t-muted" x="366" y="252" text-anchor="end">3</text>
+<text class="t-small t-muted" x="366" y="44" text-anchor="end">y\x</text>
+<rect class="box" x="376" y="52" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="381" y="67">0</text>
+<rect class="box" x="432" y="52" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="437" y="67">1</text>
+<rect class="box" x="488" y="52" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="493" y="67">14</text>
+<rect class="box" x="544" y="52" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="549" y="67">15</text>
+<rect class="box" x="376" y="108" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="381" y="123">3</text>
+<rect class="box" x="432" y="108" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="437" y="123">2</text>
+<rect class="box" x="488" y="108" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="493" y="123">13</text>
+<rect class="box" x="544" y="108" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="549" y="123">12</text>
+<rect class="box" x="376" y="164" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="381" y="179">4</text>
+<rect class="box" x="432" y="164" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="437" y="179">7</text>
+<rect class="box" x="488" y="164" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="493" y="179">8</text>
+<rect class="box" x="544" y="164" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="549" y="179">11</text>
+<rect class="box" x="376" y="220" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="381" y="235">5</text>
+<rect class="box" x="432" y="220" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="437" y="235">6</text>
+<rect class="box" x="488" y="220" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="493" y="235">9</text>
+<rect class="box" x="544" y="220" width="56" height="56"/>
+<text class="t-small t-mono t-muted" x="549" y="235">10</text>
+<path class="line-a" d="M404,80 L460,80 L460,136 L404,136 L404,192 L404,248 L460,248 L460,192 L516,192 L516,248 L572,248 L572,192 L572,136 L516,136 L516,80 L572,80"/>
+<circle class="head-a" cx="404" cy="80" r="3.5"/>
+<circle class="head-a" cx="572" cy="80" r="3.5"/>
+</svg>

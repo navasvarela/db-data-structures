@@ -1,0 +1,39 @@
+<svg class="diagram" viewBox="0 0 640 214" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="finite-state-transducer-map-title">
+<title id="finite-state-transducer-map-title">The minimal FST for cat 4, cats 9, dog 7 and dogs 12. Paths c-a-t and d-o-g lead to the same final state 3, which has an s transition with output 5 to final state 4.</title>
+<defs><marker id="finite-state-transducer-map-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="finite-state-transducer-map-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<line class="line-a" x1="55.2053" y1="97.3974" x2="133.006" y2="58.4971" marker-end="url(#finite-state-transducer-map-head-a)"/>
+<text class="t-small t-mono t-a" x="87.8446" y="67.1892" text-anchor="middle">c/4</text>
+<line class="line-a" x1="167" y1="50" x2="246" y2="50" marker-end="url(#finite-state-transducer-map-head-a)"/>
+<text class="t-small t-mono t-a" x="207.5" y="42" text-anchor="middle">a/0</text>
+<line class="line-a" x1="280.56" y1="56.8466" x2="372.609" y2="97.348" marker-end="url(#finite-state-transducer-map-head-a)"/>
+<text class="t-small t-mono t-a" x="333.944" y="66.855" text-anchor="middle">t/0</text>
+<line class="line-a" x1="407" y1="105" x2="521" y2="105" marker-end="url(#finite-state-transducer-map-head-a)"/>
+<text class="t-small t-mono t-a" x="465" y="97" text-anchor="middle">s/5</text>
+<line class="line" x1="55.2053" y1="112.603" x2="133.006" y2="151.503" marker-end="url(#finite-state-transducer-map-head)"/>
+<text class="t-small t-mono" x="87.8446" y="150.811" text-anchor="middle">d/7</text>
+<line class="line" x1="167" y1="160" x2="246" y2="160" marker-end="url(#finite-state-transducer-map-head)"/>
+<text class="t-small t-mono" x="207.5" y="152" text-anchor="middle">o/0</text>
+<line class="line" x1="280.56" y1="153.153" x2="372.609" y2="112.652" marker-end="url(#finite-state-transducer-map-head)"/>
+<text class="t-small t-mono" x="333.944" y="151.145" text-anchor="middle">g/0</text>
+<circle class="box" cx="40" cy="105" r="17"/>
+<text class="t-small t-mono" x="40" y="110" text-anchor="middle">0</text>
+<circle class="box" cx="150" cy="50" r="17"/>
+<text class="t-small t-mono" x="150" y="55" text-anchor="middle">1</text>
+<circle class="box" cx="265" cy="50" r="17"/>
+<text class="t-small t-mono" x="265" y="55" text-anchor="middle">2</text>
+<circle class="box" cx="390" cy="105" r="17"/>
+<circle class="box" cx="390" cy="105" r="13"/>
+<text class="t-small t-mono" x="390" y="110" text-anchor="middle">3</text>
+<circle class="box" cx="540" cy="105" r="17"/>
+<circle class="box" cx="540" cy="105" r="13"/>
+<text class="t-small t-mono" x="540" y="110" text-anchor="middle">4</text>
+<circle class="box" cx="150" cy="160" r="17"/>
+<text class="t-small t-mono" x="150" y="165" text-anchor="middle">5</text>
+<circle class="box" cx="265" cy="160" r="17"/>
+<text class="t-small t-mono" x="265" y="165" text-anchor="middle">6</text>
+<text class="t-small t-muted" x="40" y="75" text-anchor="middle">start</text>
+<text class="t-small t-muted" x="390" y="145" text-anchor="middle">final</text>
+<text class="t-small t-muted" x="540" y="145" text-anchor="middle">final</text>
+<text class="t-small t-mono t-a" x="16" y="204">cats = 4 + 0 + 0 + 5 = 9</text>
+<text class="t-small t-mono" x="624" y="204" text-anchor="end">dogs = 7 + 0 + 0 + 5 = 12</text>
+</svg>

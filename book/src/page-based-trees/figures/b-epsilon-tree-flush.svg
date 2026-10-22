@@ -1,0 +1,38 @@
+<svg class="diagram" viewBox="0 0 640 312" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="b-epsilon-tree-flush-title">
+<title id="b-epsilon-tree-flush-title">Flushing the root's buffer: child 0 receives the most messages, so both messages for key 12 move from the root's buffer to child 0's buffer, after its older message for key 20.</title>
+<defs><marker id="b-epsilon-tree-flush-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="b-epsilon-tree-flush-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t t-bold" x="16" y="18">Before: the root's buffer is full</text>
+<rect class="box" x="150" y="32" width="470" height="40" rx="6"/>
+<text class="t-small t-muted" x="160" y="57">root</text>
+<rect class="box-a" x="236" y="40" width="86" height="24" rx="3"/>
+<text class="t-small t-mono" x="279" y="57" text-anchor="middle">12 put 41</text>
+<rect class="box-a" x="330" y="40" width="86" height="24" rx="3"/>
+<text class="t-small t-mono" x="373" y="57" text-anchor="middle">12 del 57</text>
+<rect class="box" x="424" y="40" width="86" height="24" rx="3"/>
+<text class="t-small t-mono" x="467" y="57" text-anchor="middle">45 put 50</text>
+<rect class="box" x="518" y="40" width="86" height="24" rx="3"/>
+<text class="t-small t-mono" x="561" y="57" text-anchor="middle">77 +1 53</text>
+<rect class="box" x="20" y="110" width="400" height="40" rx="6"/>
+<text class="t-small t-muted" x="30" y="135">child 0</text>
+<rect class="box" x="106" y="118" width="86" height="24" rx="3"/>
+<text class="t-small t-mono" x="149" y="135" text-anchor="middle">20 del 33</text>
+<text class="t-small t-muted" x="430" y="135">keys &lt; 30</text>
+<line class="line dashed" x1="16" y1="156" x2="624" y2="156"/>
+<text class="t t-bold" x="16" y="174">After: two messages flushed to child 0</text>
+<rect class="box" x="150" y="188" width="470" height="40" rx="6"/>
+<text class="t-small t-muted" x="160" y="213">root</text>
+<rect class="box" x="236" y="196" width="86" height="24" rx="3"/>
+<text class="t-small t-mono" x="279" y="213" text-anchor="middle">45 put 50</text>
+<rect class="box" x="330" y="196" width="86" height="24" rx="3"/>
+<text class="t-small t-mono" x="373" y="213" text-anchor="middle">77 +1 53</text>
+<rect class="box" x="20" y="266" width="400" height="40" rx="6"/>
+<text class="t-small t-muted" x="30" y="291">child 0</text>
+<rect class="box" x="106" y="274" width="86" height="24" rx="3"/>
+<text class="t-small t-mono" x="149" y="291" text-anchor="middle">20 del 33</text>
+<rect class="box-a" x="200" y="274" width="86" height="24" rx="3"/>
+<text class="t-small t-mono" x="243" y="291" text-anchor="middle">12 put 41</text>
+<rect class="box-a" x="294" y="274" width="86" height="24" rx="3"/>
+<text class="t-small t-mono" x="337" y="291" text-anchor="middle">12 del 57</text>
+<text class="t-small t-muted" x="430" y="291">keys &lt; 30</text>
+<line class="line-a" x1="322" y1="228" x2="286" y2="263" marker-end="url(#b-epsilon-tree-flush-head-a)"/>
+</svg>

@@ -1,0 +1,136 @@
+<svg class="diagram" viewBox="0 0 640 410" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="adaptive-radix-tree-nodes-title">
+<title id="adaptive-radix-tree-nodes-title">The four ART inner node types, each mapping the key bytes 0x02, 0x41 and 0x7a to children c0, c1 and c2: Node4 and Node16 with parallel key and child arrays, Node48 with a 256-entry index into 48 child slots, Node256 with a child per byte value.</title>
+<defs><marker id="adaptive-radix-tree-nodes-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t" x="8" y="20"><tspan class="t-bold">Node4</tspan><tspan class="t-small t-muted" dx="10">2–4 children; sorted keys, scanned linearly</tspan></text>
+<text class="t-small t-muted" x="104" y="51" text-anchor="end">keys</text>
+<rect class="box-a" x="112" y="34" width="40" height="24"/>
+<text class="t-small t-mono" x="132" y="50" text-anchor="middle">02</text>
+<rect class="box-a" x="152" y="34" width="40" height="24"/>
+<text class="t-small t-mono" x="172" y="50" text-anchor="middle">41</text>
+<rect class="box-a" x="192" y="34" width="40" height="24"/>
+<text class="t-small t-mono" x="212" y="50" text-anchor="middle">7a</text>
+<rect class="box" x="232" y="34" width="40" height="24"/>
+<text class="t-small t-muted" x="104" y="75" text-anchor="end">children</text>
+<rect class="box-a" x="112" y="58" width="40" height="24"/>
+<text class="t-small t-mono" x="132" y="74" text-anchor="middle">c0</text>
+<rect class="box-a" x="152" y="58" width="40" height="24"/>
+<text class="t-small t-mono" x="172" y="74" text-anchor="middle">c1</text>
+<rect class="box-a" x="192" y="58" width="40" height="24"/>
+<text class="t-small t-mono" x="212" y="74" text-anchor="middle">c2</text>
+<rect class="box" x="232" y="58" width="40" height="24"/>
+<text class="t" x="8" y="110"><tspan class="t-bold">Node16</tspan><tspan class="t-small t-muted" dx="10">5–16 children; sorted keys, binary search or SIMD</tspan></text>
+<text class="t-small t-muted" x="104" y="141" text-anchor="end">keys</text>
+<rect class="box-a" x="112" y="124" width="26" height="24"/>
+<text class="t-small t-mono" x="125" y="140" text-anchor="middle">02</text>
+<rect class="box-a" x="138" y="124" width="26" height="24"/>
+<text class="t-small t-mono" x="151" y="140" text-anchor="middle">41</text>
+<rect class="box-a" x="164" y="124" width="26" height="24"/>
+<text class="t-small t-mono" x="177" y="140" text-anchor="middle">7a</text>
+<rect class="box" x="190" y="124" width="26" height="24"/>
+<text class="t-small t-muted" x="203" y="140" text-anchor="middle">…</text>
+<rect class="box" x="216" y="124" width="26" height="24"/>
+<rect class="box" x="242" y="124" width="26" height="24"/>
+<rect class="box" x="268" y="124" width="26" height="24"/>
+<rect class="box" x="294" y="124" width="26" height="24"/>
+<rect class="box" x="320" y="124" width="26" height="24"/>
+<rect class="box" x="346" y="124" width="26" height="24"/>
+<rect class="box" x="372" y="124" width="26" height="24"/>
+<rect class="box" x="398" y="124" width="26" height="24"/>
+<rect class="box" x="424" y="124" width="26" height="24"/>
+<rect class="box" x="450" y="124" width="26" height="24"/>
+<rect class="box" x="476" y="124" width="26" height="24"/>
+<rect class="box" x="502" y="124" width="26" height="24"/>
+<text class="t-small t-muted" x="104" y="165" text-anchor="end">children</text>
+<rect class="box-a" x="112" y="148" width="26" height="24"/>
+<text class="t-small t-mono" x="125" y="164" text-anchor="middle">c0</text>
+<rect class="box-a" x="138" y="148" width="26" height="24"/>
+<text class="t-small t-mono" x="151" y="164" text-anchor="middle">c1</text>
+<rect class="box-a" x="164" y="148" width="26" height="24"/>
+<text class="t-small t-mono" x="177" y="164" text-anchor="middle">c2</text>
+<rect class="box" x="190" y="148" width="26" height="24"/>
+<text class="t-small t-muted" x="203" y="164" text-anchor="middle">…</text>
+<rect class="box" x="216" y="148" width="26" height="24"/>
+<rect class="box" x="242" y="148" width="26" height="24"/>
+<rect class="box" x="268" y="148" width="26" height="24"/>
+<rect class="box" x="294" y="148" width="26" height="24"/>
+<rect class="box" x="320" y="148" width="26" height="24"/>
+<rect class="box" x="346" y="148" width="26" height="24"/>
+<rect class="box" x="372" y="148" width="26" height="24"/>
+<rect class="box" x="398" y="148" width="26" height="24"/>
+<rect class="box" x="424" y="148" width="26" height="24"/>
+<rect class="box" x="450" y="148" width="26" height="24"/>
+<rect class="box" x="476" y="148" width="26" height="24"/>
+<rect class="box" x="502" y="148" width="26" height="24"/>
+<text class="t" x="8" y="200"><tspan class="t-bold">Node48</tspan><tspan class="t-small t-muted" dx="10">17–48 children; a slot number for each of the 256 byte values</tspan></text>
+<text class="t-small t-muted" x="104" y="249" text-anchor="end">index</text>
+<rect class="box" x="112" y="232" width="40" height="24"/>
+<text class="t-small t-muted" x="132" y="248" text-anchor="middle">–</text>
+<text class="t-small t-muted t-mono" x="132" y="227" text-anchor="middle">00</text>
+<rect class="box" x="152" y="232" width="40" height="24"/>
+<text class="t-small t-muted" x="172" y="248" text-anchor="middle">–</text>
+<text class="t-small t-muted t-mono" x="172" y="227" text-anchor="middle">01</text>
+<rect class="box-a" x="192" y="232" width="40" height="24"/>
+<text class="t-small t-mono" x="212" y="248" text-anchor="middle">0</text>
+<text class="t-small t-muted t-mono" x="212" y="227" text-anchor="middle">02</text>
+<rect class="box" x="232" y="232" width="40" height="24"/>
+<text class="t-small t-muted" x="252" y="248" text-anchor="middle">…</text>
+<text class="t-small t-muted t-mono" x="252" y="227" text-anchor="middle">…</text>
+<rect class="box-a" x="272" y="232" width="40" height="24"/>
+<text class="t-small t-mono" x="292" y="248" text-anchor="middle">1</text>
+<text class="t-small t-muted t-mono" x="292" y="227" text-anchor="middle">41</text>
+<rect class="box" x="312" y="232" width="40" height="24"/>
+<text class="t-small t-muted" x="332" y="248" text-anchor="middle">…</text>
+<text class="t-small t-muted t-mono" x="332" y="227" text-anchor="middle">…</text>
+<rect class="box-a" x="352" y="232" width="40" height="24"/>
+<text class="t-small t-mono" x="372" y="248" text-anchor="middle">2</text>
+<text class="t-small t-muted t-mono" x="372" y="227" text-anchor="middle">7a</text>
+<rect class="box" x="392" y="232" width="40" height="24"/>
+<text class="t-small t-muted" x="412" y="248" text-anchor="middle">…</text>
+<text class="t-small t-muted t-mono" x="412" y="227" text-anchor="middle">…</text>
+<rect class="box" x="432" y="232" width="40" height="24"/>
+<text class="t-small t-muted" x="452" y="248" text-anchor="middle">–</text>
+<text class="t-small t-muted t-mono" x="452" y="227" text-anchor="middle">ff</text>
+<text class="t-small t-muted" x="104" y="309" text-anchor="end">children</text>
+<rect class="box-a" x="112" y="292" width="40" height="24"/>
+<text class="t-small t-mono" x="132" y="308" text-anchor="middle">c0</text>
+<rect class="box-a" x="152" y="292" width="40" height="24"/>
+<text class="t-small t-mono" x="172" y="308" text-anchor="middle">c1</text>
+<rect class="box-a" x="192" y="292" width="40" height="24"/>
+<text class="t-small t-mono" x="212" y="308" text-anchor="middle">c2</text>
+<rect class="box" x="232" y="292" width="40" height="24"/>
+<text class="t-small t-muted" x="252" y="308" text-anchor="middle">…</text>
+<rect class="box" x="272" y="292" width="40" height="24"/>
+<text class="t-small t-mono" x="292" y="308" text-anchor="middle">c47</text>
+<line class="line-a" x1="212" y1="256" x2="132" y2="291" marker-end="url(#adaptive-radix-tree-nodes-head-a)"/>
+<line class="line-a" x1="292" y1="256" x2="172" y2="291" marker-end="url(#adaptive-radix-tree-nodes-head-a)"/>
+<line class="line-a" x1="372" y1="256" x2="212" y2="291" marker-end="url(#adaptive-radix-tree-nodes-head-a)"/>
+<text class="t" x="8" y="344"><tspan class="t-bold">Node256</tspan><tspan class="t-small t-muted" dx="10">49–256 children; indexed directly by the byte</tspan></text>
+<text class="t-small t-muted" x="104" y="393" text-anchor="end">children</text>
+<rect class="box" x="112" y="376" width="40" height="24"/>
+<text class="t-small t-muted" x="132" y="392" text-anchor="middle">–</text>
+<text class="t-small t-muted t-mono" x="132" y="371" text-anchor="middle">00</text>
+<rect class="box" x="152" y="376" width="40" height="24"/>
+<text class="t-small t-muted" x="172" y="392" text-anchor="middle">–</text>
+<text class="t-small t-muted t-mono" x="172" y="371" text-anchor="middle">01</text>
+<rect class="box-a" x="192" y="376" width="40" height="24"/>
+<text class="t-small t-mono" x="212" y="392" text-anchor="middle">c0</text>
+<text class="t-small t-muted t-mono" x="212" y="371" text-anchor="middle">02</text>
+<rect class="box" x="232" y="376" width="40" height="24"/>
+<text class="t-small t-muted" x="252" y="392" text-anchor="middle">…</text>
+<text class="t-small t-muted t-mono" x="252" y="371" text-anchor="middle">…</text>
+<rect class="box-a" x="272" y="376" width="40" height="24"/>
+<text class="t-small t-mono" x="292" y="392" text-anchor="middle">c1</text>
+<text class="t-small t-muted t-mono" x="292" y="371" text-anchor="middle">41</text>
+<rect class="box" x="312" y="376" width="40" height="24"/>
+<text class="t-small t-muted" x="332" y="392" text-anchor="middle">…</text>
+<text class="t-small t-muted t-mono" x="332" y="371" text-anchor="middle">…</text>
+<rect class="box-a" x="352" y="376" width="40" height="24"/>
+<text class="t-small t-mono" x="372" y="392" text-anchor="middle">c2</text>
+<text class="t-small t-muted t-mono" x="372" y="371" text-anchor="middle">7a</text>
+<rect class="box" x="392" y="376" width="40" height="24"/>
+<text class="t-small t-muted" x="412" y="392" text-anchor="middle">…</text>
+<text class="t-small t-muted t-mono" x="412" y="371" text-anchor="middle">…</text>
+<rect class="box" x="432" y="376" width="40" height="24"/>
+<text class="t-small t-muted" x="452" y="392" text-anchor="middle">–</text>
+<text class="t-small t-muted t-mono" x="452" y="371" text-anchor="middle">ff</text>
+</svg>

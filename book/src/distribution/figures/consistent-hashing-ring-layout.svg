@@ -1,0 +1,52 @@
+<svg class="diagram" viewBox="0 0 640 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="consistent-hashing-ring-layout-title">
+<title id="consistent-hashing-ring-layout-title">A ring with tokens A1, B1, C1, A2, B2, C2 for nodes A, B and C. Key k hashes between B1 and C1, so it belongs to C1 and node C. A1's arc wraps through 0.</title>
+<circle class="line" cx="160" cy="150" r="105"/>
+<path class="line-a" d="M263.4,131.8A105,105 0 0 1 227.5,230.4"/>
+<path class="line-b" d="M79.6,82.5A105,105 0 0 1 212.5,59.1"/>
+<line class="line" x1="160" y1="39" x2="160" y2="51"/>
+<text class="t-small t-muted" x="160" y="33" text-anchor="middle">0</text>
+<circle class="box" cx="212.5" cy="59.0673" r="5"/>
+<text class="t-small t-bold" x="222.5" y="46.7468" text-anchor="middle">A1</text>
+<circle class="box" cx="263.405" cy="131.767" r="5"/>
+<text class="t-small t-bold" x="283.101" y="133.294" text-anchor="middle">B1</text>
+<circle class="box-a" cx="227.493" cy="230.435" r="5"/>
+<text class="t-small t-bold t-a" x="240.348" y="250.756" text-anchor="middle">C1</text>
+<circle class="box" cx="141.767" cy="253.405" r="5"/>
+<text class="t-small t-bold" x="138.294" y="278.101" text-anchor="middle">A2</text>
+<circle class="box" cx="61.3323" cy="185.912" r="5"/>
+<text class="t-small t-bold" x="42.5384" y="197.753" text-anchor="middle">B2</text>
+<circle class="box" cx="79.5653" cy="82.5073" r="5"/>
+<text class="t-small t-bold" x="64.2444" y="74.6515" text-anchor="middle">C2</text>
+<circle class="box-a" cx="245.512" cy="181.124" r="4"/>
+<text class="t-small t-a t-bold" x="228.598" y="178.967" text-anchor="middle">k</text>
+<text class="t-small t-a" x="268.481" y="197.829">arc of C1</text>
+<text class="t-small t-b" x="131.336" y="32.8079" text-anchor="end">arc of A1</text>
+<text class="t-small t-muted" x="160" y="155" text-anchor="middle">clockwise</text>
+<text class="t-small t-bold" x="360" y="40">sorted map: token → node</text>
+<rect class="box" x="360" y="52" width="70" height="24"/>
+<text class="t-small t-mono" x="395" y="68" text-anchor="middle">A1</text>
+<rect class="box" x="436" y="52" width="70" height="24"/>
+<text class="t-small t-mono" x="471" y="68" text-anchor="middle">A</text>
+<rect class="box" x="360" y="80" width="70" height="24"/>
+<text class="t-small t-mono" x="395" y="96" text-anchor="middle">B1</text>
+<rect class="box" x="436" y="80" width="70" height="24"/>
+<text class="t-small t-mono" x="471" y="96" text-anchor="middle">B</text>
+<rect class="box-a" x="360" y="108" width="70" height="24"/>
+<text class="t-small t-mono" x="395" y="124" text-anchor="middle">C1</text>
+<rect class="box-a" x="436" y="108" width="70" height="24"/>
+<text class="t-small t-mono" x="471" y="124" text-anchor="middle">C</text>
+<rect class="box" x="360" y="136" width="70" height="24"/>
+<text class="t-small t-mono" x="395" y="152" text-anchor="middle">A2</text>
+<rect class="box" x="436" y="136" width="70" height="24"/>
+<text class="t-small t-mono" x="471" y="152" text-anchor="middle">A</text>
+<rect class="box" x="360" y="164" width="70" height="24"/>
+<text class="t-small t-mono" x="395" y="180" text-anchor="middle">B2</text>
+<rect class="box" x="436" y="164" width="70" height="24"/>
+<text class="t-small t-mono" x="471" y="180" text-anchor="middle">B</text>
+<rect class="box" x="360" y="192" width="70" height="24"/>
+<text class="t-small t-mono" x="395" y="208" text-anchor="middle">C2</text>
+<rect class="box" x="436" y="192" width="70" height="24"/>
+<text class="t-small t-mono" x="471" y="208" text-anchor="middle">C</text>
+<text class="t-small" x="360" y="244">lookup(k): first token ≥ hash(k)</text>
+<text class="t-small t-a" x="360" y="262">is C1, so node C owns k</text>
+</svg>

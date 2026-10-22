@@ -1,0 +1,72 @@
+<svg class="diagram" viewBox="0 0 640 236" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bounded-top-k-heap-push-title">
+<title id="bounded-top-k-heap-push-title">Four states of the heap: full with root 14; 11 replaces 14; 5 replaces 11 and sifts down past 9; 10 is not better than the root 9 and is discarded.</title>
+<text class="t-small t-bold" x="80" y="18" text-anchor="middle">after 9, 2, 14, 7, 3</text>
+<line class="line" x1="90" y1="81" x2="54" y2="99"/>
+<line class="line" x1="90" y1="81" x2="126" y2="99"/>
+<line class="line" x1="54" y1="129" x2="36" y2="147"/>
+<line class="line" x1="54" y1="129" x2="72" y2="147"/>
+<circle class="box-a" cx="90" cy="66" r="15"/>
+<text class="t t-mono" x="90" y="71" text-anchor="middle">14</text>
+<circle class="box" cx="54" cy="114" r="15"/>
+<text class="t t-mono" x="54" y="119" text-anchor="middle">7</text>
+<circle class="box" cx="126" cy="114" r="15"/>
+<text class="t t-mono" x="126" y="119" text-anchor="middle">9</text>
+<circle class="box" cx="36" cy="162" r="15"/>
+<text class="t t-mono" x="36" y="167" text-anchor="middle">2</text>
+<circle class="box" cx="72" cy="162" r="15"/>
+<text class="t t-mono" x="72" y="167" text-anchor="middle">3</text>
+<text class="t-small t-bold" x="240" y="18" text-anchor="middle">push 11: 11 &lt; 14</text>
+<text class="t-small t-muted" x="240" y="34" text-anchor="middle">replace root, no swap</text>
+<line class="line" x1="250" y1="81" x2="214" y2="99"/>
+<line class="line" x1="250" y1="81" x2="286" y2="99"/>
+<line class="line" x1="214" y1="129" x2="196" y2="147"/>
+<line class="line" x1="214" y1="129" x2="232" y2="147"/>
+<circle class="box-a" cx="250" cy="66" r="15"/>
+<text class="t t-mono" x="250" y="71" text-anchor="middle">11</text>
+<circle class="box" cx="214" cy="114" r="15"/>
+<text class="t t-mono" x="214" y="119" text-anchor="middle">7</text>
+<circle class="box" cx="286" cy="114" r="15"/>
+<text class="t t-mono" x="286" y="119" text-anchor="middle">9</text>
+<circle class="box" cx="196" cy="162" r="15"/>
+<text class="t t-mono" x="196" y="167" text-anchor="middle">2</text>
+<circle class="box" cx="232" cy="162" r="15"/>
+<text class="t t-mono" x="232" y="167" text-anchor="middle">3</text>
+<text class="t-small t-warn" x="240" y="224" text-anchor="middle">14 evicted</text>
+<line class="line dashed" x1="160" y1="50" x2="160" y2="210"/>
+<text class="t-small t-bold" x="400" y="18" text-anchor="middle">push 5: 5 &lt; 11</text>
+<text class="t-small t-muted" x="400" y="34" text-anchor="middle">replace root, swap with 9</text>
+<line class="line" x1="410" y1="81" x2="374" y2="99"/>
+<line class="line" x1="410" y1="81" x2="446" y2="99"/>
+<line class="line" x1="374" y1="129" x2="356" y2="147"/>
+<line class="line" x1="374" y1="129" x2="392" y2="147"/>
+<circle class="box-b" cx="410" cy="66" r="15"/>
+<text class="t t-mono" x="410" y="71" text-anchor="middle">9</text>
+<circle class="box" cx="374" cy="114" r="15"/>
+<text class="t t-mono" x="374" y="119" text-anchor="middle">7</text>
+<circle class="box-b" cx="446" cy="114" r="15"/>
+<text class="t t-mono" x="446" y="119" text-anchor="middle">5</text>
+<circle class="box" cx="356" cy="162" r="15"/>
+<text class="t t-mono" x="356" y="167" text-anchor="middle">2</text>
+<circle class="box" cx="392" cy="162" r="15"/>
+<text class="t t-mono" x="392" y="167" text-anchor="middle">3</text>
+<text class="t-small t-warn" x="400" y="224" text-anchor="middle">11 evicted</text>
+<line class="line dashed" x1="320" y1="50" x2="320" y2="210"/>
+<text class="t-small t-bold" x="560" y="18" text-anchor="middle">push 10: 10 ≥ 9</text>
+<text class="t-small t-muted" x="560" y="34" text-anchor="middle">one comparison</text>
+<line class="line" x1="570" y1="81" x2="534" y2="99"/>
+<line class="line" x1="570" y1="81" x2="606" y2="99"/>
+<line class="line" x1="534" y1="129" x2="516" y2="147"/>
+<line class="line" x1="534" y1="129" x2="552" y2="147"/>
+<circle class="box" cx="570" cy="66" r="15"/>
+<text class="t t-mono" x="570" y="71" text-anchor="middle">9</text>
+<circle class="box" cx="534" cy="114" r="15"/>
+<text class="t t-mono" x="534" y="119" text-anchor="middle">7</text>
+<circle class="box" cx="606" cy="114" r="15"/>
+<text class="t t-mono" x="606" y="119" text-anchor="middle">5</text>
+<circle class="box" cx="516" cy="162" r="15"/>
+<text class="t t-mono" x="516" y="167" text-anchor="middle">2</text>
+<circle class="box" cx="552" cy="162" r="15"/>
+<text class="t t-mono" x="552" y="167" text-anchor="middle">3</text>
+<text class="t-small t-warn" x="560" y="224" text-anchor="middle">10 discarded</text>
+<line class="line dashed" x1="480" y1="50" x2="480" y2="210"/>
+</svg>

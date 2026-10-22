@@ -1,0 +1,60 @@
+<svg class="diagram" viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bitmap-index-roaring-title">
+<title id="bitmap-index-roaring-title">Roaring splits row 65,543 into key 0x0001 and low half 7. Keys 0x0000, 0x0001 and 0x0002 point to an array container of three values, a bitmap container of 5,000 values in which bit 7 stands for row 65,543, and a run container of 60,000 values.</title>
+<defs><marker id="bitmap-index-roaring-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small" x="150" y="31" text-anchor="end">row 65,543 =</text>
+<rect class="box-a" x="160" y="14" width="110" height="26"/>
+<text class="t t-mono t-a" x="215" y="32" text-anchor="middle">0x0001</text>
+<rect class="box-b" x="270" y="14" width="110" height="26"/>
+<text class="t t-mono t-b" x="325" y="32" text-anchor="middle">0x0007</text>
+<text class="t-small t-a" x="215" y="56" text-anchor="middle">high 16 bits: key</text>
+<text class="t-small t-b" x="325" y="56" text-anchor="middle">low 16 bits</text>
+<text class="t-small t-bold" x="82" y="86" text-anchor="middle">keys</text>
+<text class="t-small t-bold" x="160" y="86">containers</text>
+<text class="t-small t-bold" x="632" y="86" text-anchor="end">holds</text>
+<rect class="box" x="40" y="96" width="84" height="30"/>
+<text class="t-small t-mono" x="82" y="115.3" text-anchor="middle">0x0000</text>
+<line class="line" x1="124" y1="111" x2="156" y2="111" marker-end="url(#bitmap-index-roaring-head)"/>
+<text class="t-small t-muted" x="632" y="115" text-anchor="end">array: 3 values, 6 bytes</text>
+<rect class="box-a" x="40" y="152" width="84" height="30"/>
+<text class="t-small t-mono t-a" x="82" y="171.3" text-anchor="middle">0x0001</text>
+<line class="line" x1="124" y1="167" x2="156" y2="167" marker-end="url(#bitmap-index-roaring-head)"/>
+<text class="t-small t-muted" x="632" y="171" text-anchor="end">bitmap: 5,000 values, 8,192 bytes</text>
+<rect class="box" x="40" y="208" width="84" height="30"/>
+<text class="t-small t-mono" x="82" y="227.3" text-anchor="middle">0x0002</text>
+<line class="line" x1="124" y1="223" x2="156" y2="223" marker-end="url(#bitmap-index-roaring-head)"/>
+<text class="t-small t-muted" x="632" y="227" text-anchor="end">run: 60,000 values, 6 bytes</text>
+<rect class="box" x="160" y="96" width="44" height="30"/>
+<text class="t-small t-mono" x="182" y="115.3" text-anchor="middle">3</text>
+<rect class="box" x="204" y="96" width="44" height="30"/>
+<text class="t-small t-mono" x="226" y="115.3" text-anchor="middle">7</text>
+<rect class="box" x="248" y="96" width="44" height="30"/>
+<text class="t-small t-mono" x="270" y="115.3" text-anchor="middle">912</text>
+<rect class="box-muted" x="160" y="156" width="9" height="22"/>
+<rect class="box-muted" x="169" y="156" width="9" height="22"/>
+<rect class="box" x="178" y="156" width="9" height="22"/>
+<rect class="box-muted" x="187" y="156" width="9" height="22"/>
+<rect class="box" x="196" y="156" width="9" height="22"/>
+<rect class="box" x="205" y="156" width="9" height="22"/>
+<rect class="box-muted" x="214" y="156" width="9" height="22"/>
+<rect class="box-b" x="223" y="156" width="9" height="22"/>
+<rect class="box-muted" x="232" y="156" width="9" height="22"/>
+<rect class="box" x="241" y="156" width="9" height="22"/>
+<rect class="box-muted" x="250" y="156" width="9" height="22"/>
+<rect class="box-muted" x="259" y="156" width="9" height="22"/>
+<rect class="box" x="268" y="156" width="9" height="22"/>
+<rect class="box" x="277" y="156" width="9" height="22"/>
+<rect class="box-muted" x="286" y="156" width="9" height="22"/>
+<rect class="box-muted" x="295" y="156" width="9" height="22"/>
+<rect class="box" x="304" y="156" width="9" height="22"/>
+<rect class="box" x="313" y="156" width="9" height="22"/>
+<rect class="box" x="322" y="156" width="9" height="22"/>
+<rect class="box" x="331" y="156" width="9" height="22"/>
+<rect class="box" x="340" y="156" width="9" height="22"/>
+<rect class="box-muted" x="349" y="156" width="9" height="22"/>
+<rect class="box" x="358" y="156" width="9" height="22"/>
+<rect class="box-muted" x="367" y="156" width="9" height="22"/>
+<text class="t-small t-b" x="227.5" y="196" text-anchor="middle">bit 7</text>
+<text class="t-small t-muted" x="382" y="171">…</text>
+<rect class="box-muted" x="160" y="208" width="216" height="30"/>
+<text class="t-small t-mono" x="268" y="227.3" text-anchor="middle">(0, 59999)</text>
+</svg>

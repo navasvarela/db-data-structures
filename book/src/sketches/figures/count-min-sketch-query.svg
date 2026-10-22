@@ -1,0 +1,60 @@
+<svg class="diagram" viewBox="0 0 640 196" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="count-min-sketch-query-title">
+<title id="count-min-sketch-query-title">A three by seven grid of counters. Item x maps to column 2 in row 0, column 5 in row 1 and column 0 in row 2, reading 17, 12 and 14; the estimate is the minimum, 12.</title>
+<text class="t-small t-muted" x="119" y="30" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="165" y="30" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="211" y="30" text-anchor="middle">2</text>
+<text class="t-small t-muted" x="257" y="30" text-anchor="middle">3</text>
+<text class="t-small t-muted" x="303" y="30" text-anchor="middle">4</text>
+<text class="t-small t-muted" x="349" y="30" text-anchor="middle">5</text>
+<text class="t-small t-muted" x="395" y="30" text-anchor="middle">6</text>
+<text class="t-small t-muted" x="84" y="30" text-anchor="end">column</text>
+<text class="t-small t-muted" x="84" y="61" text-anchor="end">row 0</text>
+<rect class="box" x="96" y="40" width="46" height="32"/>
+<text class="t t-mono" x="119" y="61" text-anchor="middle">4</text>
+<rect class="box" x="142" y="40" width="46" height="32"/>
+<text class="t t-mono" x="165" y="61" text-anchor="middle">0</text>
+<rect class="box-a" x="188" y="40" width="46" height="32"/>
+<text class="t t-mono" x="211" y="61" text-anchor="middle">17</text>
+<rect class="box" x="234" y="40" width="46" height="32"/>
+<text class="t t-mono" x="257" y="61" text-anchor="middle">2</text>
+<rect class="box" x="280" y="40" width="46" height="32"/>
+<text class="t t-mono" x="303" y="61" text-anchor="middle">0</text>
+<rect class="box" x="326" y="40" width="46" height="32"/>
+<text class="t t-mono" x="349" y="61" text-anchor="middle">9</text>
+<rect class="box" x="372" y="40" width="46" height="32"/>
+<text class="t t-mono" x="395" y="61" text-anchor="middle">1</text>
+<text class="t t-mono" x="442" y="61">h0(x) = 2  →  17</text>
+<text class="t-small t-muted" x="84" y="93" text-anchor="end">row 1</text>
+<rect class="box" x="96" y="72" width="46" height="32"/>
+<text class="t t-mono" x="119" y="93" text-anchor="middle">0</text>
+<rect class="box" x="142" y="72" width="46" height="32"/>
+<text class="t t-mono" x="165" y="93" text-anchor="middle">3</text>
+<rect class="box" x="188" y="72" width="46" height="32"/>
+<text class="t t-mono" x="211" y="93" text-anchor="middle">5</text>
+<rect class="box" x="234" y="72" width="46" height="32"/>
+<text class="t t-mono" x="257" y="93" text-anchor="middle">1</text>
+<rect class="box" x="280" y="72" width="46" height="32"/>
+<text class="t t-mono" x="303" y="93" text-anchor="middle">8</text>
+<rect class="box-b" x="326" y="72" width="46" height="32"/>
+<text class="t t-mono" x="349" y="93" text-anchor="middle">12</text>
+<rect class="box" x="372" y="72" width="46" height="32"/>
+<text class="t t-mono" x="395" y="93" text-anchor="middle">0</text>
+<text class="t t-mono t-b t-bold" x="442" y="93">h1(x) = 5  →  12</text>
+<text class="t-small t-muted" x="84" y="125" text-anchor="end">row 2</text>
+<rect class="box-a" x="96" y="104" width="46" height="32"/>
+<text class="t t-mono" x="119" y="125" text-anchor="middle">14</text>
+<rect class="box" x="142" y="104" width="46" height="32"/>
+<text class="t t-mono" x="165" y="125" text-anchor="middle">2</text>
+<rect class="box" x="188" y="104" width="46" height="32"/>
+<text class="t t-mono" x="211" y="125" text-anchor="middle">0</text>
+<rect class="box" x="234" y="104" width="46" height="32"/>
+<text class="t t-mono" x="257" y="125" text-anchor="middle">6</text>
+<rect class="box" x="280" y="104" width="46" height="32"/>
+<text class="t t-mono" x="303" y="125" text-anchor="middle">1</text>
+<rect class="box" x="326" y="104" width="46" height="32"/>
+<text class="t t-mono" x="349" y="125" text-anchor="middle">0</text>
+<rect class="box" x="372" y="104" width="46" height="32"/>
+<text class="t t-mono" x="395" y="125" text-anchor="middle">7</text>
+<text class="t t-mono" x="442" y="125">h2(x) = 0  →  14</text>
+<text class="t t-mono t-bold" x="320" y="180" text-anchor="middle">estimate(x) = min(17, 12, 14) = 12</text>
+</svg>

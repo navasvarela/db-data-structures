@@ -1,0 +1,29 @@
+<svg class="diagram" viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="zone-maps-prune-title">
+<title id="zone-maps-prune-title">The four zones of the example as price ranges on a number line. Only zone 1, from 85.00 to 170.25, reaches past 100, so price &gt; 100 scans zone 1 and skips the others; zone 2 has no bounds.</title>
+<defs><marker id="zone-maps-prune-head-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-warn" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small" x="106" y="47" text-anchor="end">zone 0</text>
+<rect class="box-muted" x="127.4" y="34" width="182.6" height="18"/>
+<text class="t-small t-warn" x="518" y="47">skip: max ≤ 100</text>
+<text class="t-small" x="106" y="81" text-anchor="end">zone 1</text>
+<rect class="box-a" x="299.4" y="68" width="180" height="18"/>
+<text class="t-small t-a" x="518" y="81">scan</text>
+<text class="t-small" x="106" y="115" text-anchor="end">zone 2</text>
+<text class="t-small t-muted" x="204.4" y="115" text-anchor="middle">all NULL: no bounds</text>
+<text class="t-small t-warn" x="518" y="115">skip</text>
+<text class="t-small" x="106" y="149" text-anchor="end">zone 3</text>
+<rect class="box-muted" x="122.1" y="136" width="23.2" height="18"/>
+<text class="t-small t-warn" x="518" y="149">skip: max ≤ 100</text>
+<line class="line" x1="120" y1="168" x2="500" y2="168"/>
+<line class="line" x1="120" y1="168" x2="120" y2="173"/>
+<text class="t-small t-muted" x="120" y="187" text-anchor="middle">0</text>
+<line class="line" x1="225.6" y1="168" x2="225.6" y2="173"/>
+<text class="t-small t-muted" x="225.6" y="187" text-anchor="middle">50</text>
+<line class="line" x1="331.1" y1="168" x2="331.1" y2="173"/>
+<text class="t-small t-muted" x="331.1" y="187" text-anchor="middle">100</text>
+<line class="line" x1="436.7" y1="168" x2="436.7" y2="173"/>
+<text class="t-small t-muted" x="436.7" y="187" text-anchor="middle">150</text>
+<text class="t-small t-muted" x="508" y="172">price</text>
+<line class="line-warn dashed" x1="331.1" y1="22" x2="331.1" y2="168"/>
+<line class="line-warn" x1="331.1" y1="16" x2="391.1" y2="16" marker-end="url(#zone-maps-prune-head-warn)"/>
+<text class="t-small t-warn" x="325.1" y="20" text-anchor="end">price &gt; 100</text>
+</svg>

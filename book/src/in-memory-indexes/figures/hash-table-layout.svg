@@ -1,0 +1,68 @@
+<svg class="diagram" viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="hash-table-layout-title">
+<title id="hash-table-layout-title">The same four keys under separate chaining, where slot 1 holds a list of cat and dog, and under linear probing, where dog and eel move one slot to the right of their home.</title>
+<defs><marker id="hash-table-layout-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="hash-table-layout-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="164" y="26" text-anchor="middle">0</text>
+<rect class="box" x="136" y="34" width="56" height="32"/>
+<text class="t-small t-muted" x="220" y="26" text-anchor="middle">1</text>
+<rect class="box" x="192" y="34" width="56" height="32"/>
+<text class="t-small t-muted" x="276" y="26" text-anchor="middle">2</text>
+<rect class="box" x="248" y="34" width="56" height="32"/>
+<text class="t-small t-muted" x="332" y="26" text-anchor="middle">3</text>
+<rect class="box" x="304" y="34" width="56" height="32"/>
+<text class="t-small t-muted" x="388" y="26" text-anchor="middle">4</text>
+<rect class="box" x="360" y="34" width="56" height="32"/>
+<text class="t-small t-muted" x="444" y="26" text-anchor="middle">5</text>
+<rect class="box" x="416" y="34" width="56" height="32"/>
+<text class="t-small t-muted" x="500" y="26" text-anchor="middle">6</text>
+<rect class="box" x="472" y="34" width="56" height="32"/>
+<text class="t-small t-muted" x="556" y="26" text-anchor="middle">7</text>
+<rect class="box" x="528" y="34" width="56" height="32"/>
+<text class="t-small t-muted" x="122" y="54" text-anchor="end">chaining</text>
+<circle class="head" cx="220" cy="50" r="3"/>
+<line class="line" x1="220" y1="50" x2="220" y2="92" marker-end="url(#hash-table-layout-head)"/>
+<rect class="box" x="196" y="92" width="48" height="26"/>
+<text class="t t-mono" x="220" y="110" text-anchor="middle">"cat"</text>
+<line class="line" x1="220" y1="118" x2="220" y2="138" marker-end="url(#hash-table-layout-head)"/>
+<rect class="box" x="196" y="138" width="48" height="26"/>
+<text class="t t-mono" x="220" y="156" text-anchor="middle">"dog"</text>
+<circle class="head" cx="276" cy="50" r="3"/>
+<line class="line" x1="276" y1="50" x2="276" y2="92" marker-end="url(#hash-table-layout-head)"/>
+<rect class="box" x="252" y="92" width="48" height="26"/>
+<text class="t t-mono" x="276" y="110" text-anchor="middle">"eel"</text>
+<circle class="head" cx="500" cy="50" r="3"/>
+<line class="line" x1="500" y1="50" x2="500" y2="92" marker-end="url(#hash-table-layout-head)"/>
+<rect class="box" x="476" y="92" width="48" height="26"/>
+<text class="t t-mono" x="500" y="110" text-anchor="middle">"ant"</text>
+<text class="t-small t-muted" x="122" y="242" text-anchor="end">linear probing</text>
+<text class="t-small t-muted" x="164" y="214" text-anchor="middle">0</text>
+<rect class="box" x="136" y="222" width="56" height="32"/>
+<text class="t-small t-muted" x="164" y="242" text-anchor="middle">empty</text>
+<text class="t-small t-muted" x="220" y="214" text-anchor="middle">1</text>
+<rect class="box" x="192" y="222" width="56" height="32"/>
+<text class="t t-mono" x="220" y="243" text-anchor="middle">"cat"</text>
+<text class="t-small t-muted" x="276" y="214" text-anchor="middle">2</text>
+<rect class="box" x="248" y="222" width="56" height="32"/>
+<text class="t t-mono" x="276" y="243" text-anchor="middle">"dog"</text>
+<text class="t-small t-muted" x="332" y="214" text-anchor="middle">3</text>
+<rect class="box" x="304" y="222" width="56" height="32"/>
+<text class="t t-mono" x="332" y="243" text-anchor="middle">"eel"</text>
+<text class="t-small t-muted" x="388" y="214" text-anchor="middle">4</text>
+<rect class="box" x="360" y="222" width="56" height="32"/>
+<text class="t-small t-muted" x="388" y="242" text-anchor="middle">empty</text>
+<text class="t-small t-muted" x="444" y="214" text-anchor="middle">5</text>
+<rect class="box" x="416" y="222" width="56" height="32"/>
+<text class="t-small t-muted" x="444" y="242" text-anchor="middle">empty</text>
+<text class="t-small t-muted" x="500" y="214" text-anchor="middle">6</text>
+<rect class="box" x="472" y="222" width="56" height="32"/>
+<text class="t t-mono" x="500" y="243" text-anchor="middle">"ant"</text>
+<text class="t-small t-muted" x="556" y="214" text-anchor="middle">7</text>
+<rect class="box" x="528" y="222" width="56" height="32"/>
+<text class="t-small t-muted" x="556" y="242" text-anchor="middle">empty</text>
+<path class="line-a" d="M214.0,256 Q242.0,286 268.0,259" marker-end="url(#hash-table-layout-head-a)"/>
+<path class="line-a" d="M270.0,256 Q298.0,286 324.0,259" marker-end="url(#hash-table-layout-head-a)"/>
+<text class="t-small t-muted" x="122" y="288" text-anchor="end">home</text>
+<text class="t-small t-muted" x="220" y="288" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="276" y="288" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="332" y="288" text-anchor="middle">2</text>
+<text class="t-small t-muted" x="500" y="288" text-anchor="middle">6</text>
+</svg>

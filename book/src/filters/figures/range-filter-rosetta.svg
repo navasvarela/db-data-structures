@@ -1,0 +1,93 @@
+<svg class="diagram" viewBox="0 0 640 262" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="range-filter-rosetta-title">
+<title id="range-filter-rosetta-title">Four levels of prefixes over 4-bit keys. The stored keys 0101 and 1100 have their prefixes in bold. The range 3 to 12 decomposes into the prefixes 0011, 01, 10 and 1100.</title>
+<text class="t-small t-muted" x="30" y="49" text-anchor="end">1</text>
+<rect class="box" x="42" y="30" width="296" height="28"/>
+<text class="t-small t-mono t-bold t-b" x="190" y="48" text-anchor="middle">0</text>
+<rect class="box" x="338" y="30" width="296" height="28"/>
+<text class="t-small t-mono t-bold t-b" x="486" y="48" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="30" y="85" text-anchor="end">2</text>
+<rect class="box" x="42" y="66" width="148" height="28"/>
+<text class="t-small t-mono t-muted" x="116" y="84" text-anchor="middle">00</text>
+<rect class="box-a" x="190" y="66" width="148" height="28"/>
+<text class="t-small t-mono t-bold t-b" x="264" y="84" text-anchor="middle">01</text>
+<rect class="box-a" x="338" y="66" width="148" height="28"/>
+<text class="t-small t-mono t-muted" x="412" y="84" text-anchor="middle">10</text>
+<rect class="box" x="486" y="66" width="148" height="28"/>
+<text class="t-small t-mono t-bold t-b" x="560" y="84" text-anchor="middle">11</text>
+<text class="t-small t-muted" x="30" y="121" text-anchor="end">3</text>
+<rect class="box" x="42" y="102" width="74" height="28"/>
+<text class="t-small t-mono t-muted" x="79" y="120" text-anchor="middle">000</text>
+<rect class="box" x="116" y="102" width="74" height="28"/>
+<text class="t-small t-mono t-muted" x="153" y="120" text-anchor="middle">001</text>
+<rect class="box" x="190" y="102" width="74" height="28"/>
+<text class="t-small t-mono t-bold t-b" x="227" y="120" text-anchor="middle">010</text>
+<rect class="box" x="264" y="102" width="74" height="28"/>
+<text class="t-small t-mono t-muted" x="301" y="120" text-anchor="middle">011</text>
+<rect class="box" x="338" y="102" width="74" height="28"/>
+<text class="t-small t-mono t-muted" x="375" y="120" text-anchor="middle">100</text>
+<rect class="box" x="412" y="102" width="74" height="28"/>
+<text class="t-small t-mono t-muted" x="449" y="120" text-anchor="middle">101</text>
+<rect class="box" x="486" y="102" width="74" height="28"/>
+<text class="t-small t-mono t-bold t-b" x="523" y="120" text-anchor="middle">110</text>
+<rect class="box" x="560" y="102" width="74" height="28"/>
+<text class="t-small t-mono t-muted" x="597" y="120" text-anchor="middle">111</text>
+<text class="t-small t-muted" x="30" y="157" text-anchor="end">4</text>
+<rect class="box" x="42" y="138" width="37" height="28"/>
+<text class="t-small t-mono t-muted" x="60.5" y="156" text-anchor="middle">0000</text>
+<rect class="box" x="79" y="138" width="37" height="28"/>
+<text class="t-small t-mono t-muted" x="97.5" y="156" text-anchor="middle">0001</text>
+<rect class="box" x="116" y="138" width="37" height="28"/>
+<text class="t-small t-mono t-muted" x="134.5" y="156" text-anchor="middle">0010</text>
+<rect class="box-a" x="153" y="138" width="37" height="28"/>
+<text class="t-small t-mono t-muted" x="171.5" y="156" text-anchor="middle">0011</text>
+<rect class="box" x="190" y="138" width="37" height="28"/>
+<text class="t-small t-mono t-muted" x="208.5" y="156" text-anchor="middle">0100</text>
+<rect class="box" x="227" y="138" width="37" height="28"/>
+<text class="t-small t-mono t-bold t-b" x="245.5" y="156" text-anchor="middle">0101</text>
+<rect class="box" x="264" y="138" width="37" height="28"/>
+<text class="t-small t-mono t-muted" x="282.5" y="156" text-anchor="middle">0110</text>
+<rect class="box" x="301" y="138" width="37" height="28"/>
+<text class="t-small t-mono t-muted" x="319.5" y="156" text-anchor="middle">0111</text>
+<rect class="box" x="338" y="138" width="37" height="28"/>
+<text class="t-small t-mono t-muted" x="356.5" y="156" text-anchor="middle">1000</text>
+<rect class="box" x="375" y="138" width="37" height="28"/>
+<text class="t-small t-mono t-muted" x="393.5" y="156" text-anchor="middle">1001</text>
+<rect class="box" x="412" y="138" width="37" height="28"/>
+<text class="t-small t-mono t-muted" x="430.5" y="156" text-anchor="middle">1010</text>
+<rect class="box" x="449" y="138" width="37" height="28"/>
+<text class="t-small t-mono t-muted" x="467.5" y="156" text-anchor="middle">1011</text>
+<rect class="box-a" x="486" y="138" width="37" height="28"/>
+<text class="t-small t-mono t-bold t-b" x="504.5" y="156" text-anchor="middle">1100</text>
+<rect class="box" x="523" y="138" width="37" height="28"/>
+<text class="t-small t-mono t-muted" x="541.5" y="156" text-anchor="middle">1101</text>
+<rect class="box" x="560" y="138" width="37" height="28"/>
+<text class="t-small t-mono t-muted" x="578.5" y="156" text-anchor="middle">1110</text>
+<rect class="box" x="597" y="138" width="37" height="28"/>
+<text class="t-small t-mono t-muted" x="615.5" y="156" text-anchor="middle">1111</text>
+<text class="t-small t-muted" x="30" y="20" text-anchor="end">level</text>
+<text class="t-small t-muted" x="32" y="184" text-anchor="end">key</text>
+<text class="t-small t-muted" x="60.5" y="184" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="97.5" y="184" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="134.5" y="184" text-anchor="middle">2</text>
+<text class="t-small t-muted" x="171.5" y="184" text-anchor="middle">3</text>
+<text class="t-small t-muted" x="208.5" y="184" text-anchor="middle">4</text>
+<text class="t-small t-muted" x="245.5" y="184" text-anchor="middle">5</text>
+<text class="t-small t-muted" x="282.5" y="184" text-anchor="middle">6</text>
+<text class="t-small t-muted" x="319.5" y="184" text-anchor="middle">7</text>
+<text class="t-small t-muted" x="356.5" y="184" text-anchor="middle">8</text>
+<text class="t-small t-muted" x="393.5" y="184" text-anchor="middle">9</text>
+<text class="t-small t-muted" x="430.5" y="184" text-anchor="middle">10</text>
+<text class="t-small t-muted" x="467.5" y="184" text-anchor="middle">11</text>
+<text class="t-small t-muted" x="504.5" y="184" text-anchor="middle">12</text>
+<text class="t-small t-muted" x="541.5" y="184" text-anchor="middle">13</text>
+<text class="t-small t-muted" x="578.5" y="184" text-anchor="middle">14</text>
+<text class="t-small t-muted" x="615.5" y="184" text-anchor="middle">15</text>
+<line class="line-a" x1="155" y1="202" x2="521" y2="202"/>
+<line class="line-a" x1="155" y1="196" x2="155" y2="208"/>
+<line class="line-a" x1="521" y1="196" x2="521" y2="208"/>
+<text class="t-small t-a" x="338" y="222" text-anchor="middle">query range [3, 12]</text>
+<rect class="box-a" x="140" y="236" width="20" height="16"/>
+<text class="t-small" x="168" y="248">dyadic interval of [3, 12]</text>
+<text class="t-small t-mono t-bold t-b" x="390" y="248">0101</text>
+<text class="t-small" x="426" y="248">prefix of a stored key</text>
+</svg>

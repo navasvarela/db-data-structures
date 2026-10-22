@@ -1,0 +1,35 @@
+<svg class="diagram" viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="learned-index-cone-title">
+<title id="learned-index-cone-title">The shrinking cone: each point's error bar of plus or minus epsilon narrows the range of slopes from the segment's first point, until a point falls outside it and a new segment starts there.</title>
+<path class="box-a" d="M40,210 L465.6,73.2 L465.6,118.8 Z"/>
+<line class="line-a" x1="40" y1="210" x2="465.6" y2="73.2"/>
+<line class="line-a" x1="40" y1="210" x2="465.6" y2="118.8"/>
+<text class="t-small t-a" x="471.6" y="77.2">steepest allowed slope</text>
+<text class="t-small t-a" x="471.6" y="122.8">shallowest allowed slope</text>
+<circle class="head" cx="40" cy="210" r="3.5"/>
+<line class="line" x1="96" y1="210" x2="96" y2="174"/>
+<line class="line" x1="92" y1="210" x2="100" y2="210"/>
+<line class="line" x1="92" y1="174" x2="100" y2="174"/>
+<circle class="head" cx="96" cy="192" r="3.5"/>
+<line class="line" x1="152" y1="192" x2="152" y2="156"/>
+<line class="line" x1="148" y1="192" x2="156" y2="192"/>
+<line class="line" x1="148" y1="156" x2="156" y2="156"/>
+<circle class="head" cx="152" cy="174" r="3.5"/>
+<line class="line" x1="264" y1="174" x2="264" y2="138"/>
+<line class="line" x1="260" y1="174" x2="268" y2="174"/>
+<line class="line" x1="260" y1="138" x2="268" y2="138"/>
+<circle class="head" cx="264" cy="156" r="3.5"/>
+<line class="line" x1="320" y1="156" x2="320" y2="120"/>
+<line class="line" x1="316" y1="156" x2="324" y2="156"/>
+<line class="line" x1="316" y1="120" x2="324" y2="120"/>
+<circle class="head" cx="320" cy="138" r="3.5"/>
+<line class="line" x1="376" y1="138" x2="376" y2="102"/>
+<line class="line" x1="372" y1="138" x2="380" y2="138"/>
+<line class="line" x1="372" y1="102" x2="380" y2="102"/>
+<circle class="head" cx="376" cy="120" r="3.5"/>
+<line class="line-warn" x1="432" y1="66" x2="432" y2="30"/>
+<line class="line-warn" x1="428" y1="66" x2="436" y2="66"/>
+<line class="line-warn" x1="428" y1="30" x2="436" y2="30"/>
+<circle class="head-warn" cx="432" cy="48" r="3.5"/>
+<text class="t-small t-mono" x="40" y="232" text-anchor="middle">(x₀, y₀)</text>
+<text class="t-small t-warn" x="422" y="52" text-anchor="end">outside: new segment</text>
+</svg>

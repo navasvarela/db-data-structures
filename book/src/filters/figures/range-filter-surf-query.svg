@@ -1,0 +1,28 @@
+<svg class="diagram" viewBox="0 0 640 214" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="range-filter-surf-query-title">
+<title id="range-filter-surf-query-title">Query SIGB to SIGL falls between the stored prefixes SIGA and SIGM and is answered absent. Query SIGMP to SIGN overlaps the prefix SIGM and is answered maybe present, although the hidden key SIGMOD lies below SIGMP.</title>
+<text class="t-small t-muted" x="88" y="47" text-anchor="end">prefixes</text>
+<text class="t-small t-muted" x="88" y="92" text-anchor="end">hidden keys</text>
+<text class="t-small t-muted" x="88" y="136" text-anchor="end">queries</text>
+<line class="line dashed" x1="100" y1="66" x2="610" y2="66"/>
+<rect class="box-a" x="100" y="30" width="100" height="26"/>
+<text class="t t-mono t-a" x="150" y="48" text-anchor="middle">SIGA…</text>
+<line class="line" x1="140" y1="56" x2="140" y2="76"/>
+<text class="t-small t-mono t-muted" x="140" y="92" text-anchor="middle">SIGAI</text>
+<rect class="box-a" x="290" y="30" width="130" height="26"/>
+<text class="t t-mono t-a" x="355" y="48" text-anchor="middle">SIGM…</text>
+<line class="line" x1="322" y1="56" x2="322" y2="76"/>
+<text class="t-small t-mono t-muted" x="322" y="92" text-anchor="middle">SIGMOD</text>
+<rect class="box-a" x="490" y="30" width="120" height="26"/>
+<text class="t t-mono t-a" x="550" y="48" text-anchor="middle">SIGO…</text>
+<line class="line" x1="550" y1="56" x2="550" y2="76"/>
+<text class="t-small t-mono t-muted" x="550" y="92" text-anchor="middle">SIGOPS</text>
+<rect class="box-b" x="215" y="128" width="50" height="12"/>
+<text class="t-small t-mono" x="215" y="160" text-anchor="middle">SIGB</text>
+<text class="t-small t-mono" x="265" y="160" text-anchor="middle">SIGL</text>
+<text class="t-small t-b t-bold" x="240" y="184" text-anchor="middle">absent</text>
+<rect class="box-warn" x="352" y="128" width="110" height="12"/>
+<text class="t-small t-mono" x="352" y="160" text-anchor="middle">SIGMP</text>
+<text class="t-small t-mono" x="462" y="160" text-anchor="middle">SIGN</text>
+<text class="t-small t-warn t-bold" x="407" y="184" text-anchor="middle">maybe present</text>
+<text class="t-small t-warn" x="407" y="202" text-anchor="middle">false positive</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg class="diagram" viewBox="0 0 640 196" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="append-only-log-append-title">
+<title id="append-only-log-append-title">Appender A reserves bytes 29 to 37 and appender B reserves 37 to 46. B has written its record; A's region still holds zeros.</title>
+<defs><marker id="append-only-log-append-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="append-only-log-append-head-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-b" d="M0,0L10,5L0,10z"/></marker><marker id="append-only-log-append-head-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-warn" d="M0,0L10,5L0,10z"/></marker></defs>
+<rect class="box-muted" x="40" y="78" width="319" height="36"/>
+<text class="t t-muted" x="199.5" y="101.0" text-anchor="middle">earlier records</text>
+<rect class="box-warn dashed" x="359" y="78" width="88" height="36"/>
+<text class="t t-warn" x="403" y="101.0" text-anchor="middle">zeros</text>
+<rect class="box-b" x="447" y="78" width="44" height="36"/>
+<text class="t t-mono" x="469" y="101.0" text-anchor="middle">5</text>
+<rect class="box-b" x="491" y="78" width="55" height="36"/>
+<text class="t-small t-mono" x="518.5" y="100.3" text-anchor="middle">"fifth"</text>
+<text class="t-small t-mono" x="40" y="132" text-anchor="middle">0</text>
+<text class="t-small t-mono" x="359" y="132" text-anchor="middle">29</text>
+<text class="t-small t-mono" x="447" y="132" text-anchor="middle">37</text>
+<text class="t-small t-mono" x="546" y="132" text-anchor="middle">46</text>
+<text class="t-small t-muted" x="30" y="132" text-anchor="end">offset</text>
+<text class="t-small t-warn" x="403" y="22" text-anchor="middle">A: reserve 8 B</text>
+<text class="t-small t-muted" x="403" y="40" text-anchor="middle">not written yet</text>
+<line class="line-warn dashed" x1="403" y1="48" x2="403" y2="74" marker-end="url(#append-only-log-append-head-warn)"/>
+<text class="t-small t-b" x="536.5" y="22" text-anchor="middle">B: reserve 9 B</text>
+<text class="t-small t-muted" x="536.5" y="40" text-anchor="middle">written</text>
+<line class="line-b" x1="526.5" y1="48" x2="500.5" y2="74" marker-end="url(#append-only-log-append-head-b)"/>
+<line class="line" x1="586" y1="96" x2="552" y2="96" marker-end="url(#append-only-log-append-head)"/>
+<text class="t" x="590" y="101">end</text>
+<text class="t-small t-muted" x="320" y="166" text-anchor="middle">end advanced 29 → 37 → 46 before either write started</text>
+</svg>

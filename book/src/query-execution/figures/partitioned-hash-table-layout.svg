@@ -1,0 +1,64 @@
+<svg class="diagram" viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="partitioned-hash-table-layout-title">
+<title id="partitioned-hash-table-layout-title">The top p bits of a key's hash pick its partition, further bits pick a slot in that partition's table, and a few more are stored in the slot as a tag; slots point to rows kept in separate row storage.</title>
+<defs><marker id="partitioned-hash-table-layout-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="92" y="45" text-anchor="end">hash(key)</text>
+<rect class="box-a" x="100" y="26" width="90" height="28"/>
+<text class="t-small" x="145" y="44" text-anchor="middle">p bits</text>
+<rect class="box-b" x="190" y="26" width="190" height="28"/>
+<text class="t-small" x="285" y="44" text-anchor="middle">slot bits</text>
+<rect class="box" x="380" y="26" width="120" height="28"/>
+<text class="t-small" x="440" y="44" text-anchor="middle">tag bits</text>
+<rect class="box-muted" x="500" y="26" width="112" height="28"/>
+<text class="t-small t-muted" x="556" y="44" text-anchor="middle">unused</text>
+<text class="t-small t-muted" x="100" y="18">bit 63</text>
+<text class="t-small t-muted" x="612" y="18" text-anchor="end">bit 0</text>
+<line class="line" x1="145" y1="54" x2="145" y2="82" marker-end="url(#partitioned-hash-table-layout-head)"/>
+<text class="t-small t-a t-bold" x="145" y="100" text-anchor="middle">partition 2</text>
+<text class="t-small t-muted" x="145" y="116" text-anchor="middle">one of 2^p tables</text>
+<line class="line" x1="285" y1="54" x2="285" y2="82" marker-end="url(#partitioned-hash-table-layout-head)"/>
+<text class="t-small t-b t-bold" x="285" y="100" text-anchor="middle">home slot 1</text>
+<text class="t-small t-muted" x="285" y="116" text-anchor="middle">in that table</text>
+<line class="line" x1="440" y1="54" x2="440" y2="82" marker-end="url(#partitioned-hash-table-layout-head)"/>
+<text class="t-small t-bold" x="440" y="100" text-anchor="middle">tag 0x3a</text>
+<text class="t-small t-muted" x="440" y="116" text-anchor="middle">kept in the slot</text>
+<text class="t-small t-bold" x="20" y="160">partition 2</text>
+<text class="t-small t-muted" x="92" y="191" text-anchor="end">slots</text>
+<text class="t-small t-muted" x="132" y="166" text-anchor="middle">0</text>
+<rect class="box-muted" x="100" y="172" width="64" height="30"/>
+<text class="t-small t-muted" x="132" y="191" text-anchor="middle">empty</text>
+<text class="t-small t-muted" x="196" y="166" text-anchor="middle">1</text>
+<rect class="box-b" x="164" y="172" width="64" height="30"/>
+<text class="t-small t-mono" x="196" y="191" text-anchor="middle">0x3a</text>
+<line class="line" x1="196" y1="202" x2="196" y2="230" marker-end="url(#partitioned-hash-table-layout-head)"/>
+<rect class="box" x="168" y="232" width="56" height="26"/>
+<text class="t-small" x="196" y="249" text-anchor="middle">row 17</text>
+<text class="t-small t-muted" x="260" y="166" text-anchor="middle">2</text>
+<rect class="box" x="228" y="172" width="64" height="30"/>
+<text class="t-small t-mono" x="260" y="191" text-anchor="middle">0x91</text>
+<line class="line" x1="260" y1="202" x2="260" y2="230" marker-end="url(#partitioned-hash-table-layout-head)"/>
+<rect class="box" x="232" y="232" width="56" height="26"/>
+<text class="t-small" x="260" y="249" text-anchor="middle">row 4</text>
+<text class="t-small t-muted" x="324" y="166" text-anchor="middle">3</text>
+<rect class="box" x="292" y="172" width="64" height="30"/>
+<text class="t-small t-mono" x="324" y="191" text-anchor="middle">0x91</text>
+<line class="line" x1="324" y1="202" x2="324" y2="230" marker-end="url(#partitioned-hash-table-layout-head)"/>
+<rect class="box" x="296" y="232" width="56" height="26"/>
+<text class="t-small" x="324" y="249" text-anchor="middle">row 9</text>
+<text class="t-small t-muted" x="388" y="166" text-anchor="middle">4</text>
+<rect class="box-muted" x="356" y="172" width="64" height="30"/>
+<text class="t-small t-muted" x="388" y="191" text-anchor="middle">empty</text>
+<text class="t-small t-muted" x="452" y="166" text-anchor="middle">5</text>
+<rect class="box" x="420" y="172" width="64" height="30"/>
+<text class="t-small t-mono" x="452" y="191" text-anchor="middle">0x5c</text>
+<line class="line" x1="452" y1="202" x2="452" y2="230" marker-end="url(#partitioned-hash-table-layout-head)"/>
+<rect class="box" x="424" y="232" width="56" height="26"/>
+<text class="t-small" x="452" y="249" text-anchor="middle">row 2</text>
+<text class="t-small t-muted" x="516" y="166" text-anchor="middle">6</text>
+<rect class="box-muted" x="484" y="172" width="64" height="30"/>
+<text class="t-small t-muted" x="516" y="191" text-anchor="middle">empty</text>
+<text class="t-small t-muted" x="580" y="166" text-anchor="middle">7</text>
+<rect class="box-muted" x="548" y="172" width="64" height="30"/>
+<text class="t-small t-muted" x="580" y="191" text-anchor="middle">empty</text>
+<text class="t-small t-muted" x="92" y="249" text-anchor="end">rows</text>
+<text class="t-small t-muted" x="100" y="288">row storage: key columns, plus payload (join) or aggregate state (GROUP BY)</text>
+</svg>

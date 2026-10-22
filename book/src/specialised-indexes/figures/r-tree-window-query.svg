@@ -1,0 +1,44 @@
+<svg class="diagram" viewBox="0 0 640 244" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="r-tree-window-query-title">
+<title id="r-tree-window-query-title">A window query Q that falls where R1 and R2 overlap must descend into both children; it finds b under R1 and d under R2.</title>
+<defs><marker id="r-tree-window-query-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker><marker id="r-tree-window-query-head-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-b" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="16" y="16">space</text>
+<rect class="box-muted" x="10" y="24" width="310" height="210"/>
+<rect class="line" x="43" y="57" width="144" height="124"/>
+<text class="t-small t-bold " x="49" y="175">R1</text>
+<rect class="line" x="133" y="77" width="174" height="154"/>
+<text class="t-small t-bold " x="301" y="93" text-anchor="end">R2</text>
+<rect class="box" x="50" y="64" width="50" height="40"/>
+<text class="t t-mono" x="75" y="89" text-anchor="middle">a</text>
+<rect class="box-a" x="120" y="134" width="60" height="40"/>
+<text class="t t-mono" x="150" y="159" text-anchor="middle">b</text>
+<rect class="box" x="140" y="186" width="50" height="38"/>
+<text class="t t-mono" x="165" y="210" text-anchor="middle">c</text>
+<rect class="box-a" x="210" y="84" width="50" height="40"/>
+<text class="t t-mono" x="235" y="109" text-anchor="middle">d</text>
+<rect class="box" x="250" y="164" width="50" height="50"/>
+<text class="t t-mono" x="275" y="194" text-anchor="middle">e</text>
+<rect class="line-a dashed" x="158" y="116" width="70" height="40"/>
+<text class="t t-bold t-a" x="232" y="160">Q</text>
+<text class="t-small t-muted" x="352" y="16">tree</text>
+<rect class="box" x="440" y="40" width="40" height="28"/>
+<text class="t-small t-bold" x="460" y="59" text-anchor="middle">R1</text>
+<rect class="box" x="480" y="40" width="40" height="28"/>
+<text class="t-small t-bold" x="500" y="59" text-anchor="middle">R2</text>
+<text class="t-small t-muted" x="432" y="59" text-anchor="end">root</text>
+<rect class="box" x="372" y="140" width="40" height="28"/>
+<text class="t t-mono" x="392" y="159" text-anchor="middle">a</text>
+<rect class="box-a" x="412" y="140" width="40" height="28"/>
+<text class="t t-mono" x="432" y="159" text-anchor="middle">b</text>
+<rect class="box" x="500" y="140" width="40" height="28"/>
+<text class="t t-mono" x="520" y="159" text-anchor="middle">c</text>
+<rect class="box-a" x="540" y="140" width="40" height="28"/>
+<text class="t t-mono" x="560" y="159" text-anchor="middle">d</text>
+<rect class="box" x="580" y="140" width="40" height="28"/>
+<text class="t t-mono" x="600" y="159" text-anchor="middle">e</text>
+<line class="line-a" x1="460" y1="68" x2="412" y2="137" marker-end="url(#r-tree-window-query-head-a)"/>
+<line class="line-a" x1="500" y1="68" x2="560" y2="137" marker-end="url(#r-tree-window-query-head-a)"/>
+<text class="t-small t-muted" x="412" y="186" text-anchor="middle">leaf</text>
+<text class="t-small t-muted" x="560" y="186" text-anchor="middle">leaf</text>
+<text class="t-small t-muted" x="412" y="216">Q intersects both R1 and R2,</text>
+<text class="t-small t-muted" x="412" y="232">so both leaves are read</text>
+</svg>

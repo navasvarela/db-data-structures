@@ -1,0 +1,76 @@
+<svg class="diagram" viewBox="0 0 640 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="floating-point-and-string-compression-fsst-title">
+<title id="floating-point-and-string-compression-fsst-title">FSST compresses http://www.example.com with a four-symbol table into codes 0, 1, 3, five escaped letters, 3 and 2: 22 bytes become 15.</title>
+<defs><marker id="floating-point-and-string-compression-fsst-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<rect class="box-a" x="62" y="10" width="112" height="26"/>
+<text class="t-small t-mono t-a" x="118" y="27.3" text-anchor="middle">0 = "http://"</text>
+<rect class="box-a" x="182" y="10" width="112" height="26"/>
+<text class="t-small t-mono t-a" x="238" y="27.3" text-anchor="middle">1 = "www."</text>
+<rect class="box-a" x="302" y="10" width="112" height="26"/>
+<text class="t-small t-mono t-a" x="358" y="27.3" text-anchor="middle">2 = ".com"</text>
+<rect class="box-a" x="422" y="10" width="72" height="26"/>
+<text class="t-small t-mono t-a" x="458" y="27.3" text-anchor="middle">3 = "e"</text>
+<text class="t-small t-muted" x="506" y="27">symbol table</text>
+<text class="t-small t-muted" x="52" y="88" text-anchor="end">string</text>
+<text class="t-small t-muted" x="52" y="150" text-anchor="end">codes</text>
+<rect class="box" x="62" y="70" width="98" height="28"/>
+<text class="t t-mono" x="111" y="89" text-anchor="middle">http://</text>
+<line class="line" x1="111" y1="100" x2="111" y2="126" marker-end="url(#floating-point-and-string-compression-fsst-head)"/>
+<rect class="box-a" x="96" y="132" width="30" height="28"/>
+<text class="t-small t-mono t-a" x="111" y="150.3" text-anchor="middle">0</text>
+<rect class="box" x="160" y="70" width="56" height="28"/>
+<text class="t t-mono" x="188" y="89" text-anchor="middle">www.</text>
+<line class="line" x1="188" y1="100" x2="188" y2="126" marker-end="url(#floating-point-and-string-compression-fsst-head)"/>
+<rect class="box-a" x="173" y="132" width="30" height="28"/>
+<text class="t-small t-mono t-a" x="188" y="150.3" text-anchor="middle">1</text>
+<rect class="box" x="216" y="70" width="30" height="28"/>
+<text class="t t-mono" x="231" y="89" text-anchor="middle">e</text>
+<line class="line" x1="231" y1="100" x2="231" y2="126" marker-end="url(#floating-point-and-string-compression-fsst-head)"/>
+<rect class="box-a" x="216" y="132" width="30" height="28"/>
+<text class="t-small t-mono t-a" x="231" y="150.3" text-anchor="middle">3</text>
+<rect class="box" x="246" y="70" width="60" height="28"/>
+<text class="t t-mono" x="276" y="89" text-anchor="middle">x</text>
+<line class="line" x1="276" y1="100" x2="276" y2="126" marker-end="url(#floating-point-and-string-compression-fsst-head)"/>
+<rect class="box-muted" x="246" y="132" width="30" height="28"/>
+<text class="t-small t-mono t-muted" x="261" y="150.3" text-anchor="middle">255</text>
+<rect class="box" x="276" y="132" width="30" height="28"/>
+<text class="t-small t-mono" x="291" y="150.3" text-anchor="middle">'x'</text>
+<rect class="box" x="306" y="70" width="60" height="28"/>
+<text class="t t-mono" x="336" y="89" text-anchor="middle">a</text>
+<line class="line" x1="336" y1="100" x2="336" y2="126" marker-end="url(#floating-point-and-string-compression-fsst-head)"/>
+<rect class="box-muted" x="306" y="132" width="30" height="28"/>
+<text class="t-small t-mono t-muted" x="321" y="150.3" text-anchor="middle">255</text>
+<rect class="box" x="336" y="132" width="30" height="28"/>
+<text class="t-small t-mono" x="351" y="150.3" text-anchor="middle">'a'</text>
+<rect class="box" x="366" y="70" width="60" height="28"/>
+<text class="t t-mono" x="396" y="89" text-anchor="middle">m</text>
+<line class="line" x1="396" y1="100" x2="396" y2="126" marker-end="url(#floating-point-and-string-compression-fsst-head)"/>
+<rect class="box-muted" x="366" y="132" width="30" height="28"/>
+<text class="t-small t-mono t-muted" x="381" y="150.3" text-anchor="middle">255</text>
+<rect class="box" x="396" y="132" width="30" height="28"/>
+<text class="t-small t-mono" x="411" y="150.3" text-anchor="middle">'m'</text>
+<rect class="box" x="426" y="70" width="60" height="28"/>
+<text class="t t-mono" x="456" y="89" text-anchor="middle">p</text>
+<line class="line" x1="456" y1="100" x2="456" y2="126" marker-end="url(#floating-point-and-string-compression-fsst-head)"/>
+<rect class="box-muted" x="426" y="132" width="30" height="28"/>
+<text class="t-small t-mono t-muted" x="441" y="150.3" text-anchor="middle">255</text>
+<rect class="box" x="456" y="132" width="30" height="28"/>
+<text class="t-small t-mono" x="471" y="150.3" text-anchor="middle">'p'</text>
+<rect class="box" x="486" y="70" width="60" height="28"/>
+<text class="t t-mono" x="516" y="89" text-anchor="middle">l</text>
+<line class="line" x1="516" y1="100" x2="516" y2="126" marker-end="url(#floating-point-and-string-compression-fsst-head)"/>
+<rect class="box-muted" x="486" y="132" width="30" height="28"/>
+<text class="t-small t-mono t-muted" x="501" y="150.3" text-anchor="middle">255</text>
+<rect class="box" x="516" y="132" width="30" height="28"/>
+<text class="t-small t-mono" x="531" y="150.3" text-anchor="middle">'l'</text>
+<rect class="box" x="546" y="70" width="30" height="28"/>
+<text class="t t-mono" x="561" y="89" text-anchor="middle">e</text>
+<line class="line" x1="561" y1="100" x2="561" y2="126" marker-end="url(#floating-point-and-string-compression-fsst-head)"/>
+<rect class="box-a" x="546" y="132" width="30" height="28"/>
+<text class="t-small t-mono t-a" x="561" y="150.3" text-anchor="middle">3</text>
+<rect class="box" x="576" y="70" width="56" height="28"/>
+<text class="t t-mono" x="604" y="89" text-anchor="middle">.com</text>
+<line class="line" x1="604" y1="100" x2="604" y2="126" marker-end="url(#floating-point-and-string-compression-fsst-head)"/>
+<rect class="box-a" x="589" y="132" width="30" height="28"/>
+<text class="t-small t-mono t-a" x="604" y="150.3" text-anchor="middle">2</text>
+<text class="t-small t-muted" x="62" y="186">22 bytes in, 15 bytes out</text>
+</svg>

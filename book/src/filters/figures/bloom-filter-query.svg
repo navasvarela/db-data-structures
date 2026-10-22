@@ -1,0 +1,110 @@
+<svg class="diagram" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bloom-query-title">
+<title id="bloom-query-title">Querying grape finds bit 2 unset and stops; querying kiwi finds bits 3, 6 and 12 all set, a false positive.</title>
+<defs><marker id="bloom-query-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="bloom-query-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker><marker id="bloom-query-head-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-warn" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t t-bold" x="290" y="20" text-anchor="middle">"grape"</text>
+<line class="line-warn" x1="290" y1="28" x2="144" y2="60" marker-end="url(#bloom-query-head-warn)"/>
+<line class="line dashed" x1="290" y1="28" x2="272" y2="60" marker-end="url(#bloom-query-head)"/>
+<line class="line dashed" x1="290" y1="28" x2="464" y2="60" marker-end="url(#bloom-query-head)"/>
+<rect class="box" x="64" y="64" width="32" height="32"/>
+<text class="t t-mono" x="80" y="85" text-anchor="middle">0</text>
+<rect class="box" x="96" y="64" width="32" height="32"/>
+<text class="t t-mono" x="112" y="85" text-anchor="middle">0</text>
+<rect class="box-warn" x="128" y="64" width="32" height="32"/>
+<text class="t t-mono" x="144" y="85" text-anchor="middle">0</text>
+<rect class="box-muted" x="160" y="64" width="32" height="32"/>
+<text class="t t-mono" x="176" y="85" text-anchor="middle">1</text>
+<rect class="box" x="192" y="64" width="32" height="32"/>
+<text class="t t-mono" x="208" y="85" text-anchor="middle">0</text>
+<rect class="box" x="224" y="64" width="32" height="32"/>
+<text class="t t-mono" x="240" y="85" text-anchor="middle">0</text>
+<rect class="box-muted" x="256" y="64" width="32" height="32"/>
+<text class="t t-mono" x="272" y="85" text-anchor="middle">1</text>
+<rect class="box" x="288" y="64" width="32" height="32"/>
+<text class="t t-mono" x="304" y="85" text-anchor="middle">0</text>
+<rect class="box" x="320" y="64" width="32" height="32"/>
+<text class="t t-mono" x="336" y="85" text-anchor="middle">0</text>
+<rect class="box-muted" x="352" y="64" width="32" height="32"/>
+<text class="t t-mono" x="368" y="85" text-anchor="middle">1</text>
+<rect class="box" x="384" y="64" width="32" height="32"/>
+<text class="t t-mono" x="400" y="85" text-anchor="middle">0</text>
+<rect class="box" x="416" y="64" width="32" height="32"/>
+<text class="t t-mono" x="432" y="85" text-anchor="middle">0</text>
+<rect class="box-muted" x="448" y="64" width="32" height="32"/>
+<text class="t t-mono" x="464" y="85" text-anchor="middle">1</text>
+<rect class="box" x="480" y="64" width="32" height="32"/>
+<text class="t t-mono" x="496" y="85" text-anchor="middle">0</text>
+<rect class="box-muted" x="512" y="64" width="32" height="32"/>
+<text class="t t-mono" x="528" y="85" text-anchor="middle">1</text>
+<rect class="box" x="544" y="64" width="32" height="32"/>
+<text class="t t-mono" x="560" y="85" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="80" y="112" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="112" y="112" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="144" y="112" text-anchor="middle">2</text>
+<text class="t-small t-muted" x="176" y="112" text-anchor="middle">3</text>
+<text class="t-small t-muted" x="208" y="112" text-anchor="middle">4</text>
+<text class="t-small t-muted" x="240" y="112" text-anchor="middle">5</text>
+<text class="t-small t-muted" x="272" y="112" text-anchor="middle">6</text>
+<text class="t-small t-muted" x="304" y="112" text-anchor="middle">7</text>
+<text class="t-small t-muted" x="336" y="112" text-anchor="middle">8</text>
+<text class="t-small t-muted" x="368" y="112" text-anchor="middle">9</text>
+<text class="t-small t-muted" x="400" y="112" text-anchor="middle">10</text>
+<text class="t-small t-muted" x="432" y="112" text-anchor="middle">11</text>
+<text class="t-small t-muted" x="464" y="112" text-anchor="middle">12</text>
+<text class="t-small t-muted" x="496" y="112" text-anchor="middle">13</text>
+<text class="t-small t-muted" x="528" y="112" text-anchor="middle">14</text>
+<text class="t-small t-muted" x="560" y="112" text-anchor="middle">15</text>
+<text class="t t-warn" x="320" y="138" text-anchor="middle">bit 2 is 0, so grape is definitely absent</text>
+<text class="t t-bold" x="304" y="180" text-anchor="middle">"kiwi"</text>
+<line class="line-a" x1="304" y1="188" x2="176" y2="220" marker-end="url(#bloom-query-head-a)"/>
+<line class="line-a" x1="304" y1="188" x2="272" y2="220" marker-end="url(#bloom-query-head-a)"/>
+<line class="line-a" x1="304" y1="188" x2="464" y2="220" marker-end="url(#bloom-query-head-a)"/>
+<rect class="box" x="64" y="224" width="32" height="32"/>
+<text class="t t-mono" x="80" y="245" text-anchor="middle">0</text>
+<rect class="box" x="96" y="224" width="32" height="32"/>
+<text class="t t-mono" x="112" y="245" text-anchor="middle">0</text>
+<rect class="box" x="128" y="224" width="32" height="32"/>
+<text class="t t-mono" x="144" y="245" text-anchor="middle">0</text>
+<rect class="box-a" x="160" y="224" width="32" height="32"/>
+<text class="t t-mono" x="176" y="245" text-anchor="middle">1</text>
+<rect class="box" x="192" y="224" width="32" height="32"/>
+<text class="t t-mono" x="208" y="245" text-anchor="middle">0</text>
+<rect class="box" x="224" y="224" width="32" height="32"/>
+<text class="t t-mono" x="240" y="245" text-anchor="middle">0</text>
+<rect class="box-a" x="256" y="224" width="32" height="32"/>
+<text class="t t-mono" x="272" y="245" text-anchor="middle">1</text>
+<rect class="box" x="288" y="224" width="32" height="32"/>
+<text class="t t-mono" x="304" y="245" text-anchor="middle">0</text>
+<rect class="box" x="320" y="224" width="32" height="32"/>
+<text class="t t-mono" x="336" y="245" text-anchor="middle">0</text>
+<rect class="box-muted" x="352" y="224" width="32" height="32"/>
+<text class="t t-mono" x="368" y="245" text-anchor="middle">1</text>
+<rect class="box" x="384" y="224" width="32" height="32"/>
+<text class="t t-mono" x="400" y="245" text-anchor="middle">0</text>
+<rect class="box" x="416" y="224" width="32" height="32"/>
+<text class="t t-mono" x="432" y="245" text-anchor="middle">0</text>
+<rect class="box-a" x="448" y="224" width="32" height="32"/>
+<text class="t t-mono" x="464" y="245" text-anchor="middle">1</text>
+<rect class="box" x="480" y="224" width="32" height="32"/>
+<text class="t t-mono" x="496" y="245" text-anchor="middle">0</text>
+<rect class="box-muted" x="512" y="224" width="32" height="32"/>
+<text class="t t-mono" x="528" y="245" text-anchor="middle">1</text>
+<rect class="box" x="544" y="224" width="32" height="32"/>
+<text class="t t-mono" x="560" y="245" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="80" y="272" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="112" y="272" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="144" y="272" text-anchor="middle">2</text>
+<text class="t-small t-muted" x="176" y="272" text-anchor="middle">3</text>
+<text class="t-small t-muted" x="208" y="272" text-anchor="middle">4</text>
+<text class="t-small t-muted" x="240" y="272" text-anchor="middle">5</text>
+<text class="t-small t-muted" x="272" y="272" text-anchor="middle">6</text>
+<text class="t-small t-muted" x="304" y="272" text-anchor="middle">7</text>
+<text class="t-small t-muted" x="336" y="272" text-anchor="middle">8</text>
+<text class="t-small t-muted" x="368" y="272" text-anchor="middle">9</text>
+<text class="t-small t-muted" x="400" y="272" text-anchor="middle">10</text>
+<text class="t-small t-muted" x="432" y="272" text-anchor="middle">11</text>
+<text class="t-small t-muted" x="464" y="272" text-anchor="middle">12</text>
+<text class="t-small t-muted" x="496" y="272" text-anchor="middle">13</text>
+<text class="t-small t-muted" x="528" y="272" text-anchor="middle">14</text>
+<text class="t-small t-muted" x="560" y="272" text-anchor="middle">15</text>
+<text class="t t-a" x="320" y="298" text-anchor="middle">bits 3, 6 and 12 are all 1: maybe present, here a false positive</text>
+</svg>

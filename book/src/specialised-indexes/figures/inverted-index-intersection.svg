@@ -1,0 +1,51 @@
+<svg class="diagram" viewBox="0 0 640 236" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="inverted-index-intersection-title">
+<title id="inverted-index-intersection-title">Intersecting a rare list 7, 25, 41 with a long list stored in blocks of four: 7 matches; advancing to 25 skips the second block and lands on 30; advancing the rare list to 30 lands on 41, which matches.</title>
+<defs><marker id="inverted-index-intersection-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="inverted-index-intersection-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker><marker id="inverted-index-intersection-head-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-b" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="84" y="59" text-anchor="end">rare</text>
+<text class="t-small t-muted" x="84" y="149" text-anchor="end">common</text>
+<rect class="box-a" x="204" y="40" width="36" height="28"/>
+<text class="t t-mono" x="222" y="59" text-anchor="middle">7</text>
+<rect class="box" x="434" y="40" width="36" height="28"/>
+<text class="t t-mono" x="452" y="59" text-anchor="middle">25</text>
+<rect class="box-a" x="524" y="40" width="36" height="28"/>
+<text class="t t-mono" x="542" y="59" text-anchor="middle">41</text>
+<rect class="box" x="96" y="130" width="36" height="28"/>
+<text class="t t-mono" x="114" y="149" text-anchor="middle">2</text>
+<rect class="box" x="132" y="130" width="36" height="28"/>
+<text class="t t-mono" x="150" y="149" text-anchor="middle">3</text>
+<rect class="box" x="168" y="130" width="36" height="28"/>
+<text class="t t-mono" x="186" y="149" text-anchor="middle">5</text>
+<rect class="box-a" x="204" y="130" width="36" height="28"/>
+<text class="t t-mono" x="222" y="149" text-anchor="middle">7</text>
+<text class="t-small t-muted" x="168" y="178" text-anchor="middle">skip entry: last 7</text>
+<rect class="box-muted" x="256" y="130" width="36" height="28"/>
+<text class="t t-mono" x="274" y="149" text-anchor="middle">9</text>
+<rect class="box-muted" x="292" y="130" width="36" height="28"/>
+<text class="t t-mono" x="310" y="149" text-anchor="middle">12</text>
+<rect class="box-muted" x="328" y="130" width="36" height="28"/>
+<text class="t t-mono" x="346" y="149" text-anchor="middle">15</text>
+<rect class="box-muted" x="364" y="130" width="36" height="28"/>
+<text class="t t-mono" x="382" y="149" text-anchor="middle">20</text>
+<text class="t-small t-muted" x="328" y="178" text-anchor="middle">skip entry: last 20</text>
+<rect class="box" x="416" y="130" width="36" height="28"/>
+<text class="t t-mono" x="434" y="149" text-anchor="middle">23</text>
+<rect class="box-b" x="452" y="130" width="36" height="28"/>
+<text class="t t-mono" x="470" y="149" text-anchor="middle">30</text>
+<rect class="box" x="488" y="130" width="36" height="28"/>
+<text class="t t-mono" x="506" y="149" text-anchor="middle">38</text>
+<rect class="box-a" x="524" y="130" width="36" height="28"/>
+<text class="t t-mono" x="542" y="149" text-anchor="middle">41</text>
+<text class="t-small t-muted" x="488" y="178" text-anchor="middle">skip entry: last 41</text>
+<rect class="box" x="576" y="130" width="36" height="28"/>
+<text class="t t-mono" x="594" y="149" text-anchor="middle">50</text>
+<text class="t-small t-muted" x="328" y="196" text-anchor="middle">never decoded</text>
+<line class="line-a" x1="222" y1="68" x2="222" y2="127" marker-end="url(#inverted-index-intersection-head-a)"/>
+<text class="t-small t-bold t-a" x="214" y="103" text-anchor="end">1</text>
+<line class="line-b" x1="452" y1="68" x2="466" y2="127" marker-end="url(#inverted-index-intersection-head-b)"/>
+<text class="t-small t-bold t-b" x="448" y="103" text-anchor="end">2</text>
+<path class="line-b" d="M474,128 C490,90 512,54 521,54" marker-end="url(#inverted-index-intersection-head-b)"/>
+<text class="t-small t-bold t-b" x="500" y="109">3</text>
+<line class="line-a" x1="542" y1="68" x2="542" y2="127" marker-end="url(#inverted-index-intersection-head-a)"/>
+<text class="t-small t-bold t-a" x="550" y="103">4</text>
+<text class="t t-bold t-a" x="96" y="222">result: 7, 41</text>
+</svg>

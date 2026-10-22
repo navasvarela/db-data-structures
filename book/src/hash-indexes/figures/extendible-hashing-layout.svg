@@ -1,0 +1,33 @@
+<svg class="diagram" viewBox="0 0 640 236" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="extendible-hashing-layout-title">
+<title id="extendible-hashing-layout-title">Global depth 2. Directory entries 00 and 10 point to bucket A of local depth 1; entry 01 points to bucket B and entry 11 to bucket C, both of local depth 2.</title>
+<defs><marker id="extendible-hashing-layout-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-bold" x="102" y="26" text-anchor="middle">G = 2</text>
+<text class="t-small t-bold" x="340" y="26">buckets</text>
+<rect class="box" x="70" y="36" width="64" height="34"/>
+<text class="t-small t-mono" x="102" y="57.3" text-anchor="middle">00</text>
+<rect class="box" x="70" y="70" width="64" height="34"/>
+<text class="t-small t-mono" x="102" y="91.3" text-anchor="middle">01</text>
+<rect class="box" x="70" y="104" width="64" height="34"/>
+<text class="t-small t-mono" x="102" y="125.3" text-anchor="middle">10</text>
+<rect class="box" x="70" y="138" width="64" height="34"/>
+<text class="t-small t-mono" x="102" y="159.3" text-anchor="middle">11</text>
+<rect class="box" x="340" y="36" width="250" height="50"/>
+<text class="t-small t-bold" x="350" y="56">A</text>
+<text class="t-small" x="370" y="56">L = 1</text>
+<text class="t-small t-muted" x="580" y="56" text-anchor="end">ends in 0</text>
+<text class="t-small t-mono" x="350" y="76">k1 …100, k4 …010</text>
+<line class="line" x1="136" y1="53" x2="337" y2="52.7" marker-end="url(#extendible-hashing-layout-head)"/>
+<line class="line" x1="136" y1="121" x2="337" y2="69.3" marker-end="url(#extendible-hashing-layout-head)"/>
+<rect class="box" x="340" y="106" width="250" height="50"/>
+<text class="t-small t-bold" x="350" y="126">B</text>
+<text class="t-small" x="370" y="126">L = 2</text>
+<text class="t-small t-muted" x="580" y="126" text-anchor="end">ends in 01</text>
+<text class="t-small t-mono" x="350" y="146">k2 …001, k5 …101</text>
+<line class="line" x1="136" y1="87" x2="337" y2="131" marker-end="url(#extendible-hashing-layout-head)"/>
+<rect class="box" x="340" y="176" width="250" height="50"/>
+<text class="t-small t-bold" x="350" y="196">C</text>
+<text class="t-small" x="370" y="196">L = 2</text>
+<text class="t-small t-muted" x="580" y="196" text-anchor="end">ends in 11</text>
+<text class="t-small t-mono" x="350" y="216">k3 …111</text>
+<line class="line" x1="136" y1="155" x2="337" y2="201" marker-end="url(#extendible-hashing-layout-head)"/>
+</svg>

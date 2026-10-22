@@ -1,0 +1,38 @@
+<svg class="diagram" viewBox="0 0 640 304" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="buffer-pool-clock-title">
+<title id="buffer-pool-clock-title">A clock with six frames. The hand starts at frame 0, skips it because it is pinned, clears the reference bits of frames 1 and 2, and evicts frame 3, whose bit was already clear.</title>
+<defs><marker id="buffer-pool-clock-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="buffer-pool-clock-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<ellipse class="line dashed" cx="300" cy="150" rx="170" ry="100"/>
+<rect class="box" x="254" y="30" width="92" height="40"/>
+<rect class="box" x="254" y="30" width="92" height="40"/>
+<text class="t-small t-bold" x="300" y="46" text-anchor="middle">fr 0</text>
+<text class="t-small t-mono" x="300" y="63" text-anchor="middle">pinned</text>
+<text class="t-small t-muted" x="300" y="22" text-anchor="middle">skip: pinned</text>
+<rect class="box" x="401.2" y="80" width="92" height="40"/>
+<rect class="box-a" x="401.2" y="80" width="92" height="40"/>
+<text class="t-small t-bold" x="447.2" y="96" text-anchor="middle">fr 1</text>
+<text class="t-small t-mono" x="447.2" y="113" text-anchor="middle">ref 1 → 0</text>
+<text class="t-small t-a" x="503.2" y="104">clear, move on</text>
+<rect class="box" x="401.2" y="180" width="92" height="40"/>
+<rect class="box-a" x="401.2" y="180" width="92" height="40"/>
+<text class="t-small t-bold" x="447.2" y="196" text-anchor="middle">fr 2</text>
+<text class="t-small t-mono" x="447.2" y="213" text-anchor="middle">ref 1 → 0</text>
+<text class="t-small t-a" x="503.2" y="204">clear, move on</text>
+<rect class="box" x="254" y="230" width="92" height="40"/>
+<rect class="box-warn" x="254" y="230" width="92" height="40"/>
+<text class="t-small t-bold" x="300" y="246" text-anchor="middle">fr 3</text>
+<text class="t-small t-mono" x="300" y="263" text-anchor="middle">ref 0</text>
+<text class="t-small t-warn t-bold" x="300" y="288" text-anchor="middle">victim</text>
+<rect class="box" x="106.8" y="180" width="92" height="40"/>
+<rect class="box" x="106.8" y="180" width="92" height="40"/>
+<text class="t-small t-bold" x="152.8" y="196" text-anchor="middle">fr 4</text>
+<text class="t-small t-mono" x="152.8" y="213" text-anchor="middle">ref 1</text>
+<rect class="box" x="106.8" y="80" width="92" height="40"/>
+<rect class="box" x="106.8" y="80" width="92" height="40"/>
+<text class="t-small t-bold" x="152.8" y="96" text-anchor="middle">fr 5</text>
+<text class="t-small t-mono" x="152.8" y="113" text-anchor="middle">ref 0</text>
+<path class="line-a dashed" d="M305.4,98.3 A52,52 0 0 1 312.6,200.5" marker-end="url(#buffer-pool-clock-head-a)"/>
+<text class="t-small t-a" x="360" y="154">sweep</text>
+<line class="line" x1="300" y1="150" x2="300" y2="226" marker-end="url(#buffer-pool-clock-head)"/>
+<circle class="box" cx="300" cy="150" r="3"/>
+<text class="t-small" x="292" y="184" text-anchor="end">hand</text>
+</svg>

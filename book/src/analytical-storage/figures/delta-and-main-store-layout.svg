@@ -1,0 +1,27 @@
+<svg class="diagram" viewBox="0 0 640 304" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="delta-and-main-store-layout-title">
+<title id="delta-and-main-store-layout-title">Writes go to a small write-optimised delta store, which a background merge folds into the large read-optimised main store. A scan at snapshot S reads the main store minus its deleted rows plus the delta rows visible at S.</title>
+<defs><marker id="delta-and-main-store-layout-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="delta-and-main-store-layout-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker><marker id="delta-and-main-store-layout-head-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-b" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-bold" x="150" y="16" text-anchor="middle">writes</text>
+<line class="line-b" x1="150" y1="22" x2="150" y2="42" marker-end="url(#delta-and-main-store-layout-head-b)"/>
+<rect class="box-b" x="40" y="46" width="230" height="86"/>
+<text class="t t-bold t-b" x="54" y="68">delta store</text>
+<text class="t-small" x="54" y="88">small, write-optimised</text>
+<text class="t-small" x="54" y="106">row-wise or uncompressed</text>
+<text class="t-small" x="54" y="124">indexed for lookups</text>
+<line class="line" x1="150" y1="134" x2="150" y2="170" marker-end="url(#delta-and-main-store-layout-head)"/>
+<text class="t-small" x="160" y="157">merge (background, periodic)</text>
+<rect class="box" x="40" y="174" width="230" height="122"/>
+<text class="t t-bold" x="54" y="196">main store</text>
+<text class="t-small" x="54" y="216">large, read-optimised</text>
+<text class="t-small" x="54" y="234">sorted, compressed, columnar</text>
+<text class="t-small" x="54" y="252">immutable between merges</text>
+<rect class="box-warn" x="54" y="262" width="202" height="24"/>
+<text class="t-small t-warn" x="155" y="278.3" text-anchor="middle">deletion vector or deltas</text>
+<rect class="box-a" x="394" y="128" width="220" height="86"/>
+<text class="t t-bold t-a" x="408" y="150">scan at snapshot S</text>
+<text class="t-small" x="408" y="170">main, minus deleted rows</text>
+<text class="t-small" x="408" y="188">+ delta rows visible at S</text>
+<text class="t-small t-bold" x="504" y="118" text-anchor="middle">reads</text>
+<line class="line-a" x1="272" y1="90" x2="390" y2="150" marker-end="url(#delta-and-main-store-layout-head-a)"/>
+<line class="line-a" x1="272" y1="230" x2="390" y2="192" marker-end="url(#delta-and-main-store-layout-head-a)"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg class="diagram" viewBox="0 0 640 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="lock-table-and-wait-for-graph-cycle-title">
+<title id="lock-table-and-wait-for-graph-cycle-title">The wait-for graph of the lock table: T2 waits for T1 on accounts/42, and T1 waits for T2 and T3 on accounts/77. T1 and T2 form a cycle, a deadlock.</title>
+<defs><marker id="lock-table-and-wait-for-graph-cycle-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="lock-table-and-wait-for-graph-cycle-head-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-warn" d="M0,0L10,5L0,10z"/></marker></defs>
+<circle class="box-warn" cx="300" cy="110" r="26"/>
+<text class="t t-bold" x="300" y="115" text-anchor="middle">T1</text>
+<circle class="box-warn" cx="130" cy="110" r="26"/>
+<text class="t t-bold" x="130" y="115" text-anchor="middle">T2</text>
+<circle class="box" cx="480" cy="110" r="26"/>
+<text class="t t-bold" x="480" y="115" text-anchor="middle">T3</text>
+<path class="line-warn" d="M152,98Q214.0,48 276,98" marker-end="url(#lock-table-and-wait-for-graph-cycle-head-warn)"/>
+<text class="t-small t-mono t-warn" x="214" y="64" text-anchor="middle">accounts/42</text>
+<path class="line-warn" d="M278,122Q216.0,172 154,122" marker-end="url(#lock-table-and-wait-for-graph-cycle-head-warn)"/>
+<text class="t-small t-mono t-warn" x="216" y="166" text-anchor="middle">accounts/77</text>
+<line class="line" x1="326" y1="110" x2="452" y2="110" marker-end="url(#lock-table-and-wait-for-graph-cycle-head)"/>
+<text class="t-small t-mono" x="390" y="100" text-anchor="middle">accounts/77</text>
+<line class="line" x1="110" y1="196" x2="160" y2="196" marker-end="url(#lock-table-and-wait-for-graph-cycle-head)"/>
+<text class="t-small t-muted" x="170" y="200">A → B: A waits for a lock that B holds</text>
+<text class="t-small t-warn t-bold" x="215" y="30" text-anchor="middle">cycle: deadlock</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg class="diagram" viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="data-cube-and-star-tree-index-lattice-title">
+<title id="data-cube-and-star-tree-index-lattice-title">The lattice of the eight groupings of country, browser and locale, from the finest grouping on all three down to the grand total. (country) can be computed from (country, browser) or (country, locale).</title>
+<line class="line" x1="320" y1="50" x2="140" y2="100"/>
+<line class="line" x1="320" y1="50" x2="320" y2="100"/>
+<line class="line" x1="320" y1="50" x2="500" y2="100"/>
+<line class="line-a" x1="140" y1="130" x2="140" y2="180"/>
+<line class="line" x1="140" y1="130" x2="320" y2="180"/>
+<line class="line-a" x1="320" y1="130" x2="140" y2="180"/>
+<line class="line" x1="320" y1="130" x2="500" y2="180"/>
+<line class="line" x1="500" y1="130" x2="320" y2="180"/>
+<line class="line" x1="500" y1="130" x2="500" y2="180"/>
+<line class="line" x1="140" y1="210" x2="320" y2="260"/>
+<line class="line" x1="320" y1="210" x2="320" y2="260"/>
+<line class="line" x1="500" y1="210" x2="320" y2="260"/>
+<rect class="box" x="210" y="20" width="220" height="30"/>
+<text class="t-small t-mono" x="320" y="39.3" text-anchor="middle">(country, browser, locale)</text>
+<rect class="box" x="60" y="100" width="160" height="30"/>
+<text class="t-small t-mono" x="140" y="119.3" text-anchor="middle">(country, browser)</text>
+<rect class="box" x="240" y="100" width="160" height="30"/>
+<text class="t-small t-mono" x="320" y="119.3" text-anchor="middle">(country, locale)</text>
+<rect class="box" x="420" y="100" width="160" height="30"/>
+<text class="t-small t-mono" x="500" y="119.3" text-anchor="middle">(browser, locale)</text>
+<rect class="box-a" x="85" y="180" width="110" height="30"/>
+<text class="t-small t-mono t-a" x="140" y="199.3" text-anchor="middle">(country)</text>
+<rect class="box" x="265" y="180" width="110" height="30"/>
+<text class="t-small t-mono" x="320" y="199.3" text-anchor="middle">(browser)</text>
+<rect class="box" x="445" y="180" width="110" height="30"/>
+<text class="t-small t-mono" x="500" y="199.3" text-anchor="middle">(locale)</text>
+<rect class="box" x="290" y="260" width="60" height="30"/>
+<text class="t-small t-mono" x="320" y="279.3" text-anchor="middle">()</text>
+<text class="t-small t-muted" x="438" y="39">finest</text>
+<text class="t-small t-muted" x="358" y="279">coarsest: grand total</text>
+</svg>

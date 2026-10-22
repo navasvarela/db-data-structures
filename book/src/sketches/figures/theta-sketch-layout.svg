@@ -1,0 +1,29 @@
+<svg class="diagram" viewBox="0 0 640 176" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="theta-sketch-layout-title">
+<title id="theta-sketch-layout-title">Fourteen distinct hashes on the interval from 0 to 1. With k = 8, the eight smallest are retained, theta is the ninth smallest, 0.58, and the estimate is 8 / 0.58, about 13.8.</title>
+<line class="line" x1="50" y1="60" x2="590" y2="60"/>
+<line class="line" x1="50" y1="52" x2="50" y2="68"/>
+<text class="t-small t-muted" x="50" y="86" text-anchor="middle">0</text>
+<line class="line" x1="590" y1="52" x2="590" y2="68"/>
+<text class="t-small t-muted" x="590" y="86" text-anchor="middle">1</text>
+<line class="line-a" x1="363.2" y1="38" x2="363.2" y2="74"/>
+<text class="t-small t-bold t-a" x="363.2" y="32" text-anchor="middle">θ = 0.58</text>
+<circle class="box-a" cx="71.6" cy="60" r="6"/>
+<circle class="box-a" cx="98.6" cy="60" r="6"/>
+<circle class="box-a" cx="141.8" cy="60" r="6"/>
+<circle class="box-a" cx="163.4" cy="60" r="6"/>
+<circle class="box-a" cx="212" cy="60" r="6"/>
+<circle class="box-a" cx="255.2" cy="60" r="6"/>
+<circle class="box-a" cx="287.6" cy="60" r="6"/>
+<circle class="box-a" cx="336.2" cy="60" r="6"/>
+<circle class="box-muted" cx="406.4" cy="60" r="6"/>
+<circle class="box-muted" cx="433.4" cy="60" r="6"/>
+<circle class="box-muted" cx="482" cy="60" r="6"/>
+<circle class="box-muted" cx="519.8" cy="60" r="6"/>
+<circle class="box-muted" cx="563" cy="60" r="6"/>
+<circle class="box-muted" cx="363.2" cy="60" r="6"/>
+<path class="line-a" d="M65.6,98 v6 H342.2 v-6"/>
+<text class="t-small t-a" x="203.9" y="122" text-anchor="middle">S: k = 8 retained hashes</text>
+<path class="line" d="M357.2,98 v6 H569.0 v-6"/>
+<text class="t-small t-muted" x="463.1" y="122" text-anchor="middle">seen, not retained</text>
+<text class="t t-mono" x="320" y="166" text-anchor="middle">estimate = |S| / θ = 8 / 0.58 ≈ 13.8</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg class="diagram" viewBox="0 0 640 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bounded-top-k-heap-layout-title">
+<title id="bounded-top-k-heap-layout-title">The heap for ORDER BY x ASC LIMIT 5 after reading 9, 2, 14, 7, 3, 11, 5: a max-heap with root 9, stored as the array 9, 7, 5, 2, 3.</title>
+<line class="line" x1="150" y1="49" x2="94" y2="75"/>
+<line class="line" x1="150" y1="49" x2="206" y2="75"/>
+<line class="line" x1="94" y1="105" x2="66" y2="131"/>
+<line class="line" x1="94" y1="105" x2="122" y2="131"/>
+<circle class="box-a" cx="150" cy="34" r="15"/>
+<text class="t t-mono" x="150" y="39" text-anchor="middle">9</text>
+<circle class="box" cx="94" cy="90" r="15"/>
+<text class="t t-mono" x="94" y="95" text-anchor="middle">7</text>
+<circle class="box" cx="206" cy="90" r="15"/>
+<text class="t t-mono" x="206" y="95" text-anchor="middle">5</text>
+<circle class="box" cx="66" cy="146" r="15"/>
+<text class="t t-mono" x="66" y="151" text-anchor="middle">2</text>
+<circle class="box" cx="122" cy="146" r="15"/>
+<text class="t t-mono" x="122" y="151" text-anchor="middle">3</text>
+<text class="t-small t-a" x="190" y="38">root = threshold</text>
+<text class="t-small t-muted" x="330" y="72">array</text>
+<rect class="box-a" x="330" y="80" width="48" height="32"/>
+<text class="t t-mono" x="354" y="101" text-anchor="middle">9</text>
+<text class="t-small t-muted" x="354" y="128" text-anchor="middle">0</text>
+<rect class="box" x="378" y="80" width="48" height="32"/>
+<text class="t t-mono" x="402" y="101" text-anchor="middle">7</text>
+<text class="t-small t-muted" x="402" y="128" text-anchor="middle">1</text>
+<rect class="box" x="426" y="80" width="48" height="32"/>
+<text class="t t-mono" x="450" y="101" text-anchor="middle">5</text>
+<text class="t-small t-muted" x="450" y="128" text-anchor="middle">2</text>
+<rect class="box" x="474" y="80" width="48" height="32"/>
+<text class="t t-mono" x="498" y="101" text-anchor="middle">2</text>
+<text class="t-small t-muted" x="498" y="128" text-anchor="middle">3</text>
+<rect class="box" x="522" y="80" width="48" height="32"/>
+<text class="t t-mono" x="546" y="101" text-anchor="middle">3</text>
+<text class="t-small t-muted" x="546" y="128" text-anchor="middle">4</text>
+<text class="t-small t-warn" x="330" y="166">evicted so far: 14, then 11</text>
+</svg>

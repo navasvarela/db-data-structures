@@ -1,0 +1,47 @@
+<svg class="diagram" viewBox="0 0 640 196" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="mvcc-version-chain-commit-title">
+<title id="mvcc-version-chain-commit-title">When transaction 17 commits with timestamp 41, its marker is replaced by 41 in the begin of its new version and in the end of the version it replaced.</title>
+<defs><marker id="mvcc-version-chain-commit-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-bold" x="78" y="68" text-anchor="end">before</text>
+<rect class="box-muted" x="90" y="28" width="160" height="70"/>
+<text class="t-small t-muted" x="102" y="48">begin</text>
+<text class="t-small" x="146" y="48">txn 17</text>
+<text class="t-small t-muted" x="102" y="68">end</text>
+<text class="t-small" x="146" y="68">∞</text>
+<text class="t-small t-mono" x="102" y="88">balance = 70</text>
+<rect class="box" x="274" y="28" width="160" height="70"/>
+<text class="t-small t-muted" x="286" y="48">begin</text>
+<text class="t-small" x="330" y="48">30</text>
+<text class="t-small t-muted" x="286" y="68">end</text>
+<text class="t-small" x="330" y="68">txn 17</text>
+<text class="t-small t-mono" x="286" y="88">balance = 100</text>
+<line class="line" x1="252" y1="63" x2="270" y2="63" marker-end="url(#mvcc-version-chain-commit-head)"/>
+<rect class="box" x="458" y="28" width="160" height="70"/>
+<text class="t-small t-muted" x="470" y="48">begin</text>
+<text class="t-small" x="514" y="48">12</text>
+<text class="t-small t-muted" x="470" y="68">end</text>
+<text class="t-small" x="514" y="68">30</text>
+<text class="t-small t-mono" x="470" y="88">balance = 80</text>
+<line class="line" x1="436" y1="63" x2="454" y2="63" marker-end="url(#mvcc-version-chain-commit-head)"/>
+<text class="t-small t-bold" x="78" y="156" text-anchor="end">after</text>
+<rect class="box" x="90" y="116" width="160" height="70"/>
+<text class="t-small t-muted" x="102" y="136">begin</text>
+<text class="t-small t-a t-bold" x="146" y="136">41</text>
+<text class="t-small t-muted" x="102" y="156">end</text>
+<text class="t-small" x="146" y="156">∞</text>
+<text class="t-small t-mono" x="102" y="176">balance = 70</text>
+<rect class="box" x="274" y="116" width="160" height="70"/>
+<text class="t-small t-muted" x="286" y="136">begin</text>
+<text class="t-small" x="330" y="136">30</text>
+<text class="t-small t-muted" x="286" y="156">end</text>
+<text class="t-small t-a t-bold" x="330" y="156">41</text>
+<text class="t-small t-mono" x="286" y="176">balance = 100</text>
+<line class="line" x1="252" y1="151" x2="270" y2="151" marker-end="url(#mvcc-version-chain-commit-head)"/>
+<rect class="box" x="458" y="116" width="160" height="70"/>
+<text class="t-small t-muted" x="470" y="136">begin</text>
+<text class="t-small" x="514" y="136">12</text>
+<text class="t-small t-muted" x="470" y="156">end</text>
+<text class="t-small" x="514" y="156">30</text>
+<text class="t-small t-mono" x="470" y="176">balance = 80</text>
+<line class="line" x1="436" y1="151" x2="454" y2="151" marker-end="url(#mvcc-version-chain-commit-head)"/>
+<text class="t-small t-a" x="78" y="172" text-anchor="end">c = 41</text>
+</svg>

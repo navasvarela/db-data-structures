@@ -1,0 +1,103 @@
+<svg class="diagram" viewBox="0 0 640 236" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ribbon-filter-band-title">
+<title id="ribbon-filter-band-title">Coefficient rows of five keys sorted by start position, each eight bits wide, forming a diagonal band. Key x starts at row 42 and its set bits select rows 42, 44, 45 and 48.</title>
+<text class="t-small t-muted" x="166" y="36" text-anchor="middle">40</text>
+<text class="t-small t-muted" x="198" y="36" text-anchor="middle">41</text>
+<text class="t-small t-bold t-a" x="230" y="36" text-anchor="middle">42</text>
+<text class="t-small t-muted" x="262" y="36" text-anchor="middle">43</text>
+<text class="t-small t-bold t-a" x="294" y="36" text-anchor="middle">44</text>
+<text class="t-small t-bold t-a" x="326" y="36" text-anchor="middle">45</text>
+<text class="t-small t-muted" x="358" y="36" text-anchor="middle">46</text>
+<text class="t-small t-muted" x="390" y="36" text-anchor="middle">47</text>
+<text class="t-small t-bold t-a" x="422" y="36" text-anchor="middle">48</text>
+<text class="t-small t-muted" x="454" y="36" text-anchor="middle">49</text>
+<text class="t-small t-muted" x="486" y="36" text-anchor="middle">50</text>
+<text class="t-small t-muted" x="518" y="36" text-anchor="middle">51</text>
+<text class="t-small t-muted" x="550" y="36" text-anchor="middle">52</text>
+<text class="t-small t-muted" x="140" y="36" text-anchor="end">Z row</text>
+<text class="t-small t-muted" x="140" y="65" text-anchor="end">s = 40</text>
+<rect class="box" x="150" y="46" width="32" height="28"/>
+<text class="t-small t-mono" x="166" y="65" text-anchor="middle">1</text>
+<rect class="box" x="182" y="46" width="32" height="28"/>
+<text class="t-small t-mono" x="198" y="65" text-anchor="middle">1</text>
+<rect class="box" x="214" y="46" width="32" height="28"/>
+<text class="t-small t-mono" x="230" y="65" text-anchor="middle">0</text>
+<rect class="box" x="246" y="46" width="32" height="28"/>
+<text class="t-small t-mono" x="262" y="65" text-anchor="middle">1</text>
+<rect class="box" x="278" y="46" width="32" height="28"/>
+<text class="t-small t-mono" x="294" y="65" text-anchor="middle">0</text>
+<rect class="box" x="310" y="46" width="32" height="28"/>
+<text class="t-small t-mono" x="326" y="65" text-anchor="middle">0</text>
+<rect class="box" x="342" y="46" width="32" height="28"/>
+<text class="t-small t-mono" x="358" y="65" text-anchor="middle">1</text>
+<rect class="box" x="374" y="46" width="32" height="28"/>
+<text class="t-small t-mono" x="390" y="65" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="140" y="93" text-anchor="end">s = 41</text>
+<rect class="box" x="182" y="74" width="32" height="28"/>
+<text class="t-small t-mono" x="198" y="93" text-anchor="middle">1</text>
+<rect class="box" x="214" y="74" width="32" height="28"/>
+<text class="t-small t-mono" x="230" y="93" text-anchor="middle">0</text>
+<rect class="box" x="246" y="74" width="32" height="28"/>
+<text class="t-small t-mono" x="262" y="93" text-anchor="middle">0</text>
+<rect class="box" x="278" y="74" width="32" height="28"/>
+<text class="t-small t-mono" x="294" y="93" text-anchor="middle">1</text>
+<rect class="box" x="310" y="74" width="32" height="28"/>
+<text class="t-small t-mono" x="326" y="93" text-anchor="middle">1</text>
+<rect class="box" x="342" y="74" width="32" height="28"/>
+<text class="t-small t-mono" x="358" y="93" text-anchor="middle">0</text>
+<rect class="box" x="374" y="74" width="32" height="28"/>
+<text class="t-small t-mono" x="390" y="93" text-anchor="middle">1</text>
+<rect class="box" x="406" y="74" width="32" height="28"/>
+<text class="t-small t-mono" x="422" y="93" text-anchor="middle">0</text>
+<text class="t-small t-bold t-a" x="140" y="121" text-anchor="end">x, s = 42</text>
+<rect class="box-a" x="214" y="102" width="32" height="28"/>
+<text class="t-small t-mono" x="230" y="121" text-anchor="middle">1</text>
+<rect class="box-muted" x="246" y="102" width="32" height="28"/>
+<text class="t-small t-mono" x="262" y="121" text-anchor="middle">0</text>
+<rect class="box-a" x="278" y="102" width="32" height="28"/>
+<text class="t-small t-mono" x="294" y="121" text-anchor="middle">1</text>
+<rect class="box-a" x="310" y="102" width="32" height="28"/>
+<text class="t-small t-mono" x="326" y="121" text-anchor="middle">1</text>
+<rect class="box-muted" x="342" y="102" width="32" height="28"/>
+<text class="t-small t-mono" x="358" y="121" text-anchor="middle">0</text>
+<rect class="box-muted" x="374" y="102" width="32" height="28"/>
+<text class="t-small t-mono" x="390" y="121" text-anchor="middle">0</text>
+<rect class="box-a" x="406" y="102" width="32" height="28"/>
+<text class="t-small t-mono" x="422" y="121" text-anchor="middle">1</text>
+<rect class="box-muted" x="438" y="102" width="32" height="28"/>
+<text class="t-small t-mono" x="454" y="121" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="140" y="149" text-anchor="end">s = 44</text>
+<rect class="box" x="278" y="130" width="32" height="28"/>
+<text class="t-small t-mono" x="294" y="149" text-anchor="middle">1</text>
+<rect class="box" x="310" y="130" width="32" height="28"/>
+<text class="t-small t-mono" x="326" y="149" text-anchor="middle">1</text>
+<rect class="box" x="342" y="130" width="32" height="28"/>
+<text class="t-small t-mono" x="358" y="149" text-anchor="middle">0</text>
+<rect class="box" x="374" y="130" width="32" height="28"/>
+<text class="t-small t-mono" x="390" y="149" text-anchor="middle">0</text>
+<rect class="box" x="406" y="130" width="32" height="28"/>
+<text class="t-small t-mono" x="422" y="149" text-anchor="middle">1</text>
+<rect class="box" x="438" y="130" width="32" height="28"/>
+<text class="t-small t-mono" x="454" y="149" text-anchor="middle">0</text>
+<rect class="box" x="470" y="130" width="32" height="28"/>
+<text class="t-small t-mono" x="486" y="149" text-anchor="middle">1</text>
+<rect class="box" x="502" y="130" width="32" height="28"/>
+<text class="t-small t-mono" x="518" y="149" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="140" y="177" text-anchor="end">s = 45</text>
+<rect class="box" x="310" y="158" width="32" height="28"/>
+<text class="t-small t-mono" x="326" y="177" text-anchor="middle">1</text>
+<rect class="box" x="342" y="158" width="32" height="28"/>
+<text class="t-small t-mono" x="358" y="177" text-anchor="middle">0</text>
+<rect class="box" x="374" y="158" width="32" height="28"/>
+<text class="t-small t-mono" x="390" y="177" text-anchor="middle">1</text>
+<rect class="box" x="406" y="158" width="32" height="28"/>
+<text class="t-small t-mono" x="422" y="177" text-anchor="middle">0</text>
+<rect class="box" x="438" y="158" width="32" height="28"/>
+<text class="t-small t-mono" x="454" y="177" text-anchor="middle">0</text>
+<rect class="box" x="470" y="158" width="32" height="28"/>
+<text class="t-small t-mono" x="486" y="177" text-anchor="middle">1</text>
+<rect class="box" x="502" y="158" width="32" height="28"/>
+<text class="t-small t-mono" x="518" y="177" text-anchor="middle">1</text>
+<rect class="box" x="534" y="158" width="32" height="28"/>
+<text class="t-small t-mono" x="550" y="177" text-anchor="middle">0</text>
+<text class="t t-mono" x="320" y="220" text-anchor="middle">query(x):  fp(x) == Z[42] xor Z[44] xor Z[45] xor Z[48]</text>
+</svg>

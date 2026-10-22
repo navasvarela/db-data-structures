@@ -1,0 +1,29 @@
+<svg class="diagram" viewBox="0 0 640 184" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="append-only-log-torn-tail-title">
+<title id="append-only-log-torn-tail-title">The file was cut at byte 25, inside the third record. A scan yields the records at 0 and 9, then fails at 13.</title>
+<defs><marker id="append-only-log-torn-tail-head-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-b" d="M0,0L10,5L0,10z"/></marker><marker id="append-only-log-torn-tail-head-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-warn" d="M0,0L10,5L0,10z"/></marker></defs>
+<rect class="box" x="40" y="48" width="72" height="36"/>
+<text class="t t-mono" x="76" y="71.0" text-anchor="middle">5</text>
+<rect class="box" x="112" y="48" width="90" height="36"/>
+<text class="t t-mono" x="157" y="71.0" text-anchor="middle">"first"</text>
+<rect class="box" x="202" y="48" width="72" height="36"/>
+<text class="t t-mono" x="238" y="71.0" text-anchor="middle">0</text>
+<rect class="box-warn" x="274" y="48" width="72" height="36"/>
+<text class="t t-mono" x="310" y="71.0" text-anchor="middle">12</text>
+<rect class="box-warn" x="346" y="48" width="144" height="36"/>
+<text class="t t-mono" x="418" y="71.0" text-anchor="middle">"third re</text>
+<rect class="box-muted dashed" x="490" y="48" width="72" height="36"/>
+<text class="t-small t-muted" x="526" y="70.3" text-anchor="middle">missing</text>
+<text class="t-small t-mono" x="40" y="102" text-anchor="middle">0</text>
+<text class="t-small t-mono" x="202" y="102" text-anchor="middle">9</text>
+<text class="t-small t-mono" x="274" y="102" text-anchor="middle">13</text>
+<text class="t-small t-mono" x="490" y="102" text-anchor="middle">25</text>
+<text class="t-small t-muted" x="30" y="102" text-anchor="end">offset</text>
+<text class="t-small t-warn" x="490" y="30" text-anchor="middle">file ends at 25</text>
+<line class="line-warn" x1="490" y1="34" x2="490" y2="88"/>
+<line class="line-b" x1="40" y1="110" x2="40" y2="136" marker-end="url(#append-only-log-torn-tail-head-b)"/>
+<line class="line-b" x1="202" y1="110" x2="202" y2="156" marker-end="url(#append-only-log-torn-tail-head-b)"/>
+<line class="line-warn" x1="274" y1="110" x2="274" y2="136" marker-end="url(#append-only-log-torn-tail-head-warn)"/>
+<text class="t-small t-b" x="36" y="150">yield (0, "first")</text>
+<text class="t-small t-b" x="202" y="170" text-anchor="middle">yield (9, empty)</text>
+<text class="t-small t-warn" x="270" y="150">error at 13, scan stops</text>
+</svg>

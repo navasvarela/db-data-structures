@@ -1,0 +1,24 @@
+<svg class="diagram" viewBox="0 0 640 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="kll-sketch-levels-title">
+<title id="kll-sketch-levels-title">Four levels with capacities 200, 134, 89 and 60 from the top down; level 0 is full and is compacted into level 1.</title>
+<defs><marker id="kll-sketch-levels-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small" x="156" y="34" text-anchor="end">level 3 · weight 8</text>
+<rect class="box" x="170" y="16" width="400" height="26"/>
+<rect class="box-a" x="170" y="16" width="240" height="26"/>
+<text class="t-small t-muted" x="578" y="34">200</text>
+<text class="t-small" x="156" y="74" text-anchor="end">level 2 · weight 4</text>
+<rect class="box" x="170" y="56" width="268" height="26"/>
+<rect class="box-a" x="170" y="56" width="140" height="26"/>
+<text class="t-small t-muted" x="446" y="74">134</text>
+<text class="t-small" x="156" y="114" text-anchor="end">level 1 · weight 2</text>
+<rect class="box" x="170" y="96" width="178" height="26"/>
+<rect class="box-a" x="170" y="96" width="100" height="26"/>
+<text class="t-small t-muted" x="356" y="114">89</text>
+<text class="t-small" x="156" y="154" text-anchor="end">level 0 · weight 1</text>
+<rect class="box" x="170" y="136" width="120" height="26"/>
+<rect class="box-warn" x="170" y="136" width="120" height="26"/>
+<text class="t-small t-muted" x="298" y="154">60</text>
+<text class="t-small t-muted" x="578" y="10">capacity</text>
+<path class="line-a" d="M324,149.0 C370,149.0 370,142 290,127" marker-end="url(#kll-sketch-levels-head-a)"/>
+<text class="t-small t-a" x="384" y="140">full: sort, keep half, promote</text>
+<text class="t-small t-muted" x="170" y="184">level 0 is unsorted and receives inserts</text>
+</svg>
