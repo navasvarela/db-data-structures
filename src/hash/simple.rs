@@ -3,8 +3,8 @@ use std::collections::HashMap;
 use tracing::warn;
 
 use crate::{
-    backend::{ByteStore, CompactionStores, record_size},
-    hash::{HashIndex, HashIndexError, record},
+    backend::{ByteStore, CompactionStores, record, record_size},
+    hash::{HashIndex, HashIndexError},
 };
 
 /// A hash index over an append-only log of key-value records.

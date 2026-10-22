@@ -4,4 +4,5 @@
 
 pub mod backend;
 pub mod hash;
+pub mod sstable;
 pub mod tree;

@@ -2,9 +2,8 @@ use std::io;
 
 use thiserror::Error;
 
-use crate::hash::record::DecodeError;
+use crate::backend::record::DecodeError;
 
-pub mod record;
 pub mod simple;
 
 pub trait HashIndex {
