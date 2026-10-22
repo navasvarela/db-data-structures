@@ -1,0 +1,52 @@
+<svg class="diagram" viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="slotted-page-compact-title">
+<title id="slotted-page-compact-title">Deleting rec 1 empties slot s1 and leaves a hole. Compaction moves rec 2 to the end of the free space next to rec 0 and updates s2's offset; s0 and s1 keep their numbers.</title>
+<defs><marker id="slotted-page-compact-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="slotted-page-compact-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-bold" x="40" y="24">after deleting rec 1</text>
+<rect class="box" x="40" y="86" width="70" height="36"/>
+<text class="t-small" x="75" y="108.3" text-anchor="middle">header</text>
+<rect class="box" x="110" y="86" width="36" height="36"/>
+<text class="t-small t-mono" x="128" y="108.3" text-anchor="middle">s0</text>
+<rect class="box-muted" x="146" y="86" width="36" height="36"/>
+<text class="t-small t-mono" x="164" y="108.3" text-anchor="middle">–</text>
+<rect class="box" x="182" y="86" width="36" height="36"/>
+<text class="t-small t-mono" x="200" y="108.3" text-anchor="middle">s2</text>
+<rect class="box" x="218" y="86" width="152" height="36"/>
+<rect class="box" x="370" y="86" width="60" height="36"/>
+<text class="t" x="400" y="109.0" text-anchor="middle">rec 2</text>
+<rect class="box-muted dashed" x="430" y="86" width="90" height="36"/>
+<text class="t t-muted" x="475" y="109.0" text-anchor="middle">hole</text>
+<rect class="box" x="520" y="86" width="80" height="36"/>
+<text class="t" x="560" y="109.0" text-anchor="middle">rec 0</text>
+<path class="line" d="M200,84 C200,56 400.0,56 400.0,82" marker-end="url(#slotted-page-compact-head)"/>
+<path class="line" d="M128,84 C128,12 560.0,12 560.0,82" marker-end="url(#slotted-page-compact-head)"/>
+<line class="line" x1="218" y1="122" x2="218" y2="128"/>
+<text class="t-small" x="218" y="142" text-anchor="middle">lower</text>
+<line class="line" x1="370" y1="122" x2="370" y2="128"/>
+<text class="t-small" x="370" y="142" text-anchor="middle">upper</text>
+<text class="t t-muted" x="294" y="109" text-anchor="middle">free</text>
+<line class="line" x1="226" y1="104" x2="270" y2="104" marker-end="url(#slotted-page-compact-head)"/>
+<line class="line" x1="362" y1="104" x2="318" y2="104" marker-end="url(#slotted-page-compact-head)"/>
+<text class="t-small t-bold" x="40" y="172">after compaction</text>
+<rect class="box" x="40" y="234" width="70" height="36"/>
+<text class="t-small" x="75" y="256.3" text-anchor="middle">header</text>
+<rect class="box" x="110" y="234" width="36" height="36"/>
+<text class="t-small t-mono" x="128" y="256.3" text-anchor="middle">s0</text>
+<rect class="box-muted" x="146" y="234" width="36" height="36"/>
+<text class="t-small t-mono" x="164" y="256.3" text-anchor="middle">–</text>
+<rect class="box-a" x="182" y="234" width="36" height="36"/>
+<text class="t-small t-mono" x="200" y="256.3" text-anchor="middle">s2</text>
+<rect class="box" x="218" y="234" width="242" height="36"/>
+<rect class="box-a" x="460" y="234" width="60" height="36"/>
+<text class="t" x="490" y="257.0" text-anchor="middle">rec 2</text>
+<rect class="box" x="520" y="234" width="80" height="36"/>
+<text class="t" x="560" y="257.0" text-anchor="middle">rec 0</text>
+<path class="line-a" d="M200,232 C200,194 490.0,194 490.0,230" marker-end="url(#slotted-page-compact-head-a)"/>
+<path class="line" d="M128,232 C128,160 560.0,160 560.0,230" marker-end="url(#slotted-page-compact-head)"/>
+<line class="line" x1="218" y1="270" x2="218" y2="276"/>
+<text class="t-small" x="218" y="290" text-anchor="middle">lower</text>
+<line class="line" x1="460" y1="270" x2="460" y2="276"/>
+<text class="t-small t-a" x="460" y="290" text-anchor="middle">upper</text>
+<text class="t t-muted" x="339" y="257" text-anchor="middle">free</text>
+<line class="line" x1="226" y1="252" x2="315" y2="252" marker-end="url(#slotted-page-compact-head)"/>
+<line class="line" x1="452" y1="252" x2="363" y2="252" marker-end="url(#slotted-page-compact-head)"/>
+</svg>

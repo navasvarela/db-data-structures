@@ -1,0 +1,65 @@
+<svg class="diagram" viewBox="0 0 640 286" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="lsm-tree-read-path-title">
+<title id="lsm-tree-read-path-title">A point lookup for h checks the active and immutable memtables, the level-0 files c–p and a–k newest first, skipping b–f, and finds h in level 1's file e–h; level 2 is not consulted.</title>
+<rect class="box" x="60" y="16" width="150" height="30"/>
+<text class="t-small" x="135" y="35" text-anchor="middle">active memtable</text>
+<rect class="box" x="262" y="16" width="160" height="30"/>
+<text class="t-small" x="342" y="35" text-anchor="middle">immutable memtable</text>
+<text class="t t-bold" x="16" y="112">L0</text>
+<rect class="box-muted" x="79" y="76" width="88" height="20" rx="3"/>
+<text class="t-small t-mono t-muted" x="123" y="90" text-anchor="middle">b–f</text>
+<rect class="box" x="97" y="100" width="250" height="20" rx="3"/>
+<text class="t-small t-mono" x="105" y="114">c–p</text>
+<rect class="box" x="61" y="124" width="196" height="20" rx="3"/>
+<text class="t-small t-mono" x="69" y="138">a–k</text>
+<text class="t t-bold" x="16" y="180">L1</text>
+<rect class="box" x="61" y="166" width="70" height="20" rx="3"/>
+<text class="t-small t-mono" x="96" y="180" text-anchor="middle">a–d</text>
+<rect class="box-b" x="133" y="166" width="70" height="20" rx="3"/>
+<text class="t-small t-mono" x="168" y="180" text-anchor="middle">e–h</text>
+<rect class="box" x="205" y="166" width="88" height="20" rx="3"/>
+<text class="t-small t-mono" x="249" y="180" text-anchor="middle">i–m</text>
+<rect class="box" x="295" y="166" width="232" height="20" rx="3"/>
+<text class="t-small t-mono" x="303" y="180">n–z</text>
+<text class="t t-bold" x="16" y="218">L2</text>
+<rect class="box" x="61" y="204" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="78" y="218" text-anchor="middle">a–b</text>
+<rect class="box" x="97" y="204" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="114" y="218" text-anchor="middle">c–d</text>
+<rect class="box" x="133" y="204" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="150" y="218" text-anchor="middle">e–f</text>
+<rect class="box-muted" x="169" y="204" width="34" height="20" rx="3"/>
+<text class="t-small t-mono t-muted" x="186" y="218" text-anchor="middle">g–h</text>
+<rect class="box" x="205" y="204" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="222" y="218" text-anchor="middle">i–j</text>
+<rect class="box" x="241" y="204" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="258" y="218" text-anchor="middle">k–l</text>
+<rect class="box" x="277" y="204" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="294" y="218" text-anchor="middle">m–n</text>
+<rect class="box" x="313" y="204" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="330" y="218" text-anchor="middle">o–p</text>
+<rect class="box" x="349" y="204" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="366" y="218" text-anchor="middle">q–r</text>
+<rect class="box" x="385" y="204" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="402" y="218" text-anchor="middle">s–t</text>
+<rect class="box" x="421" y="204" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="438" y="218" text-anchor="middle">u–v</text>
+<rect class="box" x="457" y="204" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="474" y="218" text-anchor="middle">w–x</text>
+<rect class="box" x="493" y="204" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="510" y="218" text-anchor="middle">y–z</text>
+<line class="line-a dashed" x1="195" y1="56" x2="195" y2="232"/>
+<text class="t-small t-mono t-a" x="195" y="248" text-anchor="middle">key h</text>
+<circle class="box-a" cx="44" cy="31" r="9"/>
+<text class="t-small t-bold" x="44" y="35" text-anchor="middle">1</text>
+<circle class="box-a" cx="246" cy="31" r="9"/>
+<text class="t-small t-bold" x="246" y="35" text-anchor="middle">2</text>
+<circle class="box-a" cx="195" cy="110" r="9"/>
+<text class="t-small t-bold" x="195" y="114" text-anchor="middle">3</text>
+<circle class="box-a" cx="195" cy="134" r="9"/>
+<text class="t-small t-bold" x="195" y="138" text-anchor="middle">4</text>
+<circle class="box-a" cx="195" cy="176" r="9"/>
+<text class="t-small t-bold" x="195" y="180" text-anchor="middle">5</text>
+<text class="t-small t-muted" x="540" y="116">newest first</text>
+<text class="t-small t-b" x="540" y="180">found: stop</text>
+<text class="t-small t-muted" x="540" y="218">not read</text>
+</svg>

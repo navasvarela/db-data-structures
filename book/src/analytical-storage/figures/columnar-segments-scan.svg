@@ -1,0 +1,34 @@
+<svg class="diagram" viewBox="0 0 640 176" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="columnar-segments-scan-title">
+<title id="columnar-segments-scan-title">SELECT name WHERE price &gt; 100 over three row groups: row group 0 is skipped from its footer statistics; in the others the price chunk is read and filtered, then the name chunk; id and qty are never read.</title>
+<text class="t-small t-bold" x="170" y="20" text-anchor="middle">id</text>
+<text class="t-small t-bold" x="260" y="20" text-anchor="middle">name</text>
+<text class="t-small t-bold" x="350" y="20" text-anchor="middle">price</text>
+<text class="t-small t-bold" x="440" y="20" text-anchor="middle">qty</text>
+<text class="t-small t-bold" x="566" y="20" text-anchor="middle">price min … max</text>
+<text class="t-small" x="116" y="50" text-anchor="end">row group 0</text>
+<rect class="box-muted" x="128" y="30" width="84" height="30"/>
+<rect class="box-muted" x="218" y="30" width="84" height="30"/>
+<rect class="box-muted" x="308" y="30" width="84" height="30"/>
+<rect class="box-muted" x="398" y="30" width="84" height="30"/>
+<text class="t-small t-mono" x="566" y="43" text-anchor="middle">3.50 … 90.00</text>
+<text class="t-small t-warn" x="566" y="58" text-anchor="middle">max ≤ 100: skip</text>
+<text class="t-small" x="116" y="90" text-anchor="end">row group 1</text>
+<rect class="box" x="128" y="70" width="84" height="30"/>
+<rect class="box-a" x="218" y="70" width="84" height="30"/>
+<text class="t-small t-a" x="260" y="89.3" text-anchor="middle">2. fetch</text>
+<rect class="box-b" x="308" y="70" width="84" height="30"/>
+<text class="t-small t-b" x="350" y="89.3" text-anchor="middle">1. filter</text>
+<rect class="box" x="398" y="70" width="84" height="30"/>
+<text class="t-small t-mono" x="566" y="83" text-anchor="middle">85.00 … 170.25</text>
+<text class="t-small t-muted" x="566" y="98" text-anchor="middle">may match: scan</text>
+<text class="t-small" x="116" y="130" text-anchor="end">row group 2</text>
+<rect class="box" x="128" y="110" width="84" height="30"/>
+<rect class="box-a" x="218" y="110" width="84" height="30"/>
+<text class="t-small t-a" x="260" y="129.3" text-anchor="middle">2. fetch</text>
+<rect class="box-b" x="308" y="110" width="84" height="30"/>
+<text class="t-small t-b" x="350" y="129.3" text-anchor="middle">1. filter</text>
+<rect class="box" x="398" y="110" width="84" height="30"/>
+<text class="t-small t-mono" x="566" y="123" text-anchor="middle">120.00 … 410.00</text>
+<text class="t-small t-muted" x="566" y="138" text-anchor="middle">may match: scan</text>
+<text class="t-small t-mono t-muted" x="320" y="168" text-anchor="middle">query: SELECT name WHERE price &gt; 100</text>
+</svg>

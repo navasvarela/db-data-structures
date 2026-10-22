@@ -1,0 +1,84 @@
+/*
+ * Figures are SVG files inlined into pages with {{#include}}, so their classes are styled here
+ * and follow the reader's theme. An SVG loaded through <img> could not see these rules, and
+ * would stay dark-on-light in the dark themes.
+ *
+ * Classes available to figures:
+ *   shapes  .box  .box-a  .box-b  .box-warn  .box-muted   (filled cells and nodes)
+ *   lines   .line .line-a .line-b .line-warn .dashed      (strokes; add a marker for arrows)
+ *   heads   .head .head-a .head-b .head-warn              (fill of arrowhead marker paths)
+ *   text    .t .t-small .t-mono .t-bold .t-a .t-b .t-warn .t-muted
+ * "a" is the primary highlight, "b" a second one for contrast, "warn" marks a failure, a
+ * conflict or a deleted item, and "muted" marks something stale or not yet relevant.
+ */
+
+:root,
+.light,
+.rust {
+    --fig-ink: var(--fg);
+    --fig-muted: #6b7280;
+    --fig-surface: var(--bg);
+    --fig-muted-fill: rgba(107, 114, 128, 0.12);
+    --fig-a: #2563eb;
+    --fig-a-fill: #dbeafe;
+    --fig-b: #0f766e;
+    --fig-b-fill: #ccfbf1;
+    --fig-warn: #dc2626;
+    --fig-warn-fill: #fee2e2;
+}
+
+.coal,
+.navy,
+.ayu {
+    --fig-muted: #9ca3af;
+    --fig-muted-fill: rgba(156, 163, 175, 0.14);
+    --fig-a: #60a5fa;
+    --fig-a-fill: rgba(96, 165, 250, 0.24);
+    --fig-b: #2dd4bf;
+    --fig-b-fill: rgba(45, 212, 191, 0.2);
+    --fig-warn: #f87171;
+    --fig-warn-fill: rgba(248, 113, 113, 0.22);
+}
+
+figure.diagram {
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+figure.diagram svg {
+    max-width: 100%;
+    height: auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+figure.diagram figcaption {
+    margin-top: 0.4em;
+    font-size: 0.9em;
+    color: var(--fig-muted);
+}
+
+.diagram .box { fill: var(--fig-surface); stroke: var(--fig-ink); stroke-width: 1.2; }
+.diagram .box-a { fill: var(--fig-a-fill); stroke: var(--fig-a); stroke-width: 1.4; }
+.diagram .box-b { fill: var(--fig-b-fill); stroke: var(--fig-b); stroke-width: 1.4; }
+.diagram .box-warn { fill: var(--fig-warn-fill); stroke: var(--fig-warn); stroke-width: 1.4; }
+.diagram .box-muted { fill: var(--fig-muted-fill); stroke: var(--fig-muted); stroke-width: 1.2; }
+
+.diagram .line { fill: none; stroke: var(--fig-ink); stroke-width: 1.4; }
+.diagram .line-a { fill: none; stroke: var(--fig-a); stroke-width: 1.6; }
+.diagram .line-b { fill: none; stroke: var(--fig-b); stroke-width: 1.6; }
+.diagram .line-warn { fill: none; stroke: var(--fig-warn); stroke-width: 1.6; }
+.diagram .dashed { stroke-dasharray: 5 4; }
+
+.diagram .head { fill: var(--fig-ink); }
+.diagram .head-a { fill: var(--fig-a); }
+.diagram .head-b { fill: var(--fig-b); }
+.diagram .head-warn { fill: var(--fig-warn); }
+
+.diagram .t { fill: var(--fig-ink); font-size: 14px; }
+.diagram .t-small { fill: var(--fig-ink); font-size: 12px; }
+.diagram .t-mono { font-family: var(--mono-font), monospace; }
+.diagram .t-bold { font-weight: 700; }
+.diagram .t-a { fill: var(--fig-a); }
+.diagram .t-b { fill: var(--fig-b); }
+.diagram .t-warn { fill: var(--fig-warn); }
+.diagram .t-muted { fill: var(--fig-muted); }

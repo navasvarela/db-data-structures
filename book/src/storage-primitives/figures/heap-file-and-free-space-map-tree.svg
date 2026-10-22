@@ -1,0 +1,44 @@
+<svg class="diagram" viewBox="0 0 640 266" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="heap-file-and-free-space-map-tree-title">
+<title id="heap-file-and-free-space-map-tree-title">An FSM tree over four heap pages with leaf values 3, 7, 4 and 0. Each internal node holds the maximum of its children, so the root is 7.</title>
+<line class="line" x1="320" y1="60" x2="200" y2="94"/>
+<line class="line" x1="320" y1="60" x2="440" y2="94"/>
+<line class="line" x1="200" y1="124" x2="140" y2="158"/>
+<line class="line" x1="200" y1="124" x2="260" y2="158"/>
+<line class="line" x1="440" y1="124" x2="380" y2="158"/>
+<line class="line" x1="440" y1="124" x2="500" y2="158"/>
+<rect class="box" x="298" y="30" width="44" height="30"/>
+<text class="t t-mono" x="320" y="50.0" text-anchor="middle">7</text>
+<text class="t-small t-mono t-muted" x="346" y="56">[0]</text>
+<rect class="box" x="178" y="94" width="44" height="30"/>
+<text class="t t-mono" x="200" y="114.0" text-anchor="middle">7</text>
+<text class="t-small t-mono t-muted" x="226" y="120">[1]</text>
+<rect class="box" x="418" y="94" width="44" height="30"/>
+<text class="t t-mono" x="440" y="114.0" text-anchor="middle">4</text>
+<text class="t-small t-mono t-muted" x="466" y="120">[2]</text>
+<rect class="box" x="118" y="158" width="44" height="30"/>
+<text class="t t-mono" x="140" y="178.0" text-anchor="middle">3</text>
+<text class="t-small t-mono t-muted" x="166" y="184">[3]</text>
+<rect class="box" x="238" y="158" width="44" height="30"/>
+<text class="t t-mono" x="260" y="178.0" text-anchor="middle">7</text>
+<text class="t-small t-mono t-muted" x="286" y="184">[4]</text>
+<rect class="box" x="358" y="158" width="44" height="30"/>
+<text class="t t-mono" x="380" y="178.0" text-anchor="middle">4</text>
+<text class="t-small t-mono t-muted" x="406" y="184">[5]</text>
+<rect class="box" x="478" y="158" width="44" height="30"/>
+<text class="t t-mono" x="500" y="178.0" text-anchor="middle">0</text>
+<text class="t-small t-mono t-muted" x="526" y="184">[6]</text>
+<line class="line dashed" x1="140" y1="188" x2="140" y2="226"/>
+<rect class="box" x="96" y="226" width="88" height="30"/>
+<text class="t-small" x="140" y="245.3" text-anchor="middle">page 0</text>
+<line class="line dashed" x1="260" y1="188" x2="260" y2="226"/>
+<rect class="box" x="216" y="226" width="88" height="30"/>
+<text class="t-small" x="260" y="245.3" text-anchor="middle">page 1</text>
+<line class="line dashed" x1="380" y1="188" x2="380" y2="226"/>
+<rect class="box" x="336" y="226" width="88" height="30"/>
+<text class="t-small" x="380" y="245.3" text-anchor="middle">page 2</text>
+<line class="line dashed" x1="500" y1="188" x2="500" y2="226"/>
+<rect class="box" x="456" y="226" width="88" height="30"/>
+<text class="t-small" x="500" y="245.3" text-anchor="middle">page 3</text>
+<text class="t-small t-muted" x="84" y="246" text-anchor="end">heap</text>
+<text class="t-small t-muted" x="84" y="178" text-anchor="end">FSM</text>
+</svg>

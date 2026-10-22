@@ -1,0 +1,50 @@
+<svg class="diagram" viewBox="0 0 640 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="columnar-batch-compact-title">
+<title id="columnar-batch-compact-title">Compaction gathers the selected rows 1 and 4 of every column into a dense batch of two rows with no selection vector.</title>
+<defs><marker id="columnar-batch-compact-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-bold" x="20" y="18">before: n = 6, selection [1, 4]</text>
+<text class="t-small t-muted" x="126" y="42" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="186" y="42" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="246" y="42" text-anchor="middle">2</text>
+<text class="t-small t-muted" x="306" y="42" text-anchor="middle">3</text>
+<text class="t-small t-muted" x="366" y="42" text-anchor="middle">4</text>
+<text class="t-small t-muted" x="426" y="42" text-anchor="middle">5</text>
+<text class="t-small t-muted" x="86" y="69" text-anchor="end">price</text>
+<text class="t-small t-muted" x="86" y="103" text-anchor="end">name</text>
+<rect class="box-muted" x="96" y="50" width="60" height="28"/>
+<text class="t-small t-mono t-muted" x="126" y="68" text-anchor="middle">10</text>
+<rect class="box-muted" x="96" y="84" width="60" height="28"/>
+<text class="t-small t-mono t-muted" x="126" y="102" text-anchor="middle">"foo"</text>
+<rect class="box-a" x="156" y="50" width="60" height="28"/>
+<text class="t t-mono" x="186" y="69" text-anchor="middle">25</text>
+<rect class="box-a" x="156" y="84" width="60" height="28"/>
+<text class="t-small t-mono" x="186" y="102" text-anchor="middle">""</text>
+<rect class="box-muted" x="216" y="50" width="60" height="28"/>
+<text class="t-small t-mono t-muted" x="246" y="68" text-anchor="middle">NULL</text>
+<rect class="box-muted" x="216" y="84" width="60" height="28"/>
+<text class="t-small t-mono t-muted" x="246" y="102" text-anchor="middle">"apple"</text>
+<rect class="box-muted" x="276" y="50" width="60" height="28"/>
+<text class="t-small t-mono t-muted" x="306" y="68" text-anchor="middle">7</text>
+<rect class="box-muted" x="276" y="84" width="60" height="28"/>
+<text class="t-small t-mono t-muted" x="306" y="102" text-anchor="middle">"pear"</text>
+<rect class="box-a" x="336" y="50" width="60" height="28"/>
+<text class="t t-mono" x="366" y="69" text-anchor="middle">40</text>
+<rect class="box-a" x="336" y="84" width="60" height="28"/>
+<text class="t-small t-mono" x="366" y="102" text-anchor="middle">"kiwi"</text>
+<rect class="box-muted" x="396" y="50" width="60" height="28"/>
+<text class="t-small t-mono t-muted" x="426" y="68" text-anchor="middle">12</text>
+<rect class="box-muted" x="396" y="84" width="60" height="28"/>
+<text class="t-small t-mono t-muted" x="426" y="102" text-anchor="middle">"plum"</text>
+<text class="t-small t-bold" x="530" y="18">after: n = 2</text>
+<text class="t-small t-muted" x="556" y="42" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="608" y="42" text-anchor="middle">1</text>
+<rect class="box" x="530" y="50" width="52" height="28"/>
+<text class="t t-mono" x="556" y="69" text-anchor="middle">25</text>
+<rect class="box" x="530" y="84" width="52" height="28"/>
+<text class="t-small t-mono" x="556" y="102" text-anchor="middle">""</text>
+<rect class="box" x="582" y="50" width="52" height="28"/>
+<text class="t t-mono" x="608" y="69" text-anchor="middle">40</text>
+<rect class="box" x="582" y="84" width="52" height="28"/>
+<text class="t-small t-mono" x="608" y="102" text-anchor="middle">"kiwi"</text>
+<line class="line-a" x1="464" y1="81" x2="524" y2="81" marker-end="url(#columnar-batch-compact-head-a)"/>
+<text class="t-small t-a" x="495" y="72" text-anchor="middle">gather</text>
+</svg>

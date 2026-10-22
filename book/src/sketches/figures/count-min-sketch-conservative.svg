@@ -1,0 +1,35 @@
+<svg class="diagram" viewBox="0 0 640 194" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="count-min-sketch-conservative-title">
+<title id="count-min-sketch-conservative-title">Adding one occurrence of x. The plain update raises all three counters to 18, 13 and 15. The conservative update raises each only to the new estimate 13, giving 17, 13 and 14.</title>
+<defs><marker id="count-min-sketch-conservative-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t t-bold" x="110" y="24" text-anchor="middle">before</text>
+<rect class="box" x="78" y="46" width="64" height="30"/>
+<text class="t t-mono" x="110" y="66" text-anchor="middle">17</text>
+<text class="t-small t-muted" x="66" y="66" text-anchor="end">row 0</text>
+<rect class="box" x="78" y="76" width="64" height="30"/>
+<text class="t t-mono" x="110" y="96" text-anchor="middle">12</text>
+<text class="t-small t-muted" x="66" y="96" text-anchor="end">row 1</text>
+<rect class="box" x="78" y="106" width="64" height="30"/>
+<text class="t t-mono" x="110" y="126" text-anchor="middle">14</text>
+<text class="t-small t-muted" x="66" y="126" text-anchor="end">row 2</text>
+<text class="t-small" x="110" y="162" text-anchor="middle">estimate 12</text>
+<text class="t t-bold" x="320" y="24" text-anchor="middle">plain: add 1</text>
+<rect class="box-a" x="288" y="46" width="64" height="30"/>
+<text class="t t-mono" x="320" y="66" text-anchor="middle">18</text>
+<rect class="box-a" x="288" y="76" width="64" height="30"/>
+<text class="t t-mono" x="320" y="96" text-anchor="middle">13</text>
+<rect class="box-a" x="288" y="106" width="64" height="30"/>
+<text class="t t-mono" x="320" y="126" text-anchor="middle">15</text>
+<text class="t-small t-a t-bold" x="320" y="162" text-anchor="middle">estimate 13</text>
+<text class="t t-bold" x="510" y="24" text-anchor="middle">conservative</text>
+<rect class="box" x="478" y="46" width="64" height="30"/>
+<text class="t t-mono" x="510" y="66" text-anchor="middle">17</text>
+<rect class="box-a" x="478" y="76" width="64" height="30"/>
+<text class="t t-mono" x="510" y="96" text-anchor="middle">13</text>
+<rect class="box" x="478" y="106" width="64" height="30"/>
+<text class="t t-mono" x="510" y="126" text-anchor="middle">14</text>
+<text class="t-small t-a t-bold" x="510" y="162" text-anchor="middle">estimate 13</text>
+<line class="line" x1="158" y1="91" x2="272" y2="91" marker-end="url(#count-min-sketch-conservative-head)"/>
+<text class="t-small t-muted" x="215" y="83" text-anchor="middle">add x</text>
+<text class="t t-muted" x="415" y="96" text-anchor="middle">or</text>
+<text class="t-small t-muted" x="510" y="182" text-anchor="middle">raise to max(cell, 12 + 1)</text>
+</svg>

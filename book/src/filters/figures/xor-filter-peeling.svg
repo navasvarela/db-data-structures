@@ -1,0 +1,63 @@
+<svg class="diagram" viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="xor-filter-peeling-title">
+<title id="xor-filter-peeling-title">Four keys a, b, c and d each map to three of nine slots. Slots 1, 2, 3 and 5 start with count 1; peeling takes c at slot 1, d at slot 2, a at slot 3, then b at slot 4.</title>
+<line class="line" x1="172" y1="48" x2="124" y2="140"/>
+<line class="line-a" x1="172" y1="48" x2="284" y2="140"/>
+<line class="line" x1="172" y1="48" x2="444" y2="140"/>
+<line class="line" x1="278.7" y1="48" x2="124" y2="140"/>
+<line class="line-a" x1="278.7" y1="48" x2="332" y2="140"/>
+<line class="line" x1="278.7" y1="48" x2="492" y2="140"/>
+<line class="line-a" x1="385.3" y1="48" x2="172" y2="140"/>
+<line class="line" x1="385.3" y1="48" x2="332" y2="140"/>
+<line class="line" x1="385.3" y1="48" x2="444" y2="140"/>
+<line class="line-a" x1="492" y1="48" x2="220" y2="140"/>
+<line class="line" x1="492" y1="48" x2="380" y2="140"/>
+<line class="line" x1="492" y1="48" x2="492" y2="140"/>
+<rect class="box" x="156" y="26" width="32" height="26"/>
+<text class="t t-bold" x="172" y="44" text-anchor="middle">a</text>
+<rect class="box" x="262.7" y="26" width="32" height="26"/>
+<text class="t t-bold" x="278.7" y="44" text-anchor="middle">b</text>
+<rect class="box" x="369.3" y="26" width="32" height="26"/>
+<text class="t t-bold" x="385.3" y="44" text-anchor="middle">c</text>
+<rect class="box" x="476" y="26" width="32" height="26"/>
+<text class="t t-bold" x="492" y="44" text-anchor="middle">d</text>
+<rect class="box" x="104" y="140" width="40" height="30"/>
+<text class="t-small t-muted" x="124" y="160" text-anchor="middle">0</text>
+<text class="t t-mono" x="124" y="194" text-anchor="middle">2</text>
+<rect class="box-a" x="152" y="140" width="40" height="30"/>
+<text class="t-small t-muted" x="172" y="160" text-anchor="middle">1</text>
+<text class="t t-mono" x="172" y="194" text-anchor="middle">1</text>
+<rect class="box-a" x="200" y="140" width="40" height="30"/>
+<text class="t-small t-muted" x="220" y="160" text-anchor="middle">2</text>
+<text class="t t-mono" x="220" y="194" text-anchor="middle">1</text>
+<rect class="box-a" x="264" y="140" width="40" height="30"/>
+<text class="t-small t-muted" x="284" y="160" text-anchor="middle">3</text>
+<text class="t t-mono" x="284" y="194" text-anchor="middle">1</text>
+<rect class="box-a" x="312" y="140" width="40" height="30"/>
+<text class="t-small t-muted" x="332" y="160" text-anchor="middle">4</text>
+<text class="t t-mono" x="332" y="194" text-anchor="middle">2</text>
+<rect class="box" x="360" y="140" width="40" height="30"/>
+<text class="t-small t-muted" x="380" y="160" text-anchor="middle">5</text>
+<text class="t t-mono" x="380" y="194" text-anchor="middle">1</text>
+<rect class="box" x="424" y="140" width="40" height="30"/>
+<text class="t-small t-muted" x="444" y="160" text-anchor="middle">6</text>
+<text class="t t-mono" x="444" y="194" text-anchor="middle">2</text>
+<rect class="box" x="472" y="140" width="40" height="30"/>
+<text class="t-small t-muted" x="492" y="160" text-anchor="middle">7</text>
+<text class="t t-mono" x="492" y="194" text-anchor="middle">2</text>
+<rect class="box-muted" x="520" y="140" width="40" height="30"/>
+<text class="t-small t-muted" x="540" y="160" text-anchor="middle">8</text>
+<text class="t t-mono" x="540" y="194" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="92" y="160" text-anchor="end">slot</text>
+<text class="t-small t-muted" x="92" y="194" text-anchor="end">count at start</text>
+<text class="t-small t-muted" x="92" y="224" text-anchor="end">peels</text>
+<text class="t t-bold t-a" x="172" y="224" text-anchor="middle">c</text>
+<text class="t-small t-a" x="172" y="242" text-anchor="middle">step 1</text>
+<text class="t t-bold t-a" x="220" y="224" text-anchor="middle">d</text>
+<text class="t-small t-a" x="220" y="242" text-anchor="middle">step 2</text>
+<text class="t t-bold t-a" x="284" y="224" text-anchor="middle">a</text>
+<text class="t-small t-a" x="284" y="242" text-anchor="middle">step 3</text>
+<text class="t t-bold t-a" x="332" y="224" text-anchor="middle">b</text>
+<text class="t-small t-a" x="332" y="242" text-anchor="middle">step 4</text>
+<text class="t t-mono" x="320" y="280" text-anchor="middle">stack: (c, 1)  (d, 2)  (a, 3)  (b, 4)</text>
+<text class="t-small t-muted" x="320" y="306" text-anchor="middle">assign in reverse: Z[4] for b, Z[3] for a, Z[2] for d, Z[1] for c</text>
+</svg>

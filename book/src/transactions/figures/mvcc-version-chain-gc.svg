@@ -1,0 +1,30 @@
+<svg class="diagram" viewBox="0 0 640 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="mvcc-version-chain-gc-title">
+<title id="mvcc-version-chain-gc-title">With a low watermark of 38, the version of balance 80, whose end 30 is at or below the watermark, is unlinked; the version of balance 100 is kept, because a snapshot at 38 still reads it.</title>
+<defs><marker id="mvcc-version-chain-gc-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="78" y="52" text-anchor="end">watermark</text>
+<text class="t-small t-bold" x="78" y="68" text-anchor="end">38</text>
+<rect class="box" x="90" y="20" width="160" height="70"/>
+<text class="t-small t-muted" x="102" y="40">begin</text>
+<text class="t-small" x="146" y="40">41</text>
+<text class="t-small t-muted" x="102" y="60">end</text>
+<text class="t-small" x="146" y="60">∞</text>
+<text class="t-small t-mono" x="102" y="80">balance = 70</text>
+<rect class="box-a" x="274" y="20" width="160" height="70"/>
+<text class="t-small t-muted" x="286" y="40">begin</text>
+<text class="t-small" x="330" y="40">30</text>
+<text class="t-small t-muted" x="286" y="60">end</text>
+<text class="t-small" x="330" y="60">41</text>
+<text class="t-small t-mono" x="286" y="80">balance = 100</text>
+<line class="line" x1="252" y1="55" x2="270" y2="55" marker-end="url(#mvcc-version-chain-gc-head)"/>
+<rect class="box-warn" x="458" y="20" width="160" height="70"/>
+<text class="t-small t-muted" x="470" y="40">begin</text>
+<text class="t-small" x="514" y="40">12</text>
+<text class="t-small t-muted" x="470" y="60">end</text>
+<text class="t-small" x="514" y="60">30</text>
+<text class="t-small t-mono" x="470" y="80">balance = 80</text>
+<line class="line" x1="436" y1="55" x2="454" y2="55" marker-end="url(#mvcc-version-chain-gc-head)"/>
+<text class="t-small t-muted" x="170" y="116" text-anchor="middle">current</text>
+<text class="t-small t-a" x="354" y="116" text-anchor="middle">visible at 38: keep</text>
+<text class="t-small t-warn" x="538" y="116" text-anchor="middle">end 30 ≤ 38: unlink</text>
+<text class="t-small t-warn" x="538" y="134" text-anchor="middle">and free</text>
+</svg>

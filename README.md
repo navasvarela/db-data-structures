@@ -79,9 +79,15 @@ fn main() -> Result<(), HashIndexError> {
 
 ## Documentation
 
-API documentation for the latest `main` is published to
-[GitHub Pages](https://navasvarela.github.io/db-data-structures/). Released versions are also
-documented on [docs.rs](https://docs.rs/db-data-structures).
+[The guide](https://navasvarela.github.io/db-data-structures/) explains each data structure
+databases are built from, for both transactional and analytical systems, with the papers and books
+to learn it from and the order in which this crate builds them. Its source is the mdBook in
+[`book/`](https://github.com/navasvarela/db-data-structures/tree/main/book); `just book-serve`
+previews it locally.
+
+API documentation for the latest `main` is published
+[alongside the guide](https://navasvarela.github.io/db-data-structures/api/db_data_structures/).
+Released versions are documented on [docs.rs](https://docs.rs/db-data-structures).
 
 ## Development
 

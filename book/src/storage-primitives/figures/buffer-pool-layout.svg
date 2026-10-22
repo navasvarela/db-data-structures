@@ -1,0 +1,61 @@
+<svg class="diagram" viewBox="0 0 640 232" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="buffer-pool-layout-title">
+<title id="buffer-pool-layout-title">A buffer pool with three frames. The page table maps page 17 to frame 0 and page 3 to frame 1; frame 2 is on the free list. Frame 0 is pinned, frame 1 is unpinned and dirty.</title>
+<defs><marker id="buffer-pool-layout-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-bold" x="20" y="18">page table</text>
+<text class="t-small t-muted" x="55" y="36" text-anchor="middle">page</text>
+<text class="t-small t-muted" x="125" y="36" text-anchor="middle">frame</text>
+<text class="t-small t-bold" x="290" y="18">frames</text>
+<text class="t-small t-muted" x="322" y="36" text-anchor="middle">frame</text>
+<text class="t-small t-muted" x="389" y="36" text-anchor="middle">page</text>
+<text class="t-small t-muted" x="449" y="36" text-anchor="middle">pin</text>
+<text class="t-small t-muted" x="504" y="36" text-anchor="middle">dirty</text>
+<text class="t-small t-muted" x="577" y="36" text-anchor="middle">data</text>
+<rect class="box" x="20" y="44" width="70" height="34"/>
+<text class="t-small" x="55" y="65.3" text-anchor="middle">17</text>
+<rect class="box" x="90" y="44" width="70" height="34"/>
+<text class="t-small" x="125" y="65.3" text-anchor="middle">fr 0</text>
+<rect class="box" x="20" y="78" width="70" height="34"/>
+<text class="t-small" x="55" y="99.3" text-anchor="middle">3</text>
+<rect class="box" x="90" y="78" width="70" height="34"/>
+<text class="t-small" x="125" y="99.3" text-anchor="middle">fr 1</text>
+<rect class="box" x="290" y="44" width="64" height="34"/>
+<text class="t-small" x="322" y="65.3" text-anchor="middle">fr 0</text>
+<rect class="box" x="354" y="44" width="70" height="34"/>
+<text class="t-small" x="389" y="65.3" text-anchor="middle">17</text>
+<rect class="box" x="424" y="44" width="50" height="34"/>
+<text class="t-small" x="449" y="65.3" text-anchor="middle">2</text>
+<rect class="box" x="474" y="44" width="60" height="34"/>
+<text class="t-small" x="504" y="65.3" text-anchor="middle">no</text>
+<rect class="box" x="534" y="44" width="86" height="34"/>
+<text class="t-small" x="577" y="65.3" text-anchor="middle">4 KiB</text>
+<rect class="box-b" x="290" y="78" width="64" height="34"/>
+<text class="t-small" x="322" y="99.3" text-anchor="middle">fr 1</text>
+<rect class="box-b" x="354" y="78" width="70" height="34"/>
+<text class="t-small" x="389" y="99.3" text-anchor="middle">3</text>
+<rect class="box-b" x="424" y="78" width="50" height="34"/>
+<text class="t-small" x="449" y="99.3" text-anchor="middle">0</text>
+<rect class="box-b" x="474" y="78" width="60" height="34"/>
+<text class="t-small" x="504" y="99.3" text-anchor="middle">yes</text>
+<rect class="box-b" x="534" y="78" width="86" height="34"/>
+<text class="t-small" x="577" y="99.3" text-anchor="middle">4 KiB</text>
+<rect class="box-muted" x="290" y="112" width="64" height="34"/>
+<text class="t-small t-muted" x="322" y="133.3" text-anchor="middle">fr 2</text>
+<rect class="box-muted" x="354" y="112" width="70" height="34"/>
+<text class="t-small t-muted" x="389" y="133.3" text-anchor="middle">–</text>
+<rect class="box-muted" x="424" y="112" width="50" height="34"/>
+<text class="t-small t-muted" x="449" y="133.3" text-anchor="middle">0</text>
+<rect class="box-muted" x="474" y="112" width="60" height="34"/>
+<text class="t-small t-muted" x="504" y="133.3" text-anchor="middle">no</text>
+<rect class="box-muted" x="534" y="112" width="86" height="34"/>
+<text class="t-small t-muted" x="577" y="133.3" text-anchor="middle"></text>
+<line class="line" x1="164" y1="61" x2="286" y2="61" marker-end="url(#buffer-pool-layout-head)"/>
+<line class="line" x1="164" y1="95" x2="286" y2="95" marker-end="url(#buffer-pool-layout-head)"/>
+<text class="t-small t-bold" x="20" y="133">free list</text>
+<rect class="box-muted" x="90" y="112" width="70" height="34"/>
+<text class="t-small" x="125" y="133.3" text-anchor="middle">fr 2</text>
+<line class="line dashed" x1="164" y1="129" x2="286" y2="129" marker-end="url(#buffer-pool-layout-head)"/>
+<text class="t-small t-bold" x="20" y="180">replacer</text>
+<text class="t-small" x="90" y="180">candidates: frames with pin = 0 that hold a page</text>
+<text class="t-small t-b" x="90" y="200">fr 1 may be evicted (after writing it back, as it is dirty)</text>
+<text class="t-small t-muted" x="90" y="220">fr 0 may not: two callers are using it</text>
+</svg>

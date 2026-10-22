@@ -1,0 +1,48 @@
+<svg class="diagram" viewBox="0 0 640 264" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="merkle-tree-compare-title">
+<title id="merkle-tree-compare-title">Comparing replicas A and B: the roots differ, h01 matches so its subtree is skipped, h23 differs, h2 matches and h3 differs, so only the keys in 300 to 400 are exchanged.</title>
+<text class="t-small t-bold" x="145" y="18" text-anchor="middle">replica A</text>
+<line class="line" x1="145" y1="62" x2="75" y2="92"/>
+<line class="line" x1="145" y1="62" x2="215" y2="92"/>
+<line class="line dashed" x1="75" y1="120" x2="40" y2="150"/>
+<line class="line dashed" x1="75" y1="120" x2="110" y2="150"/>
+<line class="line" x1="215" y1="120" x2="180" y2="150"/>
+<line class="line" x1="215" y1="120" x2="250" y2="150"/>
+<rect class="box-muted" x="13" y="150" width="54" height="28"/>
+<text class="t-small t-mono t-muted" x="40" y="168" text-anchor="middle">h0</text>
+<rect class="box-muted" x="83" y="150" width="54" height="28"/>
+<text class="t-small t-mono t-muted" x="110" y="168" text-anchor="middle">h1</text>
+<rect class="box-muted" x="153" y="150" width="54" height="28"/>
+<text class="t-small t-mono t-muted" x="180" y="168" text-anchor="middle">h2</text>
+<rect class="box-warn" x="223" y="150" width="54" height="28"/>
+<text class="t-small t-mono" x="250" y="168" text-anchor="middle">h3</text>
+<rect class="box-muted" x="48" y="92" width="54" height="28"/>
+<text class="t-small t-mono t-muted" x="75" y="110" text-anchor="middle">h01</text>
+<rect class="box-warn" x="188" y="92" width="54" height="28"/>
+<text class="t-small t-mono" x="215" y="110" text-anchor="middle">h23</text>
+<rect class="box-warn" x="118" y="34" width="54" height="28"/>
+<text class="t-small t-mono" x="145" y="52" text-anchor="middle">root</text>
+<text class="t-small t-bold" x="465" y="18" text-anchor="middle">replica B</text>
+<line class="line" x1="465" y1="62" x2="395" y2="92"/>
+<line class="line" x1="465" y1="62" x2="535" y2="92"/>
+<line class="line dashed" x1="395" y1="120" x2="360" y2="150"/>
+<line class="line dashed" x1="395" y1="120" x2="430" y2="150"/>
+<line class="line" x1="535" y1="120" x2="500" y2="150"/>
+<line class="line" x1="535" y1="120" x2="570" y2="150"/>
+<rect class="box-muted" x="333" y="150" width="54" height="28"/>
+<text class="t-small t-mono t-muted" x="360" y="168" text-anchor="middle">h0</text>
+<rect class="box-muted" x="403" y="150" width="54" height="28"/>
+<text class="t-small t-mono t-muted" x="430" y="168" text-anchor="middle">h1</text>
+<rect class="box-muted" x="473" y="150" width="54" height="28"/>
+<text class="t-small t-mono t-muted" x="500" y="168" text-anchor="middle">h2</text>
+<rect class="box-warn" x="543" y="150" width="54" height="28"/>
+<text class="t-small t-mono" x="570" y="168" text-anchor="middle">h3</text>
+<rect class="box-muted" x="368" y="92" width="54" height="28"/>
+<text class="t-small t-mono t-muted" x="395" y="110" text-anchor="middle">h01</text>
+<rect class="box-warn" x="508" y="92" width="54" height="28"/>
+<text class="t-small t-mono" x="535" y="110" text-anchor="middle">h23</text>
+<rect class="box-warn" x="438" y="34" width="54" height="28"/>
+<text class="t-small t-mono" x="465" y="52" text-anchor="middle">root</text>
+<text class="t-small" x="40" y="214">1. The roots differ: exchange h01 and h23.</text>
+<text class="t-small" x="40" y="234">2. h01 is equal, so its subtree is skipped; h23 differs: exchange h2 and h3.</text>
+<text class="t-small t-warn" x="40" y="254">3. h3 differs: exchange the keys in [300, 400) and reconcile them.</text>
+</svg>

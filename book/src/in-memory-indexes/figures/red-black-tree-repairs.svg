@@ -1,0 +1,52 @@
+<svg class="diagram" viewBox="0 0 640 310" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="red-black-tree-repairs-title">
+<title id="red-black-tree-repairs-title">rotate_left turns a red right child x of h into the parent of h, which becomes red; flip_colours turns a black node with two red children into a red node with two black children.</title>
+<defs><marker id="red-black-tree-repairs-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted t-mono" x="20" y="22">rotate_left(h)</text>
+<line class="line-warn" x1="160.607" y1="60.6066" x2="189.393" y2="89.3934"/>
+<circle class="box" cx="150" cy="50" r="15"/>
+<text class="t t-bold" x="150" y="55" text-anchor="middle">h</text>
+<circle class="box-warn" cx="200" cy="100" r="15"/>
+<text class="t t-bold" x="200" y="105" text-anchor="middle">x</text>
+<line class="line" x1="138.514" y1="59.6479" x2="100" y2="92"/>
+<path class="box" d="M100,92 L83,124 L117,124 Z"/>
+<text class="t-small" x="100" y="119" text-anchor="middle">a</text>
+<line class="line" x1="191.679" y1="112.481" x2="172" y2="142"/>
+<line class="line" x1="208.321" y1="112.481" x2="228" y2="142"/>
+<path class="box" d="M172,142 L155,174 L189,174 Z"/>
+<text class="t-small" x="172" y="169" text-anchor="middle">b</text>
+<path class="box" d="M228,142 L211,174 L245,174 Z"/>
+<text class="t-small" x="228" y="169" text-anchor="middle">c</text>
+<line class="line" x1="276" y1="100" x2="346" y2="100" marker-end="url(#red-black-tree-repairs-head)"/>
+<line class="line-warn" x1="459.393" y1="60.6066" x2="430.607" y2="89.3934"/>
+<circle class="box" cx="470" cy="50" r="15"/>
+<text class="t t-bold" x="470" y="55" text-anchor="middle">x</text>
+<circle class="box-warn" cx="420" cy="100" r="15"/>
+<text class="t t-bold" x="420" y="105" text-anchor="middle">h</text>
+<line class="line" x1="481.486" y1="59.6479" x2="520" y2="92"/>
+<path class="box" d="M520,92 L503,124 L537,124 Z"/>
+<text class="t-small" x="520" y="119" text-anchor="middle">c</text>
+<line class="line" x1="411.679" y1="112.481" x2="392" y2="142"/>
+<line class="line" x1="428.321" y1="112.481" x2="448" y2="142"/>
+<path class="box" d="M392,142 L375,174 L409,174 Z"/>
+<text class="t-small" x="392" y="169" text-anchor="middle">a</text>
+<path class="box" d="M448,142 L431,174 L465,174 Z"/>
+<text class="t-small" x="448" y="169" text-anchor="middle">b</text>
+<text class="t-small t-muted t-mono" x="20" y="210">flip_colours(h)</text>
+<line class="line-warn" x1="139.632" y1="240.84" x2="116.368" y2="265.16"/>
+<line class="line-warn" x1="160.368" y1="240.84" x2="183.632" y2="265.16"/>
+<circle class="box" cx="150" cy="230" r="15"/>
+<text class="t t-bold" x="150" y="235" text-anchor="middle">h</text>
+<circle class="box-warn" cx="106" cy="276" r="15"/>
+<text class="t t-bold" x="106" y="281" text-anchor="middle">a</text>
+<circle class="box-warn" cx="194" cy="276" r="15"/>
+<text class="t t-bold" x="194" y="281" text-anchor="middle">b</text>
+<line class="line" x1="276" y1="256" x2="346" y2="256" marker-end="url(#red-black-tree-repairs-head)"/>
+<line class="line" x1="459.632" y1="240.84" x2="436.368" y2="265.16"/>
+<line class="line" x1="480.368" y1="240.84" x2="503.632" y2="265.16"/>
+<circle class="box-warn" cx="470" cy="230" r="15"/>
+<text class="t t-bold" x="470" y="235" text-anchor="middle">h</text>
+<circle class="box" cx="426" cy="276" r="15"/>
+<text class="t t-bold" x="426" y="281" text-anchor="middle">a</text>
+<circle class="box" cx="514" cy="276" r="15"/>
+<text class="t t-bold" x="514" y="281" text-anchor="middle">b</text>
+</svg>

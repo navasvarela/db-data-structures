@@ -1,0 +1,79 @@
+<svg class="diagram" viewBox="0 0 640 268" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="hyperloglog-insert-title">
+<title id="hyperloglog-insert-title">A 64-bit hash split into a 14-bit register index and a remainder with seven leading zeros, so rho is 8 and register j becomes the maximum of its old value 5 and 8.</title>
+<defs><marker id="hyperloglog-insert-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker><marker id="hyperloglog-insert-head-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-b" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="34" y="18">64-bit hash</text>
+<rect class="box-b" x="34" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="44" y="48" text-anchor="middle">0</text>
+<rect class="box-b" x="54" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="64" y="48" text-anchor="middle">1</text>
+<rect class="box-b" x="74" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="84" y="48" text-anchor="middle">1</text>
+<rect class="box-b" x="94" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="104" y="48" text-anchor="middle">0</text>
+<rect class="box-b" x="114" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="124" y="48" text-anchor="middle">1</text>
+<rect class="box-b" x="134" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="144" y="48" text-anchor="middle">0</text>
+<rect class="box-b" x="154" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="164" y="48" text-anchor="middle">1</text>
+<rect class="box-b" x="174" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="184" y="48" text-anchor="middle">1</text>
+<rect class="box-b" x="194" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="204" y="48" text-anchor="middle">0</text>
+<rect class="box-b" x="214" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="224" y="48" text-anchor="middle">1</text>
+<rect class="box-b" x="234" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="244" y="48" text-anchor="middle">0</text>
+<rect class="box-b" x="254" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="264" y="48" text-anchor="middle">0</text>
+<rect class="box-b" x="274" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="284" y="48" text-anchor="middle">0</text>
+<rect class="box-b" x="294" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="304" y="48" text-anchor="middle">1</text>
+<rect class="box-muted" x="326" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="336" y="48" text-anchor="middle">0</text>
+<rect class="box-muted" x="346" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="356" y="48" text-anchor="middle">0</text>
+<rect class="box-muted" x="366" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="376" y="48" text-anchor="middle">0</text>
+<rect class="box-muted" x="386" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="396" y="48" text-anchor="middle">0</text>
+<rect class="box-muted" x="406" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="416" y="48" text-anchor="middle">0</text>
+<rect class="box-muted" x="426" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="436" y="48" text-anchor="middle">0</text>
+<rect class="box-muted" x="446" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="456" y="48" text-anchor="middle">0</text>
+<rect class="box-a" x="466" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="476" y="48" text-anchor="middle">1</text>
+<rect class="box" x="486" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="496" y="48" text-anchor="middle">1</text>
+<rect class="box" x="506" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="516" y="48" text-anchor="middle">0</text>
+<rect class="box" x="526" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="536" y="48" text-anchor="middle">1</text>
+<rect class="box" x="546" y="30" width="20" height="26"/>
+<text class="t-small t-mono" x="556" y="48" text-anchor="middle">0</text>
+<text class="t t-muted" x="580" y="48" text-anchor="middle">…</text>
+<path class="line-b" d="M34,64 v6 H314 v-6"/>
+<text class="t-small t-b" x="174" y="88" text-anchor="middle">first p = 14 bits: index j = 6865</text>
+<path class="line-a" d="M326,64 v6 H486 v-6"/>
+<text class="t-small t-a" x="436" y="88" text-anchor="middle">7 zeros, then 1: ρ = 8</text>
+<rect class="box" x="68" y="200" width="64" height="34"/>
+<text class="t t-mono" x="100" y="222" text-anchor="middle">3</text>
+<text class="t-small t-mono t-muted" x="100" y="192" text-anchor="middle">M[0]</text>
+<rect class="box" x="156" y="200" width="64" height="34"/>
+<text class="t t-mono" x="188" y="222" text-anchor="middle">0</text>
+<text class="t-small t-mono t-muted" x="188" y="192" text-anchor="middle">M[1]</text>
+<text class="t t-muted" x="276" y="224" text-anchor="middle">…</text>
+<rect class="box-a" x="332" y="200" width="64" height="34"/>
+<text class="t t-mono" x="364" y="222" text-anchor="middle">8</text>
+<text class="t-small t-mono t-bold" x="364" y="192" text-anchor="middle">M[j]</text>
+<text class="t t-muted" x="452" y="224" text-anchor="middle">…</text>
+<rect class="box" x="508" y="200" width="64" height="34"/>
+<text class="t t-mono" x="540" y="222" text-anchor="middle">5</text>
+<text class="t-small t-mono t-muted" x="540" y="192" text-anchor="middle">M[m−1]</text>
+<line class="line-b" x1="174" y1="96" x2="354" y2="176" marker-end="url(#hyperloglog-insert-head-b)"/>
+<line class="line-a" x1="436" y1="96" x2="374" y2="176" marker-end="url(#hyperloglog-insert-head-a)"/>
+<text class="t-small t-a" x="364" y="256" text-anchor="middle">max(5, 8) = 8</text>
+</svg>

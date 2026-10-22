@@ -1,0 +1,32 @@
+<svg class="diagram" viewBox="0 0 640 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="append-only-log-layout-title">
+<title id="append-only-log-layout-title">Three records laid end to end: first at offset 0, an empty payload at 9, third record at 13; end is 29.</title>
+<defs><marker id="append-only-log-layout-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="append-only-log-layout-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<rect class="box-a" x="40" y="64" width="72" height="36"/>
+<text class="t t-mono" x="76" y="87.0" text-anchor="middle">5</text>
+<text class="t-small t-muted" x="76" y="136" text-anchor="middle">4 B</text>
+<rect class="box" x="112" y="64" width="90" height="36"/>
+<text class="t t-mono" x="157" y="87.0" text-anchor="middle">"first"</text>
+<text class="t-small t-muted" x="157" y="136" text-anchor="middle">5 B</text>
+<rect class="box-a" x="202" y="64" width="72" height="36"/>
+<text class="t t-mono" x="238" y="87.0" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="238" y="136" text-anchor="middle">4 B</text>
+<rect class="box-a" x="274" y="64" width="72" height="36"/>
+<text class="t t-mono" x="310" y="87.0" text-anchor="middle">12</text>
+<text class="t-small t-muted" x="310" y="136" text-anchor="middle">4 B</text>
+<rect class="box" x="346" y="64" width="216" height="36"/>
+<text class="t t-mono" x="454" y="87.0" text-anchor="middle">"third record"</text>
+<text class="t-small t-muted" x="454" y="136" text-anchor="middle">12 B</text>
+<path class="line-a" d="M44,62 C44,30 202,30 202,60" marker-end="url(#append-only-log-layout-head-a)"/>
+<text class="t-small t-a" x="123" y="32" text-anchor="middle">+ 4 + 5</text>
+<path class="line-a" d="M206,62 C206,30 274,30 274,60" marker-end="url(#append-only-log-layout-head-a)"/>
+<text class="t-small t-a" x="240" y="32" text-anchor="middle">+ 4 + 0</text>
+<path class="line-a" d="M278,62 C278,30 562,30 562,60" marker-end="url(#append-only-log-layout-head-a)"/>
+<text class="t-small t-a" x="420" y="32" text-anchor="middle">+ 4 + 12</text>
+<text class="t-small t-mono" x="40" y="118" text-anchor="middle">0</text>
+<text class="t-small t-mono" x="202" y="118" text-anchor="middle">9</text>
+<text class="t-small t-mono" x="274" y="118" text-anchor="middle">13</text>
+<text class="t-small t-mono" x="562" y="118" text-anchor="middle">29</text>
+<line class="line" x1="608" y1="82" x2="568" y2="82" marker-end="url(#append-only-log-layout-head)"/>
+<text class="t" x="612" y="87">end</text>
+<text class="t-small t-muted" x="30" y="118" text-anchor="end">offset</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg class="diagram" viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="lsm-tree-policies-title">
+<title id="lsm-tree-policies-title">Leveling keeps one sorted run per level, each T times larger than the one above; tiering lets up to T runs of the same size accumulate in each level.</title>
+<text class="t t-bold" x="170" y="18" text-anchor="middle">leveling</text>
+<text class="t t-bold" x="480" y="18" text-anchor="middle">tiering</text>
+<text class="t t-bold" x="16" y="58">L1</text>
+<rect class="box-a" x="48" y="44" width="26" height="18" rx="3"/>
+<rect class="box-b" x="344" y="36" width="26" height="11" rx="2"/>
+<rect class="box-b" x="344" y="50" width="26" height="11" rx="2"/>
+<rect class="box-b" x="344" y="64" width="26" height="11" rx="2"/>
+<text class="t t-bold" x="16" y="108">L2</text>
+<rect class="box-a" x="48" y="94" width="78" height="18" rx="3"/>
+<rect class="box-b" x="344" y="86" width="78" height="11" rx="2"/>
+<rect class="box-b" x="344" y="100" width="78" height="11" rx="2"/>
+<rect class="box-b" x="344" y="114" width="78" height="11" rx="2"/>
+<text class="t t-bold" x="16" y="158">L3</text>
+<rect class="box-a" x="48" y="144" width="234" height="18" rx="3"/>
+<rect class="box-b" x="344" y="136" width="234" height="11" rx="2"/>
+<rect class="box-b" x="344" y="150" width="234" height="11" rx="2"/>
+<rect class="box-b" x="344" y="164" width="234" height="11" rx="2"/>
+<text class="t-small t-muted" x="48" y="196">one run per level</text>
+<text class="t-small t-muted" x="344" y="196">up to T runs per level (T = 3 here)</text>
+</svg>

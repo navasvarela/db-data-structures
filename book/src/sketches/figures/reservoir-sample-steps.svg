@@ -1,0 +1,71 @@
+<svg class="diagram" viewBox="0 0 640 262" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="reservoir-sample-steps-title">
+<title id="reservoir-sample-steps-title">Reservoir of three slots. After a, b and c it holds a, b, c. d arrives as item 4, draws j = 2 and replaces b. e arrives as item 5, draws j = 5 and is discarded. f arrives as item 6, draws j = 3 and replaces c.</title>
+<defs><marker id="reservoir-sample-steps-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="136" y="34" text-anchor="end">stream</text>
+<rect class="box" x="150" y="16" width="34" height="26"/>
+<text class="t t-mono" x="167" y="34" text-anchor="middle">a</text>
+<text class="t-small t-muted" x="167" y="58" text-anchor="middle">1</text>
+<rect class="box" x="190" y="16" width="34" height="26"/>
+<text class="t t-mono" x="207" y="34" text-anchor="middle">b</text>
+<text class="t-small t-muted" x="207" y="58" text-anchor="middle">2</text>
+<rect class="box" x="230" y="16" width="34" height="26"/>
+<text class="t t-mono" x="247" y="34" text-anchor="middle">c</text>
+<text class="t-small t-muted" x="247" y="58" text-anchor="middle">3</text>
+<rect class="box" x="270" y="16" width="34" height="26"/>
+<text class="t t-mono" x="287" y="34" text-anchor="middle">d</text>
+<text class="t-small t-muted" x="287" y="58" text-anchor="middle">4</text>
+<rect class="box" x="310" y="16" width="34" height="26"/>
+<text class="t t-mono" x="327" y="34" text-anchor="middle">e</text>
+<text class="t-small t-muted" x="327" y="58" text-anchor="middle">5</text>
+<rect class="box" x="350" y="16" width="34" height="26"/>
+<text class="t t-mono" x="367" y="34" text-anchor="middle">f</text>
+<text class="t-small t-muted" x="367" y="58" text-anchor="middle">6</text>
+<rect class="box-muted" x="390" y="16" width="34" height="26"/>
+<text class="t t-mono t-muted" x="407" y="34" text-anchor="middle">g</text>
+<text class="t-small t-muted" x="407" y="58" text-anchor="middle">7</text>
+<rect class="box-muted" x="430" y="16" width="34" height="26"/>
+<text class="t t-mono t-muted" x="447" y="34" text-anchor="middle">h</text>
+<text class="t-small t-muted" x="447" y="58" text-anchor="middle">8</text>
+<text class="t t-muted" x="476" y="34">…</text>
+<text class="t-small t-muted" x="136" y="104" text-anchor="end">i ≤ 3</text>
+<rect class="box" x="240" y="86" width="40" height="26"/>
+<text class="t t-mono" x="260" y="104" text-anchor="middle">a</text>
+<rect class="box" x="280" y="86" width="40" height="26"/>
+<text class="t t-mono" x="300" y="104" text-anchor="middle">b</text>
+<rect class="box" x="320" y="86" width="40" height="26"/>
+<text class="t t-mono" x="340" y="104" text-anchor="middle">c</text>
+<text class="t-small t-muted" x="380" y="104">first k items copied</text>
+<text class="t-small t-muted" x="136" y="148" text-anchor="end">i = 4</text>
+<rect class="box-a" x="148" y="130" width="30" height="26"/>
+<text class="t t-mono" x="163" y="148" text-anchor="middle">d</text>
+<line class="line" x1="182" y1="143" x2="232" y2="143" marker-end="url(#reservoir-sample-steps-head)"/>
+<rect class="box" x="240" y="130" width="40" height="26"/>
+<text class="t t-mono" x="260" y="148" text-anchor="middle">a</text>
+<rect class="box-a" x="280" y="130" width="40" height="26"/>
+<text class="t t-mono" x="300" y="148" text-anchor="middle">d</text>
+<rect class="box" x="320" y="130" width="40" height="26"/>
+<text class="t t-mono" x="340" y="148" text-anchor="middle">c</text>
+<text class="t-small t-a" x="380" y="148">j = 2 ≤ 3: d replaces b</text>
+<text class="t-small t-muted" x="136" y="192" text-anchor="end">i = 5</text>
+<rect class="box-warn" x="148" y="174" width="30" height="26"/>
+<text class="t t-mono t-warn" x="163" y="192" text-anchor="middle">e</text>
+<line class="line" x1="182" y1="187" x2="232" y2="187" marker-end="url(#reservoir-sample-steps-head)"/>
+<rect class="box" x="240" y="174" width="40" height="26"/>
+<text class="t t-mono" x="260" y="192" text-anchor="middle">a</text>
+<rect class="box" x="280" y="174" width="40" height="26"/>
+<text class="t t-mono" x="300" y="192" text-anchor="middle">d</text>
+<rect class="box" x="320" y="174" width="40" height="26"/>
+<text class="t t-mono" x="340" y="192" text-anchor="middle">c</text>
+<text class="t-small t-warn" x="380" y="192">j = 5 > 3: e discarded</text>
+<text class="t-small t-muted" x="136" y="236" text-anchor="end">i = 6</text>
+<rect class="box-a" x="148" y="218" width="30" height="26"/>
+<text class="t t-mono" x="163" y="236" text-anchor="middle">f</text>
+<line class="line" x1="182" y1="231" x2="232" y2="231" marker-end="url(#reservoir-sample-steps-head)"/>
+<rect class="box" x="240" y="218" width="40" height="26"/>
+<text class="t t-mono" x="260" y="236" text-anchor="middle">a</text>
+<rect class="box" x="280" y="218" width="40" height="26"/>
+<text class="t t-mono" x="300" y="236" text-anchor="middle">d</text>
+<rect class="box-a" x="320" y="218" width="40" height="26"/>
+<text class="t t-mono" x="340" y="236" text-anchor="middle">f</text>
+<text class="t-small t-a" x="380" y="236">j = 3 ≤ 3: f replaces c</text>
+</svg>

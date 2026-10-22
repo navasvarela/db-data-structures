@@ -1,0 +1,23 @@
+<svg class="diagram" viewBox="0 0 640 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="memtable-internal-keys-title">
+<title id="memtable-internal-keys-title">Four internal keys in order: apple 12 put, apple 7 delete, apple 3 put, pear 9 put. Seeking apple at snapshot 15 finds the put at 12, at snapshot 10 the delete at 7, and at snapshot 5 the put at 3.</title>
+<defs><marker id="memtable-internal-keys-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<rect class="box" x="20" y="62" width="146" height="32"/>
+<text class="t-small t-mono" x="93" y="82" text-anchor="middle">"apple", 12, put</text>
+<rect class="box-warn" x="174" y="62" width="146" height="32"/>
+<text class="t-small t-mono" x="247" y="82" text-anchor="middle">"apple", 7, delete</text>
+<rect class="box" x="328" y="62" width="146" height="32"/>
+<text class="t-small t-mono" x="401" y="82" text-anchor="middle">"apple", 3, put</text>
+<rect class="box" x="482" y="62" width="146" height="32"/>
+<text class="t-small t-mono" x="555" y="82" text-anchor="middle">"pear", 9, put</text>
+<text class="t-small t-mono t-a" x="93" y="24" text-anchor="middle">seek ("apple", 15)</text>
+<line class="line-a" x1="93" y1="32" x2="93" y2="60" marker-end="url(#memtable-internal-keys-head-a)"/>
+<text class="t-small" x="93" y="116" text-anchor="middle">found, version 12</text>
+<text class="t-small t-mono t-a" x="247" y="24" text-anchor="middle">seek ("apple", 10)</text>
+<line class="line-a" x1="247" y1="32" x2="247" y2="60" marker-end="url(#memtable-internal-keys-head-a)"/>
+<text class="t-small t-warn" x="247" y="116" text-anchor="middle">deleted</text>
+<text class="t-small t-mono t-a" x="401" y="24" text-anchor="middle">seek ("apple", 5)</text>
+<line class="line-a" x1="401" y1="32" x2="401" y2="60" marker-end="url(#memtable-internal-keys-head-a)"/>
+<text class="t-small" x="401" y="116" text-anchor="middle">found, version 3</text>
+<text class="t-small t-muted" x="20" y="142">newest "apple"</text>
+<text class="t-small t-muted" x="474" y="142" text-anchor="end">oldest "apple"</text>
+</svg>

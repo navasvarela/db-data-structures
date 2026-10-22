@@ -1,0 +1,38 @@
+<svg class="diagram" viewBox="0 0 640 212" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="kll-sketch-compact-title">
+<title id="kll-sketch-compact-title">Compacting six sorted items of weight w: the coin picks odd positions, so 2, 9 and 20 are kept with weight 2w. The rank of 10 moves from 3w to 4w.</title>
+<defs><marker id="kll-sketch-compact-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="114" y="61" text-anchor="end">weight w</text>
+<text class="t-small t-muted" x="114" y="171" text-anchor="end">weight 2w</text>
+<rect class="box-a" x="128" y="40" width="56" height="32"/>
+<text class="t t-mono" x="156" y="61" text-anchor="middle">2</text>
+<text class="t-small t-a" x="156" y="30" text-anchor="middle">1st</text>
+<rect class="box-muted" x="192" y="40" width="56" height="32"/>
+<text class="t t-mono t-muted" x="220" y="61" text-anchor="middle">5</text>
+<text class="t-small t-muted" x="220" y="30" text-anchor="middle">2nd</text>
+<rect class="box-a" x="256" y="40" width="56" height="32"/>
+<text class="t t-mono" x="284" y="61" text-anchor="middle">9</text>
+<text class="t-small t-a" x="284" y="30" text-anchor="middle">3rd</text>
+<rect class="box-muted" x="320" y="40" width="56" height="32"/>
+<text class="t t-mono t-muted" x="348" y="61" text-anchor="middle">14</text>
+<text class="t-small t-muted" x="348" y="30" text-anchor="middle">4th</text>
+<rect class="box-a" x="384" y="40" width="56" height="32"/>
+<text class="t t-mono" x="412" y="61" text-anchor="middle">20</text>
+<text class="t-small t-a" x="412" y="30" text-anchor="middle">5th</text>
+<rect class="box-muted" x="448" y="40" width="56" height="32"/>
+<text class="t t-mono t-muted" x="476" y="61" text-anchor="middle">31</text>
+<text class="t-small t-muted" x="476" y="30" text-anchor="middle">6th</text>
+<rect class="box-a" x="128" y="150" width="56" height="32"/>
+<text class="t t-mono" x="156" y="171" text-anchor="middle">2</text>
+<line class="line-a" x1="156" y1="78" x2="156" y2="144" marker-end="url(#kll-sketch-compact-head-a)"/>
+<rect class="box-a" x="256" y="150" width="56" height="32"/>
+<text class="t t-mono" x="284" y="171" text-anchor="middle">9</text>
+<line class="line-a" x1="284" y1="78" x2="284" y2="144" marker-end="url(#kll-sketch-compact-head-a)"/>
+<rect class="box-a" x="384" y="150" width="56" height="32"/>
+<text class="t t-mono" x="412" y="171" text-anchor="middle">20</text>
+<line class="line-a" x1="412" y1="78" x2="412" y2="144" marker-end="url(#kll-sketch-compact-head-a)"/>
+<text class="t-small t-a" x="424" y="110">coin: keep odd positions</text>
+<line class="line dashed" x1="316" y1="14" x2="316" y2="202"/>
+<text class="t-small" x="322" y="18">x = 10</text>
+<text class="t-small" x="324" y="94">rank(10) = 3w</text>
+<text class="t-small t-bold" x="324" y="200">rank(10) = 2w + 2w = 4w</text>
+</svg>

@@ -1,0 +1,78 @@
+<svg class="diagram" viewBox="0 0 640 362" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="segment-tree-query-title">
+<title id="segment-tree-query-title">Querying the sum of input[1..8) combines three nodes, 7 at position 9, 13 at position 5 and 20 at position 3, for a total of 40.</title>
+<line class="line" x1="317" y1="40" x2="193" y2="66"/>
+<line class="line" x1="317" y1="40" x2="441" y2="66"/>
+<line class="line" x1="193" y1="94" x2="131" y2="120"/>
+<line class="line" x1="193" y1="94" x2="255" y2="120"/>
+<line class="line" x1="441" y1="94" x2="379" y2="120"/>
+<line class="line" x1="441" y1="94" x2="503" y2="120"/>
+<line class="line" x1="131" y1="148" x2="100" y2="174"/>
+<line class="line" x1="131" y1="148" x2="162" y2="174"/>
+<line class="line" x1="255" y1="148" x2="224" y2="174"/>
+<line class="line" x1="255" y1="148" x2="286" y2="174"/>
+<line class="line" x1="379" y1="148" x2="348" y2="174"/>
+<line class="line" x1="379" y1="148" x2="410" y2="174"/>
+<line class="line" x1="503" y1="148" x2="472" y2="174"/>
+<line class="line" x1="503" y1="148" x2="534" y2="174"/>
+<rect class="box" x="295" y="12" width="44" height="28"/>
+<text class="t t-mono" x="317" y="31" text-anchor="middle">45</text>
+<text class="t-small t-muted" x="342" y="22">1</text>
+<rect class="box" x="171" y="66" width="44" height="28"/>
+<text class="t t-mono" x="193" y="85" text-anchor="middle">25</text>
+<text class="t-small t-muted" x="218" y="76">2</text>
+<rect class="box-a" x="419" y="66" width="44" height="28"/>
+<text class="t t-mono" x="441" y="85" text-anchor="middle">20</text>
+<text class="t-small t-muted" x="466" y="76">3</text>
+<rect class="box" x="109" y="120" width="44" height="28"/>
+<text class="t t-mono" x="131" y="139" text-anchor="middle">12</text>
+<text class="t-small t-muted" x="156" y="130">4</text>
+<rect class="box-a" x="233" y="120" width="44" height="28"/>
+<text class="t t-mono" x="255" y="139" text-anchor="middle">13</text>
+<text class="t-small t-muted" x="280" y="130">5</text>
+<rect class="box" x="357" y="120" width="44" height="28"/>
+<text class="t t-mono" x="379" y="139" text-anchor="middle">8</text>
+<text class="t-small t-muted" x="404" y="130">6</text>
+<rect class="box" x="481" y="120" width="44" height="28"/>
+<text class="t t-mono" x="503" y="139" text-anchor="middle">12</text>
+<text class="t-small t-muted" x="528" y="130">7</text>
+<rect class="box" x="78" y="174" width="44" height="28"/>
+<text class="t t-mono" x="100" y="193" text-anchor="middle">5</text>
+<text class="t-small t-muted" x="100" y="218" text-anchor="middle">8</text>
+<rect class="box-a" x="140" y="174" width="44" height="28"/>
+<text class="t t-mono" x="162" y="193" text-anchor="middle">7</text>
+<text class="t-small t-muted" x="162" y="218" text-anchor="middle">9</text>
+<rect class="box" x="202" y="174" width="44" height="28"/>
+<text class="t t-mono" x="224" y="193" text-anchor="middle">3</text>
+<text class="t-small t-muted" x="224" y="218" text-anchor="middle">10</text>
+<rect class="box" x="264" y="174" width="44" height="28"/>
+<text class="t t-mono" x="286" y="193" text-anchor="middle">10</text>
+<text class="t-small t-muted" x="286" y="218" text-anchor="middle">11</text>
+<rect class="box" x="326" y="174" width="44" height="28"/>
+<text class="t t-mono" x="348" y="193" text-anchor="middle">6</text>
+<text class="t-small t-muted" x="348" y="218" text-anchor="middle">12</text>
+<rect class="box" x="388" y="174" width="44" height="28"/>
+<text class="t t-mono" x="410" y="193" text-anchor="middle">2</text>
+<text class="t-small t-muted" x="410" y="218" text-anchor="middle">13</text>
+<rect class="box" x="450" y="174" width="44" height="28"/>
+<text class="t t-mono" x="472" y="193" text-anchor="middle">8</text>
+<text class="t-small t-muted" x="472" y="218" text-anchor="middle">14</text>
+<rect class="box" x="512" y="174" width="44" height="28"/>
+<text class="t t-mono" x="534" y="193" text-anchor="middle">4</text>
+<text class="t-small t-muted" x="534" y="218" text-anchor="middle">15</text>
+<text class="t-small t-muted" x="60" y="218" text-anchor="end">position</text>
+<path class="line-a" d="M140.0,226V232H556.0V226"/>
+<text class="t-small t-a" x="348" y="250" text-anchor="middle">range [1, 8) of the input</text>
+<text class="t-small t-muted" x="80" y="280" text-anchor="end">pass 1</text>
+<text class="t-small t-mono" x="92" y="280">l = 9, r = 16</text>
+<text class="t-small t-a" x="236" y="280">l is odd: take t[9] = 7, l = 10</text>
+<text class="t-small t-muted" x="80" y="300" text-anchor="end">pass 2</text>
+<text class="t-small t-mono" x="92" y="300">l = 5, r = 8</text>
+<text class="t-small t-a" x="236" y="300">l is odd: take t[5] = 13, l = 6</text>
+<text class="t-small t-muted" x="80" y="320" text-anchor="end">pass 3</text>
+<text class="t-small t-mono" x="92" y="320">l = 3, r = 4</text>
+<text class="t-small t-a" x="236" y="320">l is odd: take t[3] = 20, l = 4</text>
+<text class="t-small t-muted" x="80" y="340" text-anchor="end"></text>
+<text class="t-small t-mono" x="92" y="340">l = 2, r = 2</text>
+<text class="t-small" x="236" y="340">l = r: stop</text>
+<text class="t-small t-bold" x="92" y="366">result = 7 + 13 + 20 = 40</text>
+</svg>

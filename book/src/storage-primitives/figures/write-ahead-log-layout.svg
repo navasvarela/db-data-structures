@@ -1,0 +1,28 @@
+<svg class="diagram" viewBox="0 0 640 196" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="write-ahead-log-layout-title">
+<title id="write-ahead-log-layout-title">A log with records at LSN 0, 41, 97 and 150. Everything before LSN 150 is on disk; the record at 150 is written but not yet fsynced. Each record's prev LSN points to its transaction's previous record.</title>
+<defs><marker id="write-ahead-log-layout-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker><marker id="write-ahead-log-layout-head-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-b" d="M0,0L10,5L0,10z"/></marker></defs>
+<rect class="box-a" x="40" y="34" width="112.8" height="38"/>
+<text class="t" x="96.4" y="58.0" text-anchor="middle">T1 put a</text>
+<text class="t-small t-mono" x="43" y="26">0</text>
+<rect class="box-b" x="152.8" y="34" width="154" height="38"/>
+<text class="t" x="229.8" y="58.0" text-anchor="middle">T2 put b</text>
+<text class="t-small t-mono" x="155.8" y="26">41</text>
+<rect class="box-a" x="306.8" y="34" width="145.8" height="38"/>
+<text class="t" x="379.6" y="58.0" text-anchor="middle">T1 commit</text>
+<text class="t-small t-mono" x="309.8" y="26">97</text>
+<rect class="box-b dashed" x="452.5" y="34" width="104.5" height="38"/>
+<text class="t" x="504.8" y="58.0" text-anchor="middle">T2 put c</text>
+<text class="t-small t-mono" x="455.5" y="26">150</text>
+<text class="t-small t-mono t-muted" x="560" y="26">188</text>
+<text class="t-small t-muted" x="32" y="26" text-anchor="end">LSN</text>
+<text class="t-small t-muted" x="569" y="58">next append</text>
+<path class="line-a" d="M324.75,74 C324.75,100 70.0,100 70.0,77" marker-end="url(#write-ahead-log-layout-head-a)"/>
+<path class="line-b" d="M470.5,74 C470.5,116 182.75,116 182.75,77" marker-end="url(#write-ahead-log-layout-head-b)"/>
+<text class="t-small t-muted" x="322.6" y="124" text-anchor="middle">prev LSN</text>
+<line class="line" x1="452.5" y1="12" x2="452.5" y2="162"/>
+<text class="t-small t-bold" x="452.5" y="180" text-anchor="middle">flushed LSN = 150</text>
+<line class="line" x1="40" y1="150" x2="446.5" y2="150"/>
+<text class="t-small" x="246.2" y="144" text-anchor="middle">durable</text>
+<line class="line dashed" x1="458.5" y1="150" x2="557" y2="150"/>
+<text class="t-small t-muted" x="510.8" y="144" text-anchor="middle">page cache only</text>
+</svg>

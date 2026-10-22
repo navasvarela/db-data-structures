@@ -1,0 +1,22 @@
+<svg class="diagram" viewBox="0 0 640 146" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bounded-top-k-heap-prune-title">
+<title id="bounded-top-k-heap-prune-title">With the heap full and root 9, a block whose zone-map minimum is 12 is skipped; blocks whose minimum is below 9 are read, filtered with x &lt; 9.</title>
+<defs><marker id="bounded-top-k-heap-prune-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<circle class="box-a" cx="60" cy="70" r="22"/>
+<text class="t t-mono" x="60" y="75" text-anchor="middle">9</text>
+<text class="t-small t-muted" x="60" y="112" text-anchor="middle">heap root</text>
+<text class="t-small t-a" x="60" y="128" text-anchor="middle">x &lt; 9 to enter</text>
+<rect class="box" x="160" y="40" width="140" height="64"/>
+<text class="t-small t-bold" x="230" y="64" text-anchor="middle">block 1</text>
+<text class="t-small t-mono" x="230" y="84" text-anchor="middle">min 1, max 6</text>
+<text class="t-small" x="230" y="128" text-anchor="middle">read</text>
+<rect class="box-muted" x="320" y="40" width="140" height="64"/>
+<text class="t-small t-bold t-muted" x="390" y="64" text-anchor="middle">block 2</text>
+<text class="t-small t-mono t-muted" x="390" y="84" text-anchor="middle">min 12, max 30</text>
+<text class="t-small t-warn" x="390" y="128" text-anchor="middle">skipped: min ≥ 9</text>
+<rect class="box" x="480" y="40" width="140" height="64"/>
+<text class="t-small t-bold" x="550" y="64" text-anchor="middle">block 3</text>
+<text class="t-small t-mono" x="550" y="84" text-anchor="middle">min 4, max 20</text>
+<text class="t-small" x="550" y="128" text-anchor="middle">read, filter x &lt; 9</text>
+<text class="t-small t-muted" x="160" y="24">scan, checking each block's zone map before decoding it</text>
+<line class="line-a" x1="86" y1="70" x2="154" y2="70" marker-end="url(#bounded-top-k-heap-prune-head-a)"/>
+</svg>

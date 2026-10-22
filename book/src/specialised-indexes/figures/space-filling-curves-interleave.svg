@@ -1,0 +1,38 @@
+<svg class="diagram" viewBox="0 0 640 196" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="space-filling-curves-interleave-title">
+<title id="space-filling-curves-interleave-title">Interleaving the bits of x = 2 (binary 10) and y = 1 (binary 01) gives key bits 0110, which is 6.</title>
+<defs><marker id="space-filling-curves-interleave-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker><marker id="space-filling-curves-interleave-head-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-b" d="M0,0L10,5L0,10z"/></marker></defs>
+<rect class="box-b" x="250" y="76" width="44" height="44"/>
+<text class="t t-mono" x="272" y="97" text-anchor="middle">0</text>
+<text class="t-small t-mono t-b" x="272" y="113" text-anchor="middle">y1</text>
+<rect class="box-a" x="294" y="76" width="44" height="44"/>
+<text class="t t-mono" x="316" y="97" text-anchor="middle">1</text>
+<text class="t-small t-mono t-a" x="316" y="113" text-anchor="middle">x1</text>
+<rect class="box-b" x="338" y="76" width="44" height="44"/>
+<text class="t t-mono" x="360" y="97" text-anchor="middle">1</text>
+<text class="t-small t-mono t-b" x="360" y="113" text-anchor="middle">y0</text>
+<rect class="box-a" x="382" y="76" width="44" height="44"/>
+<text class="t t-mono" x="404" y="97" text-anchor="middle">0</text>
+<text class="t-small t-mono t-a" x="404" y="113" text-anchor="middle">x0</text>
+<text class="t t-a" x="128" y="32" text-anchor="end">x = 2</text>
+<text class="t t-b" x="128" y="172" text-anchor="end">y = 1</text>
+<rect class="box-a" x="140" y="8" width="44" height="44"/>
+<text class="t t-mono" x="162" y="29" text-anchor="middle">1</text>
+<text class="t-small t-mono t-a" x="162" y="45" text-anchor="middle">x1</text>
+<line class="line-a" x1="162" y1="52" x2="316" y2="73" marker-end="url(#space-filling-curves-interleave-head-a)"/>
+<rect class="box-b" x="140" y="148" width="44" height="44"/>
+<text class="t t-mono" x="162" y="169" text-anchor="middle">0</text>
+<text class="t-small t-mono t-b" x="162" y="185" text-anchor="middle">y1</text>
+<line class="line-b" x1="162" y1="148" x2="272" y2="123" marker-end="url(#space-filling-curves-interleave-head-b)"/>
+<rect class="box-a" x="184" y="8" width="44" height="44"/>
+<text class="t t-mono" x="206" y="29" text-anchor="middle">0</text>
+<text class="t-small t-mono t-a" x="206" y="45" text-anchor="middle">x0</text>
+<line class="line-a" x1="206" y1="52" x2="404" y2="73" marker-end="url(#space-filling-curves-interleave-head-a)"/>
+<rect class="box-b" x="184" y="148" width="44" height="44"/>
+<text class="t t-mono" x="206" y="169" text-anchor="middle">1</text>
+<text class="t-small t-mono t-b" x="206" y="185" text-anchor="middle">y0</text>
+<line class="line-b" x1="206" y1="148" x2="360" y2="123" marker-end="url(#space-filling-curves-interleave-head-b)"/>
+<text class="t t-bold" x="238" y="103" text-anchor="end">key</text>
+<text class="t t-mono" x="440" y="103">= 0110 = 6</text>
+<text class="t-small t-a" x="440" y="36">bit i of x → bit 2i</text>
+<text class="t-small t-b" x="440" y="176">bit i of y → bit 2i + 1</text>
+</svg>

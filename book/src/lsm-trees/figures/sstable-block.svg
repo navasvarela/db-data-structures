@@ -1,0 +1,45 @@
+<svg class="diagram" viewBox="0 0 640 176" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sstable-block-title">
+<title id="sstable-block-title">A data block of six prefix-compressed entries with a restart point every three entries; the restart array at the end of the block holds the offsets of apple and apricot, followed by the count 2 and the block trailer.</title>
+<defs><marker id="sstable-block-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<rect class="box-a" x="12" y="70" width="74" height="40"/>
+<text class="t-small t-mono" x="49" y="87" text-anchor="middle">"apple"</text>
+<text class="t-small t-muted" x="49" y="103" text-anchor="middle">shared 0</text>
+<text class="t-small t-muted" x="49" y="126" text-anchor="middle">apple</text>
+<rect class="box" x="86" y="70" width="74" height="40"/>
+<text class="t-small t-mono" x="123" y="87" text-anchor="middle">"t"</text>
+<text class="t-small t-muted" x="123" y="103" text-anchor="middle">shared 5</text>
+<text class="t-small t-muted" x="123" y="126" text-anchor="middle">applet</text>
+<rect class="box" x="160" y="70" width="74" height="40"/>
+<text class="t-small t-mono" x="197" y="87" text-anchor="middle">"y"</text>
+<text class="t-small t-muted" x="197" y="103" text-anchor="middle">shared 4</text>
+<text class="t-small t-muted" x="197" y="126" text-anchor="middle">apply</text>
+<rect class="box-a" x="234" y="70" width="74" height="40"/>
+<text class="t-small t-mono" x="271" y="87" text-anchor="middle">"apricot"</text>
+<text class="t-small t-muted" x="271" y="103" text-anchor="middle">shared 0</text>
+<text class="t-small t-muted" x="271" y="126" text-anchor="middle">apricot</text>
+<rect class="box" x="308" y="70" width="74" height="40"/>
+<text class="t-small t-mono" x="345" y="87" text-anchor="middle">"l"</text>
+<text class="t-small t-muted" x="345" y="103" text-anchor="middle">shared 4</text>
+<text class="t-small t-muted" x="345" y="126" text-anchor="middle">april</text>
+<rect class="box" x="382" y="70" width="74" height="40"/>
+<text class="t-small t-mono" x="419" y="87" text-anchor="middle">"on"</text>
+<text class="t-small t-muted" x="419" y="103" text-anchor="middle">shared 3</text>
+<text class="t-small t-muted" x="419" y="126" text-anchor="middle">apron</text>
+<rect class="box-a" x="464" y="70" width="28" height="40"/>
+<rect class="box-a" x="492" y="70" width="28" height="40"/>
+<rect class="box" x="520" y="70" width="28" height="40"/>
+<text class="t-small t-mono" x="534" y="94" text-anchor="middle">2</text>
+<rect class="box-muted" x="556" y="70" width="52" height="40"/>
+<text class="t-small t-muted" x="582" y="87" text-anchor="middle">type</text>
+<text class="t-small t-muted" x="582" y="103" text-anchor="middle">CRC</text>
+<path class="line-a" d="M478,68 C478,26 49.0,26 49.0,67" marker-end="url(#sstable-block-head-a)"/>
+<path class="line-a" d="M506,68 C506,8 271.0,8 271.0,67" marker-end="url(#sstable-block-head-a)"/>
+<path class="line" d="M13,136 L13,140 L455,140 L455,136"/>
+<text class="t-small" x="234" y="156" text-anchor="middle">entries</text>
+<path class="line" d="M465,136 L465,140 L519,140 L519,136"/>
+<text class="t-small" x="492" y="156" text-anchor="middle">restarts</text>
+<path class="line" d="M521,136 L521,140 L547,140 L547,136"/>
+<text class="t-small" x="534" y="156" text-anchor="middle">count</text>
+<path class="line" d="M557,136 L557,140 L607,140 L607,136"/>
+<text class="t-small" x="582" y="156" text-anchor="middle">trailer</text>
+</svg>

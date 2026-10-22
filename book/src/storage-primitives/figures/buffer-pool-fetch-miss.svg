@@ -1,0 +1,60 @@
+<svg class="diagram" viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="buffer-pool-fetch-miss-title">
+<title id="buffer-pool-fetch-miss-title">Fetching page 9 with no free frame: the replacer picks frame 1, page 3 is written back, its page table entry is removed, page 9 is read into frame 1 and added to the page table.</title>
+<defs><marker id="buffer-pool-fetch-miss-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker><marker id="buffer-pool-fetch-miss-head-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-b" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-bold" x="20" y="24">page table</text>
+<text class="t-small t-muted" x="55" y="42" text-anchor="middle">page</text>
+<text class="t-small t-muted" x="125" y="42" text-anchor="middle">frame</text>
+<rect class="box" x="20" y="50" width="70" height="34"/>
+<text class="t-small" x="55" y="71.3" text-anchor="middle">17</text>
+<rect class="box" x="90" y="50" width="70" height="34"/>
+<text class="t-small" x="125" y="71.3" text-anchor="middle">fr 0</text>
+<rect class="box" x="20" y="84" width="70" height="34"/>
+<text class="t-small" x="55" y="105.3" text-anchor="middle">5</text>
+<rect class="box" x="90" y="84" width="70" height="34"/>
+<text class="t-small" x="125" y="105.3" text-anchor="middle">fr 2</text>
+<rect class="box-warn" x="20" y="118" width="70" height="34"/>
+<text class="t-small t-warn" x="55" y="139.3" text-anchor="middle">3</text>
+<rect class="box-warn" x="90" y="118" width="70" height="34"/>
+<text class="t-small t-warn" x="125" y="139.3" text-anchor="middle">fr 1</text>
+<line class="line-warn" x1="26" y1="135" x2="154" y2="135"/>
+<rect class="box-a" x="20" y="152" width="70" height="34"/>
+<text class="t-small" x="55" y="173.3" text-anchor="middle">9</text>
+<rect class="box-a" x="90" y="152" width="70" height="34"/>
+<text class="t-small" x="125" y="173.3" text-anchor="middle">fr 1</text>
+<text class="t-small t-warn" x="168" y="139">removed</text>
+<text class="t-small t-a" x="168" y="173">added</text>
+<text class="t-small t-bold" x="250" y="24">frames</text>
+<text class="t-small t-muted" x="278" y="42" text-anchor="middle">frame</text>
+<text class="t-small t-muted" x="334" y="42" text-anchor="middle">page</text>
+<text class="t-small t-muted" x="384" y="42" text-anchor="middle">pin</text>
+<rect class="box" x="250" y="50" width="56" height="34"/>
+<text class="t-small" x="278" y="71.3" text-anchor="middle">fr 0</text>
+<rect class="box" x="306" y="50" width="56" height="34"/>
+<text class="t-small" x="334" y="71.3" text-anchor="middle">17</text>
+<rect class="box" x="362" y="50" width="44" height="34"/>
+<text class="t-small" x="384" y="71.3" text-anchor="middle">2</text>
+<rect class="box-a" x="250" y="84" width="56" height="34"/>
+<text class="t-small" x="278" y="105.3" text-anchor="middle">fr 1</text>
+<rect class="box-a" x="306" y="84" width="56" height="34"/>
+<text class="t-small" x="334" y="105.3" text-anchor="middle">9</text>
+<rect class="box-a" x="362" y="84" width="44" height="34"/>
+<text class="t-small" x="384" y="105.3" text-anchor="middle">1</text>
+<rect class="box" x="250" y="118" width="56" height="34"/>
+<text class="t-small" x="278" y="139.3" text-anchor="middle">fr 2</text>
+<rect class="box" x="306" y="118" width="56" height="34"/>
+<text class="t-small" x="334" y="139.3" text-anchor="middle">5</text>
+<rect class="box" x="362" y="118" width="44" height="34"/>
+<text class="t-small" x="384" y="139.3" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="328" y="172" text-anchor="middle">fr 1 held page 3, dirty</text>
+<text class="t-small t-bold" x="500" y="24">disk</text>
+<rect class="box-muted" x="500" y="44" width="120" height="130"/>
+<rect class="box" x="516" y="60" width="88" height="34"/>
+<text class="t-small" x="560" y="81.3" text-anchor="middle">page 3</text>
+<rect class="box" x="516" y="124" width="88" height="34"/>
+<text class="t-small" x="560" y="145.3" text-anchor="middle">page 9</text>
+<path class="line-b" d="M410,94 L512,77" marker-end="url(#buffer-pool-fetch-miss-head-b)"/>
+<text class="t-small t-b" x="455" y="64" text-anchor="middle">1 write back</text>
+<path class="line-a" d="M512,141 L412,108" marker-end="url(#buffer-pool-fetch-miss-head-a)"/>
+<text class="t-small t-a" x="459" y="152" text-anchor="middle">2 read</text>
+<text class="t-small t-muted" x="620" y="206" text-anchor="end">log flushed to page 3's LSN first</text>
+</svg>

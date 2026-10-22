@@ -1,0 +1,81 @@
+<svg class="diagram" viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="lsm-tree-compaction-title">
+<title id="lsm-tree-compaction-title">Compacting level 1's file e–h: it and the overlapping level-2 files e–f and g–h are merged and written as new level-2 files, which replace all three inputs.</title>
+<defs><marker id="lsm-tree-compaction-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="16" y="18">before</text>
+<text class="t t-bold" x="16" y="42">L1</text>
+<rect class="box" x="61" y="28" width="70" height="20" rx="3"/>
+<text class="t-small t-mono" x="96" y="42" text-anchor="middle">a–d</text>
+<rect class="box-a" x="133" y="28" width="70" height="20" rx="3"/>
+<text class="t-small t-mono" x="168" y="42" text-anchor="middle">e–h</text>
+<rect class="box" x="205" y="28" width="88" height="20" rx="3"/>
+<text class="t-small t-mono" x="249" y="42" text-anchor="middle">i–m</text>
+<rect class="box" x="295" y="28" width="232" height="20" rx="3"/>
+<text class="t-small t-mono" x="303" y="42">n–z</text>
+<text class="t t-bold" x="16" y="78">L2</text>
+<rect class="box" x="61" y="64" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="78" y="78" text-anchor="middle">a–b</text>
+<rect class="box" x="97" y="64" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="114" y="78" text-anchor="middle">c–d</text>
+<rect class="box-a" x="133" y="64" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="150" y="78" text-anchor="middle">e–f</text>
+<rect class="box-a" x="169" y="64" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="186" y="78" text-anchor="middle">g–h</text>
+<rect class="box" x="205" y="64" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="222" y="78" text-anchor="middle">i–j</text>
+<rect class="box" x="241" y="64" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="258" y="78" text-anchor="middle">k–l</text>
+<rect class="box" x="277" y="64" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="294" y="78" text-anchor="middle">m–n</text>
+<rect class="box" x="313" y="64" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="330" y="78" text-anchor="middle">o–p</text>
+<rect class="box" x="349" y="64" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="366" y="78" text-anchor="middle">q–r</text>
+<rect class="box" x="385" y="64" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="402" y="78" text-anchor="middle">s–t</text>
+<rect class="box" x="421" y="64" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="438" y="78" text-anchor="middle">u–v</text>
+<rect class="box" x="457" y="64" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="474" y="78" text-anchor="middle">w–x</text>
+<rect class="box" x="493" y="64" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="510" y="78" text-anchor="middle">y–z</text>
+<path class="line-a" d="M204,100 C204,124 204,124 204,148" marker-end="url(#lsm-tree-compaction-head-a)"/>
+<text class="t-small t-a" x="212" y="128">merge, drop shadowed versions</text>
+<text class="t-small t-muted" x="16" y="140">after</text>
+<text class="t t-bold" x="16" y="164">L1</text>
+<rect class="box" x="61" y="150" width="70" height="20" rx="3"/>
+<text class="t-small t-mono" x="96" y="164" text-anchor="middle">a–d</text>
+<rect class="box" x="205" y="150" width="88" height="20" rx="3"/>
+<text class="t-small t-mono" x="249" y="164" text-anchor="middle">i–m</text>
+<rect class="box" x="295" y="150" width="232" height="20" rx="3"/>
+<text class="t-small t-mono" x="303" y="164">n–z</text>
+<rect class="box-muted" x="133" y="150" width="70" height="20" rx="3"/>
+<text class="t t-bold" x="16" y="200">L2</text>
+<rect class="box" x="61" y="186" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="78" y="200" text-anchor="middle">a–b</text>
+<rect class="box" x="97" y="186" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="114" y="200" text-anchor="middle">c–d</text>
+<rect class="box-b" x="133" y="186" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="150" y="200" text-anchor="middle">e–f</text>
+<rect class="box-b" x="169" y="186" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="186" y="200" text-anchor="middle">g–h</text>
+<rect class="box" x="205" y="186" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="222" y="200" text-anchor="middle">i–j</text>
+<rect class="box" x="241" y="186" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="258" y="200" text-anchor="middle">k–l</text>
+<rect class="box" x="277" y="186" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="294" y="200" text-anchor="middle">m–n</text>
+<rect class="box" x="313" y="186" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="330" y="200" text-anchor="middle">o–p</text>
+<rect class="box" x="349" y="186" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="366" y="200" text-anchor="middle">q–r</text>
+<rect class="box" x="385" y="186" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="402" y="200" text-anchor="middle">s–t</text>
+<rect class="box" x="421" y="186" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="438" y="200" text-anchor="middle">u–v</text>
+<rect class="box" x="457" y="186" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="474" y="200" text-anchor="middle">w–x</text>
+<rect class="box" x="493" y="186" width="34" height="20" rx="3"/>
+<text class="t-small t-mono" x="510" y="200" text-anchor="middle">y–z</text>
+<text class="t-small t-muted" x="540" y="164">L1 shrinks</text>
+<text class="t-small t-b" x="540" y="200">new files</text>
+</svg>

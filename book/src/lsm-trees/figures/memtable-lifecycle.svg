@@ -1,0 +1,28 @@
+<svg class="diagram" viewBox="0 0 640 238" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="memtable-lifecycle-title">
+<title id="memtable-lifecycle-title">A write is appended to the WAL and inserted into the active memtable; a full memtable is frozen into an immutable one, which is flushed to an SSTable; reads go from the active memtable to the immutable ones to SSTables.</title>
+<defs><marker id="memtable-lifecycle-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="memtable-lifecycle-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<line class="line dashed" x1="16" y1="122" x2="624" y2="122"/>
+<text class="t-small t-muted" x="624" y="114" text-anchor="end">memory</text>
+<text class="t-small t-muted" x="624" y="140" text-anchor="end">disk</text>
+<text class="t t-bold" x="10" y="75">write</text>
+<rect class="box-a" x="122" y="50" width="140" height="40"/>
+<text class="t" x="192" y="75" text-anchor="middle">active memtable</text>
+<rect class="box" x="330" y="50" width="160" height="40"/>
+<text class="t" x="410" y="75" text-anchor="middle">immutable memtable</text>
+<rect class="box-a" x="142" y="156" width="100" height="34"/>
+<text class="t t-mono" x="192" y="178" text-anchor="middle">WAL 7</text>
+<rect class="box" x="360" y="156" width="100" height="34"/>
+<text class="t t-mono" x="410" y="178" text-anchor="middle">WAL 6</text>
+<rect class="box" x="520" y="156" width="100" height="34"/>
+<text class="t" x="570" y="178" text-anchor="middle">SSTable</text>
+<path class="line" d="M32,82 Q32,173 140,173" marker-end="url(#memtable-lifecycle-head)"/>
+<text class="t-small" x="56" y="194">1. append</text>
+<line class="line" x1="52" y1="70" x2="120" y2="70" marker-end="url(#memtable-lifecycle-head)"/>
+<text class="t-small" x="86" y="62" text-anchor="middle">2. insert</text>
+<line class="line" x1="262" y1="70" x2="328" y2="70" marker-end="url(#memtable-lifecycle-head)"/>
+<text class="t-small" x="295" y="62" text-anchor="middle">freeze</text>
+<path class="line" d="M490,70 Q570,70 570,154" marker-end="url(#memtable-lifecycle-head)"/>
+<text class="t-small" x="540" y="60" text-anchor="middle">flush</text>
+<line class="line-a" x1="110" y1="214" x2="600" y2="214" marker-end="url(#memtable-lifecycle-head-a)"/>
+<text class="t-small t-a" x="110" y="232">reads: active, then immutable from newest to oldest, then SSTables</text>
+</svg>

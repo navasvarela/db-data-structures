@@ -1,0 +1,24 @@
+<svg class="diagram" viewBox="0 0 640 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sparse-primary-index-search-title">
+<title id="sparse-primary-index-search-title">Looking up user_id = 17: one mark is below (17, smallest), so a = 1 and the scan starts at granule 0; three marks are at most (17, largest), so b = 3 and it ends at granule 2. Granule 3 is not read.</title>
+<defs><marker id="sparse-primary-index-search-head-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-warn" d="M0,0L10,5L0,10z"/></marker></defs>
+<rect class="box-a" x="80" y="62" width="120" height="30"/>
+<text class="t-small t-mono" x="140" y="81.3" text-anchor="middle">(10, 09:00)</text>
+<text class="t-small" x="140" y="110" text-anchor="middle">granule 0</text>
+<rect class="box-a" x="200" y="62" width="120" height="30"/>
+<text class="t-small t-mono" x="260" y="81.3" text-anchor="middle">(17, 10:30)</text>
+<text class="t-small" x="260" y="110" text-anchor="middle">granule 1</text>
+<rect class="box-a" x="320" y="62" width="120" height="30"/>
+<text class="t-small t-mono" x="380" y="81.3" text-anchor="middle">(17, 12:30)</text>
+<text class="t-small" x="380" y="110" text-anchor="middle">granule 2</text>
+<rect class="box-muted" x="440" y="62" width="120" height="30"/>
+<text class="t-small t-mono t-muted" x="500" y="81.3" text-anchor="middle">(31, 06:40)</text>
+<text class="t-small t-muted" x="500" y="110" text-anchor="middle">granule 3</text>
+<text class="t-small t-mono t-warn" x="200" y="20" text-anchor="middle">lo = (17, smallest)</text>
+<line class="line-warn" x1="200" y1="26" x2="200" y2="58" marker-end="url(#sparse-primary-index-search-head-warn)"/>
+<text class="t-small t-mono t-warn" x="440" y="20" text-anchor="middle">hi = (17, largest)</text>
+<line class="line-warn" x1="440" y1="26" x2="440" y2="58" marker-end="url(#sparse-primary-index-search-head-warn)"/>
+<text class="t-small t-muted" x="192" y="46" text-anchor="end">1 mark &lt; lo: a = 1</text>
+<text class="t-small t-muted" x="432" y="46" text-anchor="end">3 marks ≤ hi: b = 3</text>
+<path class="line-a" d="M84,120V126H436V120"/>
+<text class="t-small t-a" x="260" y="146" text-anchor="middle">read granules a − 1 = 0 to b − 1 = 2</text>
+</svg>

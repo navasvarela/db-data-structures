@@ -1,0 +1,33 @@
+<svg class="diagram" viewBox="0 0 640 156" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="slotted-page-layout-title">
+<title id="slotted-page-layout-title">A slotted page: header, slots s0 to s2 growing from the front, records growing from the back, and free space between lower and upper. Each slot points to its record.</title>
+<defs><marker id="slotted-page-layout-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<rect class="box" x="40" y="76" width="70" height="36"/>
+<text class="t-small" x="75" y="98.3" text-anchor="middle">header</text>
+<rect class="box" x="110" y="76" width="36" height="36"/>
+<text class="t-small t-mono" x="128" y="98.3" text-anchor="middle">s0</text>
+<rect class="box" x="146" y="76" width="36" height="36"/>
+<text class="t-small t-mono" x="164" y="98.3" text-anchor="middle">s1</text>
+<rect class="box" x="182" y="76" width="36" height="36"/>
+<text class="t-small t-mono" x="200" y="98.3" text-anchor="middle">s2</text>
+<rect class="box" x="218" y="76" width="152" height="36"/>
+<rect class="box" x="370" y="76" width="60" height="36"/>
+<text class="t" x="400" y="99.0" text-anchor="middle">rec 2</text>
+<rect class="box" x="430" y="76" width="90" height="36"/>
+<text class="t" x="475" y="99.0" text-anchor="middle">rec 1</text>
+<rect class="box" x="520" y="76" width="80" height="36"/>
+<text class="t" x="560" y="99.0" text-anchor="middle">rec 0</text>
+<path class="line" d="M200,74 C200,46 400.0,46 400.0,72" marker-end="url(#slotted-page-layout-head)"/>
+<path class="line" d="M164,74 C164,24 475.0,24 475.0,72" marker-end="url(#slotted-page-layout-head)"/>
+<path class="line" d="M128,74 C128,2 560.0,2 560.0,72" marker-end="url(#slotted-page-layout-head)"/>
+<line class="line" x1="40" y1="112" x2="40" y2="118"/>
+<text class="t-small t-mono" x="40" y="132" text-anchor="middle">0</text>
+<line class="line" x1="218" y1="112" x2="218" y2="118"/>
+<text class="t-small" x="218" y="132" text-anchor="middle">lower</text>
+<line class="line" x1="370" y1="112" x2="370" y2="118"/>
+<text class="t-small" x="370" y="132" text-anchor="middle">upper</text>
+<line class="line" x1="600" y1="112" x2="600" y2="118"/>
+<text class="t-small" x="600" y="132" text-anchor="middle">page size</text>
+<text class="t t-muted" x="294" y="99" text-anchor="middle">free</text>
+<line class="line" x1="226" y1="94" x2="270" y2="94" marker-end="url(#slotted-page-layout-head)"/>
+<line class="line" x1="362" y1="94" x2="318" y2="94" marker-end="url(#slotted-page-layout-head)"/>
+</svg>

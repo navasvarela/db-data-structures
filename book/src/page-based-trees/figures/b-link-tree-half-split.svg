@@ -1,0 +1,119 @@
+<svg class="diagram" viewBox="0 0 640 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="b-link-tree-half-split-title">
+<title id="b-link-tree-half-split-title">Leaf P splits in two steps. After the half split, new page Q is reachable only through P's right link, and a search for 75 moves right from P to Q. Then the parent gets a downlink to Q.</title>
+<defs><marker id="b-link-tree-half-split-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="b-link-tree-half-split-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t t-bold" x="16" y="20">1. Before the split</text>
+<rect class="box" x="250" y="32" width="34" height="28"/>
+<text class="t t-mono" x="267" y="51" text-anchor="middle">40</text>
+<rect class="box-muted" x="284" y="32" width="28" height="28"/>
+<text class="t-small t-mono" x="298" y="51" text-anchor="middle">P</text>
+<rect class="box" x="312" y="32" width="34" height="28"/>
+<text class="t t-mono" x="329" y="51" text-anchor="middle">90</text>
+<rect class="box-muted" x="346" y="32" width="28" height="28"/>
+<text class="t-small t-mono" x="360" y="51" text-anchor="middle">R</text>
+<text class="t-small t-muted" x="242" y="51" text-anchor="end">parent</text>
+<rect class="box" x="70" y="102" width="34" height="28"/>
+<text class="t t-mono" x="87" y="121" text-anchor="middle">50</text>
+<rect class="box" x="104" y="102" width="34" height="28"/>
+<text class="t t-mono" x="121" y="121" text-anchor="middle">60</text>
+<rect class="box" x="138" y="102" width="34" height="28"/>
+<text class="t t-mono" x="155" y="121" text-anchor="middle">70</text>
+<rect class="box" x="172" y="102" width="34" height="28"/>
+<text class="t t-mono" x="189" y="121" text-anchor="middle">80</text>
+<rect class="box" x="206" y="102" width="54" height="28"/>
+<text class="t-small t-mono" x="233" y="121" text-anchor="middle">hk 90</text>
+<rect class="box-muted" x="260" y="102" width="20" height="28"/>
+<rect class="box" x="340" y="102" width="34" height="28"/>
+<text class="t t-mono" x="357" y="121" text-anchor="middle">95</text>
+<rect class="box" x="374" y="102" width="34" height="28"/>
+<text class="t t-mono" x="391" y="121" text-anchor="middle">…</text>
+<text class="t t-bold" x="62" y="121" text-anchor="end">P</text>
+<text class="t t-bold" x="418" y="121">R</text>
+<circle class="head" cx="270" cy="116" r="2.5"/>
+<line class="line" x1="270" y1="116" x2="338" y2="116" marker-end="url(#b-link-tree-half-split-head)"/>
+<line class="line" x1="298" y1="60" x2="175" y2="98" marker-end="url(#b-link-tree-half-split-head)"/>
+<line class="line" x1="360" y1="60" x2="374" y2="98" marker-end="url(#b-link-tree-half-split-head)"/>
+<line class="line dashed" x1="16" y1="146" x2="624" y2="146"/>
+<text class="t t-bold" x="16" y="166">2. Half split: P rewritten, parent unchanged</text>
+<rect class="box" x="250" y="178" width="34" height="28"/>
+<text class="t t-mono" x="267" y="197" text-anchor="middle">40</text>
+<rect class="box-muted" x="284" y="178" width="28" height="28"/>
+<text class="t-small t-mono" x="298" y="197" text-anchor="middle">P</text>
+<rect class="box" x="312" y="178" width="34" height="28"/>
+<text class="t t-mono" x="329" y="197" text-anchor="middle">90</text>
+<rect class="box-muted" x="346" y="178" width="28" height="28"/>
+<text class="t-small t-mono" x="360" y="197" text-anchor="middle">R</text>
+<text class="t-small t-muted" x="242" y="197" text-anchor="end">parent</text>
+<rect class="box" x="70" y="248" width="34" height="28"/>
+<text class="t t-mono" x="87" y="267" text-anchor="middle">50</text>
+<rect class="box" x="104" y="248" width="34" height="28"/>
+<text class="t t-mono" x="121" y="267" text-anchor="middle">60</text>
+<rect class="box" x="138" y="248" width="54" height="28"/>
+<text class="t-small t-mono" x="165" y="267" text-anchor="middle">hk 60</text>
+<rect class="box-a" x="192" y="248" width="20" height="28"/>
+<rect class="box-a" x="256" y="248" width="34" height="28"/>
+<text class="t t-mono" x="273" y="267" text-anchor="middle">70</text>
+<rect class="box-a" x="290" y="248" width="34" height="28"/>
+<text class="t t-mono" x="307" y="267" text-anchor="middle">80</text>
+<rect class="box" x="324" y="248" width="54" height="28"/>
+<text class="t-small t-mono" x="351" y="267" text-anchor="middle">hk 90</text>
+<rect class="box-muted" x="378" y="248" width="20" height="28"/>
+<rect class="box" x="442" y="248" width="34" height="28"/>
+<text class="t t-mono" x="459" y="267" text-anchor="middle">95</text>
+<rect class="box" x="476" y="248" width="34" height="28"/>
+<text class="t t-mono" x="493" y="267" text-anchor="middle">…</text>
+<text class="t t-bold" x="62" y="267" text-anchor="end">P</text>
+<text class="t t-bold" x="520" y="267">R</text>
+<circle class="head-a" cx="202" cy="262" r="2.5"/>
+<line class="line-a" x1="202" y1="262" x2="254" y2="262" marker-end="url(#b-link-tree-half-split-head-a)"/>
+<circle class="head" cx="388" cy="262" r="2.5"/>
+<line class="line" x1="388" y1="262" x2="440" y2="262" marker-end="url(#b-link-tree-half-split-head)"/>
+<text class="t t-bold" x="351" y="240" text-anchor="middle">Q</text>
+<line class="line-b" x1="298" y1="206" x2="141" y2="244" marker-end="url(#b-link-tree-half-split-head)"/>
+<line class="line" x1="360" y1="206" x2="476" y2="244" marker-end="url(#b-link-tree-half-split-head)"/>
+<path class="line-b" d="M141,280 C141,310 327,310 327,282" marker-end="url(#b-link-tree-half-split-head)"/>
+<text class="t-small t-b" x="234" y="322" text-anchor="middle">search 75: 75 &gt; hk 60, move right</text>
+<text class="t-small t-b" x="400" y="197">search 75 follows the old downlink to P</text>
+<line class="line dashed" x1="16" y1="336" x2="624" y2="336"/>
+<text class="t t-bold" x="16" y="356">3. Parent updated</text>
+<rect class="box" x="220" y="368" width="34" height="28"/>
+<text class="t t-mono" x="237" y="387" text-anchor="middle">40</text>
+<rect class="box-muted" x="254" y="368" width="28" height="28"/>
+<text class="t-small t-mono" x="268" y="387" text-anchor="middle">P</text>
+<rect class="box-a" x="282" y="368" width="34" height="28"/>
+<text class="t t-mono" x="299" y="387" text-anchor="middle">60</text>
+<rect class="box-a" x="316" y="368" width="28" height="28"/>
+<text class="t-small t-mono" x="330" y="387" text-anchor="middle">Q</text>
+<rect class="box" x="344" y="368" width="34" height="28"/>
+<text class="t t-mono" x="361" y="387" text-anchor="middle">90</text>
+<rect class="box-muted" x="378" y="368" width="28" height="28"/>
+<text class="t-small t-mono" x="392" y="387" text-anchor="middle">R</text>
+<text class="t-small t-muted" x="212" y="387" text-anchor="end">parent</text>
+<rect class="box" x="70" y="438" width="34" height="28"/>
+<text class="t t-mono" x="87" y="457" text-anchor="middle">50</text>
+<rect class="box" x="104" y="438" width="34" height="28"/>
+<text class="t t-mono" x="121" y="457" text-anchor="middle">60</text>
+<rect class="box" x="138" y="438" width="54" height="28"/>
+<text class="t-small t-mono" x="165" y="457" text-anchor="middle">hk 60</text>
+<rect class="box-muted" x="192" y="438" width="20" height="28"/>
+<rect class="box" x="256" y="438" width="34" height="28"/>
+<text class="t t-mono" x="273" y="457" text-anchor="middle">70</text>
+<rect class="box" x="290" y="438" width="34" height="28"/>
+<text class="t t-mono" x="307" y="457" text-anchor="middle">80</text>
+<rect class="box" x="324" y="438" width="54" height="28"/>
+<text class="t-small t-mono" x="351" y="457" text-anchor="middle">hk 90</text>
+<rect class="box-muted" x="378" y="438" width="20" height="28"/>
+<rect class="box" x="442" y="438" width="34" height="28"/>
+<text class="t t-mono" x="459" y="457" text-anchor="middle">95</text>
+<rect class="box" x="476" y="438" width="34" height="28"/>
+<text class="t t-mono" x="493" y="457" text-anchor="middle">…</text>
+<text class="t t-bold" x="62" y="457" text-anchor="end">P</text>
+<text class="t t-bold" x="520" y="457">R</text>
+<circle class="head" cx="202" cy="452" r="2.5"/>
+<line class="line" x1="202" y1="452" x2="254" y2="452" marker-end="url(#b-link-tree-half-split-head)"/>
+<circle class="head" cx="388" cy="452" r="2.5"/>
+<line class="line" x1="388" y1="452" x2="440" y2="452" marker-end="url(#b-link-tree-half-split-head)"/>
+<text class="t t-bold" x="351" y="430" text-anchor="middle">Q</text>
+<line class="line" x1="268" y1="396" x2="141" y2="434" marker-end="url(#b-link-tree-half-split-head)"/>
+<line class="line-a" x1="330" y1="396" x2="327" y2="434" marker-end="url(#b-link-tree-half-split-head-a)"/>
+<line class="line" x1="392" y1="396" x2="476" y2="434" marker-end="url(#b-link-tree-half-split-head)"/>
+</svg>

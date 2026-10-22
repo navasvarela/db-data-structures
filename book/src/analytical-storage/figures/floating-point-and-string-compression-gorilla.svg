@@ -1,0 +1,120 @@
+<svg class="diagram" viewBox="0 0 640 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="floating-point-and-string-compression-gorilla-title">
+<title id="floating-point-and-string-compression-gorilla-title">Gorilla value encoding of 15.0, 15.0, 12.0, 14.0: the first is stored as is; the repeat XORs to zero and costs one bit; 12.0 XORs to two meaningful bits after 13 leading zeros and opens a new window; 14.0 fits that window and costs four bits.</title>
+<text class="t-small t-bold" x="52" y="18" text-anchor="end">value</text>
+<text class="t-small t-bold" x="62" y="18">bits (hex)</text>
+<text class="t-small t-bold" x="200" y="18">XOR with previous, bits 63 to 48</text>
+<text class="t-small t-bold" x="456" y="18">written</text>
+<text class="t-small t-mono" x="52" y="46" text-anchor="end">15.0</text>
+<text class="t-small t-mono" x="62" y="46">402E000000000000</text>
+<text class="t-small t-muted" x="320" y="46" text-anchor="middle">none: first value</text>
+<text class="t-small t-mono" x="456" y="46">64 bits, as is</text>
+<text class="t-small t-mono" x="52" y="82" text-anchor="end">15.0</text>
+<text class="t-small t-mono" x="62" y="82">402E000000000000</text>
+<rect class="box" x="200" y="64" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="207.5" y="81.3" text-anchor="middle">0</text>
+<rect class="box" x="215" y="64" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="222.5" y="81.3" text-anchor="middle">0</text>
+<rect class="box" x="230" y="64" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="237.5" y="81.3" text-anchor="middle">0</text>
+<rect class="box" x="245" y="64" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="252.5" y="81.3" text-anchor="middle">0</text>
+<rect class="box" x="260" y="64" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="267.5" y="81.3" text-anchor="middle">0</text>
+<rect class="box" x="275" y="64" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="282.5" y="81.3" text-anchor="middle">0</text>
+<rect class="box" x="290" y="64" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="297.5" y="81.3" text-anchor="middle">0</text>
+<rect class="box" x="305" y="64" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="312.5" y="81.3" text-anchor="middle">0</text>
+<rect class="box" x="320" y="64" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="327.5" y="81.3" text-anchor="middle">0</text>
+<rect class="box" x="335" y="64" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="342.5" y="81.3" text-anchor="middle">0</text>
+<rect class="box" x="350" y="64" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="357.5" y="81.3" text-anchor="middle">0</text>
+<rect class="box" x="365" y="64" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="372.5" y="81.3" text-anchor="middle">0</text>
+<rect class="box" x="380" y="64" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="387.5" y="81.3" text-anchor="middle">0</text>
+<rect class="box" x="395" y="64" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="402.5" y="81.3" text-anchor="middle">0</text>
+<rect class="box" x="410" y="64" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="417.5" y="81.3" text-anchor="middle">0</text>
+<rect class="box" x="425" y="64" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="432.5" y="81.3" text-anchor="middle">0</text>
+<text class="t-small t-mono" x="456" y="82">0</text>
+<text class="t-small t-mono" x="52" y="118" text-anchor="end">12.0</text>
+<text class="t-small t-mono" x="62" y="118">4028000000000000</text>
+<rect class="box" x="200" y="100" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="207.5" y="117.3" text-anchor="middle">0</text>
+<rect class="box" x="215" y="100" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="222.5" y="117.3" text-anchor="middle">0</text>
+<rect class="box" x="230" y="100" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="237.5" y="117.3" text-anchor="middle">0</text>
+<rect class="box" x="245" y="100" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="252.5" y="117.3" text-anchor="middle">0</text>
+<rect class="box" x="260" y="100" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="267.5" y="117.3" text-anchor="middle">0</text>
+<rect class="box" x="275" y="100" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="282.5" y="117.3" text-anchor="middle">0</text>
+<rect class="box" x="290" y="100" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="297.5" y="117.3" text-anchor="middle">0</text>
+<rect class="box" x="305" y="100" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="312.5" y="117.3" text-anchor="middle">0</text>
+<rect class="box" x="320" y="100" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="327.5" y="117.3" text-anchor="middle">0</text>
+<rect class="box" x="335" y="100" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="342.5" y="117.3" text-anchor="middle">0</text>
+<rect class="box" x="350" y="100" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="357.5" y="117.3" text-anchor="middle">0</text>
+<rect class="box" x="365" y="100" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="372.5" y="117.3" text-anchor="middle">0</text>
+<rect class="box" x="380" y="100" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="387.5" y="117.3" text-anchor="middle">0</text>
+<rect class="box-a" x="395" y="100" width="15" height="26"/>
+<text class="t-small t-mono t-a" x="402.5" y="117.3" text-anchor="middle">1</text>
+<rect class="box-a" x="410" y="100" width="15" height="26"/>
+<text class="t-small t-mono t-a" x="417.5" y="117.3" text-anchor="middle">1</text>
+<rect class="box" x="425" y="100" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="432.5" y="117.3" text-anchor="middle">0</text>
+<text class="t-small t-mono t-a" x="456" y="118">11 01101 000010 11</text>
+<text class="t-small t-mono" x="52" y="154" text-anchor="end">14.0</text>
+<text class="t-small t-mono" x="62" y="154">402C000000000000</text>
+<rect class="box" x="200" y="136" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="207.5" y="153.3" text-anchor="middle">0</text>
+<rect class="box" x="215" y="136" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="222.5" y="153.3" text-anchor="middle">0</text>
+<rect class="box" x="230" y="136" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="237.5" y="153.3" text-anchor="middle">0</text>
+<rect class="box" x="245" y="136" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="252.5" y="153.3" text-anchor="middle">0</text>
+<rect class="box" x="260" y="136" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="267.5" y="153.3" text-anchor="middle">0</text>
+<rect class="box" x="275" y="136" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="282.5" y="153.3" text-anchor="middle">0</text>
+<rect class="box" x="290" y="136" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="297.5" y="153.3" text-anchor="middle">0</text>
+<rect class="box" x="305" y="136" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="312.5" y="153.3" text-anchor="middle">0</text>
+<rect class="box" x="320" y="136" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="327.5" y="153.3" text-anchor="middle">0</text>
+<rect class="box" x="335" y="136" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="342.5" y="153.3" text-anchor="middle">0</text>
+<rect class="box" x="350" y="136" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="357.5" y="153.3" text-anchor="middle">0</text>
+<rect class="box" x="365" y="136" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="372.5" y="153.3" text-anchor="middle">0</text>
+<rect class="box" x="380" y="136" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="387.5" y="153.3" text-anchor="middle">0</text>
+<rect class="box-a" x="395" y="136" width="15" height="26"/>
+<text class="t-small t-mono t-a" x="402.5" y="153.3" text-anchor="middle">1</text>
+<rect class="box-a" x="410" y="136" width="15" height="26"/>
+<text class="t-small t-mono t-a" x="417.5" y="153.3" text-anchor="middle">0</text>
+<rect class="box" x="425" y="136" width="15" height="26"/>
+<text class="t-small t-mono t-muted" x="432.5" y="153.3" text-anchor="middle">0</text>
+<text class="t-small t-mono t-a" x="456" y="154">10 10</text>
+<text class="t-small t-muted" x="207.5" y="180" text-anchor="middle">63</text>
+<text class="t-small t-muted" x="402.5" y="180" text-anchor="middle">50</text>
+<text class="t-small t-muted" x="432.5" y="180" text-anchor="middle">48</text>
+<text class="t-small t-muted" x="320" y="198" text-anchor="middle">bits 47 to 0 are all zero</text>
+</svg>

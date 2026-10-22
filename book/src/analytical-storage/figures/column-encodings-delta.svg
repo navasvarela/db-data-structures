@@ -1,0 +1,50 @@
+<svg class="diagram" viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="column-encodings-delta-title">
+<title id="column-encodings-delta-title">Delta encoding of 1000, 1010, 1020, 1031: deltas 10, 10, 11; minus the minimum delta 10 they become 0, 0, 1, packed at one bit each.</title>
+<defs><marker id="column-encodings-delta-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="150" y="37" text-anchor="end">values</text>
+<rect class="box" x="196" y="20" width="68" height="26"/>
+<text class="t t-mono" x="230" y="38" text-anchor="middle">1000</text>
+<rect class="box" x="296" y="20" width="68" height="26"/>
+<text class="t t-mono" x="330" y="38" text-anchor="middle">1010</text>
+<rect class="box" x="396" y="20" width="68" height="26"/>
+<text class="t t-mono" x="430" y="38" text-anchor="middle">1020</text>
+<rect class="box" x="496" y="20" width="68" height="26"/>
+<text class="t t-mono" x="530" y="38" text-anchor="middle">1031</text>
+<text class="t-small t-muted" x="150" y="97" text-anchor="end">deltas</text>
+<text class="t-small t-muted" x="150" y="157" text-anchor="end">minus min delta 10</text>
+<line class="line" x1="238" y1="46" x2="274" y2="76"/>
+<line class="line" x1="322" y1="46" x2="286" y2="76"/>
+<rect class="box" x="258" y="80" width="44" height="26"/>
+<text class="t t-mono" x="280" y="98" text-anchor="middle">10</text>
+<line class="line" x1="280" y1="106" x2="280" y2="136" marker-end="url(#column-encodings-delta-head)"/>
+<rect class="box-a" x="258" y="140" width="44" height="26"/>
+<text class="t t-mono t-a" x="280" y="158" text-anchor="middle">0</text>
+<line class="line" x1="338" y1="46" x2="374" y2="76"/>
+<line class="line" x1="422" y1="46" x2="386" y2="76"/>
+<rect class="box" x="358" y="80" width="44" height="26"/>
+<text class="t t-mono" x="380" y="98" text-anchor="middle">10</text>
+<line class="line" x1="380" y1="106" x2="380" y2="136" marker-end="url(#column-encodings-delta-head)"/>
+<rect class="box-a" x="358" y="140" width="44" height="26"/>
+<text class="t t-mono t-a" x="380" y="158" text-anchor="middle">0</text>
+<line class="line" x1="438" y1="46" x2="474" y2="76"/>
+<line class="line" x1="522" y1="46" x2="486" y2="76"/>
+<rect class="box" x="458" y="80" width="44" height="26"/>
+<text class="t t-mono" x="480" y="98" text-anchor="middle">11</text>
+<line class="line" x1="480" y1="106" x2="480" y2="136" marker-end="url(#column-encodings-delta-head)"/>
+<rect class="box-a" x="458" y="140" width="44" height="26"/>
+<text class="t t-mono t-a" x="480" y="158" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="150" y="223" text-anchor="end">written</text>
+<rect class="box-muted" x="166" y="206" width="96" height="26"/>
+<text class="t-small t-mono" x="214" y="223.3" text-anchor="middle">first 1000</text>
+<rect class="box-muted" x="262" y="206" width="80" height="26"/>
+<text class="t-small t-mono" x="302" y="223.3" text-anchor="middle">min Δ 10</text>
+<rect class="box-muted" x="342" y="206" width="72" height="26"/>
+<text class="t-small t-mono" x="378" y="223.3" text-anchor="middle">width 1</text>
+<rect class="box-a" x="414" y="206" width="26" height="26"/>
+<text class="t-small t-mono t-a" x="427" y="223.3" text-anchor="middle">0</text>
+<rect class="box-a" x="440" y="206" width="26" height="26"/>
+<text class="t-small t-mono t-a" x="453" y="223.3" text-anchor="middle">0</text>
+<rect class="box-a" x="466" y="206" width="26" height="26"/>
+<text class="t-small t-mono t-a" x="479" y="223.3" text-anchor="middle">1</text>
+<text class="t-small t-a" x="453" y="198" text-anchor="middle">3 bits</text>
+</svg>

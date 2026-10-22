@@ -1,0 +1,35 @@
+<svg class="diagram" viewBox="0 0 640 176" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="k-way-merge-heap-next-title">
+<title id="k-way-merge-heap-next-title">One call to next: the top entry (a, 1) is returned, input 1's next key e replaces it as (e, 1), and sifting down swaps it with its smaller child (b, 0).</title>
+<defs><marker id="k-way-merge-heap-next-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="k-way-merge-heap-next-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="110" y="20" text-anchor="middle">1. take (a, 1): return a</text>
+<line class="line" x1="100" y1="65" x2="58" y2="95"/>
+<line class="line" x1="120" y1="65" x2="162" y2="95"/>
+<rect class="box-a" x="82" y="39" width="56" height="26"/>
+<text class="t-small t-mono" x="110" y="56" text-anchor="middle">(a, 1)</text>
+<rect class="box" x="30" y="95" width="56" height="26"/>
+<text class="t-small t-mono" x="58" y="112" text-anchor="middle">(b, 0)</text>
+<rect class="box" x="134" y="95" width="56" height="26"/>
+<text class="t-small t-mono" x="162" y="112" text-anchor="middle">(b, 2)</text>
+<line class="line" x1="202" y1="80" x2="226" y2="80" marker-end="url(#k-way-merge-heap-next-head)"/>
+<text class="t-small t-muted" x="320" y="20" text-anchor="middle">2. replace top with (e, 1)</text>
+<line class="line" x1="310" y1="65" x2="268" y2="95"/>
+<line class="line" x1="330" y1="65" x2="372" y2="95"/>
+<rect class="box-a" x="292" y="39" width="56" height="26"/>
+<text class="t-small t-mono" x="320" y="56" text-anchor="middle">(e, 1)</text>
+<rect class="box-b" x="240" y="95" width="56" height="26"/>
+<text class="t-small t-mono" x="268" y="112" text-anchor="middle">(b, 0)</text>
+<rect class="box" x="344" y="95" width="56" height="26"/>
+<text class="t-small t-mono" x="372" y="112" text-anchor="middle">(b, 2)</text>
+<path class="line-a" d="M290.0,52 Q258,52 258,92.0" marker-end="url(#k-way-merge-heap-next-head-a)"/>
+<text class="t-small t-a" x="242" y="50" text-anchor="end">swap</text>
+<line class="line" x1="412" y1="80" x2="436" y2="80" marker-end="url(#k-way-merge-heap-next-head)"/>
+<text class="t-small t-muted" x="530" y="20" text-anchor="middle">3. after the sift-down</text>
+<line class="line" x1="520" y1="65" x2="478" y2="95"/>
+<line class="line" x1="540" y1="65" x2="582" y2="95"/>
+<rect class="box-b" x="502" y="39" width="56" height="26"/>
+<text class="t-small t-mono" x="530" y="56" text-anchor="middle">(b, 0)</text>
+<rect class="box-a" x="450" y="95" width="56" height="26"/>
+<text class="t-small t-mono" x="478" y="112" text-anchor="middle">(e, 1)</text>
+<rect class="box" x="554" y="95" width="56" height="26"/>
+<text class="t-small t-mono" x="582" y="112" text-anchor="middle">(b, 2)</text>
+</svg>

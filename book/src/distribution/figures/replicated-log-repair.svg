@@ -1,0 +1,67 @@
+<svg class="diagram" viewBox="0 0 640 298" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="replicated-log-repair-title">
+<title id="replicated-log-repair-title">The leader repairs S5: two failed AppendEntries move nextIndex from 7 to 6 and then to 4; the third matches at index 3, and S5 replaces entries 4 and 5 with the leader's entries 4 to 6.</title>
+<text class="t-small t-muted" x="153" y="18" text-anchor="middle">1</text>
+<text class="t-small t-muted" x="203" y="18" text-anchor="middle">2</text>
+<text class="t-small t-muted" x="253" y="18" text-anchor="middle">3</text>
+<text class="t-small t-muted" x="303" y="18" text-anchor="middle">4</text>
+<text class="t-small t-muted" x="353" y="18" text-anchor="middle">5</text>
+<text class="t-small t-muted" x="403" y="18" text-anchor="middle">6</text>
+<text class="t-small t-bold" x="118" y="50" text-anchor="end">S1 leader</text>
+<rect class="box" x="130" y="30" width="46" height="30"/>
+<text class="t t-mono" x="153" y="50" text-anchor="middle">1</text>
+<rect class="box" x="180" y="30" width="46" height="30"/>
+<text class="t t-mono" x="203" y="50" text-anchor="middle">1</text>
+<rect class="box" x="230" y="30" width="46" height="30"/>
+<text class="t t-mono" x="253" y="50" text-anchor="middle">2</text>
+<rect class="box" x="280" y="30" width="46" height="30"/>
+<text class="t t-mono" x="303" y="50" text-anchor="middle">3</text>
+<rect class="box" x="330" y="30" width="46" height="30"/>
+<text class="t t-mono" x="353" y="50" text-anchor="middle">3</text>
+<rect class="box" x="380" y="30" width="46" height="30"/>
+<text class="t t-mono" x="403" y="50" text-anchor="middle">3</text>
+<text class="t-small t-bold" x="118" y="92" text-anchor="end">S5 before</text>
+<rect class="box" x="130" y="72" width="46" height="30"/>
+<text class="t t-mono" x="153" y="92" text-anchor="middle">1</text>
+<rect class="box" x="180" y="72" width="46" height="30"/>
+<text class="t t-mono" x="203" y="92" text-anchor="middle">1</text>
+<rect class="box" x="230" y="72" width="46" height="30"/>
+<text class="t t-mono" x="253" y="92" text-anchor="middle">2</text>
+<rect class="box-warn" x="280" y="72" width="46" height="30"/>
+<text class="t t-mono" x="303" y="92" text-anchor="middle">2</text>
+<rect class="box-warn" x="330" y="72" width="46" height="30"/>
+<text class="t t-mono" x="353" y="92" text-anchor="middle">2</text>
+<rect class="box-muted dashed" x="380" y="72" width="46" height="30"/>
+<circle class="box" cx="403" cy="122" r="9"/>
+<text class="t-small t-bold" x="403" y="126" text-anchor="middle">1</text>
+<circle class="box" cx="353" cy="122" r="9"/>
+<text class="t-small t-bold" x="353" y="126" text-anchor="middle">2</text>
+<circle class="box-b" cx="253" cy="122" r="9"/>
+<text class="t-small t-bold" x="253" y="126" text-anchor="middle">3</text>
+<text class="t-small t-bold" x="20" y="180">1.</text>
+<text class="t-small t-mono" x="38" y="180">prev = 6, term 3</text>
+<text class="t-small" x="178" y="180">S5 has no entry 6: conflictIndex = 6</text>
+<text class="t-small t-muted" x="620" y="180" text-anchor="end">nextIndex 6</text>
+<text class="t-small t-bold" x="20" y="202">2.</text>
+<text class="t-small t-mono" x="38" y="202">prev = 5, term 3</text>
+<text class="t-small" x="178" y="202">conflictTerm = 2, conflictIndex = 3</text>
+<text class="t-small t-muted" x="620" y="202" text-anchor="end">nextIndex 4</text>
+<text class="t-small t-bold" x="20" y="224">3.</text>
+<text class="t-small t-mono" x="38" y="224">prev = 3, term 2</text>
+<text class="t-small t-b" x="178" y="224">match: delete 4–5, append 4–6</text>
+<text class="t-small t-muted" x="620" y="224" text-anchor="end">done</text>
+<text class="t-small t-bold" x="118" y="274" text-anchor="end">S5 after</text>
+<rect class="box" x="130" y="254" width="46" height="30"/>
+<text class="t t-mono" x="153" y="274" text-anchor="middle">1</text>
+<rect class="box" x="180" y="254" width="46" height="30"/>
+<text class="t t-mono" x="203" y="274" text-anchor="middle">1</text>
+<rect class="box" x="230" y="254" width="46" height="30"/>
+<text class="t t-mono" x="253" y="274" text-anchor="middle">2</text>
+<rect class="box-b" x="280" y="254" width="46" height="30"/>
+<text class="t t-mono" x="303" y="274" text-anchor="middle">3</text>
+<rect class="box-b" x="330" y="254" width="46" height="30"/>
+<text class="t t-mono" x="353" y="274" text-anchor="middle">3</text>
+<rect class="box-b" x="380" y="254" width="46" height="30"/>
+<text class="t t-mono" x="403" y="274" text-anchor="middle">3</text>
+<text class="t-small t-b" x="444" y="274">now matches the leader</text>
+<text class="t-small t-muted" x="20" y="154">nextIndex for S5 starts at 7, one past the leader's last entry</text>
+</svg>

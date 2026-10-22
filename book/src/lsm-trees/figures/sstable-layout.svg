@@ -1,0 +1,33 @@
+<svg class="diagram" viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sstable-layout-title">
+<title id="sstable-layout-title">An SSTable file: data blocks, a filter block, the metaindex block, the index block and a fixed-size footer. The footer points at the metaindex and index blocks, the metaindex at the filter, and the index at every data block.</title>
+<defs><marker id="sstable-layout-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="sstable-layout-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker><marker id="sstable-layout-head-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-b" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="120" y="26">offset 0</text>
+<rect class="box" x="120" y="34" width="170" height="28"/>
+<text class="t-small" x="205" y="52" text-anchor="middle">data block 0</text>
+<text class="t-small t-muted" x="364" y="52">entries in key order, about 4 KB each</text>
+<rect class="box" x="120" y="62" width="170" height="28"/>
+<text class="t-small" x="205" y="80" text-anchor="middle">data block 1</text>
+<rect class="box" x="120" y="90" width="170" height="28"/>
+<text class="t-small t-muted" x="205" y="108" text-anchor="middle">…</text>
+<rect class="box" x="120" y="118" width="170" height="28"/>
+<text class="t-small" x="205" y="136" text-anchor="middle">data block n-1</text>
+<rect class="box" x="120" y="146" width="170" height="28"/>
+<text class="t-small" x="205" y="164" text-anchor="middle">filter block</text>
+<text class="t-small t-muted" x="364" y="164">a meta block: the Bloom filter</text>
+<rect class="box" x="120" y="174" width="170" height="28"/>
+<text class="t-small" x="205" y="192" text-anchor="middle">metaindex block</text>
+<text class="t-small t-muted" x="364" y="192">meta block name → block handle</text>
+<rect class="box-a" x="120" y="202" width="170" height="28"/>
+<text class="t-small" x="205" y="220" text-anchor="middle">index block</text>
+<text class="t-small t-muted" x="364" y="220">one entry per data block → handle</text>
+<rect class="box-b" x="120" y="230" width="170" height="28"/>
+<text class="t-small" x="205" y="248" text-anchor="middle">footer</text>
+<text class="t-small t-muted" x="364" y="248">2 handles, padding, magic: 48 bytes</text>
+<text class="t-small t-muted" x="120" y="274">end of file</text>
+<path class="line-a" d="M120,216.0 C60,216.0 60,48.0 118,48.0" marker-end="url(#sstable-layout-head-a)"/>
+<path class="line-a" d="M120,216.0 C76,216.0 76,76.0 118,76.0" marker-end="url(#sstable-layout-head-a)"/>
+<path class="line-a" d="M120,216.0 C92,216.0 92,132.0 118,132.0" marker-end="url(#sstable-layout-head-a)"/>
+<path class="line-b" d="M290,244.0 C324,244.0 324,216.0 292,216.0" marker-end="url(#sstable-layout-head-b)"/>
+<path class="line-b" d="M290,244.0 C352,244.0 352,188.0 292,188.0" marker-end="url(#sstable-layout-head-b)"/>
+<path class="line" d="M290,184.0 C318,184.0 318,160.0 292,160.0" marker-end="url(#sstable-layout-head)"/>
+</svg>

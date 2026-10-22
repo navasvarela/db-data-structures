@@ -1,0 +1,25 @@
+<svg class="diagram" viewBox="0 0 640 186" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="lock-table-and-wait-for-graph-queue-title">
+<title id="lock-table-and-wait-for-graph-queue-title">On accounts/77, T4's S request is compatible with the S holders but queues behind T1's X request; when T2 and T3 release, T1 is granted X and T4 keeps waiting.</title>
+<defs><marker id="lock-table-and-wait-for-graph-queue-head-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-b" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-bold" x="130" y="18">granted group</text>
+<text class="t-small t-bold" x="380" y="18">wait queue</text>
+<text class="t-small t-bold" x="116" y="49" text-anchor="end">before</text>
+<rect class="box" x="130" y="30" width="58" height="28"/>
+<text class="t-small t-mono" x="159" y="48" text-anchor="middle">T2 S</text>
+<rect class="box" x="194" y="30" width="58" height="28"/>
+<text class="t-small t-mono" x="223" y="48" text-anchor="middle">T3 S</text>
+<rect class="box" x="380" y="30" width="58" height="28"/>
+<text class="t-small t-mono" x="409" y="48" text-anchor="middle">T1 X</text>
+<rect class="box-a" x="444" y="30" width="58" height="28"/>
+<text class="t-small t-mono" x="473" y="48" text-anchor="middle">T4 S</text>
+<text class="t-small t-a" x="514" y="40">compatible with S,</text>
+<text class="t-small t-a" x="514" y="56">but may not overtake</text>
+<text class="t-small t-bold" x="116" y="145" text-anchor="end">after T2, T3</text>
+<text class="t-small t-bold" x="116" y="161" text-anchor="end">release</text>
+<rect class="box-b" x="130" y="126" width="58" height="28"/>
+<text class="t-small t-mono" x="159" y="144" text-anchor="middle">T1 X</text>
+<rect class="box-a" x="380" y="126" width="58" height="28"/>
+<text class="t-small t-mono" x="409" y="144" text-anchor="middle">T4 S</text>
+<path class="line-b" d="M409.0,60V100H159.0V122" marker-end="url(#lock-table-and-wait-for-graph-queue-head-b)"/>
+<text class="t-small t-b" x="280" y="94" text-anchor="middle">granted</text>
+</svg>

@@ -1,0 +1,106 @@
+<svg class="diagram" viewBox="0 0 640 372" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="b-plus-tree-leaf-split-title">
+<title id="b-plus-tree-leaf-split-title">Inserting 60 into the full leaf page 5 splits it: 60 and 70 move to new page 11, which is linked between pages 5 and 9, and 60 is copied up into page 7.</title>
+<defs><marker id="b-plus-tree-leaf-split-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="b-plus-tree-leaf-split-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t t-bold" x="20" y="18">Before: insert 60</text>
+<rect class="box-muted" x="244" y="32" width="28" height="28"/>
+<text class="t-small t-mono" x="258" y="51" text-anchor="middle">c3</text>
+<rect class="box" x="272" y="32" width="34" height="28"/>
+<text class="t t-mono" x="289" y="51" text-anchor="middle">40</text>
+<rect class="box-muted" x="306" y="32" width="28" height="28"/>
+<text class="t-small t-mono" x="320" y="51" text-anchor="middle">c5</text>
+<rect class="box" x="334" y="32" width="34" height="28"/>
+<text class="t t-mono" x="351" y="51" text-anchor="middle">80</text>
+<rect class="box-muted" x="368" y="32" width="28" height="28"/>
+<text class="t-small t-mono" x="382" y="51" text-anchor="middle">c9</text>
+<text class="t-small t-muted" x="232" y="51" text-anchor="end">page 7</text>
+<rect class="box" x="77" y="122" width="34" height="28"/>
+<text class="t t-mono" x="94" y="141" text-anchor="middle">10</text>
+<rect class="box" x="111" y="122" width="34" height="28"/>
+<text class="t t-mono" x="128" y="141" text-anchor="middle">20</text>
+<rect class="box" x="145" y="122" width="34" height="28"/>
+<text class="t t-mono" x="162" y="141" text-anchor="middle">30</text>
+<rect class="box-muted" x="179" y="122" width="20" height="28"/>
+<text class="t-small t-muted" x="128" y="168" text-anchor="middle">page 3</text>
+<rect class="box" x="259" y="122" width="34" height="28"/>
+<text class="t t-mono" x="276" y="141" text-anchor="middle">40</text>
+<rect class="box" x="293" y="122" width="34" height="28"/>
+<text class="t t-mono" x="310" y="141" text-anchor="middle">55</text>
+<rect class="box" x="327" y="122" width="34" height="28"/>
+<text class="t t-mono" x="344" y="141" text-anchor="middle">70</text>
+<rect class="box-muted" x="361" y="122" width="20" height="28"/>
+<text class="t-small t-muted" x="310" y="168" text-anchor="middle">page 5</text>
+<rect class="box" x="441" y="122" width="34" height="28"/>
+<text class="t t-mono" x="458" y="141" text-anchor="middle">80</text>
+<rect class="box" x="475" y="122" width="34" height="28"/>
+<text class="t t-mono" x="492" y="141" text-anchor="middle">90</text>
+<rect class="box" x="509" y="122" width="34" height="28"/>
+<rect class="box-muted" x="543" y="122" width="20" height="28"/>
+<text class="t-small t-muted" x="492" y="168" text-anchor="middle">page 9</text>
+<line class="line" x1="258" y1="60" x2="128" y2="118" marker-end="url(#b-plus-tree-leaf-split-head)"/>
+<line class="line" x1="320" y1="60" x2="310" y2="118" marker-end="url(#b-plus-tree-leaf-split-head)"/>
+<line class="line" x1="382" y1="60" x2="492" y2="118" marker-end="url(#b-plus-tree-leaf-split-head)"/>
+<circle class="head" cx="189" cy="136" r="2.5"/>
+<line class="line" x1="189" y1="136" x2="257" y2="136" marker-end="url(#b-plus-tree-leaf-split-head)"/>
+<circle class="head" cx="371" cy="136" r="2.5"/>
+<line class="line" x1="371" y1="136" x2="439" y2="136" marker-end="url(#b-plus-tree-leaf-split-head)"/>
+<line class="line" x1="548" y1="143" x2="558" y2="129"/>
+<text class="t t-mono t-a" x="380" y="100" text-anchor="middle">60</text>
+<line class="line-a" x1="370" y1="104" x2="339" y2="119" marker-end="url(#b-plus-tree-leaf-split-head-a)"/>
+<line class="line dashed" x1="20" y1="190" x2="620" y2="190"/>
+<text class="t t-bold" x="20" y="210">After: split, 60 copied up</text>
+<rect class="box-muted" x="213" y="224" width="28" height="28"/>
+<text class="t-small t-mono" x="227" y="243" text-anchor="middle">c3</text>
+<rect class="box" x="241" y="224" width="34" height="28"/>
+<text class="t t-mono" x="258" y="243" text-anchor="middle">40</text>
+<rect class="box-muted" x="275" y="224" width="28" height="28"/>
+<text class="t-small t-mono" x="289" y="243" text-anchor="middle">c5</text>
+<rect class="box-a" x="303" y="224" width="34" height="28"/>
+<text class="t t-mono" x="320" y="243" text-anchor="middle">60</text>
+<rect class="box-a" x="337" y="224" width="28" height="28"/>
+<text class="t-small t-mono" x="351" y="243" text-anchor="middle">c11</text>
+<rect class="box" x="365" y="224" width="34" height="28"/>
+<text class="t t-mono" x="382" y="243" text-anchor="middle">80</text>
+<rect class="box-muted" x="399" y="224" width="28" height="28"/>
+<text class="t-small t-mono" x="413" y="243" text-anchor="middle">c9</text>
+<text class="t-small t-muted" x="201" y="243" text-anchor="end">page 7</text>
+<rect class="box" x="20" y="314" width="34" height="28"/>
+<text class="t t-mono" x="37" y="333" text-anchor="middle">10</text>
+<rect class="box" x="54" y="314" width="34" height="28"/>
+<text class="t t-mono" x="71" y="333" text-anchor="middle">20</text>
+<rect class="box" x="88" y="314" width="34" height="28"/>
+<text class="t t-mono" x="105" y="333" text-anchor="middle">30</text>
+<rect class="box-muted" x="122" y="314" width="20" height="28"/>
+<text class="t-small t-muted" x="71" y="360" text-anchor="middle">page 3</text>
+<rect class="box" x="179.333" y="314" width="34" height="28"/>
+<text class="t t-mono" x="196.333" y="333" text-anchor="middle">40</text>
+<rect class="box" x="213.333" y="314" width="34" height="28"/>
+<text class="t t-mono" x="230.333" y="333" text-anchor="middle">55</text>
+<rect class="box" x="247.333" y="314" width="34" height="28"/>
+<rect class="box-a" x="281.333" y="314" width="20" height="28"/>
+<text class="t-small t-muted" x="230.333" y="360" text-anchor="middle">page 5</text>
+<rect class="box-a" x="338.667" y="314" width="34" height="28"/>
+<text class="t t-mono" x="355.667" y="333" text-anchor="middle">60</text>
+<rect class="box-a" x="372.667" y="314" width="34" height="28"/>
+<text class="t t-mono" x="389.667" y="333" text-anchor="middle">70</text>
+<rect class="box" x="406.667" y="314" width="34" height="28"/>
+<rect class="box-a" x="440.667" y="314" width="20" height="28"/>
+<text class="t-small t-muted" x="389.667" y="360" text-anchor="middle">page 11 (new)</text>
+<rect class="box" x="498" y="314" width="34" height="28"/>
+<text class="t t-mono" x="515" y="333" text-anchor="middle">80</text>
+<rect class="box" x="532" y="314" width="34" height="28"/>
+<text class="t t-mono" x="549" y="333" text-anchor="middle">90</text>
+<rect class="box" x="566" y="314" width="34" height="28"/>
+<rect class="box-muted" x="600" y="314" width="20" height="28"/>
+<text class="t-small t-muted" x="549" y="360" text-anchor="middle">page 9</text>
+<line class="line" x1="227" y1="252" x2="71" y2="310" marker-end="url(#b-plus-tree-leaf-split-head)"/>
+<line class="line" x1="289" y1="252" x2="230.333" y2="310" marker-end="url(#b-plus-tree-leaf-split-head)"/>
+<line class="line-a" x1="351" y1="252" x2="389.667" y2="310" marker-end="url(#b-plus-tree-leaf-split-head-a)"/>
+<line class="line" x1="413" y1="252" x2="549" y2="310" marker-end="url(#b-plus-tree-leaf-split-head)"/>
+<circle class="head" cx="132" cy="328" r="2.5"/>
+<line class="line" x1="132" y1="328" x2="177.333" y2="328" marker-end="url(#b-plus-tree-leaf-split-head)"/>
+<circle class="head-a" cx="291.333" cy="328" r="2.5"/>
+<line class="line-a" x1="291.333" y1="328" x2="336.667" y2="328" marker-end="url(#b-plus-tree-leaf-split-head-a)"/>
+<circle class="head-a" cx="450.667" cy="328" r="2.5"/>
+<line class="line-a" x1="450.667" y1="328" x2="496" y2="328" marker-end="url(#b-plus-tree-leaf-split-head-a)"/>
+<line class="line" x1="605" y1="335" x2="615" y2="321"/>
+</svg>

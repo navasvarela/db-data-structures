@@ -1,0 +1,42 @@
+<svg class="diagram" viewBox="0 0 640 284" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="copy-on-write-b-plus-tree-path-copy-title">
+<title id="copy-on-write-b-plus-tree-path-copy-title">Transaction 42 changes a key in leaf G. It writes copies G', C' and A' of the path, shares pages B, D, E and F with the old tree, and commits by writing meta page 1 with root A'.</title>
+<defs><marker id="copy-on-write-b-plus-tree-path-copy-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="copy-on-write-b-plus-tree-path-copy-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<line class="line" x1="210" y1="115" x2="110" y2="162" marker-end="url(#copy-on-write-b-plus-tree-path-copy-head)"/>
+<line class="line" x1="210" y1="115" x2="300" y2="162" marker-end="url(#copy-on-write-b-plus-tree-path-copy-head)"/>
+<line class="line" x1="110" y1="195" x2="50" y2="242" marker-end="url(#copy-on-write-b-plus-tree-path-copy-head)"/>
+<line class="line" x1="110" y1="195" x2="160" y2="242" marker-end="url(#copy-on-write-b-plus-tree-path-copy-head)"/>
+<line class="line" x1="300" y1="195" x2="300" y2="242" marker-end="url(#copy-on-write-b-plus-tree-path-copy-head)"/>
+<line class="line" x1="300" y1="195" x2="390" y2="242" marker-end="url(#copy-on-write-b-plus-tree-path-copy-head)"/>
+<line class="line-a" x1="430" y1="115" x2="110" y2="162" marker-end="url(#copy-on-write-b-plus-tree-path-copy-head-a)"/>
+<line class="line-a" x1="430" y1="115" x2="480" y2="162" marker-end="url(#copy-on-write-b-plus-tree-path-copy-head-a)"/>
+<line class="line-a" x1="480" y1="195" x2="300" y2="242" marker-end="url(#copy-on-write-b-plus-tree-path-copy-head-a)"/>
+<line class="line-a" x1="480" y1="195" x2="530" y2="242" marker-end="url(#copy-on-write-b-plus-tree-path-copy-head-a)"/>
+<rect class="box-muted" x="188" y="85" width="44" height="30" rx="4"/>
+<text class="t t-bold" x="210" y="105" text-anchor="middle">A</text>
+<rect class="box-a" x="408" y="85" width="44" height="30" rx="4"/>
+<text class="t t-bold" x="430" y="105" text-anchor="middle">A'</text>
+<rect class="box" x="88" y="165" width="44" height="30" rx="4"/>
+<text class="t t-bold" x="110" y="185" text-anchor="middle">B</text>
+<rect class="box-muted" x="278" y="165" width="44" height="30" rx="4"/>
+<text class="t t-bold" x="300" y="185" text-anchor="middle">C</text>
+<rect class="box-a" x="458" y="165" width="44" height="30" rx="4"/>
+<text class="t t-bold" x="480" y="185" text-anchor="middle">C'</text>
+<rect class="box" x="28" y="245" width="44" height="30" rx="4"/>
+<text class="t t-bold" x="50" y="265" text-anchor="middle">D</text>
+<rect class="box" x="138" y="245" width="44" height="30" rx="4"/>
+<text class="t t-bold" x="160" y="265" text-anchor="middle">E</text>
+<rect class="box" x="278" y="245" width="44" height="30" rx="4"/>
+<text class="t t-bold" x="300" y="265" text-anchor="middle">F</text>
+<rect class="box-muted" x="368" y="245" width="44" height="30" rx="4"/>
+<text class="t t-bold" x="390" y="265" text-anchor="middle">G</text>
+<rect class="box-a" x="508" y="245" width="44" height="30" rx="4"/>
+<text class="t t-bold" x="530" y="265" text-anchor="middle">G'</text>
+<rect class="box" x="110" y="14" width="200" height="30" rx="4"/>
+<text class="t-small" x="210" y="34" text-anchor="middle">meta 0: txn 41, root A</text>
+<rect class="box-a" x="330" y="14" width="200" height="30" rx="4"/>
+<text class="t-small" x="430" y="34" text-anchor="middle">meta 1: txn 42, root A'</text>
+<line class="line" x1="210" y1="44" x2="210" y2="82" marker-end="url(#copy-on-write-b-plus-tree-path-copy-head)"/>
+<line class="line-a" x1="430" y1="44" x2="430" y2="82" marker-end="url(#copy-on-write-b-plus-tree-path-copy-head-a)"/>
+<text class="t-small t-muted" x="16" y="33">reader of 41</text>
+<text class="t-small t-a" x="624" y="33" text-anchor="end">new readers</text>
+</svg>

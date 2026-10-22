@@ -1,0 +1,52 @@
+<svg class="diagram" viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="b-plus-tree-layout-title">
+<title id="b-plus-tree-layout-title">A two-level B+ tree: the meta page points to inner page 7, whose separators 40 and 80 divide three leaves, pages 3, 5 and 9, linked left to right.</title>
+<defs><marker id="b-plus-tree-layout-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<rect class="box" x="230" y="8" width="180" height="30" rx="4"/>
+<text class="t-small" x="320" y="28" text-anchor="middle">meta: root = 7, height = 2</text>
+<rect class="box-muted" x="244" y="76" width="28" height="28"/>
+<text class="t-small t-mono" x="258" y="95" text-anchor="middle">c3</text>
+<rect class="box" x="272" y="76" width="34" height="28"/>
+<text class="t t-mono" x="289" y="95" text-anchor="middle">40</text>
+<rect class="box-muted" x="306" y="76" width="28" height="28"/>
+<text class="t-small t-mono" x="320" y="95" text-anchor="middle">c5</text>
+<rect class="box" x="334" y="76" width="34" height="28"/>
+<text class="t t-mono" x="351" y="95" text-anchor="middle">80</text>
+<rect class="box-muted" x="368" y="76" width="28" height="28"/>
+<text class="t-small t-mono" x="382" y="95" text-anchor="middle">c9</text>
+<line class="line" x1="320" y1="38" x2="320" y2="72" marker-end="url(#b-plus-tree-layout-head)"/>
+<text class="t-small t-muted" x="232" y="95" text-anchor="end">page 7</text>
+<text class="t-small t-muted" x="408" y="95">inner</text>
+<rect class="box" x="77" y="170" width="34" height="28"/>
+<text class="t t-mono" x="94" y="189" text-anchor="middle">10</text>
+<rect class="box" x="111" y="170" width="34" height="28"/>
+<text class="t t-mono" x="128" y="189" text-anchor="middle">20</text>
+<rect class="box" x="145" y="170" width="34" height="28"/>
+<text class="t t-mono" x="162" y="189" text-anchor="middle">30</text>
+<rect class="box-muted" x="179" y="170" width="20" height="28"/>
+<text class="t-small t-muted" x="128" y="218" text-anchor="middle">page 3</text>
+<rect class="box" x="259" y="170" width="34" height="28"/>
+<text class="t t-mono" x="276" y="189" text-anchor="middle">40</text>
+<rect class="box" x="293" y="170" width="34" height="28"/>
+<text class="t t-mono" x="310" y="189" text-anchor="middle">55</text>
+<rect class="box" x="327" y="170" width="34" height="28"/>
+<text class="t t-mono" x="344" y="189" text-anchor="middle">70</text>
+<rect class="box-muted" x="361" y="170" width="20" height="28"/>
+<text class="t-small t-muted" x="310" y="218" text-anchor="middle">page 5</text>
+<rect class="box" x="441" y="170" width="34" height="28"/>
+<text class="t t-mono" x="458" y="189" text-anchor="middle">80</text>
+<rect class="box" x="475" y="170" width="34" height="28"/>
+<text class="t t-mono" x="492" y="189" text-anchor="middle">90</text>
+<rect class="box" x="509" y="170" width="34" height="28"/>
+<rect class="box-muted" x="543" y="170" width="20" height="28"/>
+<text class="t-small t-muted" x="492" y="218" text-anchor="middle">page 9</text>
+<line class="line" x1="258" y1="104" x2="128" y2="166" marker-end="url(#b-plus-tree-layout-head)"/>
+<line class="line" x1="320" y1="104" x2="310" y2="166" marker-end="url(#b-plus-tree-layout-head)"/>
+<line class="line" x1="382" y1="104" x2="492" y2="166" marker-end="url(#b-plus-tree-layout-head)"/>
+<circle class="head" cx="189" cy="184" r="2.5"/>
+<line class="line" x1="189" y1="184" x2="257" y2="184" marker-end="url(#b-plus-tree-layout-head)"/>
+<circle class="head" cx="371" cy="184" r="2.5"/>
+<line class="line" x1="371" y1="184" x2="439" y2="184" marker-end="url(#b-plus-tree-layout-head)"/>
+<line class="line" x1="548" y1="191" x2="558" y2="177"/>
+<text class="t-small t-muted" x="577" y="189">none</text>
+<text class="t-small t-muted" x="65" y="189" text-anchor="end">leaves</text>
+</svg>

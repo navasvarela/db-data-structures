@@ -1,0 +1,33 @@
+<svg class="diagram" viewBox="0 0 640 166" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="lock-table-and-wait-for-graph-layout-title">
+<title id="lock-table-and-wait-for-graph-layout-title">A lock table with three resources: accounts, held in IX by T1 and T2 and in IS by T3; accounts/42, held in X by T1 with T2 waiting for S; accounts/77, held in S by T2 and T3 with T1 waiting for X.</title>
+<defs><marker id="lock-table-and-wait-for-graph-layout-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-bold" x="20" y="18">resource</text>
+<text class="t-small t-bold" x="180" y="18">granted group</text>
+<text class="t-small t-bold" x="440" y="18">wait queue</text>
+<rect class="box" x="20" y="30" width="130" height="28"/>
+<text class="t-small t-mono" x="85" y="48" text-anchor="middle">accounts</text>
+<line class="line" x1="152" y1="44" x2="174" y2="44" marker-end="url(#lock-table-and-wait-for-graph-layout-head)"/>
+<rect class="box" x="180" y="30" width="58" height="28"/>
+<text class="t-small t-mono" x="209" y="48" text-anchor="middle">T1 IX</text>
+<rect class="box" x="244" y="30" width="58" height="28"/>
+<text class="t-small t-mono" x="273" y="48" text-anchor="middle">T2 IX</text>
+<rect class="box" x="308" y="30" width="58" height="28"/>
+<text class="t-small t-mono" x="337" y="48" text-anchor="middle">T3 IS</text>
+<text class="t-small t-muted" x="440" y="49">empty</text>
+<rect class="box" x="20" y="74" width="130" height="28"/>
+<text class="t-small t-mono" x="85" y="92" text-anchor="middle">accounts/42</text>
+<line class="line" x1="152" y1="88" x2="174" y2="88" marker-end="url(#lock-table-and-wait-for-graph-layout-head)"/>
+<rect class="box" x="180" y="74" width="58" height="28"/>
+<text class="t-small t-mono" x="209" y="92" text-anchor="middle">T1 X</text>
+<rect class="box-warn" x="440" y="74" width="58" height="28"/>
+<text class="t-small t-mono" x="469" y="92" text-anchor="middle">T2 S</text>
+<rect class="box" x="20" y="118" width="130" height="28"/>
+<text class="t-small t-mono" x="85" y="136" text-anchor="middle">accounts/77</text>
+<line class="line" x1="152" y1="132" x2="174" y2="132" marker-end="url(#lock-table-and-wait-for-graph-layout-head)"/>
+<rect class="box" x="180" y="118" width="58" height="28"/>
+<text class="t-small t-mono" x="209" y="136" text-anchor="middle">T2 S</text>
+<rect class="box" x="244" y="118" width="58" height="28"/>
+<text class="t-small t-mono" x="273" y="136" text-anchor="middle">T3 S</text>
+<rect class="box-warn" x="440" y="118" width="58" height="28"/>
+<text class="t-small t-mono" x="469" y="136" text-anchor="middle">T1 X</text>
+</svg>

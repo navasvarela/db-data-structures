@@ -1,0 +1,35 @@
+<svg class="diagram" viewBox="0 0 640 222" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bitmap-index-and-title">
+<title id="bitmap-index-and-title">AND of two Roaring bitmaps walks their keys like a merge. Keys 0x0000 and 0x0002 are in both and their containers are intersected, giving [7, 912] and [5]; keys 0x0001 and 0x0003 are in only one input and are dropped.</title>
+<text class="t-small t-bold t-mono" x="186" y="20" text-anchor="middle">a</text>
+<text class="t-small t-bold t-mono" x="366" y="20" text-anchor="middle">b</text>
+<text class="t-small t-bold t-mono" x="546" y="20" text-anchor="middle">a AND b</text>
+<text class="t-small t-mono" x="88" y="51" text-anchor="end">0x0000</text>
+<rect class="box" x="100" y="32" width="172" height="30"/>
+<text class="t-small t-mono" x="186" y="51.3" text-anchor="middle">array [3, 7, 912]</text>
+<rect class="box" x="280" y="32" width="172" height="30"/>
+<text class="t-small t-mono" x="366" y="51.3" text-anchor="middle">array [7, 100, 912]</text>
+<rect class="box-a" x="460" y="32" width="172" height="30"/>
+<text class="t-small t-mono t-a" x="546" y="51.3" text-anchor="middle">array [7, 912]</text>
+<text class="t-small t-mono" x="88" y="95" text-anchor="end">0x0001</text>
+<rect class="box" x="100" y="76" width="172" height="30"/>
+<text class="t-small t-mono" x="186" y="95.3" text-anchor="middle">bitmap: 5,000 values</text>
+<rect class="box-muted" x="280" y="76" width="172" height="30"/>
+<text class="t-small t-muted" x="366" y="95.3" text-anchor="middle">no container</text>
+<rect class="box-muted" x="460" y="76" width="172" height="30"/>
+<text class="t-small t-muted" x="546" y="95.3" text-anchor="middle">dropped</text>
+<text class="t-small t-mono" x="88" y="139" text-anchor="end">0x0002</text>
+<rect class="box" x="100" y="120" width="172" height="30"/>
+<text class="t-small t-mono" x="186" y="139.3" text-anchor="middle">run (0, 59999)</text>
+<rect class="box" x="280" y="120" width="172" height="30"/>
+<text class="t-small t-mono" x="366" y="139.3" text-anchor="middle">array [5, 61000]</text>
+<rect class="box-a" x="460" y="120" width="172" height="30"/>
+<text class="t-small t-mono t-a" x="546" y="139.3" text-anchor="middle">array [5]</text>
+<text class="t-small t-mono" x="88" y="183" text-anchor="end">0x0003</text>
+<rect class="box-muted" x="100" y="164" width="172" height="30"/>
+<text class="t-small t-muted" x="186" y="183.3" text-anchor="middle">no container</text>
+<rect class="box" x="280" y="164" width="172" height="30"/>
+<text class="t-small t-mono" x="366" y="183.3" text-anchor="middle">array [9]</text>
+<rect class="box-muted" x="460" y="164" width="172" height="30"/>
+<text class="t-small t-muted" x="546" y="183.3" text-anchor="middle">dropped</text>
+<text class="t-small t-muted" x="546" y="216" text-anchor="middle">only keys present in both</text>
+</svg>

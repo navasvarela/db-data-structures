@@ -1,0 +1,52 @@
+<svg class="diagram" viewBox="0 0 640 236" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="columnar-batch-filter-title">
+<title id="columnar-batch-filter-title">Evaluating price &gt; 20 over the batch selects rows 1 and 4; row 2 is NULL and fails; no column is copied.</title>
+<defs><marker id="columnar-batch-filter-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-muted" x="182" y="18" text-anchor="middle">row 0</text>
+<text class="t-small t-muted" x="246" y="18" text-anchor="middle">row 1</text>
+<text class="t-small t-muted" x="310" y="18" text-anchor="middle">row 2</text>
+<text class="t-small t-muted" x="374" y="18" text-anchor="middle">row 3</text>
+<text class="t-small t-muted" x="438" y="18" text-anchor="middle">row 4</text>
+<text class="t-small t-muted" x="502" y="18" text-anchor="middle">row 5</text>
+<text class="t-small t-muted" x="140" y="49" text-anchor="end">price</text>
+<text class="t-small t-muted" x="140" y="83" text-anchor="end">name</text>
+<rect class="box" x="150" y="30" width="64" height="28"/>
+<text class="t t-mono" x="182" y="49" text-anchor="middle">10</text>
+<rect class="box" x="150" y="64" width="64" height="28"/>
+<text class="t-small t-mono" x="182" y="82" text-anchor="middle">"foo"</text>
+<rect class="box-a" x="214" y="30" width="64" height="28"/>
+<text class="t t-mono" x="246" y="49" text-anchor="middle">25</text>
+<rect class="box-a" x="214" y="64" width="64" height="28"/>
+<text class="t-small t-mono" x="246" y="82" text-anchor="middle">""</text>
+<rect class="box-muted" x="278" y="30" width="64" height="28"/>
+<text class="t-small t-mono t-muted" x="310" y="48" text-anchor="middle">NULL</text>
+<rect class="box" x="278" y="64" width="64" height="28"/>
+<text class="t-small t-mono" x="310" y="82" text-anchor="middle">"apple"</text>
+<rect class="box" x="342" y="30" width="64" height="28"/>
+<text class="t t-mono" x="374" y="49" text-anchor="middle">7</text>
+<rect class="box" x="342" y="64" width="64" height="28"/>
+<text class="t-small t-mono" x="374" y="82" text-anchor="middle">"pear"</text>
+<rect class="box-a" x="406" y="30" width="64" height="28"/>
+<text class="t t-mono" x="438" y="49" text-anchor="middle">40</text>
+<rect class="box-a" x="406" y="64" width="64" height="28"/>
+<text class="t-small t-mono" x="438" y="82" text-anchor="middle">"kiwi"</text>
+<rect class="box" x="470" y="30" width="64" height="28"/>
+<text class="t t-mono" x="502" y="49" text-anchor="middle">12</text>
+<rect class="box" x="470" y="64" width="64" height="28"/>
+<text class="t-small t-mono" x="502" y="82" text-anchor="middle">"plum"</text>
+<text class="t-small t-muted" x="140" y="124" text-anchor="end">price &gt; 20</text>
+<text class="t-small t-muted" x="182" y="124" text-anchor="middle">false</text>
+<text class="t-small t-a t-bold" x="246" y="124" text-anchor="middle">true</text>
+<text class="t-small t-warn" x="310" y="124" text-anchor="middle">NULL</text>
+<text class="t-small t-muted" x="374" y="124" text-anchor="middle">false</text>
+<text class="t-small t-a t-bold" x="438" y="124" text-anchor="middle">true</text>
+<text class="t-small t-muted" x="502" y="124" text-anchor="middle">false</text>
+<text class="t-small t-warn" x="310" y="140" text-anchor="middle">fails</text>
+<text class="t-small t-muted" x="140" y="205" text-anchor="end">selection</text>
+<rect class="box-a" x="150" y="186" width="40" height="28"/>
+<text class="t t-mono" x="170" y="205" text-anchor="middle">1</text>
+<rect class="box-a" x="190" y="186" width="40" height="28"/>
+<text class="t t-mono" x="210" y="205" text-anchor="middle">4</text>
+<line class="line-a" x1="170" y1="186" x2="242" y2="132" marker-end="url(#columnar-batch-filter-head-a)"/>
+<line class="line-a" x1="210" y1="186" x2="432" y2="132" marker-end="url(#columnar-batch-filter-head-a)"/>
+<text class="t-small t-muted" x="244" y="205">new selection vector; the columns are unchanged</text>
+</svg>

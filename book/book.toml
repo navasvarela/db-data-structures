@@ -1,0 +1,17 @@
+[book]
+title = "Database Data Structures"
+description = "A guide to the data structures that databases are built from, from logs and B-trees to columnar segments and sketches."
+language = "en"
+
+[build]
+# Keeps the generated site out of the source tree, next to the rustdoc output it is published with.
+build-dir = "../target/book"
+# A typo in SUMMARY.md should fail the build, not silently create an empty page.
+create-missing = false
+
+[output.html]
+git-repository-url = "https://github.com/navasvarela/db-data-structures"
+edit-url-template = "https://github.com/navasvarela/db-data-structures/edit/main/book/{path}"
+# GitHub Pages serves the site under the repository name; the 404 page needs it to load its assets.
+site-url = "/db-data-structures/"
+additional-css = ["figures.css"]

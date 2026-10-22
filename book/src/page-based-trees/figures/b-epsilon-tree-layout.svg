@@ -1,0 +1,37 @@
+<svg class="diagram" viewBox="0 0 640 236" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="b-epsilon-tree-layout-title">
+<title id="b-epsilon-tree-layout-title">A B-epsilon-tree inner node with pivots 30 and 60 and a buffer of four pending messages, above three children for keys below 30, from 30 to 60, and from 60 up.</title>
+<defs><marker id="b-epsilon-tree-layout-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<rect class="box" x="100" y="8" width="446" height="100" rx="6"/>
+<text class="t-small t-muted" x="114" y="83">pivots</text>
+<rect class="box-muted" x="190" y="64" width="22" height="28"/>
+<circle class="head" cx="201" cy="78" r="2.5"/>
+<rect class="box" x="212" y="64" width="34" height="28"/>
+<text class="t t-mono" x="229" y="83" text-anchor="middle">30</text>
+<rect class="box-muted" x="246" y="64" width="22" height="28"/>
+<circle class="head" cx="257" cy="78" r="2.5"/>
+<rect class="box" x="268" y="64" width="34" height="28"/>
+<text class="t t-mono" x="285" y="83" text-anchor="middle">60</text>
+<rect class="box-muted" x="302" y="64" width="22" height="28"/>
+<circle class="head" cx="313" cy="78" r="2.5"/>
+<text class="t-small t-muted" x="114" y="39">buffer</text>
+<rect class="box" x="162" y="22" width="86" height="24" rx="3"/>
+<text class="t-small t-mono" x="205" y="39" text-anchor="middle">12 put 41</text>
+<rect class="box" x="256" y="22" width="86" height="24" rx="3"/>
+<text class="t-small t-mono" x="299" y="39" text-anchor="middle">12 del 57</text>
+<rect class="box" x="350" y="22" width="86" height="24" rx="3"/>
+<text class="t-small t-mono" x="393" y="39" text-anchor="middle">45 put 50</text>
+<rect class="box" x="444" y="22" width="86" height="24" rx="3"/>
+<text class="t-small t-mono" x="487" y="39" text-anchor="middle">77 +1 53</text>
+<rect class="box" x="80" y="170" width="150" height="30" rx="4"/>
+<text class="t-small" x="155" y="190" text-anchor="middle">child 0</text>
+<text class="t-small t-muted" x="155" y="220" text-anchor="middle">keys &lt; 30</text>
+<line class="line" x1="201" y1="78" x2="155" y2="166" marker-end="url(#b-epsilon-tree-layout-head)"/>
+<rect class="box" x="245" y="170" width="150" height="30" rx="4"/>
+<text class="t-small" x="320" y="190" text-anchor="middle">child 1</text>
+<text class="t-small t-muted" x="320" y="220" text-anchor="middle">30 ≤ keys &lt; 60</text>
+<line class="line" x1="257" y1="78" x2="320" y2="166" marker-end="url(#b-epsilon-tree-layout-head)"/>
+<rect class="box" x="410" y="170" width="150" height="30" rx="4"/>
+<text class="t-small" x="485" y="190" text-anchor="middle">child 2</text>
+<text class="t-small t-muted" x="485" y="220" text-anchor="middle">keys ≥ 60</text>
+<line class="line" x1="313" y1="78" x2="485" y2="166" marker-end="url(#b-epsilon-tree-layout-head)"/>
+</svg>

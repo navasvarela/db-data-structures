@@ -1,0 +1,79 @@
+<svg class="diagram" viewBox="0 0 640 346" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sparse-primary-index-granules-title">
+<title id="sparse-primary-index-granules-title">Rows sorted by (user_id, ts) in granules of four rows. The primary index keeps the key of each granule's first row: (10, 09:00), (17, 10:30), (17, 12:30) and (31, 06:40). user_id 17 spans granules 0 to 2.</title>
+<defs><marker id="sparse-primary-index-granules-head-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-b" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-bold" x="40" y="18" text-anchor="middle">granule</text>
+<text class="t-small t-bold" x="104" y="18" text-anchor="middle">row</text>
+<text class="t-small t-bold" x="166" y="18" text-anchor="middle">user_id</text>
+<text class="t-small t-bold" x="230" y="18" text-anchor="middle">ts</text>
+<text class="t-small t-bold" x="470" y="18" text-anchor="middle">primary index</text>
+<rect class="box" x="70" y="28" width="200" height="80"/>
+<text class="t t-bold" x="40" y="72" text-anchor="middle">0</text>
+<text class="t-small t-muted" x="104" y="42" text-anchor="middle">0</text>
+<text class="t-small t-mono" x="166" y="42" text-anchor="middle">10</text>
+<text class="t-small t-mono" x="230" y="42" text-anchor="middle">09:00</text>
+<text class="t-small t-muted" x="104" y="62" text-anchor="middle">1</text>
+<text class="t-small t-mono" x="166" y="62" text-anchor="middle">10</text>
+<text class="t-small t-mono" x="230" y="62" text-anchor="middle">09:05</text>
+<text class="t-small t-muted" x="104" y="82" text-anchor="middle">2</text>
+<text class="t-small t-mono" x="166" y="82" text-anchor="middle">12</text>
+<text class="t-small t-mono" x="230" y="82" text-anchor="middle">08:00</text>
+<rect class="box-a" x="138" y="90" width="56" height="16"/>
+<text class="t-small t-muted" x="104" y="102" text-anchor="middle">3</text>
+<text class="t-small t-mono t-a" x="166" y="102" text-anchor="middle">17</text>
+<text class="t-small t-mono" x="230" y="102" text-anchor="middle">10:00</text>
+<rect class="box-b" x="400" y="28" width="140" height="20"/>
+<text class="t-small t-b" x="410" y="42">mark 0</text>
+<text class="t-small t-mono" x="530" y="42" text-anchor="end">(10, 09:00)</text>
+<line class="line-b" x1="398" y1="38" x2="274" y2="38" marker-end="url(#sparse-primary-index-granules-head-b)"/>
+<rect class="box" x="70" y="116" width="200" height="80"/>
+<text class="t t-bold" x="40" y="160" text-anchor="middle">1</text>
+<rect class="box-a" x="138" y="118" width="56" height="16"/>
+<text class="t-small t-muted" x="104" y="130" text-anchor="middle">4</text>
+<text class="t-small t-mono t-a" x="166" y="130" text-anchor="middle">17</text>
+<text class="t-small t-mono" x="230" y="130" text-anchor="middle">10:30</text>
+<rect class="box-a" x="138" y="138" width="56" height="16"/>
+<text class="t-small t-muted" x="104" y="150" text-anchor="middle">5</text>
+<text class="t-small t-mono t-a" x="166" y="150" text-anchor="middle">17</text>
+<text class="t-small t-mono" x="230" y="150" text-anchor="middle">11:00</text>
+<rect class="box-a" x="138" y="158" width="56" height="16"/>
+<text class="t-small t-muted" x="104" y="170" text-anchor="middle">6</text>
+<text class="t-small t-mono t-a" x="166" y="170" text-anchor="middle">17</text>
+<text class="t-small t-mono" x="230" y="170" text-anchor="middle">11:30</text>
+<rect class="box-a" x="138" y="178" width="56" height="16"/>
+<text class="t-small t-muted" x="104" y="190" text-anchor="middle">7</text>
+<text class="t-small t-mono t-a" x="166" y="190" text-anchor="middle">17</text>
+<text class="t-small t-mono" x="230" y="190" text-anchor="middle">12:00</text>
+<rect class="box-b" x="400" y="116" width="140" height="20"/>
+<text class="t-small t-b" x="410" y="130">mark 1</text>
+<text class="t-small t-mono" x="530" y="130" text-anchor="end">(17, 10:30)</text>
+<line class="line-b" x1="398" y1="126" x2="274" y2="126" marker-end="url(#sparse-primary-index-granules-head-b)"/>
+<rect class="box" x="70" y="204" width="200" height="80"/>
+<text class="t t-bold" x="40" y="248" text-anchor="middle">2</text>
+<rect class="box-a" x="138" y="206" width="56" height="16"/>
+<text class="t-small t-muted" x="104" y="218" text-anchor="middle">8</text>
+<text class="t-small t-mono t-a" x="166" y="218" text-anchor="middle">17</text>
+<text class="t-small t-mono" x="230" y="218" text-anchor="middle">12:30</text>
+<text class="t-small t-muted" x="104" y="238" text-anchor="middle">9</text>
+<text class="t-small t-mono" x="166" y="238" text-anchor="middle">23</text>
+<text class="t-small t-mono" x="230" y="238" text-anchor="middle">07:00</text>
+<text class="t-small t-muted" x="104" y="258" text-anchor="middle">10</text>
+<text class="t-small t-mono" x="166" y="258" text-anchor="middle">23</text>
+<text class="t-small t-mono" x="230" y="258" text-anchor="middle">09:15</text>
+<text class="t-small t-muted" x="104" y="278" text-anchor="middle">11</text>
+<text class="t-small t-mono" x="166" y="278" text-anchor="middle">25</text>
+<text class="t-small t-mono" x="230" y="278" text-anchor="middle">08:00</text>
+<rect class="box-b" x="400" y="204" width="140" height="20"/>
+<text class="t-small t-b" x="410" y="218">mark 2</text>
+<text class="t-small t-mono" x="530" y="218" text-anchor="end">(17, 12:30)</text>
+<line class="line-b" x1="398" y1="214" x2="274" y2="214" marker-end="url(#sparse-primary-index-granules-head-b)"/>
+<rect class="box" x="70" y="292" width="200" height="40"/>
+<text class="t t-bold" x="40" y="316" text-anchor="middle">3</text>
+<text class="t-small t-muted" x="104" y="306" text-anchor="middle">12</text>
+<text class="t-small t-mono" x="166" y="306" text-anchor="middle">31</text>
+<text class="t-small t-mono" x="230" y="306" text-anchor="middle">06:40</text>
+<text class="t-small t-muted" x="166" y="326" text-anchor="middle">…</text>
+<rect class="box-b" x="400" y="292" width="140" height="20"/>
+<text class="t-small t-b" x="410" y="306">mark 3</text>
+<text class="t-small t-mono" x="530" y="306" text-anchor="end">(31, 06:40)</text>
+<line class="line-b" x1="398" y1="302" x2="274" y2="302" marker-end="url(#sparse-primary-index-granules-head-b)"/>
+</svg>

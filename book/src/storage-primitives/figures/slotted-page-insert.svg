@@ -1,0 +1,59 @@
+<svg class="diagram" viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="slotted-page-insert-title">
+<title id="slotted-page-insert-title">Inserting rec 3: it is copied just below upper, which moves down by its length, and a new slot s3 after s2 moves lower up by one slot.</title>
+<defs><marker id="slotted-page-insert-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="slotted-page-insert-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-bold" x="40" y="24">before</text>
+<rect class="box" x="40" y="86" width="70" height="36"/>
+<text class="t-small" x="75" y="108.3" text-anchor="middle">header</text>
+<rect class="box" x="110" y="86" width="36" height="36"/>
+<text class="t-small t-mono" x="128" y="108.3" text-anchor="middle">s0</text>
+<rect class="box" x="146" y="86" width="36" height="36"/>
+<text class="t-small t-mono" x="164" y="108.3" text-anchor="middle">s1</text>
+<rect class="box" x="182" y="86" width="36" height="36"/>
+<text class="t-small t-mono" x="200" y="108.3" text-anchor="middle">s2</text>
+<rect class="box" x="218" y="86" width="152" height="36"/>
+<rect class="box" x="370" y="86" width="60" height="36"/>
+<text class="t" x="400" y="109.0" text-anchor="middle">rec 2</text>
+<rect class="box" x="430" y="86" width="90" height="36"/>
+<text class="t" x="475" y="109.0" text-anchor="middle">rec 1</text>
+<rect class="box" x="520" y="86" width="80" height="36"/>
+<text class="t" x="560" y="109.0" text-anchor="middle">rec 0</text>
+<path class="line" d="M200,84 C200,56 400.0,56 400.0,82" marker-end="url(#slotted-page-insert-head)"/>
+<path class="line" d="M164,84 C164,34 475.0,34 475.0,82" marker-end="url(#slotted-page-insert-head)"/>
+<path class="line" d="M128,84 C128,12 560.0,12 560.0,82" marker-end="url(#slotted-page-insert-head)"/>
+<line class="line" x1="218" y1="122" x2="218" y2="128"/>
+<text class="t-small" x="218" y="142" text-anchor="middle">lower</text>
+<line class="line" x1="370" y1="122" x2="370" y2="128"/>
+<text class="t-small" x="370" y="142" text-anchor="middle">upper</text>
+<text class="t t-muted" x="294" y="109" text-anchor="middle">free</text>
+<line class="line" x1="226" y1="104" x2="270" y2="104" marker-end="url(#slotted-page-insert-head)"/>
+<line class="line" x1="362" y1="104" x2="318" y2="104" marker-end="url(#slotted-page-insert-head)"/>
+<text class="t-small t-bold" x="40" y="172">after inserting rec 3</text>
+<rect class="box" x="40" y="234" width="70" height="36"/>
+<text class="t-small" x="75" y="256.3" text-anchor="middle">header</text>
+<rect class="box" x="110" y="234" width="36" height="36"/>
+<text class="t-small t-mono" x="128" y="256.3" text-anchor="middle">s0</text>
+<rect class="box" x="146" y="234" width="36" height="36"/>
+<text class="t-small t-mono" x="164" y="256.3" text-anchor="middle">s1</text>
+<rect class="box" x="182" y="234" width="36" height="36"/>
+<text class="t-small t-mono" x="200" y="256.3" text-anchor="middle">s2</text>
+<rect class="box-a" x="218" y="234" width="36" height="36"/>
+<text class="t-small t-mono" x="236" y="256.3" text-anchor="middle">s3</text>
+<rect class="box" x="254" y="234" width="62" height="36"/>
+<rect class="box-a" x="316" y="234" width="54" height="36"/>
+<text class="t" x="343" y="257.0" text-anchor="middle">rec 3</text>
+<rect class="box" x="370" y="234" width="60" height="36"/>
+<text class="t" x="400" y="257.0" text-anchor="middle">rec 2</text>
+<rect class="box" x="430" y="234" width="90" height="36"/>
+<text class="t" x="475" y="257.0" text-anchor="middle">rec 1</text>
+<rect class="box" x="520" y="234" width="80" height="36"/>
+<text class="t" x="560" y="257.0" text-anchor="middle">rec 0</text>
+<path class="line-a" d="M236,232 C236,218 343.0,218 343.0,230" marker-end="url(#slotted-page-insert-head-a)"/>
+<path class="line" d="M200,232 C200,204 400.0,204 400.0,230" marker-end="url(#slotted-page-insert-head)"/>
+<path class="line" d="M164,232 C164,182 475.0,182 475.0,230" marker-end="url(#slotted-page-insert-head)"/>
+<path class="line" d="M128,232 C128,160 560.0,160 560.0,230" marker-end="url(#slotted-page-insert-head)"/>
+<line class="line" x1="254" y1="270" x2="254" y2="276"/>
+<text class="t-small t-a" x="254" y="290" text-anchor="middle">lower</text>
+<line class="line" x1="316" y1="270" x2="316" y2="276"/>
+<text class="t-small t-a" x="316" y="290" text-anchor="middle">upper</text>
+<text class="t t-muted" x="285" y="257" text-anchor="middle">free</text>
+</svg>

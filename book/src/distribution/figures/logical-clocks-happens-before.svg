@@ -1,0 +1,33 @@
+<svg class="diagram" viewBox="0 0 640 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logical-clocks-happens-before-title">
+<title id="logical-clocks-happens-before-title">Three processes A, B and C. A sends m1 at a2, received by B at b2; B sends m2 at b3, received by C at c2. The chain a1, a2, b2, b3, c2 is ordered by happens-before; a3 and b3 are concurrent.</title>
+<defs><marker id="logical-clocks-happens-before-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker><marker id="logical-clocks-happens-before-head-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head-a" d="M0,0L10,5L0,10z"/></marker></defs>
+<line class="line" x1="64" y1="50" x2="600" y2="50" marker-end="url(#logical-clocks-happens-before-head)"/>
+<text class="t t-bold" x="50" y="55" text-anchor="end">A</text>
+<line class="line" x1="64" y1="140" x2="600" y2="140" marker-end="url(#logical-clocks-happens-before-head)"/>
+<text class="t t-bold" x="50" y="145" text-anchor="end">B</text>
+<line class="line" x1="64" y1="230" x2="600" y2="230" marker-end="url(#logical-clocks-happens-before-head)"/>
+<text class="t t-bold" x="50" y="235" text-anchor="end">C</text>
+<line class="line-a" x1="120" y1="50" x2="230" y2="50"/>
+<line class="line-a" x1="310" y1="140" x2="410" y2="140"/>
+<line class="line-a" x1="230" y1="56" x2="310" y2="132" marker-end="url(#logical-clocks-happens-before-head-a)"/>
+<text class="t-small t-muted" x="280" y="95">m1</text>
+<line class="line-a" x1="410" y1="146" x2="540" y2="222" marker-end="url(#logical-clocks-happens-before-head-a)"/>
+<text class="t-small t-muted" x="485" y="185">m2</text>
+<circle class="box-a" cx="120" cy="50" r="6"/>
+<circle class="box-a" cx="230" cy="50" r="6"/>
+<circle class="box" cx="520" cy="50" r="6"/>
+<circle class="box" cx="150" cy="140" r="6"/>
+<circle class="box-a" cx="310" cy="140" r="6"/>
+<circle class="box-a" cx="410" cy="140" r="6"/>
+<circle class="box" cx="130" cy="230" r="6"/>
+<circle class="box-a" cx="540" cy="230" r="6"/>
+<text class="t-small t-bold t-a" x="120" y="38" text-anchor="middle">a1</text>
+<text class="t-small t-bold t-a" x="230" y="38" text-anchor="middle">a2</text>
+<text class="t-small t-bold" x="520" y="38" text-anchor="middle">a3</text>
+<text class="t-small t-bold" x="150" y="128" text-anchor="middle">b1</text>
+<text class="t-small t-bold t-a" x="326" y="128" text-anchor="middle">b2</text>
+<text class="t-small t-bold t-a" x="410" y="128" text-anchor="middle">b3</text>
+<text class="t-small t-bold" x="130" y="218" text-anchor="middle">c1</text>
+<text class="t-small t-bold t-a" x="556" y="218" text-anchor="middle">c2</text>
+<text class="t-small t-muted" x="600" y="262" text-anchor="end">time →</text>
+</svg>

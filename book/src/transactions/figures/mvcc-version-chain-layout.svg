@@ -1,0 +1,34 @@
+<svg class="diagram" viewBox="0 0 640 196" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="mvcc-version-chain-layout-title">
+<title id="mvcc-version-chain-layout-title">The newest-to-oldest version chain of key 42: an uncommitted balance of 70 by transaction 17, then 100 committed at 30 and being replaced by 17, then 80 committed at 12 and replaced at 30.</title>
+<defs><marker id="mvcc-version-chain-layout-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<rect class="box" x="20" y="14" width="96" height="28"/>
+<text class="t-small" x="68" y="32" text-anchor="middle">key 42</text>
+<text class="t-small t-muted" x="124" y="33">index entry points at the newest version</text>
+<line class="line" x1="40" y1="42" x2="40" y2="68" marker-end="url(#mvcc-version-chain-layout-head)"/>
+<rect class="box-muted" x="20" y="72" width="160" height="70"/>
+<text class="t-small t-muted" x="32" y="92">begin</text>
+<text class="t-small" x="76" y="92">txn 17</text>
+<text class="t-small t-muted" x="32" y="112">end</text>
+<text class="t-small" x="76" y="112">∞</text>
+<text class="t-small t-mono" x="32" y="132">balance = 70</text>
+<rect class="box" x="230" y="72" width="160" height="70"/>
+<text class="t-small t-muted" x="242" y="92">begin</text>
+<text class="t-small" x="286" y="92">30</text>
+<text class="t-small t-muted" x="242" y="112">end</text>
+<text class="t-small" x="286" y="112">txn 17</text>
+<text class="t-small t-mono" x="242" y="132">balance = 100</text>
+<line class="line" x1="182" y1="107" x2="226" y2="107" marker-end="url(#mvcc-version-chain-layout-head)"/>
+<rect class="box" x="440" y="72" width="160" height="70"/>
+<text class="t-small t-muted" x="452" y="92">begin</text>
+<text class="t-small" x="496" y="92">12</text>
+<text class="t-small t-muted" x="452" y="112">end</text>
+<text class="t-small" x="496" y="112">30</text>
+<text class="t-small t-mono" x="452" y="132">balance = 80</text>
+<line class="line" x1="392" y1="107" x2="436" y2="107" marker-end="url(#mvcc-version-chain-layout-head)"/>
+<text class="t-small t-muted" x="100" y="164" text-anchor="middle">uncommitted write</text>
+<text class="t-small t-muted" x="100" y="182" text-anchor="middle">of transaction 17</text>
+<text class="t-small t-muted" x="310" y="164" text-anchor="middle">visible to snapshots</text>
+<text class="t-small t-muted" x="310" y="182" text-anchor="middle">with 30 ≤ ts</text>
+<text class="t-small t-muted" x="520" y="164" text-anchor="middle">visible to snapshots</text>
+<text class="t-small t-muted" x="520" y="182" text-anchor="middle">with 12 ≤ ts &lt; 30</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg class="diagram" viewBox="0 0 640 226" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="partitioned-hash-table-probe-title">
+<title id="partitioned-hash-table-probe-title">A probe key with home slot 1 and tag 0x91 skips slot 1, matches row 4 in slot 2, rejects row 9 in slot 3 after comparing keys, and stops at empty slot 4.</title>
+<defs><marker id="partitioned-hash-table-probe-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="head" d="M0,0L10,5L0,10z"/></marker></defs>
+<text class="t-small t-bold" x="20" y="22">probe key: partition 2, home slot 1, tag 0x91</text>
+<text class="t-small t-muted" x="92" y="115" text-anchor="end">slots</text>
+<text class="t-small t-muted" x="132" y="90" text-anchor="middle">0</text>
+<rect class="box-muted" x="100" y="96" width="64" height="30"/>
+<text class="t-small t-muted" x="132" y="115" text-anchor="middle">empty</text>
+<text class="t-small t-muted" x="196" y="90" text-anchor="middle">1</text>
+<rect class="box-muted" x="164" y="96" width="64" height="30"/>
+<text class="t-small t-mono" x="196" y="115" text-anchor="middle">0x3a</text>
+<text class="t-small t-muted" x="260" y="90" text-anchor="middle">2</text>
+<rect class="box-a" x="228" y="96" width="64" height="30"/>
+<text class="t-small t-mono" x="260" y="115" text-anchor="middle">0x91</text>
+<text class="t-small t-muted" x="324" y="90" text-anchor="middle">3</text>
+<rect class="box-warn" x="292" y="96" width="64" height="30"/>
+<text class="t-small t-mono" x="324" y="115" text-anchor="middle">0x91</text>
+<text class="t-small t-muted" x="388" y="90" text-anchor="middle">4</text>
+<rect class="box" x="356" y="96" width="64" height="30"/>
+<text class="t-small t-muted" x="388" y="115" text-anchor="middle">empty</text>
+<text class="t-small t-muted" x="452" y="90" text-anchor="middle">5</text>
+<rect class="box" x="420" y="96" width="64" height="30"/>
+<text class="t-small t-mono" x="452" y="115" text-anchor="middle">0x5c</text>
+<text class="t-small t-muted" x="516" y="90" text-anchor="middle">6</text>
+<rect class="box-muted" x="484" y="96" width="64" height="30"/>
+<text class="t-small t-muted" x="516" y="115" text-anchor="middle">empty</text>
+<text class="t-small t-muted" x="580" y="90" text-anchor="middle">7</text>
+<rect class="box-muted" x="548" y="96" width="64" height="30"/>
+<text class="t-small t-muted" x="580" y="115" text-anchor="middle">empty</text>
+<path class="line" d="M200.0,72Q228.0,46 256.0,72" marker-end="url(#partitioned-hash-table-probe-head)"/>
+<path class="line" d="M264.0,72Q292.0,46 320.0,72" marker-end="url(#partitioned-hash-table-probe-head)"/>
+<path class="line" d="M328.0,72Q356.0,46 384.0,72" marker-end="url(#partitioned-hash-table-probe-head)"/>
+<line class="line" x1="196" y1="32" x2="196" y2="72" marker-end="url(#partitioned-hash-table-probe-head)"/>
+<text class="t-small t-muted" x="196" y="148" text-anchor="middle">tag differs</text>
+<text class="t-small t-muted" x="196" y="166" text-anchor="middle">skip</text>
+<text class="t-small t-muted" x="260" y="148" text-anchor="middle">key equal</text>
+<text class="t-small t-a t-bold" x="260" y="166" text-anchor="middle">match</text>
+<text class="t-small t-muted" x="324" y="148" text-anchor="middle">key differs</text>
+<text class="t-small t-warn" x="324" y="166" text-anchor="middle">reject</text>
+<text class="t-small t-muted" x="388" y="148" text-anchor="middle">empty</text>
+<text class="t-small t-bold" x="388" y="166" text-anchor="middle">stop</text>
+<text class="t-small t-muted" x="100" y="214">a matching tag only says the keys may be equal; the full key comparison decides</text>
+</svg>
